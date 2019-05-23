@@ -1,0 +1,52 @@
+.leaflet-control-add-marker {
+  background-image: url("../../public/images/icons/add_location.svg");
+  background-size: 24px;
+}
+
+.leaflet-control-add-marker:hover {
+  cursor: pointer;
+}
+
+.leaflet-control-add-marker_on .leaflet-control-add-marker {
+  outline: 4px solid crimson !important;
+}
+
+.popup-add-marker {
+  width: 250px;
+}
+
+.popup-add-marker-title {
+  margin-bottom: 5px;
+}
+
+.control-add-marker_select-type {
+  width: 49%;
+  padding: 5px;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.control-add-marker_description {
+  width: 49%;
+  padding: 5px;
+  margin-bottom: 15px;
+  float: right;
+}
+
+.control-add-marker_button-del {
+  width: 49%;
+  height: 30px;
+  padding: 3px;
+  float: left;
+}
+
+.control-add-marker_button-save {
+  width: 49%;
+  height: 30px;
+  padding: 3px;
+  float: right;
+}
+
+.clear {
+  clear: both;
+}

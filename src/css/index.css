@@ -1,0 +1,70 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#map {
+  height: 100vh;
+  width: 100vw;
+}
+
+/**/
+.login {
+  cursor: pointer;
+}
+
+#login-popup {
+  position: absolute;
+  top: 12px;
+  left: 60px;
+  z-index: 9999;
+}
+
+/**/
+.switch-map {
+  position: absolute;
+  top: 12px;
+  left: calc(50% - 125px);
+  z-index: 999;
+}
+
+.switch-map-button {
+  padding: 3px;
+  margin-right: 5px;
+  width: 120px;
+  cursor: pointer;
+}
+
+/**/
+.leaflet-control-layers-toggle {
+  background-image: url(../../public/images/icons/layers.svg);
+}
+
+.leaflet-control-layers-expanded {
+}
+
+.leaflet-control-layers-base label,
+.leaflet-control-layers-overlays label {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: #eee;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.legend-item {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-size: 15px;
+  background-repeat: no-repeat;
+}
+
+/* leaflet-control-layers-expanded */

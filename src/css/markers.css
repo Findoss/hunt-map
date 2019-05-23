@@ -1,0 +1,29 @@
+.leaflet-marker-icon {
+  /* размер по умолчанию */
+  width: 20px !important;
+  height: 20px !important;
+  /* центр */
+  margin-left: -10px !important;
+  margin-top: -10px !important;
+  background-size: 15px;
+  background-repeat: no-repeat;
+}
+
+/* .marker-example {
+  background-color: lightblue;
+  border-radius: 50%;
+} */
+
+.marker-NEW_OBJECT {
+  background-color: red;
+  border: 1px solid white;
+  filter: drop-shadow(4px 4px 4px #000000);
+  border-radius: 50%;
+}
+
+.marker-resupply-point {
+  background-color: lawngreen;
+  border: 1px solid white;
+  filter: drop-shadow(4px 4px 4px #000000);
+  border-radius: 50%;
+}

@@ -1,0 +1,44 @@
+.leaflet-control-measure {
+  background-image: url(../../public/images/icons/ruler.svg);
+  background-size: 24px;
+}
+
+.leaflet-bar-part-top-and-bottom {
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  border-bottom: none;
+}
+
+.leaflet-touch .leaflet-bar-part-top-and-bottom {
+  -webkit-border-radius: 7px 7px 7px 7px;
+  border-radius: 7px 7px 7px 7px;
+  border-bottom: none;
+}
+
+.leaflet-measure-tooltip {
+  margin-left: 5px !important;
+  margin-top: 5px !important;
+}
+
+.leaflet-control-measure-on .leaflet-control-measure {
+  outline: 4px solid crimson !important;
+}
+
+.leaflet-measure-tooltip {
+  font: 12px/1.25 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 4px;
+  width: auto !important;
+  height: auto !important;
+  white-space: nowrap;
+}
+
+.leaflet-measure-tooltip-total {
+  font-weight: bold;
+}
+
+.leaflet-measure-tooltip-difference {
+  color: crimson;
+}
