@@ -1,13 +1,4 @@
-const MAP = createMap("SB");
+const mapId = localStorage.getItem("mapId") || "SB";
+
+const MAP = createMap(mapId);
 toggleMap(MAP);
-
-firebase.auth().onAuthStateChanged(isLogin => {
-  loginButton("login", "login-popup", isLogin);
-  if (isLogin) {
-    console.log("Hello, user ", isLogin.uid);
-
-    MAP.setNewMarker();
-  } else {
-    //
-  }
-});

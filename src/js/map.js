@@ -81,30 +81,37 @@ function createMap(mapId, isLogin) {
       console.log("Error API", error);
     });
 
+  firebase.auth().onAuthStateChanged(isLogin => {
+    loginButton("login", "login-popup", isLogin);
+    if (isLogin) {
+      console.log("Hello, user ", isLogin.uid);
+      API.getForСheckItems(mapId)
+        .then(data => {
+          data.forEach(doc => {
+            const data = doc.data();
+            new L.marker(data.geometry.coordinates, {
+              icon: icons["NEW_OBJECT"]
+            })
+              .bindPopup(
+                popupApprovePoint(data.properties.marker, mapId, doc.id, data)
+              )
+              .addTo(groups["NEW_OBJECT"]);
+          });
+        })
+        .catch(error => {
+          console.log("Error API", error);
+        });
+    } else {
+      //
+    }
+  });
+
   map.on("click", e => {
     // console.log(e.latlng);
   });
 
   map.setMaxBounds(bounds);
   map.setView(optionsMaps[mapId].center, optionsMaps[mapId].levels.min);
-  map.setNewMarker = () => {
-    API.getForСheckItems(mapId)
-      .then(data => {
-        data.forEach(doc => {
-          const data = doc.data();
-          new L.marker(data.geometry.coordinates, {
-            icon: icons["NEW_OBJECT"]
-          })
-            .bindPopup(
-              popupApprovePoint(data.properties.marker, mapId, doc.id, data)
-            )
-            .addTo(groups["NEW_OBJECT"]);
-        });
-      })
-      .catch(error => {
-        console.log("Error API", error);
-      });
-  };
 
   return map;
 }
