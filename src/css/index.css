@@ -1,6 +1,4 @@
-*,
-::after,
-::before {
+*, ::after, ::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -12,6 +10,7 @@
 }
 
 /**/
+
 .login {
   cursor: pointer;
 }
@@ -24,6 +23,7 @@
 }
 
 /**/
+
 .switch-map {
   position: absolute;
   top: 12px;
@@ -39,15 +39,14 @@
 }
 
 /**/
+
 .leaflet-control-layers-toggle {
   background-image: url(../../public/images/icons/layers.svg);
 }
 
-.leaflet-control-layers-expanded {
-}
+.leaflet-control-layers-expanded {}
 
-.leaflet-control-layers-base label,
-.leaflet-control-layers-overlays label {
+.leaflet-control-layers-base label, .leaflet-control-layers-overlays label {
   margin-top: 8px;
   margin-bottom: 8px;
   background-color: #eee;
@@ -60,7 +59,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin-right: 5px;
+  margin-right: 10px;
   margin-left: 5px;
   margin-top: 5px;
   background-size: 15px;
