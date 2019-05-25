@@ -19,7 +19,7 @@ const API = {
     };
 
     switch (payload.title) {
-      case "clue":
+      case "easter-egg":
         properties.description = payload.description;
         break;
     }
@@ -45,7 +45,7 @@ const API = {
   },
 
   approvePoint(mapId, docId, data) {
-    Promise.all([
+    return Promise.all([
       DB.collection(mapId)
         .doc()
         .set(data),
