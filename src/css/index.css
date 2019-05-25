@@ -34,7 +34,6 @@ button:hover,
 select:hover,
 input:hover {
   border-color: var(--color-2-hover);
-  color: var(--color-2-hover);
 }
 
 button:focus,
