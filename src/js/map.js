@@ -67,6 +67,9 @@ function createMap(mapId, isLogin) {
           const marker = new L.marker(data.geometry.coordinates, {
             icon: icons[data.properties.marker]
           })
+            .on("click", () => {
+              console.log("Marker id = ", doc.id);
+            })
             .bindTooltip(
               tooltipMarker(data.properties.title, data.properties.description)
             )
