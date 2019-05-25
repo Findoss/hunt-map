@@ -22,6 +22,15 @@ const API = {
       case "easter-egg":
         properties.description = payload.description;
         break;
+      case "boss-butcher":
+        properties.description = payload.description;
+        break;
+      case "boss-spider":
+        properties.description = payload.description;
+        break;
+      case "boss-player":
+        properties.description = payload.description;
+        break;
     }
 
     const data = {

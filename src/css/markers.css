@@ -27,6 +27,7 @@
   filter: drop-shadow(4px 4px 4px #000000);
   border-radius: 50%;
 }
+
 .marker-resupply-point::after {
   content: "+";
   font-size: 24px;
@@ -41,6 +42,7 @@
   filter: drop-shadow(4px 4px 4px #000000);
   border-radius: 50%;
 }
+
 .marker-clue::after {
   content: "◌";
   font-size: 30px;
@@ -70,9 +72,7 @@
   border-radius: 50%;
 }
 
-.marker-boss-assassin::after,
-.marker-boss-butcher::after,
-.marker-boss-spider::after {
+.marker-boss-assassin::after, .marker-boss-butcher::after, .marker-boss-spider::after {
   content: "⊗";
   font-size: 17px;
   font-weight: bold;
@@ -87,12 +87,20 @@
   border-radius: 50%;
 }
 
+.marker-extraction-point {
+  background-color: whitesmoke;
+  border: 1px solid white;
+  filter: drop-shadow(4px 4px 4px #000000);
+  border-radius: 50%;
+}
+
 .marker-cash {
   background-color: lightsalmon;
   border: 1px solid white;
   filter: drop-shadow(4px 4px 4px #000000);
   border-radius: 50%;
 }
+
 .marker-cash::after {
   content: "$";
   font-size: 17px;
@@ -107,6 +115,7 @@
   filter: drop-shadow(4px 4px 4px #000000);
   border-radius: 50%;
 }
+
 .marker-easter-egg::after {
   content: "★";
   font-size: 22px;
