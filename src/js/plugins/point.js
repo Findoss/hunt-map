@@ -98,9 +98,9 @@ L.Control.Point = L.Control.extend({
             this._currentPopup.setContent(
               "Data send to server, information will appear as soon as it is checked by the moderator."
             );
-            setTimeout(() => {
-              this._currentPopup.remove();
-            }, 5000);
+            // setTimeout(() => {
+            //   this._currentPopup.remove();
+            // }, 5000);
           })
           .catch(error => {
             console.error("Error send document: ", error);

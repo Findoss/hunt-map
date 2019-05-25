@@ -6,8 +6,8 @@ const types = [
   "boss-spider",
   "spawn-player",
   "cash",
-  "easter-egg"
-  // "extraction-point",
+  "easter-egg",
+  "extraction-point"
   // "explosive-barrel"
   // "fuel-barrel",
   // "piano",
