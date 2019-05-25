@@ -22,8 +22,96 @@
 }
 
 .marker-resupply-point {
-  background-color: lawngreen;
+  background-color: lightgreen;
   border: 1px solid white;
   filter: drop-shadow(4px 4px 4px #000000);
   border-radius: 50%;
+}
+.marker-resupply-point::after {
+  content: "+";
+  font-size: 24px;
+  position: absolute;
+  top: -9px;
+  left: 2px;
+}
+
+.marker-clue {
+  background-color: skyblue;
+  border: 1px solid white;
+  filter: drop-shadow(4px 4px 4px #000000);
+  border-radius: 50%;
+}
+.marker-clue::after {
+  content: "◌";
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: -15px;
+}
+
+.marker-boss-assassin {
+  background-color: lightpink;
+  border: 1px solid white;
+  filter: drop-shadow(4px 4px 4px #000000);
+  border-radius: 50%;
+}
+
+.marker-boss-butcher {
+  background-color: lemonchiffon;
+  border: 1px solid white;
+  filter: drop-shadow(4px 4px 4px #000000);
+  border-radius: 50%;
+}
+
+.marker-boss-spider {
+  background-color: lightblue;
+  border: 1px solid white;
+  filter: drop-shadow(4px 4px 4px #000000);
+  border-radius: 50%;
+}
+
+.marker-boss-assassin::after,
+.marker-boss-butcher::after,
+.marker-boss-spider::after {
+  content: "⊗";
+  font-size: 17px;
+  font-weight: bold;
+  position: absolute;
+  top: -4px;
+}
+
+.marker-spawn-player {
+  background-color: plum;
+  border: 1px solid white;
+  filter: drop-shadow(4px 4px 4px #000000);
+  border-radius: 50%;
+}
+
+.marker-cash {
+  background-color: lightsalmon;
+  border: 1px solid white;
+  filter: drop-shadow(4px 4px 4px #000000);
+  border-radius: 50%;
+}
+.marker-cash::after {
+  content: "$";
+  font-size: 17px;
+  position: absolute;
+  top: -3px;
+  left: 4px;
+}
+
+.marker-easter-egg {
+  background-color: gold;
+  border: 1px solid white;
+  filter: drop-shadow(4px 4px 4px #000000);
+  border-radius: 50%;
+}
+.marker-easter-egg::after {
+  content: "★";
+  font-size: 22px;
+  position: absolute;
+  top: -8px;
+  left: 0px;
+  color: brown;
 }

@@ -1,6 +1,6 @@
 .leaflet-control-measure {
   background-image: url(../../public/images/icons/ruler.svg);
-  background-size: 24px;
+  background-size: 22px;
 }
 
 .leaflet-bar-part-top-and-bottom {
@@ -21,7 +21,7 @@
 }
 
 .leaflet-control-measure-on .leaflet-control-measure {
-  outline: 4px solid crimson !important;
+  outline: 4px solid var(--color-2-hover) !important;
 }
 
 .leaflet-measure-tooltip {
@@ -40,5 +40,5 @@
 }
 
 .leaflet-measure-tooltip-difference {
-  color: crimson;
+  color: var(--color-2-hover);
 }

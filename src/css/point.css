@@ -1,18 +1,18 @@
 .leaflet-control-add-marker {
   background-image: url("../../public/images/icons/add_location.svg");
-  background-size: 24px;
+  background-size: 22px;
 }
 
 .leaflet-control-add-marker:hover {
   cursor: pointer;
 }
 
-.leaflet-control-add-marker_on .leaflet-control-add-marker {
-  outline: 4px solid crimson !important;
-}
-
 .popup-add-marker {
   width: 250px;
+}
+
+.leaflet-control-add-marker_on .leaflet-control-add-marker {
+  outline: 4px solid var(--color-2-hover) !important;
 }
 
 .popup-add-marker-title {
@@ -21,6 +21,7 @@
 
 .control-add-marker_select-type {
   width: 49%;
+  height: 29px;
   padding: 5px;
   margin-bottom: 15px;
   float: left;
@@ -28,6 +29,7 @@
 
 .control-add-marker_description {
   width: 49%;
+  height: 29px;
   padding: 5px;
   margin-bottom: 15px;
   float: right;
