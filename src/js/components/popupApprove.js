@@ -2,7 +2,7 @@ function popupApprovePoint(type, mapId, docId, data) {
   const container = L.DomUtil.create("div", "popup-add-marker");
 
   const title = L.DomUtil.create("pre", "popup-add-marker-title", container);
-  title.innerHTML = JSON.stringify({ docId, data }, null, 2);
+  title.innerText = JSON.stringify({ docId, data }, null, 2);
 
   const btn1 = L.DomUtil.create(
     "button",

@@ -20,7 +20,7 @@
 }
 
 .control-add-marker_select-type {
-  width: 49%;
+  width: 100%;
   height: 29px;
   padding: 5px;
   margin-bottom: 15px;
@@ -28,11 +28,12 @@
 }
 
 .control-add-marker_description {
-  width: 49%;
-  height: 29px;
+  width: 100%;
+  height: 70px;
   padding: 5px;
   margin-bottom: 15px;
   float: right;
+  resize: none;
 }
 
 .control-add-marker_button-del {

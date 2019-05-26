@@ -52,7 +52,7 @@ L.Control.Point = L.Control.extend({
     });
 
     this._description = L.DomUtil.create(
-      "input",
+      "textarea",
       "control-add-marker_description",
       container
     );

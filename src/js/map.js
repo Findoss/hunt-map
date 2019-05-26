@@ -21,6 +21,21 @@ function createMap(mapId, isLogin) {
     }
   });
 
+  function addMarkers(doc, id) {
+    if (types.findIndex(type => doc.properties.title === type) > -1) {
+      return new L.marker(doc.geometry.coordinates, {
+        icon: icons[doc.properties.marker]
+      })
+        .on("click", () => {
+          console.log("Marker id = ", id);
+        })
+        .bindPopup(
+          popupMarker(doc.properties.title, doc.properties.description)
+        )
+        .addTo(groups[doc.properties.marker]);
+    }
+  }
+
   const map = L.map("map", { crs: L.CRS.Pr });
 
   const sw = map.unproject(
@@ -59,61 +74,32 @@ function createMap(mapId, isLogin) {
   L.control.point({ ...optionsPoint, mapId: mapId }).addTo(map);
   L.control.layers(null, legendItems).addTo(map);
 
-  API.getItemsChache(mapId)
-    .then(data => {
-      Object.keys(data).forEach(id => {
-        const doc = data[id];
-        if (types.findIndex(type => doc.properties.title === type) > -1) {
-          const marker = new L.marker(doc.geometry.coordinates, {
-            icon: icons[doc.properties.marker]
-          })
-            .on("click", () => {
-              console.log("Marker id = ", id);
-            })
-            .bindTooltip(
-              tooltipMarker(doc.properties.title, doc.properties.description)
-            )
-            .addTo(groups[doc.properties.marker]);
-        }
+  if (localStorage.getItem("REALTIME")) {
+    API.getItems(mapId)
+      .then(snapshot => {
+        console.log("From cache -", snapshot.metadata.fromCache ? "yes" : "no");
+        snapshot.forEach(doc => addMarkers(doc.data(), doc.id));
+        for (type in groups) groups[type].addTo(map);
+      })
+      .catch(error => {
+        console.log("Error API", error);
       });
-      for (type in groups) {
-        groups[type].addTo(map);
-      }
-    })
-    .catch(error => {
-      console.log("Error API", error);
-    });
-
-  // API.getItems(mapId)
-  //   .then(data => {
-  //     console.log("From cache -", data.metadata.fromCache ? "yes" : "no");
-  //     data.forEach(doc => {
-  //       const data = doc.data();
-  //       if (types.findIndex(type => data.properties.title === type) > -1) {
-  //         const marker = new L.marker(data.geometry.coordinates, {
-  //           icon: icons[data.properties.marker]
-  //         })
-  //           .on("click", () => {
-  //             console.log("Marker id = ", doc.id);
-  //           })
-  //           .bindTooltip(
-  //             tooltipMarker(data.properties.title, data.properties.description)
-  //           )
-  //           .addTo(groups[data.properties.marker]);
-  //       }
-  //     });
-  //     for (type in groups) {
-  //       groups[type].addTo(map);
-  //     }
-  //   })
-  //   .catch(error => {
-  //     console.log("Error API", error);
-  //   });
+  } else {
+    API.getItemsChache(mapId)
+      .then(data => {
+        Object.keys(data).forEach(id => addMarkers(data[id], id));
+        for (type in groups) groups[type].addTo(map);
+      })
+      .catch(error => {
+        console.log("Error API", error);
+      });
+  }
 
   firebase.auth().onAuthStateChanged(isLogin => {
     loginButton("login", "login-popup", isLogin);
     if (isLogin) {
-      console.log("Hello, user ", isLogin.uid);
+      console.log("Hello, user", isLogin.uid);
+      localStorage.setItem("REALTIME", true);
       API.getForСheckItems(mapId)
         .then(data => {
           data.forEach(doc => {
@@ -131,7 +117,7 @@ function createMap(mapId, isLogin) {
           console.log("Error API", error);
         });
     } else {
-      //
+      localStorage.removeItem("REALTIME");
     }
   });
 
