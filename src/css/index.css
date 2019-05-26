@@ -1,24 +1,18 @@
 :root {
   --color-1: #ccc;
   --bg-color-1: black;
-
   --color-2: #7c0e0d;
   --color-2-hover: #d82827;
   --bg-color-2: #222;
 }
 
-*,
-::after,
-::before {
+*, ::after, ::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-button,
-select,
-option,
-input {
+button, select, option, input, textarea {
   background-color: var(--bg-color-1);
   color: var(--color-1);
   border: 1px solid var(--color-2);
@@ -30,17 +24,21 @@ button {
   cursor: pointer;
 }
 
-button:hover,
-select:hover,
-input:hover {
+button:hover, select:hover, input:hover, textarea:hover {
   border-color: var(--color-2-hover);
 }
 
-button:focus,
-select:focus,
-input:focus {
+button:focus, select:focus, input:focus {
   outline: none;
   border: 1px solid var(--color-2-hover);
+}
+
+hr {
+  margin-bottom: 10px;
+  border: none;
+  color: var(--color-2);
+  background-color: var(--color-2);
+  height: 2px;
 }
 
 #map {
@@ -48,21 +46,14 @@ input:focus {
   width: 100vw;
 }
 
-.leaflet-control-container .leaflet-control-zoom-in,
-.leaflet-control-container .leaflet-control-zoom-out,
-.leaflet-control-container .leaflet-control-measure,
-.leaflet-control-container .leaflet-control-add-marker,
-.leaflet-control-layers-toggle {
+.leaflet-control-container .leaflet-control-zoom-in, .leaflet-control-container .leaflet-control-zoom-out, .leaflet-control-container .leaflet-control-measure, .leaflet-control-container .leaflet-control-add-marker, .leaflet-control-layers-toggle {
   color: var(--color-1);
   background-color: var(--bg-color-1);
   border: 1px solid var(--color-2) !important;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
-.leaflet-control-container .leaflet-control-zoom-in:hover,
-.leaflet-control-container .leaflet-control-zoom-out:hover,
-.leaflet-control-container .leaflet-control-measure:hover,
-.leaflet-control-container .leaflet-control-add-marker:hover {
+.leaflet-control-container .leaflet-control-zoom-in:hover, .leaflet-control-container .leaflet-control-zoom-out:hover, .leaflet-control-container .leaflet-control-measure:hover, .leaflet-control-container .leaflet-control-add-marker:hover {
   background-color: var(--bg-color-1);
   color: var(--color-2-hover);
   fill: var(--color-2-hover);
@@ -135,8 +126,7 @@ input:focus {
   padding-left: 10px;
 }
 
-.leaflet-control-layers-base label,
-.leaflet-control-layers-overlays label {
+.leaflet-control-layers-base label, .leaflet-control-layers-overlays label {
   margin-top: 2px;
   margin-bottom: 2px;
   background-color: var(--bg-color-2);
@@ -147,8 +137,7 @@ input:focus {
   cursor: pointer;
 }
 
-.leaflet-control-layers-base label:hover,
-.leaflet-control-layers-overlays label:hover {
+.leaflet-control-layers-base label:hover, .leaflet-control-layers-overlays label:hover {
   border-color: var(--color-2-hover) !important;
 }
 
@@ -180,24 +169,16 @@ input:focus {
   border-bottom: 2px solid var(--color-2);
 }
 
+.leaflet-popup-content-wrapper h4 {
+  text-transform: uppercase;
+}
+
 /* tooltip */
 
 .leaflet-tooltip {
   color: var(--color-1);
   background: var(--bg-color-1);
   border: 1px solid var(--color-1);
-}
-
-.leaflet-tooltip h4 {
-  text-transform: uppercase;
-}
-
-.leaflet-tooltip-right {
-  margin-left: 15px;
-}
-
-.leaflet-tooltip-left {
-  margin-left: -15px;
 }
 
 .leaflet-tooltip-right::before {

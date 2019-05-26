@@ -24,7 +24,7 @@ const optionsMaps = {
     image: {
       width: 1066,
       height: 1066,
-      path: "public/images/SB_tiles/{z}-{x}-{y}.jpg"
+      path: "public/images/tiles/SB/{z}-{x}-{y}.jpg"
     },
     levels: {
       org: 3,
@@ -43,18 +43,18 @@ const optionsMaps = {
     id: "LD",
     title: "Lawson Delta",
     image: {
-      width: 803,
-      height: 803,
-      path: "public/images/LD_tiles/{z}-{x}-{y}.jpg"
+      width: 2434,
+      height: 2429,
+      path: "public/images/tiles/LD/{z}-{x}-{y}.jpg"
     },
     levels: {
-      org: 2,
-      max: 6,
+      org: 4,
+      max: 7,
       min: 2
     },
     factor: {
-      x: 0.20075,
-      y: 0.20075
+      x: 0.152125,
+      y: 0.1518125
     },
     width: 1000,
     height: 1000,

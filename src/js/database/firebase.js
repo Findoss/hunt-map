@@ -19,9 +19,7 @@ const API = {
   },
 
   getItemsChache(mapId) {
-    return fetch(`./public/cache/${mapId}.json`).then(function(response) {
-      return response.json();
-    });
+    return fetch(`./public/cache/${mapId}.json`).then(res => res.json());
   },
 
   getForСheckItems(mapId) {
