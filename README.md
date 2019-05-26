@@ -25,3 +25,11 @@
 0. в `config.js` указать тип  
 0. в `css/marker.css` указать стили по имени типа  
 0. в `js/database/firebase.js` метод `addPoint` дополнить необходимой логикой  
+
+## Форматирование описания
+ссылка  
+```<a href="" target="_blank" rel="noopener noreferrer"></a>```
+картинка  
+```<img height="100px" src="">```
+ссылка + картинка  
+```<a href="" target="_blank" rel="noopener noreferrer"><img height="100px" src=""></a>```
