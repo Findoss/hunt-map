@@ -78,9 +78,6 @@ const firebaseConfig = {
   authDomain: "hunt-map-1.firebaseapp.com",
   databaseURL: "https://hunt-map-1.firebaseio.com",
   projectId: "hunt-map-1"
-  // storageBucket: "hunt-map-1.appspot.com",
-  // messagingSenderId: "sender-id",
-  // appID: "hunt-map-1",
 };
 
 const optionsRuler = {

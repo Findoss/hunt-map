@@ -59,21 +59,21 @@ function createMap(mapId, isLogin) {
   L.control.point({ ...optionsPoint, mapId: mapId }).addTo(map);
   L.control.layers(null, legendItems).addTo(map);
 
-  API.getItems(mapId)
+  API.getItemsChache(mapId)
     .then(data => {
-      data.forEach(doc => {
-        const data = doc.data();
-        if (types.findIndex(type => data.properties.title === type) > -1) {
-          const marker = new L.marker(data.geometry.coordinates, {
-            icon: icons[data.properties.marker]
+      Object.keys(data).forEach(id => {
+        const doc = data[id];
+        if (types.findIndex(type => doc.properties.title === type) > -1) {
+          const marker = new L.marker(doc.geometry.coordinates, {
+            icon: icons[doc.properties.marker]
           })
             .on("click", () => {
-              console.log("Marker id = ", doc.id);
+              console.log("Marker id = ", id);
             })
             .bindTooltip(
-              tooltipMarker(data.properties.title, data.properties.description)
+              tooltipMarker(doc.properties.title, doc.properties.description)
             )
-            .addTo(groups[data.properties.marker]);
+            .addTo(groups[doc.properties.marker]);
         }
       });
       for (type in groups) {
@@ -83,6 +83,32 @@ function createMap(mapId, isLogin) {
     .catch(error => {
       console.log("Error API", error);
     });
+
+  // API.getItems(mapId)
+  //   .then(data => {
+  //     console.log("From cache -", data.metadata.fromCache ? "yes" : "no");
+  //     data.forEach(doc => {
+  //       const data = doc.data();
+  //       if (types.findIndex(type => data.properties.title === type) > -1) {
+  //         const marker = new L.marker(data.geometry.coordinates, {
+  //           icon: icons[data.properties.marker]
+  //         })
+  //           .on("click", () => {
+  //             console.log("Marker id = ", doc.id);
+  //           })
+  //           .bindTooltip(
+  //             tooltipMarker(data.properties.title, data.properties.description)
+  //           )
+  //           .addTo(groups[data.properties.marker]);
+  //       }
+  //     });
+  //     for (type in groups) {
+  //       groups[type].addTo(map);
+  //     }
+  //   })
+  //   .catch(error => {
+  //     console.log("Error API", error);
+  //   });
 
   firebase.auth().onAuthStateChanged(isLogin => {
     loginButton("login", "login-popup", isLogin);
