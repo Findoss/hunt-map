@@ -1,8 +1,27 @@
 const DB = firebase.initializeApp(firebaseConfig).firestore();
 
+firebase
+  .firestore()
+  .enablePersistence()
+  .catch(function(err) {
+    if (err.code == "failed-precondition") {
+      console.error("Multiple tabs open.");
+    } else if (err.code == "unimplemented") {
+      console.error(
+        "The current browser does not support to enable persistence"
+      );
+    }
+  });
+
 const API = {
   getItems(mapId) {
     return DB.collection(mapId).get();
+  },
+
+  getItemsChache(mapId) {
+    return fetch(`./public/cache/${mapId}.json`).then(function(response) {
+      return response.json();
+    });
   },
 
   getForСheckItems(mapId) {
@@ -19,6 +38,9 @@ const API = {
     };
 
     switch (payload.title) {
+      case "cash":
+        properties.description = payload.description;
+        break;
       case "easter-egg":
         properties.description = payload.description;
         break;
