@@ -22,3 +22,15 @@ function loginButton(idElBtn = "login", idElPopup = "login-popup", isLogin) {
     }
   };
 }
+
+function authorList(idEl = "contributors", idElPopup = "contributors-popup") {
+  const el = document.getElementById(idEl);
+  const elPopup = document.getElementById(idElPopup);
+  elPopup.innerText = contributorNames;
+  el.onmouseover = e => {
+    elPopup.style.display = "block";
+  };
+  el.onmouseout = e => {
+    elPopup.style.display = "none";
+  };
+}

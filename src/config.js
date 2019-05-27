@@ -65,8 +65,8 @@ const optionsMaps = {
 const buttonAuth = `<span id="login" class="login">login</span>`;
 const author =
   'by <a target="_blank" href="https://steamcommunity.com/id/Findoss/">Findoss</a> | ';
-const contributors = "contributors | ";
-const contributorNames = ["123", "456"].join("\n");
+const contributors = `<span id="contributors">contributors</span> | `;
+const contributorNames = ["Святобор", ""].join("\n");
 
 const options = {
   zIndex: 1,
