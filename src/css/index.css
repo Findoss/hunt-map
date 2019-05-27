@@ -46,6 +46,10 @@ hr {
   width: 100vw;
 }
 
+.cursor-zoom {
+  cursor: zoom-in;
+}
+
 .leaflet-control-container .leaflet-control-zoom-in, .leaflet-control-container .leaflet-control-zoom-out, .leaflet-control-container .leaflet-control-measure, .leaflet-control-container .leaflet-control-add-marker, .leaflet-control-layers-toggle {
   color: var(--color-1);
   background-color: var(--bg-color-1);

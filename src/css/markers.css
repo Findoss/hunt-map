@@ -7,6 +7,10 @@
   margin-top: -10px !important;
   background-size: 15px;
   background-repeat: no-repeat;
+  /**/
+  border: 1px solid white;
+  filter: drop-shadow(4px 4px 4px #000000);
+  border-radius: 50%;
 }
 
 /* .marker-example {
@@ -16,16 +20,10 @@
 
 .marker-NEW_OBJECT {
   background-color: red;
-  border: 1px solid white;
-  filter: drop-shadow(4px 4px 4px #000000);
-  border-radius: 50%;
 }
 
 .marker-resupply-point {
   background-color: lightgreen;
-  border: 1px solid white;
-  filter: drop-shadow(4px 4px 4px #000000);
-  border-radius: 50%;
 }
 
 .marker-resupply-point::after {
@@ -38,9 +36,6 @@
 
 .marker-clue {
   background-color: skyblue;
-  border: 1px solid white;
-  filter: drop-shadow(4px 4px 4px #000000);
-  border-radius: 50%;
 }
 
 .marker-clue::after {
@@ -51,35 +46,72 @@
   top: -15px;
 }
 
-.marker-boss-assassin {
+.marker-boss {
+  background-image: url(../../public/images/markers/boss-all.svg);
+  background-size: 20px;
+  border: 1px solid white;
+  filter: drop-shadow(4px 4px 4px #000000);
+  border-radius: 50%;
+}
+
+.marker-boss-all {
+  background-image: url(../../public/images/markers/boss-all.svg);
+  width: 26px !important;
+  height: 26px !important;
+  margin-left: -13px !important;
+  margin-top: -13px !important;
+  background-size: 25px;
+}
+
+.marker-boss-as {
+  background-image: url(../../public/images/markers/boss-as.svg);
+  width: 26px !important;
+  height: 26px !important;
+  margin-left: -13px !important;
+  margin-top: -13px !important;
+  background-size: 25px;
+}
+
+.marker-boss-ab {
+  background-image: url(../../public/images/markers/boss-ab.svg);
+  width: 26px !important;
+  height: 26px !important;
+  margin-left: -13px !important;
+  margin-top: -13px !important;
+  background-size: 25px;
+}
+
+.marker-boss-bs {
+  background-image: url(../../public/images/markers/boss-bs.svg);
+  width: 26px !important;
+  height: 26px !important;
+  margin-left: -13px !important;
+  margin-top: -13px !important;
+  background-size: 25px;
+}
+
+.marker-boss-a {
   background-color: lightpink;
-  border: 1px solid white;
-  filter: drop-shadow(4px 4px 4px #000000);
-  border-radius: 50%;
 }
 
-.marker-boss-butcher {
+.marker-boss-b {
   background-color: lemonchiffon;
-  border: 1px solid white;
-  filter: drop-shadow(4px 4px 4px #000000);
-  border-radius: 50%;
 }
 
-.marker-boss-spider {
+.marker-boss-s {
   background-color: lightblue;
-  border: 1px solid white;
-  filter: drop-shadow(4px 4px 4px #000000);
-  border-radius: 50%;
 }
 
+/*
 .marker-boss-assassin::after, .marker-boss-butcher::after, .marker-boss-spider::after {
   content: "⊗";
   font-size: 17px;
   font-weight: bold;
   position: absolute;
   top: -4px;
-}
+} */
 
+/* 
 .marker-spawn-player {
   background-color: plum;
   border: 1px solid white;
@@ -123,4 +155,4 @@
   top: -8px;
   left: 0px;
   color: brown;
-}
+} */

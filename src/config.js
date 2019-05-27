@@ -1,21 +1,20 @@
 const types = [
-  "clue",
-  "resupply-point",
-  "boss-assassin",
-  "boss-butcher",
-  "boss-spider",
-  "spawn-player",
-  "cash",
-  "easter-egg",
-  "extraction-point"
-  // "explosive-barrel"
-  // "fuel-barrel",
-  // "piano",
-  // "crows",
-  // "ducks",
-  // "bell",
-  // "engine"
+  // "clue",
+  // "cash",
+  "boss"
+  // "resupply-point",
+  // "spawn-player",
+  // "extraction-point"
+  // "easter-egg",
+  // "tower"
 ];
+
+const typesField = {
+  boss: {
+    title: ["Assassin", "Butcher", "Spider"],
+    level: ["", "underground", "1st floor", "2st floor"]
+  }
+};
 
 const optionsMaps = {
   SB: {
