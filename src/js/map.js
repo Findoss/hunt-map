@@ -24,7 +24,7 @@ function createMap(mapId, isLogin) {
   function addMarkers(doc, id) {
     if (types.findIndex(type => doc.properties.title === type) > -1) {
       return new L.marker(doc.geometry.coordinates, {
-        icon: icons[doc.properties.marker]
+        icon: L.divIcon({ className: "marker-" + doc.properties.marker })
       })
         .on("click", () => {
           console.log("Marker id = ", id);
@@ -32,7 +32,7 @@ function createMap(mapId, isLogin) {
         .bindPopup(
           popupMarker(doc.properties.title, doc.properties.description)
         )
-        .addTo(groups[doc.properties.marker]);
+        .addTo(groups[doc.properties.title]);
     }
   }
 
@@ -56,7 +56,6 @@ function createMap(mapId, isLogin) {
   groups["NEW_OBJECT"] = L.layerGroup();
 
   types.forEach(type => {
-    icons[type] = L.divIcon({ className: "marker-" + type });
     groups[type] = L.layerGroup();
     legendItems[legendMarker(type)] = groups[type];
   });

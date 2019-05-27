@@ -26,10 +26,44 @@
 0. в `css/marker.css` указать стили по имени типа  
 0. в `js/database/firebase.js` метод `addPoint` дополнить необходимой логикой  
 
-## Форматирование описания
+## Описания
+### Описание поддерживает
+0. boss
+0. tower
+0. easter-egg
+
+### Форматирование
 ссылка  
-```<a href="" target="_blank" rel="noopener noreferrer"></a>```
+```<a href="" target="_blank" rel="noopener noreferrer"></a>```  
+
 картинка  
-```<img height="100px" src="">```
+```<img height="100px" src="">```  
+
 ссылка + картинка  
-```<a href="" target="_blank" rel="noopener noreferrer"><img height="100px" src=""></a>```
+```<a href="" target="_blank" class="cursor-zoom" rel="noopener noreferrer"><img height="100px" src=""></a>```  
+
+### Дополнительные поля для маркеров
+tower  
+```X``` - направление башни  
+0-11 - (num)  
+
+resupply-point  
+```X``` - тип дилижанса  
+coach - карета (string)  
+boat - лодка (string)  
+
+aviary  
+```X``` - тип вальера  
+dogs - собаки (string)  
+chickens - курицы (string)  
+
+boss  
+```A,X,Y,Z``` - тип маркера для босса  
+`A` - уровень босса  
+      0 - без уровня (num)  
+      1 - подвал (num)  
+      2 - 1 этаж (num)  
+      3 - 2 этаж (num)  
+`X` - наличие ассасина (num-bool)  
+`Y` - наличие паука (num-bool)  
+`Z` - наличие мясника (num-bool)  

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="pie" viewBox="0 0 64 64" xml:space="preserve">
+    <style>
+        .pie { width: 300px; background: #ccc; border-radius: 50%; } .pie circle { fill: none; stroke-width: 32; }
+    </style>
+    <circle cx="50%" cy="50%" r="25%" style="stroke:lightpink;stroke-dasharray:50 100;stroke-dashoffset:0"/>
+    <circle cx="50%" cy="50%" r="25%" style="stroke:lightblue;stroke-dasharray:51 100;stroke-dashoffset:-50"/>
+</svg>
