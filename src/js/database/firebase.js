@@ -36,20 +36,52 @@ const API = {
     };
 
     switch (payload.title) {
-      case "cash":
+      case "tower":
+        properties.marker = `tower${payload.description}`;
+        break;
+      case "aviary":
+        properties.description = payload.description;
+        break;
+      case "resupply-point":
         properties.description = payload.description;
         break;
       case "easter-egg":
         properties.description = payload.description;
         break;
-      case "boss-butcher":
-        properties.description = payload.description;
-        break;
-      case "boss-spider":
-        properties.description = payload.description;
-        break;
-      case "boss-player":
-        properties.description = payload.description;
+      case "boss":
+        const arr = payload.description
+          .split(",")
+          .slice(1)
+          .map(e => (e === "1" ? true : false));
+
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i]) {
+            properties.description += typesField.boss.title[i] + ", ";
+          }
+        }
+        properties.description += "<br>";
+        properties.description += typesField.boss.level[payload.description[0]];
+        if (arr[0]) {
+          properties.marker = "boss-a";
+        }
+        if (arr[1]) {
+          properties.marker = "boss-b";
+        }
+        if (arr[2]) {
+          properties.marker = "boss-s";
+        }
+        if (arr[0] && arr[1]) {
+          properties.marker = "boss-ab";
+        }
+        if (arr[0] && arr[2]) {
+          properties.marker = "boss-as";
+        }
+        if (arr[1] && arr[2]) {
+          properties.marker = "boss-bs";
+        }
+        if (arr[0] && arr[1] && arr[2]) {
+          properties.marker = "boss-all";
+        }
         break;
     }
 
