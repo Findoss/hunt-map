@@ -7,16 +7,18 @@
   margin-top: -10px !important;
   background-size: 15px;
   background-repeat: no-repeat;
-  /**/
-  border: 1px solid white;
-  filter: drop-shadow(4px 4px 4px #000000);
-  border-radius: 50%;
 }
 
 /* .marker-example {
   background-color: lightblue;
   border-radius: 50%;
 } */
+
+.marker-base {
+  border: 1px solid white;
+  filter: drop-shadow(4px 4px 4px #000000);
+  border-radius: 50%;
+}
 
 .marker-NEW_OBJECT {
   background-color: red;
