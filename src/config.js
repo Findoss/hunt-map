@@ -1,12 +1,13 @@
 const types = [
-  // "clue",
-  // "cash",
-  "boss"
-  // "resupply-point",
-  // "spawn-player",
-  // "extraction-point"
-  // "easter-egg",
-  // "tower"
+  "boss",
+  "spawn-player",
+  "extraction-point",
+  "resupply-point",
+  "easter-egg",
+  "tower",
+  "aviary",
+  "clue",
+  "cash"
 ];
 
 const typesField = {

@@ -154,16 +154,23 @@ hr {
   margin-top: 5px;
   background-size: 15px;
   color: var(--bg-color-1);
+  position: relative;
   background-repeat: no-repeat;
+  border: 1px solid white;
+  border-radius: 50%;
 }
 
 /* popup */
 
+.leaflet-popup {
+  border: 2px solid var(--color-2);
+  border-radius: 5%;
+}
+
 .leaflet-popup-content-wrapper {
   background-color: var(--bg-color-1);
   color: var(--color-1);
-  border: 2px solid var(--color-2);
-  border-radius: 5px;
+  border-radius: 3%;
 }
 
 .leaflet-popup-tip {

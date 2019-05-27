@@ -28,30 +28,16 @@
 
 .marker-resupply-point::after {
   content: "+";
+  color: green;
   font-size: 24px;
   position: absolute;
   top: -9px;
   left: 2px;
 }
 
-.marker-clue {
-  background-color: skyblue;
-}
-
-.marker-clue::after {
-  content: "◌";
-  font-size: 30px;
-  font-weight: bold;
-  position: absolute;
-  top: -15px;
-}
-
 .marker-boss {
   background-image: url(../../public/images/markers/boss-all.svg);
   background-size: 20px;
-  border: 1px solid white;
-  filter: drop-shadow(4px 4px 4px #000000);
-  border-radius: 50%;
 }
 
 .marker-boss-all {
@@ -102,28 +88,108 @@
   background-color: lightblue;
 }
 
-/*
-.marker-boss-assassin::after, .marker-boss-butcher::after, .marker-boss-spider::after {
+.marker-spawn-player {
+  background-color: plum;
+}
+
+.marker-extraction-point {
+  background-color: whitesmoke;
+}
+
+.marker-easter-egg {
+  background-color: gold;
+}
+
+.marker-easter-egg::after {
+  content: "★";
+  font-size: 22px;
+  position: absolute;
+  top: -8px;
+  left: 0px;
+  color: brown;
+}
+
+.marker-aviary {
+  background-color: lightyellow;
+}
+
+.marker-aviary::after {
   content: "⊗";
   font-size: 17px;
   font-weight: bold;
   position: absolute;
   top: -4px;
-} */
-
-/* 
-.marker-spawn-player {
-  background-color: plum;
-  border: 1px solid white;
-  filter: drop-shadow(4px 4px 4px #000000);
-  border-radius: 50%;
 }
 
-.marker-extraction-point {
-  background-color: whitesmoke;
-  border: 1px solid white;
-  filter: drop-shadow(4px 4px 4px #000000);
-  border-radius: 50%;
+.marker-tower, .marker-tower1, .marker-tower2, .marker-tower3, .marker-tower4, .marker-tower5, .marker-tower6, .marker-tower7, .marker-tower8, .marker-tower9, .marker-tower10, .marker-tower11 {
+  background-color: lightcoral;
+}
+
+.marker-tower::after, .marker-tower1::after, .marker-tower2::after, .marker-tower3::after, .marker-tower4::after, .marker-tower5::after, .marker-tower6::after, .marker-tower7::after, .marker-tower8::after, .marker-tower9::after, .marker-tower10::after, .marker-tower11::after {
+  content: "🠉";
+  font-size: 17px;
+  font-weight: bold;
+  position: absolute;
+  top: -3px;
+  left: 1px;
+  color: white;
+  transform: rotate(0deg);
+}
+
+.marker-tower1::after {
+  transform: rotate(30deg);
+}
+
+.marker-tower2::after {
+  transform: rotate(60deg);
+}
+
+.marker-tower3::after {
+  transform: rotate(90deg);
+}
+
+.marker-tower4::after {
+  transform: rotate(120deg);
+}
+
+.marker-tower5::after {
+  transform: rotate(150deg);
+}
+
+.marker-tower6::after {
+  transform: rotate(180deg);
+}
+
+.marker-tower7::after {
+  transform: rotate(210deg);
+}
+
+.marker-tower8::after {
+  transform: rotate(240deg);
+}
+
+.marker-tower9::after {
+  transform: rotate(270deg);
+}
+
+.marker-tower10::after {
+  transform: rotate(300deg);
+}
+
+.marker-tower11::after {
+  transform: rotate(330deg);
+}
+
+.marker-clue {
+  background-color: skyblue;
+}
+
+.marker-clue::after {
+  content: "◌";
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: -15px;
 }
 
 .marker-cash {
@@ -140,19 +206,3 @@
   top: -3px;
   left: 4px;
 }
-
-.marker-easter-egg {
-  background-color: gold;
-  border: 1px solid white;
-  filter: drop-shadow(4px 4px 4px #000000);
-  border-radius: 50%;
-}
-
-.marker-easter-egg::after {
-  content: "★";
-  font-size: 22px;
-  position: absolute;
-  top: -8px;
-  left: 0px;
-  color: brown;
-} */

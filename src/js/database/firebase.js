@@ -36,7 +36,13 @@ const API = {
     };
 
     switch (payload.title) {
-      case "cash":
+      case "tower":
+        properties.marker = `tower${payload.description}`;
+        break;
+      case "aviary":
+        properties.description = payload.description;
+        break;
+      case "resupply-point":
         properties.description = payload.description;
         break;
       case "easter-egg":
