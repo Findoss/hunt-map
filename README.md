@@ -34,13 +34,13 @@
 
 ### Форматирование
 ссылка  
-```<a href="" target="_blank" rel="noopener noreferrer"></a>```  
+```<a href="***" target="_blank" rel="noopener noreferrer">***</a>```  
 
 картинка  
-```<img height="100px" src="">```  
+```<img height="100px" src="***">```  
 
 ссылка + картинка  
-```<a href="" target="_blank" class="cursor-zoom" rel="noopener noreferrer"><img height="100px" src=""></a>```  
+```***<br /><a href="***" target="_blank" class="cursor-zoom" rel="noopener noreferrer"><img height="100px" src="***"></a>```  
 
 ### Дополнительные поля для маркеров
 tower  
