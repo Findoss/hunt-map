@@ -1,4 +1,4 @@
-console.log("v1.2.0");
+console.log("v1.2.1");
 
 const mapId = localStorage.getItem("mapId") || "SB";
 
