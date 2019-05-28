@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "update-cache": "node updateCache.js LD & node updateCache.js SB"
+    "start": "node updateCache.js LD & node updateCache.js SB"
   },
   "author": "",
   "license": "ISC"
