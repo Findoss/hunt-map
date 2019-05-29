@@ -172,6 +172,7 @@ hr {
   background-color: var(--bg-color-1);
   color: var(--color-1);
   border-radius: 3%;
+  min-width: 120px;
 }
 
 .leaflet-popup-tip {
@@ -179,6 +180,10 @@ hr {
   border-top: 2px solid var(--color-1);
   border-right: 2px solid var(--color-2);
   border-bottom: 2px solid var(--color-2);
+}
+
+.leaflet-popup-content {
+  min-width: 175px;
 }
 
 .leaflet-popup-content-wrapper h4 {

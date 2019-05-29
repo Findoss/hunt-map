@@ -5,9 +5,9 @@ const types = [
   "resupply-point",
   "easter-egg",
   "tower",
-  "aviary",
-  "clue",
-  "cash"
+  "aviary"
+  // "clue",
+  // "cash"
 ];
 
 const typesField = {
@@ -66,7 +66,7 @@ const buttonAuth = `<span id="login" class="login">login</span>`;
 const author =
   'by <a target="_blank" href="https://steamcommunity.com/id/Findoss/">Findoss</a> | ';
 const contributors = `<span id="contributors">contributors</span> | `;
-const contributorNames = ["Святобор", ""].join("\n");
+const contributorNames = ["Святобор", "varshevsky"].join("\n");
 
 const options = {
   zIndex: 1,
