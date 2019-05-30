@@ -9,7 +9,7 @@ function toggleMap(map) {
 
     button.onclick = e => {
       map.remove();
-      localStorage.setItem("mapId", e.target.value);
+      localStorage.setItem("MAP-ID", e.target.value);
       map = createMap(e.target.value);
     };
   });

@@ -1,4 +1,8 @@
-function createMap(mapId, isLogin) {
+function createMap() {
+  const mapId = localStorage.getItem("MAP-ID") || "SB";
+  let currentLayers = JSON.parse(localStorage.getItem("LAYERS")) || types;
+  localStorage.setItem("LAYERS", "[]");
+
   L.CRS.Pr = L.extend({}, L.CRS.Simple, {
     infinite: true,
     transformation: new L.Transformation(
@@ -59,6 +63,7 @@ function createMap(mapId, isLogin) {
 
   types.forEach(type => {
     groups[type] = L.layerGroup();
+    groups[type].title = type;
     legendItems[legendMarker(type)] = groups[type];
   });
 
@@ -80,7 +85,11 @@ function createMap(mapId, isLogin) {
       .then(snapshot => {
         console.log("From cache -", snapshot.metadata.fromCache ? "yes" : "no");
         snapshot.forEach(doc => addMarkers(doc.data(), doc.id));
-        for (type in groups) groups[type].addTo(map);
+        for (type in groups) {
+          if (currentLayers.findIndex(el => el === type) > -1) {
+            groups[type].addTo(map);
+          }
+        }
       })
       .catch(error => {
         console.log("Error API", error);
@@ -124,6 +133,16 @@ function createMap(mapId, isLogin) {
 
   map.on("click", e => {
     // console.log(e.latlng);
+  });
+  map.on("overlayadd", function(e) {
+    const currentLayers = JSON.parse(localStorage.getItem("LAYERS"));
+    currentLayers.push(e.layer.title);
+    localStorage.setItem("LAYERS", JSON.stringify(currentLayers));
+  });
+  map.on("overlayremove", function(e) {
+    const currentLayers = JSON.parse(localStorage.getItem("LAYERS"));
+    currentLayers.splice(currentLayers.indexOf(e.layer.title), 1);
+    localStorage.setItem("LAYERS", JSON.stringify(currentLayers));
   });
 
   map.setMaxBounds(bounds);
