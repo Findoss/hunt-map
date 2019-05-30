@@ -83,7 +83,6 @@ function createMap() {
   if (localStorage.getItem("REALTIME")) {
     API.getItems(mapId)
       .then(snapshot => {
-        console.log("From cache -", snapshot.metadata.fromCache ? "yes" : "no");
         snapshot.forEach(doc => addMarkers(doc.data(), doc.id));
         for (type in groups) {
           if (currentLayers.findIndex(el => el === type) > -1) {
@@ -98,7 +97,11 @@ function createMap() {
     API.getItemsChache(mapId)
       .then(data => {
         Object.keys(data).forEach(id => addMarkers(data[id], id));
-        for (type in groups) groups[type].addTo(map);
+        for (type in groups) {
+          if (currentLayers.findIndex(el => el === type) > -1) {
+            groups[type].addTo(map);
+          }
+        }
       })
       .catch(error => {
         console.log("Error API", error);
