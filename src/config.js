@@ -17,6 +17,343 @@ const typesField = {
   }
 };
 
+const namesCamp = {
+  SB: [
+    {
+      type: "Feature",
+      properties: {
+        title: "Alain & Son's <br> Fish"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-110, 130]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Reynard <br> Mill & Lumber"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-100, 350]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Port Reeker"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-120, 615]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Scupper Lake"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-95, 830]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Blanchett Graves"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-395, 200]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Darrow Livestock"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-250, 450]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Alice Farm"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-370, 595]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "The Chapel <br> of Madonna Noire"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-365, 840]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "The Chapel <br> of Madonna Noire"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-365, 840]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Lockbay Docks"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-475, 420]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Stillwater Bend"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-575, 770]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Pitching Crematorium"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-670, 340]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Cyprus Huts"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-800, 120]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Davant Ranch"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-880, 300]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "The Slaughterhouse"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-900, 600]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Catfish Grove"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-850, 850]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Hialing-Waters <br> Cherch"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-665, 570]
+      }
+    }
+  ],
+  LD: [
+    {
+      type: "Feature",
+      properties: {
+        title: "Godard Docks"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-120, 110]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Blanc Brinery"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-130, 350]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Lawson Stantion"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-250, 500]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Golden Acres"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-120, 600]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Salter's Pork"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-160, 850]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Maw Battary"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-400, 200]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Sweetbell Flour"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-500, 500]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Arden Parish"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-380, 695]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Windy Run"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-525, 910]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Nicholls Priston"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-665, 715]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Fort Carmick"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-665, 375]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Iron Works"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-620, 135]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Wolfshead Arsenal"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-870, 195]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Bradley & Craven <br> Brickworks"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-850, 450]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "C&A Lumber"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-830, 625]
+      }
+    },
+    {
+      type: "Feature",
+      properties: {
+        title: "Hemlock and Hide"
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-850, 870]
+      }
+    }
+  ]
+};
+
 const optionsMaps = {
   SB: {
     id: "SB",
