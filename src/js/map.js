@@ -59,7 +59,20 @@ function createMap() {
   const legendItems = {};
 
   icons["NEW_OBJECT"] = L.divIcon({ className: "marker-NEW_OBJECT" });
-  groups["NEW_OBJECT"] = L.layerGroup();
+  groups["NEW_OBJECT"] = L.layerGroup().addTo(map);
+
+  icons["label"] = L.divIcon({ className: "marker-label" });
+  groups["label"] = L.layerGroup();
+  legendItems["Compounds label"] = groups["label"];
+
+  namesCamp[mapId].forEach(data => {
+    new L.marker(data.geometry.coordinates, {
+      icon: L.divIcon({
+        className: "marker-label",
+        html: `<div class="label-text">${data.properties.title}</div>`
+      })
+    }).addTo(groups["label"]);
+  });
 
   types.forEach(type => {
     groups[type] = L.layerGroup();
@@ -133,6 +146,8 @@ function createMap() {
       localStorage.removeItem("REALTIME");
     }
   });
+
+  groups["label"].addTo(map);
 
   map.on("click", e => {
     // console.log(e.latlng);

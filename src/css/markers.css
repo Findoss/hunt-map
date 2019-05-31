@@ -20,6 +20,30 @@
   border-radius: 50%;
 }
 
+.marker-label {
+  color: wheat;
+  pointer-events: none !important;
+  width: 5px !important;
+  height: 20px !important;
+  /**/
+  /* background-color: lightgreen; */
+}
+
+.label-text {
+  color: #c9bba1;
+  width: 220px;
+  position: relative;
+  left: -110px;
+  opacity: 0.8;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 1px 2px 4px #000000;
+  text-align: center;
+  /**/
+  /* background-color: lightpink; */
+}
+
 .marker-NEW_OBJECT {
   background-color: red;
 }
