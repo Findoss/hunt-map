@@ -42,17 +42,32 @@ function createMap() {
     }
   }
 
-  const map = L.map("map", { crs: L.CRS.Pr });
+  const map = L.map("map", {
+    crs: L.CRS.Pr,
+    maxBoundsViscosity: 0.8,
+    // padding: [300, 300],
+    zoomSnap: 0.2
+  });
 
   const sw = map.unproject(
-    [0, optionsMaps[mapId].image.height],
+    [-300, optionsMaps[mapId].image.height],
     optionsMaps[mapId].levels.org
   );
   const ne = map.unproject(
+    [optionsMaps[mapId].image.width + 300, -300],
+    optionsMaps[mapId].levels.org
+  );
+
+  const sw2 = map.unproject(
+    [0, optionsMaps[mapId].image.height],
+    optionsMaps[mapId].levels.org
+  );
+  const ne2 = map.unproject(
     [optionsMaps[mapId].image.width, 0],
     optionsMaps[mapId].levels.org
   );
-  const bounds = new L.LatLngBounds(sw, ne);
+  const bounds = new L.LatLngBounds(sw, ne); // для ограничения
+  const bounds2 = new L.LatLngBounds(sw2, ne2); // для загрузки слоя
 
   const groups = {};
   const icons = {};
@@ -83,7 +98,7 @@ function createMap() {
   L.tileLayer(optionsMaps[mapId].image.path, {
     minZoom: optionsMaps[mapId].levels.min,
     maxZoom: optionsMaps[mapId].levels.max,
-    bounds: bounds,
+    bounds: bounds2,
     continuousWorld: true,
     zIndex: options.zIndex,
     attribution: options.attribution
@@ -152,19 +167,29 @@ function createMap() {
   map.on("click", e => {
     // console.log(e.latlng);
   });
-  map.on("overlayadd", function(e) {
+  map.on("overlayadd", e => {
     const currentLayers = JSON.parse(localStorage.getItem("LAYERS"));
     currentLayers.push(e.layer.title);
     localStorage.setItem("LAYERS", JSON.stringify(currentLayers));
   });
-  map.on("overlayremove", function(e) {
+  map.on("overlayremove", e => {
     const currentLayers = JSON.parse(localStorage.getItem("LAYERS"));
     currentLayers.splice(currentLayers.indexOf(e.layer.title), 1);
     localStorage.setItem("LAYERS", JSON.stringify(currentLayers));
   });
+  map.on("zoom", e => {
+    localStorage.setItem("ZOOM", e.target.getZoom());
+  });
+  map.on("moveend", e => {
+    localStorage.setItem("CENTER", JSON.stringify(e.target.getCenter()));
+  });
 
   map.setMaxBounds(bounds);
-  map.setView(optionsMaps[mapId].center, optionsMaps[mapId].levels.min);
+
+  const center = JSON.parse(localStorage.getItem("CENTER")) || [-500, 500];
+  const zoom = localStorage.getItem("ZOOM") || 2;
+
+  map.setView(center, zoom);
 
   return map;
 }
