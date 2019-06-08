@@ -1,0 +1,177 @@
+{
+  "0": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Godard Docks"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-120, 110]
+    }
+  },
+  "1": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Blanc Brinery"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-130, 350]
+    }
+  },
+  "2": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Lawson Stantion"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-250, 500]
+    }
+  },
+  "3": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Golden Acres"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-120, 600]
+    }
+  },
+  "4": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Salter's Pork"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-160, 850]
+    }
+  },
+  "5": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Maw Battary"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-400, 200]
+    }
+  },
+  "6": {
+    "type": "Feature",
+    "properties": {
+      "name": "Sweetbell Flour"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-500, 500]
+    }
+  },
+  "7": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Arden Parish"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-380, 695]
+    }
+  },
+  "8": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Windy Run"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-525, 910]
+    }
+  },
+  "9": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Nicholls Priston"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-665, 715]
+    }
+  },
+  "10": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Fort Carmick"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-665, 375]
+    }
+  },
+  "11": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Iron Works"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-620, 135]
+    }
+  },
+  "12": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Wolfshead Arsenal"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-870, 195]
+    }
+  },
+  "13": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Bradley & Craven <br> Brickworks"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-850, 450]
+    }
+  },
+  "14": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "C&A Lumber"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-830, 625]
+    }
+  },
+  "15": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Hemlock and Hide"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-850, 870]
+    }
+  }
+}

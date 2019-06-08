@@ -25,11 +25,12 @@
   pointer-events: none !important;
   width: 5px !important;
   height: 20px !important;
+  border: none !important;
   /**/
   /* background-color: lightgreen; */
 }
 
-.label-text {
+.marker-label_text {
   color: #c9bba1;
   width: 220px;
   position: relative;
@@ -44,7 +45,7 @@
   /* background-color: lightpink; */
 }
 
-.marker-NEW_OBJECT {
+.marker-new-object {
   background-color: red;
 }
 
@@ -62,12 +63,12 @@
 }
 
 .marker-boss {
-  background-image: url(../../public/images/markers/boss-all.svg);
+  background-image: url(../../../public/images/markers/boss-all.svg);
   background-size: 20px;
 }
 
 .marker-boss-all {
-  background-image: url(../../public/images/markers/boss-all.svg);
+  background-image: url(../../../public/images/markers/boss-all.svg);
   width: 26px !important;
   height: 26px !important;
   margin-left: -13px !important;
@@ -76,7 +77,7 @@
 }
 
 .marker-boss-as {
-  background-image: url(../../public/images/markers/boss-as.svg);
+  background-image: url(../../../public/images/markers/boss-as.svg);
   width: 26px !important;
   height: 26px !important;
   margin-left: -13px !important;
@@ -85,7 +86,7 @@
 }
 
 .marker-boss-ab {
-  background-image: url(../../public/images/markers/boss-ab.svg);
+  background-image: url(../../../public/images/markers/boss-ab.svg);
   width: 26px !important;
   height: 26px !important;
   margin-left: -13px !important;
@@ -94,7 +95,7 @@
 }
 
 .marker-boss-bs {
-  background-image: url(../../public/images/markers/boss-bs.svg);
+  background-image: url(../../../public/images/markers/boss-bs.svg);
   width: 26px !important;
   height: 26px !important;
   margin-left: -13px !important;

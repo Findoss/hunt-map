@@ -1,0 +1,189 @@
+{
+  "0": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Alain & Son's <br> Fish"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-110, 130]
+    }
+  },
+  "1": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Reynard <br> Mill & Lumber"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-100, 350]
+    }
+  },
+  "2": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Port Reeker"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-120, 615]
+    }
+  },
+  "3": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Scupper Lake"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-95, 830]
+    }
+  },
+  "4": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Blanchett Graves"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-395, 200]
+    }
+  },
+  "5": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Darrow Livestock"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-250, 450]
+    }
+  },
+  "6": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Alice Farm"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-370, 595]
+    }
+  },
+  "7": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "The Chapel <br> of Madonna Noire"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-365, 840]
+    }
+  },
+  "8": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "The Chapel <br> of Madonna Noire"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-365, 840]
+    }
+  },
+  "9": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Lockbay Docks"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-475, 420]
+    }
+  },
+  "10": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Stillwater Bend"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-575, 770]
+    }
+  },
+  "11": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Pitching Crematorium"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-670, 340]
+    }
+  },
+  "12": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Cyprus Huts"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-800, 120]
+    }
+  },
+  "13": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Davant Ranch"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-880, 300]
+    }
+  },
+  "14": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "The Slaughterhouse"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-900, 600]
+    }
+  },
+  "15": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Catfish Grove"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-850, 850]
+    }
+  },
+  "16": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": "Hialing-Waters <br> Cherch"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-665, 570]
+    }
+  }
+}
