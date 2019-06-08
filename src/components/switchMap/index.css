@@ -1,0 +1,13 @@
+.switch-map-container {
+  position: absolute;
+  top: 12px;
+  left: calc(50% - 155px);
+  z-index: 500;
+}
+
+.switch-map-button {
+  padding: 4px;
+  margin-right: 10px;
+  width: 145px;
+  border-radius: 2px;
+}
