@@ -1,7 +1,16 @@
 import 'leaflet/dist/leaflet.css';
+import 'leaflet-responsive-popup/leaflet.responsive.popup.css';
+import 'leaflet-draw/dist/leaflet.draw.css';
+
 import './index.css';
-import './markers.css';
+import '../markers/index.css';
+
 import L from 'leaflet';
+// plugins
+import '../ruler';
+import 'leaflet-draw/dist/leaflet.draw';
+import 'leaflet-responsive-popup/leaflet.responsive.popup.js';
+// components
 import { Component } from '../index';
 import { PopupText } from '../popupText';
 import { legendItem } from '../legendItem';
@@ -33,7 +42,8 @@ export class Map extends Component {
       realtime,
       extraTypes,
       currentLayers,
-      contributorNames
+      contributorNames,
+      optionsRuler
     } = props.data;
 
     this.types = types;
@@ -73,9 +83,9 @@ export class Map extends Component {
       zoomSnap: 0.2
     });
 
-    const sw = this.map.unproject([-padding, height], optionMap.levels.org);
-    const ne = this.map.unproject([width + padding, -padding], optionMap.levels.org);
-    const boundsMove = new L.LatLngBounds(sw, ne);
+    // const sw = this.map.unproject([-padding, height], optionMap.levels.org);
+    // const ne = this.map.unproject([width + padding, -padding], optionMap.levels.org);
+    // const boundsMove = new L.LatLngBounds(sw, ne);
 
     const sw2 = this.map.unproject([0, height], optionMap.levels.org);
     const ne2 = this.map.unproject([width, 0], optionMap.levels.org);
@@ -94,6 +104,7 @@ export class Map extends Component {
 
     this.groups = {};
     this.legendItems = {};
+    // this.editableLayers = new L.FeatureGroup();
 
     [...types, ...extraTypes].forEach(type => {
       this.groups[type] = L.layerGroup();
@@ -102,10 +113,29 @@ export class Map extends Component {
     });
 
     //
+    // const drawControl = new L.Control.Draw({
+    //   edit: {
+    //     featureGroup: editableLayers,
+    //     poly: {
+    //       allowIntersection: false
+    //     }
+    //   },
+    //   draw: {
+    //     polygon: {
+    //       allowIntersection: false,
+    //       showArea: true
+    //     }
+    //   }
+    // });
+
+    //
+    // this.map.addControl(drawControl);
     //
     L.control.layers(null, this.legendItems).addTo(this.map);
-
-    this.map.setMaxBounds(boundsMove);
+    L.control.measure(optionsRuler).addTo(this.map);
+    //
+    // this.map.addLayer(this.editableLayers);
+    this.map.setMaxBounds(/*boundsMove*/ boundsLoadTiles);
     this.map.setView(optionMap.center, optionMap.levels.default);
 
     this.map.on('click', e => {
@@ -136,7 +166,9 @@ export class Map extends Component {
   }
 
   addMarkers(data) {
+    let countMarkers = 0;
     Object.keys(data).forEach(id => {
+      countMarkers++;
       const doc = data[id];
       const allTypes = [...this.extraTypes, ...this.types];
 
@@ -180,13 +212,21 @@ export class Map extends Component {
     this.currentLayers.forEach(layer => {
       this.groups[layer].addTo(this.map);
     });
+
+    // for (const type in this.groups) {
+    //   if (this.groups.hasOwnProperty(type)) {
+    //     const el = this.groups[type];
+    //     console.log(type, Object.keys(el._layers).length);
+    //   }
+    // }
+    // console.log('markers', countMarkers);
   }
 
   createPopupMarker(id, doc) {
     if (this.realtime) {
       return this.popupEdit();
     } else {
-      return new PopupText().show(id, doc.properties).getElement();
+      return L.responsivePopup().setContent(new PopupText().show(id, doc.properties).getElement());
     }
   }
 

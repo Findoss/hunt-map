@@ -6,13 +6,13 @@
 
 /* controls */
 
-.leaflet-control-zoom-in, .leaflet-control-zoom-out {
+.leaflet-top .leaflet-control a {
   color: var(--color-2) !important;
   background-color: var(--bg-color-2) !important;
   border: 1px solid var(--color-2) !important;
 }
 
-.leaflet-control-zoom-in:hover, .leaflet-control-zoom-out:hover {
+.leaflet-top .leaflet-control a:hover {
   color: var(--color-2-hover) !important;
   fill: var(--color-2-hover) !important;
   border-color: var(--color-2-hover) !important;
@@ -40,22 +40,17 @@
 /* popup */
 
 .leaflet-popup {
-  border: 2px solid var(--color-2);
-  border-radius: 5%;
 }
 
 .leaflet-popup-content-wrapper {
   background-color: var(--bg-color-2);
   color: var(--color-1);
-  border-radius: 3%;
   min-width: 120px;
 }
 
 .leaflet-popup-tip {
   background: var(--bg-color-1);
-  border-top: 2px solid var(--color-1);
-  border-right: 2px solid var(--color-2);
-  border-bottom: 2px solid var(--color-2);
+  border-color: var(--bg-color-2);
 }
 
 .leaflet-popup-content {
@@ -69,7 +64,7 @@
 /* legend */
 
 .leaflet-control-layers-toggle {
-  background-image: url(../../../public/images/icons/layers.svg)!important;
+  background-image: url(../../../public/images/icons/layers.svg) !important;
   border-radius: 2px;
 }
 
@@ -80,18 +75,19 @@
 }
 
 .leaflet-control-layers input {
-  display: none
+  display: none;
 }
 
-.leaflet-control-layers-overlays label input:checked~span span {
-  color: var(--color-2-hover)!important;
+.leaflet-control-layers-overlays label input:checked ~ span span {
+  color: var(--color-2-hover) !important;
 }
 
 .leaflet-control-layers-expanded {
   padding-left: 10px;
 }
 
-.leaflet-control-layers-base label, .leaflet-control-layers-overlays label {
+.leaflet-control-layers-base label,
+.leaflet-control-layers-overlays label {
   margin-top: 2px;
   margin-bottom: 2px;
   background-color: var(--bg-color-1);
@@ -102,7 +98,8 @@
   cursor: pointer;
 }
 
-.leaflet-control-layers-base label:hover, .leaflet-control-layers-overlays label:hover {
+.leaflet-control-layers-base label:hover,
+.leaflet-control-layers-overlays label:hover {
   border-color: var(--color-2) !important;
 }
 
@@ -120,44 +117,6 @@
   border: 1px solid white;
   border-radius: 50%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.leaflet-control-container .leaflet-control-zoom-in:hover, .leaflet-control-container .leaflet-control-zoom-out:hover, {
-  background-color: var(--bg-color-1);
-  color: var(--color-2-hover);
-  fill: var(--color-2-hover);
-  border-color: var(--color-2-hover) !important;
-  border-bottom: 1px solid var(--color-2-hover);
-} */
 
 /* .cursor-zoom {
   cursor: zoom-in;

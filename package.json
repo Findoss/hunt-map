@@ -5,7 +5,9 @@
     "@babel/runtime": "^7.4.5",
     "firebase": "6.0.2",
     "firebaseui": "4.0.0",
-    "leaflet": "1.5.1"
+    "leaflet": "1.5.1",
+    "leaflet-draw": "^1.0.4",
+    "leaflet-responsive-popup": "^0.6.4"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

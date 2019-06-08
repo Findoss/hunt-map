@@ -23,8 +23,6 @@
 .marker-label {
   color: wheat;
   pointer-events: none !important;
-  width: 5px !important;
-  height: 20px !important;
   border: none !important;
   /**/
   /* background-color: lightgreen; */
@@ -54,11 +52,11 @@
 }
 
 .marker-resupply-point::after {
-  content: "+";
+  content: '+';
   color: green;
-  font-size: 24px;
+  font-size: 1.6rem;
   position: absolute;
-  top: -9px;
+  top: -8px;
   left: 2px;
 }
 
@@ -128,8 +126,8 @@
 }
 
 .marker-easter-egg::after {
-  content: "★";
-  font-size: 22px;
+  content: '★';
+  font-size: 1.5rem;
   position: absolute;
   top: -8px;
   left: 0px;
@@ -141,24 +139,46 @@
 }
 
 .marker-aviary::after {
-  content: "⊗";
-  font-size: 17px;
+  content: '⊗';
+  font-size: 1.15rem;
   font-weight: bold;
   position: absolute;
-  top: -4px;
+  top: -5px;
 }
 
-.marker-tower, .marker-tower1, .marker-tower2, .marker-tower3, .marker-tower4, .marker-tower5, .marker-tower6, .marker-tower7, .marker-tower8, .marker-tower9, .marker-tower10, .marker-tower11 {
+.marker-tower,
+.marker-tower1,
+.marker-tower2,
+.marker-tower3,
+.marker-tower4,
+.marker-tower5,
+.marker-tower6,
+.marker-tower7,
+.marker-tower8,
+.marker-tower9,
+.marker-tower10,
+.marker-tower11 {
   background-color: lightcoral;
 }
 
-.marker-tower::after, .marker-tower1::after, .marker-tower2::after, .marker-tower3::after, .marker-tower4::after, .marker-tower5::after, .marker-tower6::after, .marker-tower7::after, .marker-tower8::after, .marker-tower9::after, .marker-tower10::after, .marker-tower11::after {
-  content: "🠉";
-  font-size: 17px;
+.marker-tower::after,
+.marker-tower1::after,
+.marker-tower2::after,
+.marker-tower3::after,
+.marker-tower4::after,
+.marker-tower5::after,
+.marker-tower6::after,
+.marker-tower7::after,
+.marker-tower8::after,
+.marker-tower9::after,
+.marker-tower10::after,
+.marker-tower11::after {
+  content: '🠉';
+  font-size: 1.1rem;
   font-weight: bold;
   position: absolute;
   top: -3px;
-  left: 1px;
+  left: 2px;
   color: white;
   transform: rotate(0deg);
 }
@@ -212,7 +232,7 @@
 }
 
 .marker-clue::after {
-  content: "◌";
+  content: '◌';
   font-size: 30px;
   font-weight: bold;
   position: absolute;
@@ -221,13 +241,10 @@
 
 .marker-cash {
   background-color: lightsalmon;
-  border: 1px solid white;
-  filter: drop-shadow(4px 4px 4px #000000);
-  border-radius: 50%;
 }
 
 .marker-cash::after {
-  content: "$";
+  content: '$';
   font-size: 17px;
   position: absolute;
   top: -3px;
