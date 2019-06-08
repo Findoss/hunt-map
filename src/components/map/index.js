@@ -1,6 +1,6 @@
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-responsive-popup/leaflet.responsive.popup.css';
-import 'leaflet-draw/dist/leaflet.draw.css';
+// import 'leaflet-draw/dist/leaflet.draw.css';
 
 import './index.css';
 import '../markers/index.css';
@@ -8,7 +8,7 @@ import '../markers/index.css';
 import L from 'leaflet';
 // plugins
 import '../ruler';
-import 'leaflet-draw/dist/leaflet.draw';
+// import 'leaflet-draw/dist/leaflet.draw';
 import 'leaflet-responsive-popup/leaflet.responsive.popup.js';
 // components
 import { Component } from '../index';
