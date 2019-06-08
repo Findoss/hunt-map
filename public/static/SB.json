@@ -91,17 +91,6 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "The Chapel <br> of Madonna Noire"
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [-365, 840]
-    }
-  },
-  "9": {
-    "type": "Feature",
-    "properties": {
-      "title": "label",
       "name": "Lockbay Docks"
     },
     "geometry": {
@@ -109,7 +98,7 @@
       "coordinates": [-475, 420]
     }
   },
-  "10": {
+  "9": {
     "type": "Feature",
     "properties": {
       "title": "label",
@@ -120,7 +109,7 @@
       "coordinates": [-575, 770]
     }
   },
-  "11": {
+  "10": {
     "type": "Feature",
     "properties": {
       "title": "label",
@@ -131,7 +120,7 @@
       "coordinates": [-670, 340]
     }
   },
-  "12": {
+  "11": {
     "type": "Feature",
     "properties": {
       "title": "label",
@@ -142,7 +131,7 @@
       "coordinates": [-800, 120]
     }
   },
-  "13": {
+  "12": {
     "type": "Feature",
     "properties": {
       "title": "label",
@@ -153,7 +142,7 @@
       "coordinates": [-880, 300]
     }
   },
-  "14": {
+  "13": {
     "type": "Feature",
     "properties": {
       "title": "label",
@@ -164,7 +153,7 @@
       "coordinates": [-900, 600]
     }
   },
-  "15": {
+  "14": {
     "type": "Feature",
     "properties": {
       "title": "label",
@@ -175,7 +164,7 @@
       "coordinates": [-850, 850]
     }
   },
-  "16": {
+  "15": {
     "type": "Feature",
     "properties": {
       "title": "label",

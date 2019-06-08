@@ -68,6 +68,7 @@
   "6": {
     "type": "Feature",
     "properties": {
+      "title": "label",
       "name": "Sweetbell Flour"
     },
     "geometry": {
