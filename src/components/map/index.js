@@ -48,6 +48,8 @@ export class Map extends Component {
 
     this.types = types;
     this.extraTypes = extraTypes;
+    this.allTypes = [...this.extraTypes, ...this.types];
+
     this.realtime = realtime;
     this.currentLayers = currentLayers;
 
@@ -106,7 +108,7 @@ export class Map extends Component {
     this.legendItems = {};
     // this.editableLayers = new L.FeatureGroup();
 
-    [...types, ...extraTypes].forEach(type => {
+    this.allTypes.forEach(type => {
       this.groups[type] = L.layerGroup();
       this.groups[type].title = type;
       this.legendItems[legendItem(type)] = this.groups[type];
@@ -170,9 +172,8 @@ export class Map extends Component {
     Object.keys(data).forEach(id => {
       countMarkers++;
       const doc = data[id];
-      const allTypes = [...this.extraTypes, ...this.types];
 
-      if (allTypes.findIndex(type => doc.properties.title === type) > -1) {
+      if (this.allTypes.findIndex(type => doc.properties.title === type) > -1) {
         switch (doc.properties.title) {
           case 'new-object':
             new L.marker(doc.geometry.coordinates, {
@@ -208,7 +209,7 @@ export class Map extends Component {
       }
     });
 
-    if (!this.currentLayers || !this.currentLayers.length) this.currentLayers = allTypes;
+    if (!this.currentLayers || !this.currentLayers.length) this.currentLayers = this.allTypes;
     this.currentLayers.forEach(layer => {
       this.groups[layer].addTo(this.map);
     });
