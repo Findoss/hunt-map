@@ -1,6 +1,6 @@
-![LOGO](public/images/media2.png)
+![LOGO](public/images/logo2.png)
 # Hunt map
-Интерактивные кары для игры Hunt-Showdown  
+Interactive maps for game Hunt-Showdown  
 Stillwater Bayou & Lawson Delta
 
 ## Preview
@@ -36,10 +36,10 @@ Stillwater Bayou & Lawson Delta
 
 
 ## Contributing
-Please read [CONTRIBUTING.md](https://github.com/findoss/hunt-map/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/Findoss/Hunt-map/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
  * Nikita Stroganov - Initial work
 
 ## License
-[MIT](https://github.com/findoss/hunt-map/LICENSE.md). Copyright (c) findoss.
+[MIT](https://github.com/Findoss/Hunt-map/blob/master/LICENSE). Copyright (c) findoss.
