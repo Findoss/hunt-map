@@ -142,10 +142,6 @@ export class Map extends Component {
     this.map.setMaxBounds(/*boundsMove*/ boundsLoadTiles);
     this.map.setView(optionMap.center, optionMap.levels.default);
 
-    this.controlAuth.on('click', e => {
-       console.log(e);
-    });
-
     this.map.on('click', e => {
       if (this.realtime) console.log(e.latlng);
     });
