@@ -12,7 +12,7 @@ import { Cache } from './services/cache';
 
 class ViewController {
   constructor() {
-    console.log('v2.0.0');
+    console.log('v2.0.1');
 
     this.static = new Static();
     this.cache = new Cache();
@@ -28,8 +28,8 @@ class ViewController {
     this.mapComponent = new Map('map-placeholder', {
       data: config,
       events: {
-        addPoint: event => {
-          console.log('++++');
+        testEvent: event => {
+          console.log('testEvent');
         }
       }
     });

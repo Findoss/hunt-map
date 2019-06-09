@@ -98,9 +98,8 @@ export default {
     }
   },
 
-  buttonAuth: `<span id="login" class="login">login</span>`,
   author: 'by <a target="_blank" href="https://steamcommunity.com/id/Findoss/">Findoss</a> | ',
-  contributors: `<span id="contributors">contributors</span> | `,
+  contributors: `<span id="contributors">contributors</span>`,
   contributorNames: ['Lapin', 'Святобор', 'varshevsky'],
 
   firebaseConfig: {
@@ -128,5 +127,9 @@ export default {
 
   optionsPoligon: {
     position: 'topleft'
+  },
+
+  optionsAuth: {
+    position: 'bottomleft'
   }
 };
