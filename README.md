@@ -1,6 +1,6 @@
 ![LOGO](public/images/media2.png)
 # Hunt map
-Интерактивные кары для игры Hunt-Showdown  
+Интерактивные карты для игры Hunt-Showdown  
 Stillwater Bayou & Lawson Delta
 
 ## Preview
