@@ -8,6 +8,7 @@ import '../markers/index.css';
 import L from 'leaflet';
 // plugins
 import '../ruler';
+import '../buttonAuth';
 // import 'leaflet-draw/dist/leaflet.draw';
 import 'leaflet-responsive-popup/leaflet.responsive.popup.js';
 // components
@@ -38,10 +39,10 @@ export class Map extends Component {
       typesMarkers,
       author,
       contributors,
-      buttonAuth,
       realtime,
       extraTypes,
       currentLayers,
+      optionsAuth,
       contributorNames,
       optionsRuler
     } = props.data;
@@ -93,7 +94,7 @@ export class Map extends Component {
     const ne2 = this.map.unproject([width, 0], optionMap.levels.org);
     const boundsLoadTiles = new L.LatLngBounds(sw2, ne2);
 
-    const attribution = author + contributors + buttonAuth;
+    const attribution = author + contributors;
 
     L.tileLayer(optionsMaps[mapId].image.path, {
       minZoom: optionMap.levels.min,
@@ -133,12 +134,17 @@ export class Map extends Component {
     //
     // this.map.addControl(drawControl);
     //
-    L.control.layers(null, this.legendItems).addTo(this.map);
-    L.control.measure(optionsRuler).addTo(this.map);
+    this.controlLayers = L.control.layers(null, this.legendItems).addTo(this.map);
+    this.controlMeasure = L.control.measure(optionsRuler).addTo(this.map);
+    this.controlAuth = L.control.auth(optionsAuth).addTo(this.map);
     //
     // this.map.addLayer(this.editableLayers);
     this.map.setMaxBounds(/*boundsMove*/ boundsLoadTiles);
     this.map.setView(optionMap.center, optionMap.levels.default);
+
+    this.controlAuth.on('click', e => {
+       console.log(e);
+    });
 
     this.map.on('click', e => {
       if (this.realtime) console.log(e.latlng);
