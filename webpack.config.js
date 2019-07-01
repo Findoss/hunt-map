@@ -2,6 +2,7 @@ const path = require('path');
 const distPath = path.join(__dirname, 'dist');
 const publicPath = path.join(__dirname, 'public');
 
+const VisualizerPlugin = require('webpack-visualizer-plugin');
 const BabiliPlugin = require('babili-webpack-plugin');
 
 // Babel loader for Transpiling ES8 Javascript for browser usage
@@ -39,6 +40,7 @@ const htmlLoader = {
   }
 };
 
+//
 const webpackConfig = {
   entry: {
     main: './src/index.js'
@@ -62,6 +64,11 @@ const webpackConfig = {
 if (process.env.NODE_ENV === 'production') {
   webpackConfig.plugins = [new BabiliPlugin({})];
 } else {
+  webpackConfig.plugins = [
+    new VisualizerPlugin({
+      filename: './stat-webpack.html'
+    })
+  ];
   webpackConfig.devtool = 'eval-source-map';
 }
 
