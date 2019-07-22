@@ -4,18 +4,13 @@ const publicPath = path.join(__dirname, 'public');
 
 const VisualizerPlugin = require('webpack-visualizer-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const BabiliPlugin = require('babili-webpack-plugin');
 
 // Babel
 const babelLoader = {
   test: /\.js$/,
   exclude: /(node_modules|bower_components)/,
   use: {
-    loader: 'babel-loader',
-    options: {
-      presets: ['@babel/preset-env'],
-      plugins: ['@babel/plugin-transform-runtime']
-    }
+    loader: 'babel-loader'
   }
 };
 
@@ -62,19 +57,18 @@ const webpackConfig = {
   }
 };
 
-if (process.env.NODE_ENV === 'production') {
-  webpackConfig.plugins = [new BabiliPlugin({})];
+if (process.env.NODE_ENV == 'production') {
+  //
 } else {
   webpackConfig.plugins = [
     new VisualizerPlugin({
       filename: './stat-webpack.html'
     }),
     new BundleAnalyzerPlugin({
-      reportFilename:'./analiz-webpack.html'
+      reportFilename: './analiz-webpack.html'
     })
   ];
   webpackConfig.devtool = 'eval-source-map';
 }
 
 module.exports = webpackConfig;
-
