@@ -1,6 +1,20 @@
 {
   "name": "hunt-map",
-  "version": "2.0.0",
+  "version": "2.0.1",
+  "homepage": "http://hunt-map.online",
+  "private": true,
+  "author": "Findoss",
+  "license": "ISC",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development",
+    "start": "npm run build",
+    "cache": "node ./scripts/updateCache.js LD & node ./scripts/updateCache.js SB",
+    "static": "node ./scripts/staticServer.js",
+    "prebuild": "npm run cache",
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "@babel/runtime": "^7.4.5",
     "firebase": "6.0.2",
@@ -28,16 +42,10 @@
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.32.2",
+    "gh-pages": "^2.0.1",
+    "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.5.0",
     "webpack-visualizer-plugin": "^0.1.11"
-  },
-  "scripts": {
-    "dev": "webpack-dev-server --mode development",
-    "start": "webpack --mode production && npm run cache",
-    "static": "node ./scripts/staticServer.js",
-    "cache": "node ./scripts/updateCache.js LD & node ./scripts/updateCache.js SB"
-  },
-  "author": "",
-  "license": "ISC"
+  }
 }

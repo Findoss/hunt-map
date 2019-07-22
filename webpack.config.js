@@ -3,9 +3,10 @@ const distPath = path.join(__dirname, 'dist');
 const publicPath = path.join(__dirname, 'public');
 
 const VisualizerPlugin = require('webpack-visualizer-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const BabiliPlugin = require('babili-webpack-plugin');
 
-// Babel loader for Transpiling ES8 Javascript for browser usage
+// Babel
 const babelLoader = {
   test: /\.js$/,
   exclude: /(node_modules|bower_components)/,
@@ -24,7 +25,7 @@ const cssLoader = {
   use: ['style-loader', 'css-loader']
 };
 
-// URL loader to resolve data-urls at build time
+// URL
 const urlLoader = {
   test: /\.(png|woff|woff2|eot|ttf|svg)$/,
   use: {
@@ -32,7 +33,7 @@ const urlLoader = {
   }
 };
 
-// HTML load to allow us to import HTML templates into our JS files
+// HTML
 const htmlLoader = {
   test: /\.html$/,
   use: {
@@ -67,9 +68,13 @@ if (process.env.NODE_ENV === 'production') {
   webpackConfig.plugins = [
     new VisualizerPlugin({
       filename: './stat-webpack.html'
+    }),
+    new BundleAnalyzerPlugin({
+      reportFilename:'./analiz-webpack.html'
     })
   ];
   webpackConfig.devtool = 'eval-source-map';
 }
 
 module.exports = webpackConfig;
+

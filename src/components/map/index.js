@@ -5,7 +5,7 @@ import 'leaflet-responsive-popup/leaflet.responsive.popup.css';
 import './index.css';
 import '../markers/index.css';
 
-import L from 'leaflet';
+import L from '../../../node_modules/leaflet/dist/leaflet';
 // plugins
 import '../ruler';
 import '../buttonAuth';
@@ -86,13 +86,9 @@ export class Map extends Component {
       zoomSnap: 0.2
     });
 
-    // const sw = this.map.unproject([-padding, height], optionMap.levels.org);
-    // const ne = this.map.unproject([width + padding, -padding], optionMap.levels.org);
-    // const boundsMove = new L.LatLngBounds(sw, ne);
-
-    const sw2 = this.map.unproject([0, height], optionMap.levels.org);
-    const ne2 = this.map.unproject([width, 0], optionMap.levels.org);
-    const boundsLoadTiles = new L.LatLngBounds(sw2, ne2);
+    const sw = this.map.unproject([0, height], optionMap.levels.org);
+    const ne = this.map.unproject([width, 0], optionMap.levels.org);
+    const boundsLoadTiles = new L.LatLngBounds(sw, ne);
 
     const attribution = author + contributors;
 

@@ -60,8 +60,6 @@ class ViewController {
 
     const data = { ...staticData, ...apiData };
     this.mapComponent.addMarkers(data);
-
-    // console.log(data);
   }
 
   switchMap(id) {
