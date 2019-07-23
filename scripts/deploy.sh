@@ -1,1 +1,1 @@
-ehho hello
+echo 'START DEPLOY'
