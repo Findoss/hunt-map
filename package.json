@@ -11,9 +11,9 @@
     "cache": "node ./scripts/updateCache.js LD & node ./scripts/updateCache.js SB",
     "static": "node ./scripts/staticServer.js",
     "prebuild": "npm run cache",
-    "build": "cross-env NODE_ENV=production webpack",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
     "predeploy": "npm run build",
-    "deploy": "cross-env NODE_DEBUG=gh-pages gh-pages -d dist"
+    "deploy": "sh ./scripts/deploy.sh"
   },
   "dependencies": {
     "@babel/runtime": "^7.5.5",
@@ -37,7 +37,6 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.2",
     "firebase-admin": "^8.2.0",
-    "gh-pages": "^2.0.1",
     "html-loader": "^0.5.5",
     "prettier": "^1.18.2",
     "style-loader": "^0.23.1",
