@@ -36,7 +36,6 @@ const htmlLoader = {
   }
 };
 
-//
 const webpackConfig = {
   entry: {
     main: './src/index.js'
@@ -45,6 +44,7 @@ const webpackConfig = {
     path: distPath,
     filename: 'bundle.js'
   },
+  stats: 'minimal',
   devServer: {
     // publicPath: distPath,
     contentBase: [publicPath, path.join(__dirname, '/')],

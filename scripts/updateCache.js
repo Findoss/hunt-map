@@ -1,11 +1,11 @@
-const serviceAccount = require("./key.json");
-const admin = require("firebase-admin");
-const fs = require("fs");
+const serviceAccount = require('./key.json');
+const admin = require('firebase-admin');
+const fs = require('fs');
 const collectionName = process.argv[2];
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://hunt-map-1.firebaseio.com"
+  databaseURL: 'https://hunt-map-1.firebaseio.com'
 });
 
 const DB = admin.firestore();
@@ -21,15 +21,11 @@ DB.collection(collectionName)
     return data;
   })
   .catch(err => {
-    console.log("Error getting documents", err);
+    console.log('Error getting documents', err);
   })
   .then(data => {
-    fs.writeFile(
-      `./public/cache/${collectionName}.json`,
-      JSON.stringify(data),
-      err => {
-        if (err) return console.error(err);
-        console.log("The file was saved!");
-      }
-    );
+    fs.writeFile(`./public/cache/${collectionName}.json`, JSON.stringify(data), err => {
+      if (err) return console.error(err);
+      console.log(`The ${collectionName}.json was saved!`);
+    });
   });
