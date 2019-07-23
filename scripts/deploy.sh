@@ -15,4 +15,4 @@ echo 'START DEPLOY';
 
 # git checkout master
 
-echo 'START DEPLOY';
+echo 'END DEPLOY';

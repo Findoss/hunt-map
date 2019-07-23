@@ -12,7 +12,7 @@ import { Cache } from './services/cache';
 
 class ViewController {
   constructor() {
-    console.log('v2.0.1');
+    console.log('v2.0.2');
 
     this.static = new Static();
     this.cache = new Cache();
