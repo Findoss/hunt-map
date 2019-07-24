@@ -68,13 +68,9 @@ if (process.env.NODE_ENV == 'production') {
   ];
 } else {
   webpackConfig.plugins = [
-    new InjectPlugin(function() {
-      const version = `console.log("${String(process.env.npm_package_version)}");`;
-      return version;
-    })
-    // new VisualizerPlugin({
-    //   filename: './stat-webpack.html'
-    // }),
+    new VisualizerPlugin({
+      filename: './stat-webpack.html'
+    }),
     // new BundleAnalyzerPlugin({
     //   reportFilename: './analiz-webpack.html'
     // })
