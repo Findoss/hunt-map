@@ -1,18 +1,19 @@
 echo 'START DEPLOY';
 
-# git checkout gh-pages
+git checkout gh-pages
 
-# cp public/CNAME CNAME
-# cp public/index.html index.html
-# cp public/README.md README.md
-# cp public/CNAME CNAME
+git rebase master
 
-# git add -A .
+cp public/CNAME CNAME
+cp public/index.html index.html
+cp public/README.md README.md
 
-# git commit -m 'update maps'
+git add -A .
 
-# git push origin gh-pages
+git commit -m 'update maps'
 
-# git checkout master
+git push origin gh-pages
+
+git checkout master
 
 echo 'END DEPLOY';
