@@ -1,6 +1,12 @@
 .firebase/
 key.json
 
+<<<<<<< HEAD
+=======
+build/*
+public/cache/*
+
+>>>>>>> master
 bower_components/
 node_modules/
 
