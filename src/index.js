@@ -10,6 +10,9 @@ import { SwitchMap } from './components/switchMap';
 import { Static } from './services/static';
 import { Cache } from './services/cache';
 
+import { version } from '../package.json';
+console.log(`%cver ${version}`, 'font-size: x-large');
+
 class ViewController {
   constructor() {
     this.static = new Static();
