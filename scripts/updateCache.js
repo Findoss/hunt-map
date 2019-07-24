@@ -1,15 +1,24 @@
+const fs = require('fs');
+const mkdirp = require('mkdirp');
+const getDirName = require('path').dirname;
+
 const serviceAccount = require('./key.json');
 const admin = require('firebase-admin');
-const fs = require('fs');
-const collectionName = process.argv[2];
+
+function writeFile(path, contents, cb) {
+  mkdirp(getDirName(path), err => {
+    if (err) return cb(err);
+    fs.writeFile(path, contents, cb);
+  });
+}
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: 'https://hunt-map-1.firebaseio.com'
 });
 
+const collectionName = process.argv[2];
 const DB = admin.firestore();
-
 let data = {};
 
 DB.collection(collectionName)
@@ -24,7 +33,7 @@ DB.collection(collectionName)
     console.log('Error getting documents', err);
   })
   .then(data => {
-    fs.writeFile(`./public/cache/${collectionName}.json`, JSON.stringify(data), err => {
+    writeFile(`./public/cache/${collectionName}.json`, JSON.stringify(data), err => {
       if (err) return console.error(err);
       console.log(`The ${collectionName}.json was saved!`);
     });
