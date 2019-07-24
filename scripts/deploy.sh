@@ -1,8 +1,12 @@
 echo 'START DEPLOY';
 
+npm version patch;
+
 git checkout gh-pages;
 
 git merge master;
+
+npm run build;
 
 cp public/CNAME CNAME
 cp public/index.html index.html
