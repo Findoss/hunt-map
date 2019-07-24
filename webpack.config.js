@@ -1,6 +1,6 @@
 const path = require('path');
-const distPath = path.join(__dirname, 'dist');
 const publicPath = path.join(__dirname, 'public');
+const distPath = path.join(__dirname, 'public/build');
 
 const VisualizerPlugin = require('webpack-visualizer-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
