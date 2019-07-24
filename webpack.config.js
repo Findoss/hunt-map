@@ -62,15 +62,22 @@ const webpackConfig = {
 if (process.env.NODE_ENV == 'production') {
   webpackConfig.plugins = [
     new InjectPlugin(function() {
-      const version = `console.log("${String(process.env.npm_package_version)}");`;
+      const version = `console.log("ver ${String(process.env.npm_package_version)}");`;
       return version;
+    }),
+    new VisualizerPlugin({
+      filename: './bundle-stat.html'
     })
   ];
 } else {
   webpackConfig.plugins = [
-    new VisualizerPlugin({
-      filename: './stat-webpack.html'
-    }),
+    new InjectPlugin(function() {
+      const version = `console.log("${String(process.env.npm_package_version)}");`;
+      return version;
+    })
+    // new VisualizerPlugin({
+    //   filename: './bundle-stat.html'
+    // })
     // new BundleAnalyzerPlugin({
     //   reportFilename: './analiz-webpack.html'
     // })
