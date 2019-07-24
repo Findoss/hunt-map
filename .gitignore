@@ -1,7 +1,7 @@
 .firebase/
 key.json
 
-public/build/*
+build/*
 public/cache/*
 
 bower_components/

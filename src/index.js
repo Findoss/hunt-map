@@ -1,3 +1,5 @@
+console.log(process.env.npm_package_version);
+
 import './main.css';
 
 import config from './config';
@@ -12,8 +14,6 @@ import { Cache } from './services/cache';
 
 class ViewController {
   constructor() {
-    console.log('v2.0.4');
-
     this.static = new Static();
     this.cache = new Cache();
     // this.api = new DB(config);

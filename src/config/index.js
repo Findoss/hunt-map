@@ -69,8 +69,8 @@ export default {
       levels: {
         org: 4,
         max: 7,
-        min: 2,
-        default: localStorage.getItem('ZOOM') || 2
+        min: 0,
+        default: localStorage.getItem('ZOOM') || 1
       },
       width: 1000,
       height: 1000,
@@ -88,8 +88,8 @@ export default {
       levels: {
         org: 4,
         max: 7,
-        min: 2,
-        default: localStorage.getItem('ZOOM') || 2
+        min: 0,
+        default: localStorage.getItem('ZOOM') || 1
       },
       width: 1000,
       height: 1000,
