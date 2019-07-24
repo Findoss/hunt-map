@@ -1,5 +1,3 @@
-console.log(process.env.npm_package_version);
-
 import './main.css';
 
 import config from './config';
