@@ -45,6 +45,7 @@
     "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2",
+    "webpack-inject-plugin": "^1.5.2",
     "webpack-visualizer-plugin": "^0.1.11"
   }
 }

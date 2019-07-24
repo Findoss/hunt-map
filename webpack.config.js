@@ -4,6 +4,7 @@ const publicPath = path.join(__dirname, 'public');
 const distPath = path.join(__dirname, 'build');
 
 const VisualizerPlugin = require('webpack-visualizer-plugin');
+const InjectPlugin = require('webpack-inject-plugin').default;
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 // Babel
@@ -59,9 +60,18 @@ const webpackConfig = {
 };
 
 if (process.env.NODE_ENV == 'production') {
-  //
+  webpackConfig.plugins = [
+    new InjectPlugin(function() {
+      const version = `console.log("${String(process.env.npm_package_version)}");`;
+      return version;
+    })
+  ];
 } else {
   webpackConfig.plugins = [
+    new InjectPlugin(function() {
+      const version = `console.log("${String(process.env.npm_package_version)}");`;
+      return version;
+    })
     // new VisualizerPlugin({
     //   filename: './stat-webpack.html'
     // }),
