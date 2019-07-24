@@ -4,7 +4,7 @@ const publicPath = path.join(__dirname, 'public');
 const distPath = path.join(__dirname, 'build');
 
 const VisualizerPlugin = require('webpack-visualizer-plugin');
-const InjectPlugin = require('webpack-inject-plugin').default;
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 // Babel
@@ -56,32 +56,32 @@ const webpackConfig = {
   },
   module: {
     rules: [cssLoader, htmlLoader, babelLoader, urlLoader]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      hash: true,
+      template: './public/index.html'
+    })
+  ]
 };
 
 if (process.env.NODE_ENV == 'production') {
   webpackConfig.plugins = [
-    new InjectPlugin(function() {
-      const version = `console.log("ver ${String(process.env.npm_package_version)}");`;
-      return version;
-    }),
     new VisualizerPlugin({
       filename: './bundle-stat.html'
     })
   ];
 } else {
-  webpackConfig.plugins = [
-    new InjectPlugin(function() {
-      const version = `console.log("${String(process.env.npm_package_version)}");`;
-      return version;
-    })
-    // new VisualizerPlugin({
-    //   filename: './bundle-stat.html'
-    // })
-    // new BundleAnalyzerPlugin({
-    //   reportFilename: './analiz-webpack.html'
-    // })
-  ];
+  webpackConfig.plugins.push();
+
+  // new VisualizerPlugin({
+  //   filename: './bundle-stat.html'
+  // })
+
+  // new BundleAnalyzerPlugin({
+  //   reportFilename: './analiz-webpack.html'
+  // })
+
   webpackConfig.devtool = 'eval-source-map';
 }
 
