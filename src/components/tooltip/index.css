@@ -1,0 +1,14 @@
+.leaflet-tooltip {
+  color: var(--color-1);
+  background: var(--bg-color-1);
+  border: 1px solid var(--bg-color-1);
+  text-transform: uppercase;
+}
+
+.leaflet-tooltip-right::before {
+  border-right-color: var(--bg-color-1);
+}
+
+.leaflet-tooltip-left::before {
+  border-left-color: var(--bg-color-1);
+}

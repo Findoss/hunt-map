@@ -1,0 +1,23 @@
+/* popup */
+
+.leaflet-popup {
+}
+
+.leaflet-popup-content-wrapper {
+  background-color: var(--bg-color-2);
+  color: var(--color-1);
+  min-width: 120px;
+}
+
+.leaflet-popup-tip {
+  background: var(--bg-color-1);
+  border-color: var(--bg-color-2);
+}
+
+.leaflet-popup-content {
+  min-width: 175px;
+}
+
+.leaflet-popup-content-wrapper h4 {
+  text-transform: uppercase;
+}
