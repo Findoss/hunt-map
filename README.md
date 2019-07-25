@@ -64,10 +64,10 @@ Please read [CONTRIBUTING.md](https://github.com/Findoss/Hunt-map/blob/master/CO
 
 ## Authors
 
-- Nikita Stroganov - Initial work
+- Findoss - Initial work
 - Святобор - add markers
 - Lapin - maps layer
 
 ## License
 
-[MIT](https://github.com/Findoss/Hunt-map/blob/master/LICENSE). Copyright (c) findoss.
+[MIT](https://github.com/Findoss/Hunt-map/blob/master/LICENSE). Copyright (c) Findoss.

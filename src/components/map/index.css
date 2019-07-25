@@ -1,3 +1,6 @@
+@import '../popup/index.css';
+@import '../tooltip/index.css';
+
 .map-container {
   height: 100vh;
   width: 100vw;
@@ -35,30 +38,6 @@
 
 .leaflet-control-attribution a:hover {
   color: var(--color-2-hover);
-}
-
-/* popup */
-
-.leaflet-popup {
-}
-
-.leaflet-popup-content-wrapper {
-  background-color: var(--bg-color-2);
-  color: var(--color-1);
-  min-width: 120px;
-}
-
-.leaflet-popup-tip {
-  background: var(--bg-color-1);
-  border-color: var(--bg-color-2);
-}
-
-.leaflet-popup-content {
-  min-width: 175px;
-}
-
-.leaflet-popup-content-wrapper h4 {
-  text-transform: uppercase;
 }
 
 /* legend */
@@ -118,10 +97,6 @@
   border-radius: 50%;
 }
 
-/* .cursor-zoom {
-  cursor: zoom-in;
-} */
-
 /* login */
 
 /* .login {
@@ -133,22 +108,6 @@
   top: 12px;
   left: 60px;
   z-index: 9999;
-} */
-
-/* tooltip */
-
-/* .leaflet-tooltip {
-  color: var(--color-1);
-  background: var(--bg-color-1);
-  border: 1px solid var(--color-1);
-}
-
-.leaflet-tooltip-right::before {
-  border-right-color: var(--color-1);
-}
-
-.leaflet-tooltip-left::before {
-  border-left-color: var(--color-1);
 } */
 
 /* contributors */

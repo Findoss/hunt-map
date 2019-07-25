@@ -14,6 +14,7 @@ import 'leaflet-responsive-popup/leaflet.responsive.popup.js';
 // components
 import { Component } from '../index';
 import { PopupText } from '../popupText';
+import { Marker } from '../markers';
 import { legendItem } from '../legendItem';
 import { minPow } from '../../utils';
 
@@ -170,41 +171,7 @@ export class Map extends Component {
     Object.keys(data).forEach(id => {
       countMarkers++;
       const doc = data[id];
-
-      if (this.allTypes.findIndex(type => doc.properties.title === type) > -1) {
-        switch (doc.properties.title) {
-          case 'new-object':
-            new L.marker(doc.geometry.coordinates, {
-              icon: L.divIcon({
-                className: 'marker-base marker-' + doc.properties.title
-              })
-            })
-              .on('click', () => console.log('Marker id = ', id))
-              .bindPopup(this.popupApprove(id, doc))
-              .addTo(this.groups[doc.properties.title]);
-            break;
-
-          case 'label':
-            new L.marker(doc.geometry.coordinates, {
-              icon: L.divIcon({
-                className: 'marker-' + doc.properties.title,
-                html: `<div class="marker-label_text">${doc.properties.name}</div>`
-              })
-            }).addTo(this.groups[doc.properties.title]);
-            break;
-
-          default:
-            new L.marker(doc.geometry.coordinates, {
-              icon: L.divIcon({
-                className: 'marker-base marker-' + doc.properties.marker
-              })
-            })
-              .on('click', () => console.log('Marker id = ', id))
-              .bindPopup(this.createPopupMarker(id, doc))
-              .addTo(this.groups[doc.properties.title]);
-            break;
-        }
-      }
+      Marker.call(this, doc, id);
     });
 
     if (!this.currentLayers || !this.currentLayers.length) this.currentLayers = this.allTypes;
