@@ -181,6 +181,8 @@ export default {
   optionsPrint: {
     position: 'topleft',
     exportOnly: true,
+    title: 'Save map',
+    sizeModes: ['Current', 'A4Portrait', 'A4Landscape'],
     filename: 'hunt-map.online',
     defaultSizeTitles: {
       Current: 'Current Size',
