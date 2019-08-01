@@ -1,10 +1,3 @@
-.leaflet-div-icon {
-  background: red;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  filter: drop-shadow(3px 3px 3px #000000);
-}
-
 .leaflet-marker-icon {
   /* размер по умолчанию */
   width: 26px !important;
@@ -16,9 +9,14 @@
   background-repeat: no-repeat;
 }
 
+/* .marker-example {
+  background-color: lightblue;
+  border-radius: 50%;
+} */
+
 .marker-base {
   border: 1px solid white;
-  filter: drop-shadow(2px 2px 2px #000000);
+  filter: drop-shadow(4px 4px 4px #000000);
   border-radius: 50%;
 }
 
@@ -26,7 +24,7 @@
   color: wheat;
   pointer-events: none !important;
   border: none !important;
-  /**/
+  /* для отладки */
   /* background-color: lightgreen; */
 }
 
@@ -41,7 +39,7 @@
   font-weight: bold;
   text-shadow: 1px 2px 4px #000000;
   text-align: center;
-  /**/
+  /* для отладки */
   /* background-color: lightpink; */
 }
 
@@ -52,9 +50,7 @@
 .marker-new-object::after {
   content: 'NEW';
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: white;
   font-size: 0.5rem;
-
   font-weight: bold;
   text-shadow: 1px 2px 4px #000000;
   text-align: center;
@@ -68,6 +64,32 @@
 }
 
 .marker-resupply-point::after {
+  content: url(../../../public/images/markers/bullets.svg);
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+}
+
+.marker-resupply-point-2 {
+  background-color: lightgreen;
+}
+
+.marker-resupply-point-2::after {
+  content: url(../../../public/images/markers/first-aid-kit.svg);
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+}
+
+.marker-resupply-point-3 {
+  background-color: lightgreen;
+}
+
+.marker-resupply-point-3::after {
   content: '+';
   width: 18px;
   height: 18px;
@@ -75,29 +97,33 @@
   font-weight: bold;
   font-size: 2.3rem;
   position: absolute;
-  top: -12px;
+  top: -7px;
   left: 2px;
 }
 
 .marker-boss {
   background-image: url(../../../public/images/markers/boss-all.svg);
-  background-size: 20px;
+  background-size: 26px;
 }
 
 .marker-boss-all {
   background-image: url(../../../public/images/markers/boss-all.svg);
+  background-size: 26px;
 }
 
 .marker-boss-as {
   background-image: url(../../../public/images/markers/boss-as.svg);
+  background-size: 26px;
 }
 
 .marker-boss-ab {
   background-image: url(../../../public/images/markers/boss-ab.svg);
+  background-size: 26px;
 }
 
 .marker-boss-bs {
   background-image: url(../../../public/images/markers/boss-bs.svg);
+  background-size: 26px;
 }
 
 .marker-boss-a {
@@ -117,31 +143,45 @@
 }
 
 .marker-spawn-player::after {
-  content: 'S';
+  content: 'SPAWN';
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: black;
+  font-size: 0.45rem;
+  text-shadow: 1px 2px 4px #000000;
   text-align: center;
   position: absolute;
-  top: -2px;
-  left: 8px;
+  top: 7px;
+  left: 2px;
+}
+
+.marker-spawn-player-2 {
+  background-color: plum;
+}
+
+.marker-spawn-player-2::after {
+  content: 'SPAWN';
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 0.45rem;
+  text-shadow: 1px 2px 4px #000000;
+  text-align: center;
+  position: absolute;
+  top: 7px;
+  left: 2px;
 }
 
 .marker-extraction-point {
   background-color: whitesmoke;
 }
 
-.marker-extraction-point::after {
-  content: 'E';
+.marker-extraction-pointt::after {
+  content: 'NEW';
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.3rem;
+  font-size: 0.5rem;
   font-weight: bold;
-  color: black;
+  text-shadow: 1px 2px 4px #000000;
   text-align: center;
   position: absolute;
-  top: -2px;
-  left: 8px;
+  top: 7px;
+  left: 5px;
 }
 
 .marker-easter-egg {
@@ -152,7 +192,7 @@
   content: '★';
   font-size: 1.8rem;
   position: absolute;
-  top: -9px;
+  top: -8px;
   left: 1px;
   color: brown;
 }
@@ -162,12 +202,11 @@
 }
 
 .marker-aviary::after {
-  content: url(../../../public/images/markers/chicken.svg);
-  width: 18px;
-  height: 18px;
+  content: '⊗';
+  font-size: 1.15rem;
+  font-weight: bold;
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: -5px;
 }
 
 .marker-tower,
@@ -198,64 +237,72 @@
 .marker-tower10::after,
 .marker-tower11::after {
   content: url(../../../public/images/markers/tower-arrow.svg);
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   position: absolute;
-  top: 3px;
-  left: 4px;
-  transform: rotate(-90deg);
-}
-
-.marker-tower1::after {
-  transform: rotate(-60deg);
-}
-
-.marker-tower2::after {
-  transform: rotate(-30deg);
-}
-
-.marker-tower3::after {
+  top: 2px;
+  left: 2px;
   transform: rotate(0deg);
 }
 
-.marker-tower4::after {
+.marker-tower1::after {
   transform: rotate(30deg);
 }
 
-.marker-tower5::after {
+.marker-tower2::after {
   transform: rotate(60deg);
 }
 
-.marker-tower6::after {
+.marker-tower3::after {
   transform: rotate(90deg);
 }
 
-.marker-tower7::after {
+.marker-tower4::after {
   transform: rotate(120deg);
 }
 
-.marker-tower8::after {
+.marker-tower5::after {
   transform: rotate(150deg);
 }
 
-.marker-tower9::after {
+.marker-tower6::after {
   transform: rotate(180deg);
 }
 
-.marker-tower10::after {
+.marker-tower7::after {
   transform: rotate(210deg);
 }
 
-.marker-tower11::after {
+.marker-tower8::after {
   transform: rotate(240deg);
 }
 
+.marker-tower9::after {
+  transform: rotate(270deg);
+}
+
+.marker-tower10::after {
+  transform: rotate(300deg);
+}
+
+.marker-tower11::after {
+  transform: rotate(330deg);
+}
+
+.marker-clue {
+  background-color: skyblue;
+}
+
 .marker-clue::after {
-  content: '◌';
-  font-size: 30px;
-  font-weight: bold;
+  content: '';
+  width: 18px;
+  height: 18px;
+  display: block;
+  border: 3px dotted black;
+  border-radius: 50%;
   position: absolute;
-  top: -15px;
+  top: 1px;
+  left: 1px;
 }
 
 .marker-cash {
@@ -266,6 +313,7 @@
   content: '$';
   font-size: 17px;
   position: absolute;
+  color: black;
   top: -3px;
   left: 4px;
 }
