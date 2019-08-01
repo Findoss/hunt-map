@@ -1,4 +1,5 @@
 import L from '../../../node_modules/leaflet/dist/leaflet';
+import { PopupText } from '../popupText';
 
 export function Marker(doc, id) {
   if (this.allTypes.findIndex(type => doc.properties.title === type) > -1) {
@@ -30,7 +31,7 @@ export function Marker(doc, id) {
           })
         })
           .on('click', () => console.log('Marker id = ', id))
-          .bindPopup(this.createPopupMarker(id, doc))
+          .bindPopup(L.responsivePopup().setContent(new PopupText().show(id, doc.properties)))
           .bindTooltip(doc.properties.title.replace('-', ' '))
           .addTo(this.groups[doc.properties.title]);
         break;

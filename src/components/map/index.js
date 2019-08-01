@@ -17,7 +17,6 @@ import 'leaflet-easyprint';
 import 'leaflet-responsive-popup/leaflet.responsive.popup.js';
 // components
 import { Component } from '../index';
-import { PopupText } from '../popupText';
 import { Marker } from '../markers';
 import { legendItem } from '../legendItem';
 import { minPow } from '../../utils';
