@@ -1,6 +1,6 @@
 {
   "name": "hunt-map",
-  "version": "2.0.13",
+  "version": "2.1.1",
   "homepage": "http://hunt-map.online",
   "private": true,
   "author": "Findoss",
@@ -20,7 +20,9 @@
     "firebaseui": "4.0.0",
     "leaflet": "1.5.1",
     "leaflet-draw": "^1.0.4",
+    "leaflet-easyprint": "^2.1.9",
     "leaflet-responsive-popup": "^0.6.4",
+    "leaflet.fullscreen": "^1.5.1",
     "static-server": "^2.2.1"
   },
   "devDependencies": {

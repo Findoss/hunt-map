@@ -84,15 +84,16 @@
 
 .legend-item {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
+  background-size: 25px !important;
+  background-repeat: no-repeat;
+
   margin-right: 10px;
   margin-left: 5px;
   margin-top: 5px;
-  background-size: 15px;
   color: var(--bg-color-1);
   position: relative;
-  background-repeat: no-repeat;
   border: 1px solid white;
   border-radius: 50%;
 }

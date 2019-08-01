@@ -10,6 +10,6 @@ export class PopupText extends Component {
   show(id, doc) {
     this.refs.title.innerHTML = doc.title.replace('-', ' ');
     this.refs.content.innerHTML = doc.description ? doc.description : '';
-    return this;
+    return this.getElement();
   }
 }
