@@ -1,0 +1,9 @@
+#leafletEasyPrint {
+  background-image: url(../../../public/images/icons/download.svg) !important;
+  background-size: 18px;
+}
+
+.easyPrintSizeMode .CurrentSize::after {
+  color: white;
+  content: '.png';
+}

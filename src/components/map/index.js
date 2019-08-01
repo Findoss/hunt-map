@@ -4,12 +4,16 @@ import 'leaflet-responsive-popup/leaflet.responsive.popup.css';
 
 import './index.css';
 import '../markers/index.css';
+import '../print/index.css';
+import '../fullscreen/index.css';
 
 import L from '../../../node_modules/leaflet/dist/leaflet';
 // plugins
 import '../ruler';
 import '../buttonAuth';
 // import 'leaflet-draw/dist/leaflet.draw';
+import 'leaflet.fullscreen';
+import 'leaflet-easyprint';
 import 'leaflet-responsive-popup/leaflet.responsive.popup.js';
 // components
 import { Component } from '../index';
@@ -46,6 +50,7 @@ export class Map extends Component {
       optionsAuth,
       contributorNames,
       optionsRuler
+      optionsPrint
     } = props.data;
 
     this.types = types;
@@ -128,14 +133,14 @@ export class Map extends Component {
     //   }
     // });
 
-    //
-    // this.map.addControl(drawControl);
+    this.controlFullscreen = L.control.fullscreen().addTo(this.map);
+    this.controlMeasure = L.control.measure(optionsRuler).addTo(this.map);
     //
     this.controlLayers = L.control.layers(null, this.legendItems).addTo(this.map);
-    this.controlMeasure = L.control.measure(optionsRuler).addTo(this.map);
+    this.controlPrint = L.easyPrint(optionsPrint).addTo(this.map);
     this.controlAuth = L.control.auth(optionsAuth).addTo(this.map);
     //
-    // this.map.addLayer(this.editableLayers);
+    this.map.addLayer(this.editableLayers);
     this.map.setMaxBounds(/*boundsMove*/ boundsLoadTiles);
     this.map.setView(optionMap.center, optionMap.levels.default);
 

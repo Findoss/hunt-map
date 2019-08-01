@@ -23,38 +23,83 @@ export default {
     boss: [
       {
         title: 'Assassin',
-        label: 'a'
+        label: 'boss-a'
       },
       {
         title: 'Butcher',
-        label: 'b'
-      },
-      {
-        title: 'Assassin',
-        label: 'a'
+        label: 'boss-b'
       },
       {
         title: 'Spider',
-        label: 's'
+        label: 'boss-s'
       },
       {
-        title: 'Assassin + Butcher',
-        label: 'ab'
+        title: 'Assassin, Butcher',
+        label: 'boss-ab'
       },
       {
-        title: 'Assassin + Spider',
-        label: 'as'
+        title: 'Assassin, Spider',
+        label: 'boss-as'
       },
       {
-        title: 'Butcher + Spider',
-        label: 'bs'
+        title: 'Butcher, Spider',
+        label: 'boss-bs'
       },
       {
-        title: 'Assassin + Butcher + Spider',
-        label: 'abs'
+        title: 'Assassin, Butcher, Spider',
+        label: 'boss-all'
       }
     ],
-    tower: ['', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11']
+    tower: [
+      {
+        title: 'vector 0',
+        label: ''
+      },
+      {
+        title: 'vector 1',
+        label: '1'
+      },
+      {
+        title: 'vector 2',
+        label: '2'
+      },
+      {
+        title: 'vector 3',
+        label: '3'
+      },
+      {
+        title: 'vector 4',
+        label: '4'
+      },
+      {
+        title: 'vector 5',
+        label: '5'
+      },
+      {
+        title: 'vector 6',
+        label: '6'
+      },
+      {
+        title: 'vector 7',
+        label: '7'
+      },
+      {
+        title: 'vector 8',
+        label: '8'
+      },
+      {
+        title: 'vector 9',
+        label: '9'
+      },
+      {
+        title: 'vector 10',
+        label: '10'
+      },
+      {
+        title: 'vector 11',
+        label: '11'
+      }
+    ]
   },
 
   optionsMaps: {
@@ -131,5 +176,16 @@ export default {
 
   optionsAuth: {
     position: 'bottomleft'
+  },
+
+  optionsPrint: {
+    position: 'topleft',
+    exportOnly: true,
+    filename: 'hunt-map.online',
+    defaultSizeTitles: {
+      Current: 'Current Size',
+      A4Landscape: 'A4 Landscape',
+      A4Portrait: 'A4 Portrait'
+    }
   }
 };
