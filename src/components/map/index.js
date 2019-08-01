@@ -48,7 +48,7 @@ export class Map extends Component {
       currentLayers,
       optionsAuth,
       contributorNames,
-      optionsRuler
+      optionsRuler,
       optionsPrint
     } = props.data;
 
