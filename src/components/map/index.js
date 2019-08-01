@@ -1,6 +1,6 @@
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-responsive-popup/leaflet.responsive.popup.css';
-// import 'leaflet-draw/dist/leaflet.draw.css';
+import 'leaflet-draw/dist/leaflet.draw.css';
 
 import './index.css';
 import '../markers/index.css';
@@ -11,15 +11,18 @@ import L from '../../../node_modules/leaflet/dist/leaflet';
 // plugins
 import '../ruler';
 import '../buttonAuth';
-// import 'leaflet-draw/dist/leaflet.draw';
+import 'leaflet-draw/dist/leaflet.draw';
 import 'leaflet.fullscreen';
 import 'leaflet-easyprint';
 import 'leaflet-responsive-popup/leaflet.responsive.popup.js';
 // components
+import { minPow } from '../../utils';
+
 import { Component } from '../index';
 import { Marker } from '../markers';
 import { legendItem } from '../legendItem';
-import { minPow } from '../../utils';
+
+import { PopupNewMarker } from '../PopupNewMarker';
 
 const template = '<div ref="mapContainer" class="map-container"></div>';
 
@@ -46,8 +49,9 @@ export class Map extends Component {
       realtime,
       extraTypes,
       currentLayers,
-      optionsAuth,
       contributorNames,
+      optionDraw,
+      optionsAuth,
       optionsRuler,
       optionsPrint
     } = props.data;
@@ -108,7 +112,7 @@ export class Map extends Component {
 
     this.groups = {};
     this.legendItems = {};
-    // this.editableLayers = new L.FeatureGroup();
+    this.editableLayers = new L.FeatureGroup();
 
     this.allTypes.forEach(type => {
       this.groups[type] = L.layerGroup();
@@ -116,25 +120,29 @@ export class Map extends Component {
       this.legendItems[legendItem(type)] = this.groups[type];
     });
 
-    //
-    // const drawControl = new L.Control.Draw({
-    //   edit: {
-    //     featureGroup: editableLayers,
-    //     poly: {
-    //       allowIntersection: false
-    //     }
-    //   },
-    //   draw: {
-    //     polygon: {
-    //       allowIntersection: false,
-    //       showArea: true
-    //     }
-    //   }
-    // });
+    const drawControl = new L.Control.Draw({
+      edit: {
+        featureGroup: this.editableLayers,
+        remove: false,
+        edit: false
+      },
+      draw: {
+        marker: {
+          icon: L.divIcon({
+            className: 'marker-base marker-new-object'
+          })
+        },
+        polyline: false,
+        circlemarker: false,
+        circle: false,
+        rectangle: false,
+        polygon: false
+      }
+    });
 
     this.controlFullscreen = L.control.fullscreen().addTo(this.map);
     this.controlMeasure = L.control.measure(optionsRuler).addTo(this.map);
-    //
+    // this.map.addControl(drawControl);
     this.controlLayers = L.control.layers(null, this.legendItems).addTo(this.map);
     this.controlPrint = L.easyPrint(optionsPrint).addTo(this.map);
     this.controlAuth = L.control.auth(optionsAuth).addTo(this.map);
@@ -168,6 +176,29 @@ export class Map extends Component {
     this.map.on('moveend', e => {
       localStorage.setItem('CENTER', JSON.stringify(e.target.getCenter()));
     });
+
+    this.map.on('draw:created', e => {
+      const layer = e.layer;
+
+      switch (e.layerType) {
+        case 'marker':
+          layer.bindPopup(this.createPopupNewMarker(layer._latlng, types, typesMarkers));
+          break;
+
+        case 'poligon':
+          break;
+
+        case 'poliline':
+          layer.bindPopup(this.createPopupNewMarker());
+          break;
+
+        default:
+          break;
+      }
+
+      this.map.addLayer(layer);
+      layer.openPopup();
+    });
   }
 
   addMarkers(data) {
@@ -182,30 +213,12 @@ export class Map extends Component {
     this.currentLayers.forEach(layer => {
       this.groups[layer].addTo(this.map);
     });
-
-    // for (const type in this.groups) {
-    //   if (this.groups.hasOwnProperty(type)) {
-    //     const el = this.groups[type];
-    //     console.log(type, Object.keys(el._layers).length);
-    //   }
-    // }
-    // console.log('markers', countMarkers);
   }
 
-  createPopupMarker(id, doc) {
-    if (this.realtime) {
-      return this.popupEdit();
-    } else {
-      return L.responsivePopup().setContent(new PopupText().show(id, doc.properties).getElement());
-    }
-  }
-
-  popupEdit() {
-    return `EDIT`;
-  }
-
-  popupApprove() {
-    return `APPROVE`;
+  createPopupNewMarker(latlng, types, typesMarkers) {
+    return L.responsivePopup().setContent(
+      new PopupNewMarker().show({ latlng, types, typesMarkers })
+    );
   }
 
   delete() {

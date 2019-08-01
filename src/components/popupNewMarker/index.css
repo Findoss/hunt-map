@@ -1,0 +1,62 @@
+.popup-new-marker {
+  width: 250px;
+  height: 320px;
+}
+
+.control-select-type {
+  width: 100%;
+  height: 29px;
+  padding: 5px;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.control-select-type {
+  width: 100%;
+  height: 29px;
+  padding: 5px;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.control-description {
+  width: 100%;
+  height: 70px;
+  padding: 5px;
+  margin-bottom: 15px;
+  float: right;
+  resize: none;
+}
+
+.control-button-del {
+  width: 49%;
+  height: 30px;
+  padding: 3px;
+  float: left;
+}
+
+.control-button-save {
+  width: 49%;
+  height: 30px;
+  padding: 3px;
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.control-file-upload::-webkit-file-upload-button {
+  background: black;
+  color: white;
+  border: 1px solid brown;
+}
+
+.control-file-upload {
+  width: 100%;
+  margin-bottom: 15px;
+}
