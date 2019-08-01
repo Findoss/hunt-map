@@ -6,7 +6,7 @@ import template from './main.html';
 import { Map } from './components/map';
 import { SwitchMap } from './components/switchMap';
 
-// import { DB } from './services/database';
+import { DB } from './services/database';
 import { Static } from './services/static';
 import { Cache } from './services/cache';
 
@@ -17,7 +17,7 @@ class ViewController {
   constructor() {
     this.static = new Static();
     this.cache = new Cache();
-    // this.api = new DB(config);
+    this.api = new DB(config);
 
     document.getElementById('app').outerHTML = template;
 
@@ -28,6 +28,7 @@ class ViewController {
   initializeMap() {
     this.mapComponent = new Map('map-placeholder', {
       data: config,
+      api: this.api,
       events: {
         testEvent: event => {
           console.log('testEvent');

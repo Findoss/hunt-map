@@ -11,8 +11,14 @@
   Description
   <br />
   <textarea ref="description" class="control-description"></textarea>
-  <input type="file" ref="file" id="file-upload" class="control-file-upload hidden" />
+  <input
+    ref="file"
+    type="file"
+    id="file-upload"
+    class="control-file-upload hidden"
+    accept="image/*"
+  />
   <br />
-  <button class="control-button-del">Cansel</button>
-  <button class="control-button-save">Send</button>
+  <button ref="cansel" class="control-button-del">Cansel</button>
+  <button ref="send" class="control-button-save">Send</button>
 </div>

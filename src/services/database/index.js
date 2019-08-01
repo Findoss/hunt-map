@@ -1,10 +1,13 @@
-import * as firebase from 'firebase/app';
+import firebase from 'firebase/app';
 import 'firebase/firestore';
+import 'firebase/storage';
+import { newId } from '../../utils';
 
 export class DB {
   constructor(config) {
     const { firebaseConfig } = config;
-    this.DB = firebase.initializeApp(firebaseConfig).firestore();
+    this.base = firebase.initializeApp(firebaseConfig).firestore();
+    this.storage = firebase.storage();
 
     firebase
       .firestore()
@@ -18,9 +21,12 @@ export class DB {
       });
   }
 
+  // DB
+  //
   async getItems(mapId) {
     const data = {};
-    await this.DB.collection(mapId)
+    await this.base
+      .collection(mapId)
       .get()
       .then(snapshot => {
         snapshot.forEach(doc => (data[doc.id] = doc.data()));
@@ -32,7 +38,7 @@ export class DB {
   }
 
   getForСheckItems(mapId) {
-    return this.DB.collection(`dev_${mapId}`).get();
+    return this.base.collection(`dev_${mapId}`).get();
   }
 
   addMarker(mapId, payload) {
@@ -51,7 +57,8 @@ export class DB {
       }
     };
 
-    return this.DB.collection(`dev_${mapId}`)
+    return this.base
+      .collection(`dev_${mapId}`)
       .doc()
       .set(data)
       .then(() => {
@@ -62,12 +69,42 @@ export class DB {
       });
   }
 
+  // FS
+  //
+
+  createFileURL() {
+    const storageRef = this.storage.ref();
+    const imgRef = storageRef.child('dev/' + newId() + '.png');
+    return imgRef;
+  }
+
+  uploadFile(ref, file) {
+    const uploadTask = ref.put(file);
+
+    return new Promise((resolve, reject) => {
+      uploadTask.on(
+        'state_changed',
+        snapshot => {},
+        error => reject(error),
+        () => {
+          uploadTask.snapshot.ref
+            .getDownloadURL()
+            .then(downloadURL => {
+              console.log('success upload file');
+              resolve(downloadURL);
+            })
+            .catch(error => reject(error));
+        }
+      );
+    });
+  }
+
   // approvePoint(mapId, docId, data) {
   //   return Promise.all([
-  //     this.DB.collection(mapId)
+  //     this.base.collection(mapId)
   //       .doc()
   //       .set(data),
-  //     this.DB.collection(`dev_${mapId}`)
+  //     this.base.collection(`dev_${mapId}`)
   //       .doc(docId)
   //       .delete()
   //   ])
@@ -80,7 +117,7 @@ export class DB {
   // }
 
   // rejectPoint(mapId, docId) {
-  //   return this.DB.collection(`dev_${mapId}`)
+  //   return this.base.collection(`dev_${mapId}`)
   //     .doc(docId)
   //     .delete()
   //     .then(() => {

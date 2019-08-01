@@ -56,6 +56,8 @@ export class Map extends Component {
       optionsPrint
     } = props.data;
 
+    this.mapId = mapId;
+    this.api = props.api;
     this.types = types;
     this.extraTypes = extraTypes;
     this.allTypes = [...this.extraTypes, ...this.types];
@@ -91,8 +93,8 @@ export class Map extends Component {
 
     this.map = L.map(this.refs.mapContainer, {
       crs: L.CRS.Pr,
-      maxBoundsViscosity: 0.8,
-      zoomSnap: 0.2
+      maxBoundsViscosity: 0.6,
+      zoomSnap: 0.1
     });
 
     const sw = this.map.unproject([0, height], optionMap.levels.org);
@@ -142,7 +144,7 @@ export class Map extends Component {
 
     this.controlFullscreen = L.control.fullscreen().addTo(this.map);
     this.controlMeasure = L.control.measure(optionsRuler).addTo(this.map);
-    // this.map.addControl(drawControl);
+    this.map.addControl(drawControl);
     this.controlLayers = L.control.layers(null, this.legendItems).addTo(this.map);
     this.controlPrint = L.easyPrint(optionsPrint).addTo(this.map);
     this.controlAuth = L.control.auth(optionsAuth).addTo(this.map);
@@ -217,7 +219,11 @@ export class Map extends Component {
 
   createPopupNewMarker(latlng, types, typesMarkers) {
     return L.responsivePopup().setContent(
-      new PopupNewMarker().show({ latlng, types, typesMarkers })
+      new PopupNewMarker(undefined, { api: this.api, mapId: this.mapId }).show({
+        latlng,
+        types,
+        typesMarkers
+      })
     );
   }
 
