@@ -102,9 +102,9 @@ export class DB {
   // FS
   //
 
-  createFileURL() {
+  createFileURL(ext) {
     const storageRef = this.storage.ref();
-    const imgRef = storageRef.child('dev/' + newId() + '.png');
+    const imgRef = storageRef.child('images/' + newId() + ext);
     return imgRef;
   }
 

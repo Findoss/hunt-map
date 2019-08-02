@@ -1,10 +1,6 @@
 import L from 'leaflet/dist/leaflet';
 
 export function Polyline(doc, id) {
-  console.log('rendr line');
-
-  console.log(doc);
-
   L.polyline(doc.geometry.coordinates, {
     color: 'lime',
     opacity: 0.3,
