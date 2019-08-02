@@ -1,4 +1,3 @@
-import './index.css';
 import template from './index.html';
 import templateImage from './image.js';
 import { Component } from '../index';
@@ -82,40 +81,56 @@ export class PopupNewMarker extends Component {
   _handleSubmit(props, e) {
     switch (this.refs.types.value) {
       case 'easter-egg':
+        this._loading();
         this.api.uploadFile(this.refFile, this.selectedFile).then(url => {
           this.refs.description.value += templateImage({ url });
           this.api
             .addMarker(this.mapId, {
               type: this.refs.types.value,
-              coordinates: props.latlng,
+              coordinates: props.coord,
               marker: this.refs.typeMarkers.value,
               description: this.refs.description.value
             })
             .then(() => {
               this._success();
+            })
+            .catch(error => {
+              this._error(error);
             });
         });
 
         break;
 
       default:
+        this._loading();
         this.api
           .addMarker(this.mapId, {
             type: this.refs.types.value,
-            coordinates: props.latlng,
+            coordinates: props.coord,
             marker: this.refs.typeMarkers.value,
             description: this.refs.description.value
           })
           .then(() => {
             this._success();
+          })
+          .catch(error => {
+            this._error(error);
           });
         break;
     }
   }
 
+  _loading() {
+    this.refs.container.innerHTML = 'Uploading data...';
+  }
+
   _success() {
     this.refs.container.innerHTML =
-      'Data send to server, information will appear as soon as it is checked by the moderator.';
+      '<h1 style="color:green">SUCCESS</h1>Data send to server, information will appear as soon as it is checked by the moderator.';
+  }
+
+  _error(error) {
+    this.refs.container.innerHTML = '<h1 style="color:red">ERROR</h1>' + error.message;
   }
 
   _handleCansel(props, e) {
@@ -123,11 +138,6 @@ export class PopupNewMarker extends Component {
   }
 
   show(props) {
-    this.refs.latlng.innerHTML = `[
-      ${props.latlng.lat.toFixed(2)}, 
-      ${props.latlng.lng.toFixed(2)}
-    ]`;
-
     props.types.forEach(type => {
       const option = document.createElement('option');
       option.innerHTML = type;

@@ -1,4 +1,4 @@
-import L from '../../../node_modules/leaflet/dist/leaflet';
+import L from 'leaflet/dist/leaflet';
 import { PopupText } from '../popupText';
 
 export function Marker(doc, id) {

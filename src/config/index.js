@@ -1,10 +1,17 @@
 export default {
+  // Флаг для загрузки из Firestore
   realtime: localStorage.getItem('REALTIME'),
 
+  // Id текущей карты
   mapId: localStorage.getItem('MAP-ID') || 'SB',
 
+  // Настройки выбранных слоев
   currentLayers: JSON.parse(localStorage.getItem('LAYERS')) || [],
 
+  //
+  // Типы объектов на карте
+  //
+  // типы для маркеров
   types: [
     'boss',
     'spawn-player',
@@ -14,11 +21,21 @@ export default {
     'tower',
     'aviary'
     // "clue",
-    // "cash"
+    // "cash",
+    // "lift",
+    // "door"
   ],
 
+  // типы для особых маркеров
   extraTypes: ['label', 'new-object'],
 
+  // типы для зон
+  polygonTypes: ['zone'],
+
+  // типы для линий
+  polylineTypes: ['water-low'],
+
+  // у каждого типа может быть несколько видов маркеров
   typesMarkers: {
     boss: [
       {
@@ -102,6 +119,7 @@ export default {
     ]
   },
 
+  // Основные настройки карт
   optionsMaps: {
     SB: {
       id: 'SB',
@@ -143,10 +161,11 @@ export default {
     }
   },
 
+  //
   author: 'by <a target="_blank" href="https://steamcommunity.com/id/Findoss/">Findoss</a> | ',
-  contributors: `<span id="contributors">contributors</span>`,
-  contributorNames: ['Lapin', 'Святобор', 'varshevsky'],
+  contributors: `<a target="_blank" href="./public/contributors.txt">contributors</a>`,
 
+  // Публичный ключ к API firebase
   firebaseConfig: {
     apiKey: 'AIzaSyCK08_cm6iXguaw10EgT1GIzSfz1G2Nm-w',
     authDomain: 'hunt-map-1.firebaseapp.com',
@@ -155,6 +174,9 @@ export default {
     projectId: 'hunt-map-1'
   },
 
+  //
+  // Настройки плагинов
+  //
   optionsRuler: {
     position: 'topleft',
     textColor: 'white',
@@ -165,18 +187,52 @@ export default {
     }
   },
 
-  optionsPoint: {
-    position: 'topleft',
-    // optionsSelect: this.types
-    optionsSelect: []
-  },
-
-  optionsPoligon: {
-    position: 'topleft'
-  },
-
   optionsAuth: {
     position: 'bottomleft'
+  },
+
+  optionsDraw: {
+    polyline: {
+      allowIntersection: false,
+      shapeOptions: {
+        stroke: true,
+        color: 'aqua',
+        weight: 12,
+        opacity: 0.8,
+        fill: false,
+        clickable: false
+      }
+    },
+    polygon: {
+      allowIntersection: false,
+      shapeOptions: {
+        stroke: true,
+        color: 'aqua',
+        weight: 4,
+        opacity: 0.8,
+        fill: true,
+        fillColor: null,
+        fillOpacity: 0.2,
+        showArea: false,
+        clickable: false
+      }
+    },
+    circle: {
+      allowIntersection: false,
+      shapeOptions: {
+        stroke: true,
+        color: 'aqua',
+        weight: 4,
+        opacity: 0.8,
+        fill: true,
+        fillColor: null,
+        fillOpacity: 0.2,
+        showArea: false,
+        clickable: false
+      }
+    },
+    circlemarker: false,
+    rectangle: false
   },
 
   optionsPrint: {
