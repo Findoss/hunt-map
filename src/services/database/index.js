@@ -44,6 +44,8 @@ export class DB {
   addMarker(mapId, payload) {
     const { type, coordinates, marker, description } = payload;
 
+    const coords = Object.assign({}, coordinates);
+
     const data = {
       type: 'Feature',
       properties: {
@@ -53,7 +55,35 @@ export class DB {
       },
       geometry: {
         type: 'point',
-        coordinates: [coordinates.lat, coordinates.lng]
+        coordinates: coords
+      }
+    };
+
+    return this.base
+      .collection(`dev_${mapId}`)
+      .doc()
+      .set(data)
+      .then(() => {
+        console.log('Document successfully written!');
+      })
+      .catch(error => {
+        console.error('Error writing document: ', error);
+      });
+  }
+
+  addPoly(mapId, payload) {
+    const { type, coordinates, geometry } = payload;
+
+    const arrCoords = coordinates.map(obj => Object.assign({}, obj));
+
+    const data = {
+      type: 'Feature',
+      properties: {
+        title: type
+      },
+      geometry: {
+        type: geometry,
+        coordinates: arrCoords
       }
     };
 
@@ -90,7 +120,7 @@ export class DB {
           uploadTask.snapshot.ref
             .getDownloadURL()
             .then(downloadURL => {
-              console.log('success upload file');
+              console.log('Success upload file');
               resolve(downloadURL);
             })
             .catch(error => reject(error));

@@ -3,7 +3,7 @@ import 'leaflet-responsive-popup/leaflet.responsive.popup.css';
 import 'leaflet-draw/dist/leaflet.draw.css';
 
 import './index.css';
-import '../markers/index.css';
+import '../marker/index.css';
 import '../print/index.css';
 import '../fullscreen/index.css';
 
@@ -19,10 +19,13 @@ import 'leaflet-responsive-popup/leaflet.responsive.popup.js';
 import { minPow } from '../../utils';
 
 import { Component } from '../index';
-import { Marker } from '../markers';
+import { Marker } from '../marker';
+import { Polygon } from '../polygon';
+import { Polyline } from '../polyline';
 import { legendItem } from '../legendItem';
 
-import { PopupNewMarker } from '../PopupNewMarker';
+import { PopupNewMarker } from '../popupNewMarker';
+import { PopupNewPoly } from '../popupNewPoly';
 
 const template = '<div ref="mapContainer" class="map-container"></div>';
 
@@ -41,16 +44,20 @@ export class Map extends Component {
 
     const {
       mapId,
-      optionsMaps,
+      realtime,
+      currentLayers,
+      //
       types,
+      extraTypes,
+      polygonTypes,
+      polylineTypes,
       typesMarkers,
+      //
       author,
       contributors,
-      realtime,
-      extraTypes,
-      currentLayers,
-      contributorNames,
-      optionDraw,
+      //
+      optionsMaps,
+      optionsDraw,
       optionsAuth,
       optionsRuler,
       optionsPrint
@@ -59,8 +66,8 @@ export class Map extends Component {
     this.mapId = mapId;
     this.api = props.api;
     this.types = types;
-    this.extraTypes = extraTypes;
-    this.allTypes = [...this.extraTypes, ...this.types];
+
+    this.allTypes = [...polylineTypes, ...polygonTypes, ...extraTypes, ...this.types];
 
     this.realtime = realtime;
     this.currentLayers = currentLayers;
@@ -134,11 +141,7 @@ export class Map extends Component {
             className: 'marker-base marker-new-object'
           })
         },
-        polyline: false,
-        circlemarker: false,
-        circle: false,
-        rectangle: false,
-        polygon: false
+        ...optionsDraw
       }
     });
 
@@ -181,34 +184,43 @@ export class Map extends Component {
 
     this.map.on('draw:created', e => {
       const layer = e.layer;
-
       switch (e.layerType) {
         case 'marker':
-          layer.bindPopup(this.createPopupNewMarker(layer._latlng, types, typesMarkers));
+          layer.bindPopup(this.createPopupNewMarker(layer.getLatLng(), types, typesMarkers));
           break;
-
-        case 'poligon':
+        case 'polygon':
+          layer.bindPopup(this.createPopupNewPoly('polygon', layer._latlngs[0], polygonTypes));
           break;
-
-        case 'poliline':
-          layer.bindPopup(this.createPopupNewMarker());
+        case 'polyline':
+          layer.bindPopup(this.createPopupNewPoly('polyline', layer._latlngs, polylineTypes));
           break;
-
         default:
           break;
       }
 
-      this.map.addLayer(layer);
+      this.groups['new-object'].addLayer(layer);
       layer.openPopup();
     });
   }
 
-  addMarkers(data) {
+  addObjects(data) {
     let countMarkers = 0;
     Object.keys(data).forEach(id => {
       countMarkers++;
       const doc = data[id];
-      Marker.call(this, doc, id);
+
+      switch (doc.geometry.type.toLowerCase()) {
+        case 'polygon':
+          Polygon.call(this, doc, id);
+          break;
+        case 'polyline':
+          Polyline.call(this, doc, id);
+          break;
+
+        default:
+          Marker.call(this, doc, id);
+          break;
+      }
     });
 
     if (!this.currentLayers || !this.currentLayers.length) this.currentLayers = this.allTypes;
@@ -217,12 +229,22 @@ export class Map extends Component {
     });
   }
 
-  createPopupNewMarker(latlng, types, typesMarkers) {
+  createPopupNewMarker(coord, types, typesMarkers) {
     return L.responsivePopup().setContent(
       new PopupNewMarker(undefined, { api: this.api, mapId: this.mapId }).show({
-        latlng,
+        coord,
         types,
         typesMarkers
+      })
+    );
+  }
+
+  createPopupNewPoly(geometry, coords, polygonTypes) {
+    return L.responsivePopup().setContent(
+      new PopupNewPoly(undefined, { api: this.api, mapId: this.mapId }).show({
+        geometry,
+        coords,
+        types: polygonTypes
       })
     );
   }
