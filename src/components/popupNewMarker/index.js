@@ -74,8 +74,9 @@ export class PopupNewMarker extends Component {
   }
 
   _handleFileUploadChange(props, e) {
+    const ext = e.target.value.slice(e.target.value.lastIndexOf('.'));
     this.selectedFile = e.target.files[0];
-    this.refFile = this.api.createFileURL();
+    this.refFile = this.api.createFileURL(ext);
   }
 
   _handleSubmit(props, e) {
@@ -120,6 +121,10 @@ export class PopupNewMarker extends Component {
     }
   }
 
+  _handleCansel(props, e) {
+    props.root.remove();
+  }
+
   _loading() {
     this.refs.container.innerHTML = 'Uploading data...';
   }
@@ -131,10 +136,6 @@ export class PopupNewMarker extends Component {
 
   _error(error) {
     this.refs.container.innerHTML = '<h1 style="color:red">ERROR</h1>' + error.message;
-  }
-
-  _handleCansel(props, e) {
-    console.log('_handleCansel');
   }
 
   show(props) {

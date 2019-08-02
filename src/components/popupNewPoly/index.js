@@ -29,7 +29,7 @@ export class PopupNewPoly extends Component {
   }
 
   _handleCansel(props, e) {
-    console.log('_handleCansel');
+    props.root.remove();
   }
 
   _loading() {

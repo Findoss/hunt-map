@@ -3,6 +3,7 @@ import 'leaflet-responsive-popup/leaflet.responsive.popup.css';
 import 'leaflet-draw/dist/leaflet.draw.css';
 
 import './index.css';
+import '../draw/index.css';
 import '../marker/index.css';
 import '../print/index.css';
 import '../fullscreen/index.css';
@@ -42,6 +43,9 @@ export class Map extends Component {
   constructor(mapPlaceholderId, props) {
     super(mapPlaceholderId, props, template);
 
+    //
+    // Пропсы
+    //
     const {
       mapId,
       realtime,
@@ -81,6 +85,9 @@ export class Map extends Component {
     const factorX = ((width / minPow(width)) * 256) / 1000;
     const factorY = ((height / minPow(height)) * 256) / 1000;
 
+    //
+    // "Плоское" представление мира
+    //
     L.CRS.Pr = L.extend({}, L.CRS.Simple, {
       infinite: true,
       transformation: new L.Transformation(factorX, 0, -factorY, 0),
@@ -98,6 +105,7 @@ export class Map extends Component {
       }
     });
 
+    // Инициализация карты
     this.map = L.map(this.refs.mapContainer, {
       crs: L.CRS.Pr,
       maxBoundsViscosity: 0.6,
@@ -110,6 +118,7 @@ export class Map extends Component {
 
     const attribution = author + contributors;
 
+    // Добавление слоев
     L.tileLayer(optionsMaps[mapId].image.path, {
       minZoom: optionMap.levels.min,
       maxZoom: optionMap.levels.max,
@@ -129,6 +138,7 @@ export class Map extends Component {
       this.legendItems[legendItem(type)] = this.groups[type];
     });
 
+    // Добавление контролов
     const drawControl = new L.Control.Draw({
       edit: {
         featureGroup: this.editableLayers,
@@ -136,12 +146,12 @@ export class Map extends Component {
         edit: false
       },
       draw: {
+        ...optionsDraw,
         marker: {
           icon: L.divIcon({
             className: 'marker-base marker-new-object'
           })
-        },
-        ...optionsDraw
+        }
       }
     });
 
@@ -151,15 +161,15 @@ export class Map extends Component {
     this.controlLayers = L.control.layers(null, this.legendItems).addTo(this.map);
     this.controlPrint = L.easyPrint(optionsPrint).addTo(this.map);
     this.controlAuth = L.control.auth(optionsAuth).addTo(this.map);
-    //
+
+    // рендр
     this.map.addLayer(this.editableLayers);
     this.map.setMaxBounds(/*boundsMove*/ boundsLoadTiles);
     this.map.setView(optionMap.center, optionMap.levels.default);
 
-    this.map.on('click', e => {
-      if (this.realtime) console.log(e.latlng);
-    });
-
+    //
+    // События
+    //
     this.map.on('overlayadd', e => {
       let currentLayers = JSON.parse(localStorage.getItem('LAYERS')) || [];
       if (currentLayers.indexOf(e.layer.title) === -1) {
@@ -186,13 +196,17 @@ export class Map extends Component {
       const layer = e.layer;
       switch (e.layerType) {
         case 'marker':
-          layer.bindPopup(this.createPopupNewMarker(layer.getLatLng(), types, typesMarkers));
+          layer.bindPopup(this.createPopupNewMarker(layer, layer.getLatLng(), types, typesMarkers));
           break;
         case 'polygon':
-          layer.bindPopup(this.createPopupNewPoly('polygon', layer._latlngs[0], polygonTypes));
+          layer.bindPopup(
+            this.createPopupNewPoly(layer, 'polygon', layer._latlngs[0], polygonTypes)
+          );
           break;
         case 'polyline':
-          layer.bindPopup(this.createPopupNewPoly('polyline', layer._latlngs, polylineTypes));
+          layer.bindPopup(
+            this.createPopupNewPoly(layer, 'polyline', layer._latlngs, polylineTypes)
+          );
           break;
         default:
           break;
@@ -203,12 +217,12 @@ export class Map extends Component {
     });
   }
 
+  //
+  // Создание объектов на карте
+  //
   addObjects(data) {
-    let countMarkers = 0;
     Object.keys(data).forEach(id => {
-      countMarkers++;
       const doc = data[id];
-
       switch (doc.geometry.type.toLowerCase()) {
         case 'polygon':
           Polygon.call(this, doc, id);
@@ -229,9 +243,10 @@ export class Map extends Component {
     });
   }
 
-  createPopupNewMarker(coord, types, typesMarkers) {
+  createPopupNewMarker(layer, coord, types, typesMarkers) {
     return L.responsivePopup().setContent(
       new PopupNewMarker(undefined, { api: this.api, mapId: this.mapId }).show({
+        root: layer,
         coord,
         types,
         typesMarkers
@@ -239,9 +254,10 @@ export class Map extends Component {
     );
   }
 
-  createPopupNewPoly(geometry, coords, polygonTypes) {
+  createPopupNewPoly(layer, geometry, coords, polygonTypes) {
     return L.responsivePopup().setContent(
       new PopupNewPoly(undefined, { api: this.api, mapId: this.mapId }).show({
+        root: layer,
         geometry,
         coords,
         types: polygonTypes
