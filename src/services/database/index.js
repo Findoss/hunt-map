@@ -1,13 +1,18 @@
 import firebase from 'firebase/app';
+import firebaseui from 'firebaseui';
+import auth from './auth';
 import 'firebase/firestore';
 import 'firebase/storage';
+import 'firebase/auth';
 import { newId } from '../../utils';
 
 export class DB {
   constructor(config) {
     const { firebaseConfig } = config;
-    this.base = firebase.initializeApp(firebaseConfig).firestore();
+    this.base = firebase;
+    this.firestore = firebase.initializeApp(firebaseConfig).firestore();
     this.storage = firebase.storage();
+    this.auth = auth(firebase, firebaseui);
 
     firebase
       .firestore()
@@ -25,7 +30,7 @@ export class DB {
   //
   async getItems(mapId) {
     const data = {};
-    await this.base
+    await this.firestore
       .collection(mapId)
       .get()
       .then(snapshot => {
@@ -38,7 +43,7 @@ export class DB {
   }
 
   getForСheckItems(mapId) {
-    return this.base.collection(`dev_${mapId}`).get();
+    return this.firestore.collection(`dev_${mapId}`).get();
   }
 
   addMarker(mapId, payload) {
@@ -59,7 +64,7 @@ export class DB {
       }
     };
 
-    return this.base
+    return this.firestore
       .collection(`dev_${mapId}`)
       .doc()
       .set(data)
@@ -87,7 +92,7 @@ export class DB {
       }
     };
 
-    return this.base
+    return this.firestore
       .collection(`dev_${mapId}`)
       .doc()
       .set(data)
@@ -131,10 +136,10 @@ export class DB {
 
   // approvePoint(mapId, docId, data) {
   //   return Promise.all([
-  //     this.base.collection(mapId)
+  //     this.firestore.collection(mapId)
   //       .doc()
   //       .set(data),
-  //     this.base.collection(`dev_${mapId}`)
+  //     this.firestore.collection(`dev_${mapId}`)
   //       .doc(docId)
   //       .delete()
   //   ])
@@ -147,7 +152,7 @@ export class DB {
   // }
 
   // rejectPoint(mapId, docId) {
-  //   return this.base.collection(`dev_${mapId}`)
+  //   return this.firestore.collection(`dev_${mapId}`)
   //     .doc(docId)
   //     .delete()
   //     .then(() => {

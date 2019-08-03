@@ -21,6 +21,7 @@ class ViewController {
 
     document.getElementById('app').outerHTML = template;
 
+    // this.initializeAuth();
     this.initializeMap();
     this.initializeComponents();
   }
@@ -69,6 +70,19 @@ class ViewController {
     config.mapId = id;
     this.mapComponent.delete();
     this.initializeMap();
+  }
+
+  initializeAuth() {
+    console.log(this.api.base);
+
+    this.api.base.auth().onAuthStateChanged(isLogin => {
+      if (isLogin) {
+        console.log('Hello, user', isLogin.uid);
+        // if isLogin REALTIME
+      } else {
+        console.log('no login');
+      }
+    });
   }
 }
 

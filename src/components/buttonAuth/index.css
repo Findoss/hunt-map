@@ -10,3 +10,11 @@
   border: 1px solid var(--color-2);
   cursor: pointer;
 }
+
+#auth-placeholder {
+  position: absolute;
+  padding: 8px;
+  top: 5px;
+  left: 50px;
+  z-index: 9999;
+}

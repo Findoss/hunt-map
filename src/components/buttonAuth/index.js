@@ -1,16 +1,28 @@
+import '../../../node_modules/firebaseui/dist/firebaseui.css';
 import './index.css';
-import './index.css';
+import firebase from 'firebase/app';
 
 L.Control.Auth = L.Control.extend({
   options: {
     position: 'bottomleft'
   },
-  onAdd: function(map) {
-    var container = L.DomUtil.create('div', 'leaflet-control leaflet-control-auth');
+  onAdd: function() {
+    const container = L.DomUtil.create('div', 'leaflet-control leaflet-control-auth');
 
-    // container.onclick = function() {
-    //   console.log('button auth clicked');
-    // };
+    container.onclick = e => {
+      // if isLogin
+
+      // firebase
+      //   .auth()
+      //   .signOut()
+      //   .then(() => {
+      //     console.log('signOut');
+      //   });
+
+      var x = document.getElementById('auth-placeholder');
+      x.style.display === 'none' ? (x.style.display = 'block') : (x.style.display = 'none');
+    };
+
     return container;
   }
 });
