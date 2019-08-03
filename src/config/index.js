@@ -132,7 +132,7 @@ export default {
       levels: {
         org: 4,
         max: 7,
-        min: 0,
+        min: 1,
         default: localStorage.getItem('ZOOM') || 1
       },
       width: 1000,
@@ -151,7 +151,7 @@ export default {
       levels: {
         org: 4,
         max: 7,
-        min: 0,
+        min: 1,
         default: localStorage.getItem('ZOOM') || 1
       },
       width: 1000,
