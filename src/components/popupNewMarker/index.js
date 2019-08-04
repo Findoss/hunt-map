@@ -41,7 +41,7 @@ export class PopupNewMarker extends Component {
         break;
 
       case 'resupply-point':
-        this.refs.description.value = '3 Medkit \n3 Ammunition box \n1-2 Lantern';
+        this.refs.description.value = '3 Medkit <br/>3 Ammunition box <br/>1-2 Lantern';
         break;
 
       case 'aviary':
@@ -82,7 +82,7 @@ export class PopupNewMarker extends Component {
   _handleSubmit(props, e) {
     switch (this.refs.types.value) {
       case 'easter-egg':
-        this._loading();
+        this._loading(props);
         this.api.uploadFile(this.refFile, this.selectedFile).then(url => {
           this.refs.description.value += templateImage({ url });
           this.api
@@ -93,17 +93,16 @@ export class PopupNewMarker extends Component {
               description: this.refs.description.value
             })
             .then(() => {
-              this._success();
+              this._success(props);
             })
             .catch(error => {
               this._error(error);
             });
         });
-
         break;
 
       default:
-        this._loading();
+        this._loading(props);
         this.api
           .addMarker(this.mapId, {
             type: this.refs.types.value,
@@ -112,7 +111,7 @@ export class PopupNewMarker extends Component {
             description: this.refs.description.value
           })
           .then(() => {
-            this._success();
+            this._success(props);
           })
           .catch(error => {
             this._error(error);
@@ -125,17 +124,18 @@ export class PopupNewMarker extends Component {
     props.root.remove();
   }
 
-  _loading() {
-    this.refs.container.innerHTML = 'Uploading data...';
+  _loading(props) {
+    props.root.setPopupContent('Uploading data...');
   }
 
-  _success() {
-    this.refs.container.innerHTML =
-      '<h1 style="color:green">SUCCESS</h1>Data send to server, information will appear as soon as it is checked by the moderator.';
+  _success(props) {
+    props.root.setPopupContent(
+      '<h1 style="color:green">SUCCESS</h1>Data send to server, information will appear as soon as it is checked by the moderator.'
+    );
   }
 
   _error(error) {
-    this.refs.container.innerHTML = '<h1 style="color:red">ERROR</h1>' + error.message;
+    props.root.setPopupContent('<h1 style="color:red">ERROR</h1>' + error.message);
   }
 
   show(props) {

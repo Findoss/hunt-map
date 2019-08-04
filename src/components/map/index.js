@@ -27,6 +27,7 @@ import { legendItem } from '../legendItem';
 
 import { PopupNewMarker } from '../popupNewMarker';
 import { PopupNewPoly } from '../popupNewPoly';
+import { PopupEdit } from '../popupEdit';
 
 const template = '<div ref="mapContainer" class="map-container"></div>';
 
@@ -220,20 +221,32 @@ export class Map extends Component {
   //
   // Создание объектов на карте
   //
-  addObjects(data) {
+  addObjects(data, isNew = false, isLogin = false) {
     Object.keys(data).forEach(id => {
       const doc = data[id];
+      let object = {};
+
       switch (doc.geometry.type.toLowerCase()) {
         case 'polygon':
-          Polygon.call(this, doc, id);
+          object = Polygon.call(this, doc, id);
           break;
         case 'polyline':
-          Polyline.call(this, doc, id);
+          object = Polyline.call(this, doc, id);
           break;
-
         default:
-          Marker.call(this, doc, id);
+          object = Marker.call(this, doc, id);
           break;
+      }
+
+      if (isLogin) {
+        object.unbindPopup();
+        object.bindPopup(this.createPopupEdit(object, doc, id, isNew));
+      }
+
+      if (isNew) {
+        object.addTo(this.groups['new-object']);
+      } else {
+        object.addTo(this.groups[doc.properties.title]);
       }
     });
 
@@ -241,6 +254,17 @@ export class Map extends Component {
     this.currentLayers.forEach(layer => {
       this.groups[layer].addTo(this.map);
     });
+  }
+
+  createPopupEdit(layer, doc, id, isNew) {
+    return L.responsivePopup().setContent(
+      new PopupEdit(undefined, { api: this.api, mapId: this.mapId }).show({
+        root: layer,
+        id,
+        doc,
+        isNew
+      })
+    );
   }
 
   createPopupNewMarker(layer, coord, types, typesMarkers) {
