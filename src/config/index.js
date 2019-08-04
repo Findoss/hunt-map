@@ -70,51 +70,51 @@ export default {
     tower: [
       {
         title: 'vector 0',
-        label: ''
+        label: 'tower'
       },
       {
         title: 'vector 1',
-        label: '1'
+        label: 'tower1'
       },
       {
         title: 'vector 2',
-        label: '2'
+        label: 'tower2'
       },
       {
         title: 'vector 3',
-        label: '3'
+        label: 'tower3'
       },
       {
         title: 'vector 4',
-        label: '4'
+        label: 'tower4'
       },
       {
         title: 'vector 5',
-        label: '5'
+        label: 'tower5'
       },
       {
         title: 'vector 6',
-        label: '6'
+        label: 'tower6'
       },
       {
         title: 'vector 7',
-        label: '7'
+        label: 'tower7'
       },
       {
         title: 'vector 8',
-        label: '8'
+        label: 'tower8'
       },
       {
         title: 'vector 9',
-        label: '9'
+        label: 'tower9'
       },
       {
         title: 'vector 10',
-        label: '10'
+        label: 'tower10'
       },
       {
         title: 'vector 11',
-        label: '11'
+        label: 'tower11'
       }
     ]
   },
