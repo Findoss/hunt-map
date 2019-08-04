@@ -77,7 +77,7 @@ class ViewController {
         this.loadMapData(true);
         this.loadMapDevData(true);
       } else {
-        this.loadMapDevData();
+        this.loadMapData();
       }
     });
   }

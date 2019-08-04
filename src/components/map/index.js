@@ -29,7 +29,7 @@ import { PopupNewMarker } from '../popupNewMarker';
 import { PopupNewPoly } from '../popupNewPoly';
 import { PopupEdit } from '../popupEdit';
 
-const template = '<div ref="mapContainer" class="map-container"></div>';
+import template from './index.html';
 
 /**
  * Leaflet Map Component
