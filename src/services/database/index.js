@@ -9,29 +9,26 @@ import { newId } from '../../utils';
 export class DB {
   constructor(config) {
     const { firebaseConfig } = config;
-    this.base = firebase;
+    this.firebase = firebase;
     this.firestore = firebase.initializeApp(firebaseConfig).firestore();
     this.storage = firebase.storage();
     this.auth = auth(firebase, firebaseui);
 
-    firebase
-      .firestore()
-      .enablePersistence()
-      .catch(function(err) {
-        if (err.code == 'failed-precondition') {
-          console.error('Multiple tabs open.');
-        } else if (err.code == 'unimplemented') {
-          console.error('The current browser does not support to enable persistence');
-        }
-      });
+    this.firestore.enablePersistence().catch(function(err) {
+      if (err.code == 'failed-precondition') {
+        console.error('Multiple tabs open.');
+      } else if (err.code == 'unimplemented') {
+        console.error('The current browser does not support to enable persistence');
+      }
+    });
   }
 
   // DB
   //
-  async getItems(mapId) {
+  async getItems(mapId, dev = '') {
     const data = {};
     await this.firestore
-      .collection(mapId)
+      .collection(`${dev}${mapId}`)
       .get()
       .then(snapshot => {
         snapshot.forEach(doc => (data[doc.id] = doc.data()));
@@ -40,10 +37,6 @@ export class DB {
         console.error('Error API', error);
       });
     return data;
-  }
-
-  getForСheckItems(mapId) {
-    return this.firestore.collection(`dev_${mapId}`).get();
   }
 
   addMarker(mapId, payload) {
@@ -104,6 +97,53 @@ export class DB {
       });
   }
 
+  approveObject(mapId, docId, data) {
+    console.log(data);
+
+    return Promise.all([
+      this.firestore
+        .collection(mapId)
+        .doc()
+        .set(data),
+      this.firestore
+        .collection(`dev_${mapId}`)
+        .doc(docId)
+        .delete()
+    ])
+      .then(() => {
+        console.log('Document successfully move!');
+      })
+      .catch(error => {
+        console.error('Error moving document: ', error);
+      });
+  }
+
+  updateObject(mapId, docId, data) {
+    return this.firestore
+      .collection(mapId)
+      .doc(docId)
+      .set(data)
+      .then(() => {
+        console.log('Document successfully updated');
+      })
+      .catch(error => {
+        console.error('Error updating document: ', error);
+      });
+  }
+
+  deleteObject(mapId, docId, dev = '') {
+    return this.firestore
+      .collection(`${dev}${mapId}`)
+      .doc(docId)
+      .delete()
+      .then(() => {
+        console.log('Document successfully deleted!');
+      })
+      .catch(error => {
+        console.error('Error removing document: ', error);
+      });
+  }
+
   // FS
   //
 
@@ -133,33 +173,4 @@ export class DB {
       );
     });
   }
-
-  // approvePoint(mapId, docId, data) {
-  //   return Promise.all([
-  //     this.firestore.collection(mapId)
-  //       .doc()
-  //       .set(data),
-  //     this.firestore.collection(`dev_${mapId}`)
-  //       .doc(docId)
-  //       .delete()
-  //   ])
-  //     .then(() => {
-  //       console.log('Document successfully move!');
-  //     })
-  //     .catch(error => {
-  //       console.error('Error moving document: ', error);
-  //     });
-  // }
-
-  // rejectPoint(mapId, docId) {
-  //   return this.firestore.collection(`dev_${mapId}`)
-  //     .doc(docId)
-  //     .delete()
-  //     .then(() => {
-  //       console.log('Document successfully deleted!');
-  //     })
-  //     .catch(error => {
-  //       console.error('Error removing document: ', error);
-  //     });
-  // }
 }
