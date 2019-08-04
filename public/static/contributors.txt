@@ -1,3 +1,0 @@
-Lapin      - map layers
-varshevsky - easter-egg information
-Святобор   - add markers

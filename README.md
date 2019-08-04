@@ -1,6 +1,6 @@
 # PRODUCTION BRANCH
 
-![LOGO](public/images/media3.png)
+![LOGO](public/images/media/logo-dark-text-890x390.png)
 
 ## Authors
 
