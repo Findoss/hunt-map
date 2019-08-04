@@ -7,3 +7,17 @@
   color: white;
   content: '.png';
 }
+
+.easyPrintSizeMode .A4Portrait::after {
+  color: white;
+  content: 'A4-p';
+}
+
+.easyPrintSizeMode .A4Landscape::after {
+  color: white;
+  content: 'A4-l';
+}
+
+.easyPrintHolder .A4Landscape {
+  transform: rotate(0deg) !important;
+}

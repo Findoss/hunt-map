@@ -6,7 +6,7 @@ import template from './main.html';
 import { Map } from './components/map';
 import { SwitchMap } from './components/switchMap';
 
-// import { DB } from './services/database';
+import { DB } from './services/database';
 import { Static } from './services/static';
 import { Cache } from './services/cache';
 
@@ -17,7 +17,7 @@ class ViewController {
   constructor() {
     this.static = new Static();
     this.cache = new Cache();
-    // this.api = new DB(config);
+    this.api = new DB(config);
 
     document.getElementById('app').outerHTML = template;
 
@@ -25,19 +25,20 @@ class ViewController {
     this.initializeComponents();
   }
 
-  initializeMap() {
+  async initializeMap() {
     this.mapComponent = new Map('map-placeholder', {
       data: config,
+      api: this.api,
       events: {
         testEvent: event => {
           console.log('testEvent');
         }
       }
     });
-    this.loadMapData();
+    this.initializeAuth();
   }
 
-  initializeComponents() {
+  async initializeComponents() {
     this.switchMapComponent = new SwitchMap('switch-map-placeholder', {
       data: config.optionsMaps,
       events: {
@@ -48,26 +49,37 @@ class ViewController {
     });
   }
 
-  async loadMapData() {
-    const staticData = await this.static.getItems(config.mapId);
+  async loadMapData(isLogin) {
     let apiData = {};
-    if (config.realtime) {
-      const tmpData = await this.api.getItems(config.mapId);
-      const tmpNewData = await this.api.getForСheckItems(config.mapId);
-      apiData = { ...tmpData, ...tmpNewData };
-    } else {
-      apiData = await this.cache.getItems(config.mapId);
-    }
-
+    apiData = await this.cache.getItems(config.mapId);
+    const staticData = await this.static.getItems(config.mapId);
     const data = { ...staticData, ...apiData };
-    this.mapComponent.addMarkers(data);
+    this.mapComponent.addObjects(data, false, isLogin);
   }
 
-  switchMap(id) {
+  async loadMapDevData(isLogin) {
+    this.api.getItems(config.mapId, 'dev_').then(newData => {
+      this.mapComponent.addObjects(newData, true, isLogin);
+    });
+  }
+
+  async switchMap(id) {
     localStorage.setItem('MAP-ID', id);
     config.mapId = id;
     this.mapComponent.delete();
     this.initializeMap();
+  }
+
+  async initializeAuth() {
+    this.api.firebase.auth().onAuthStateChanged(isLogin => {
+      if (isLogin) {
+        console.log('Hello, user', isLogin.uid);
+        this.loadMapData(true);
+        this.loadMapDevData(true);
+      } else {
+        this.loadMapData();
+      }
+    });
   }
 }
 
