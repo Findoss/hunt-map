@@ -6,7 +6,7 @@
 
 - Findoss - Initial work
 - Святобор - add markers
-- Lapin - maps layer
+- Lapin - map layers
 
 ## License
 

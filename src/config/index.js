@@ -1,10 +1,17 @@
 export default {
+  // Флаг для загрузки из Firestore
   realtime: localStorage.getItem('REALTIME'),
 
+  // Id текущей карты
   mapId: localStorage.getItem('MAP-ID') || 'SB',
 
+  // Настройки выбранных слоев
   currentLayers: JSON.parse(localStorage.getItem('LAYERS')) || [],
 
+  //
+  // Типы объектов на карте
+  //
+  // типы для маркеров
   types: [
     'boss',
     'spawn-player',
@@ -14,11 +21,21 @@ export default {
     'tower',
     'aviary'
     // "clue",
-    // "cash"
+    // "cash",
+    // "lift",
+    // "door"
   ],
 
+  // типы для особых маркеров
   extraTypes: ['label', 'new-object'],
 
+  // типы для зон
+  polygonTypes: ['zone'],
+
+  // типы для линий
+  polylineTypes: ['water-low'],
+
+  // у каждого типа может быть несколько видов маркеров
   typesMarkers: {
     boss: [
       {
@@ -53,55 +70,56 @@ export default {
     tower: [
       {
         title: 'vector 0',
-        label: ''
+        label: 'tower'
       },
       {
         title: 'vector 1',
-        label: '1'
+        label: 'tower1'
       },
       {
         title: 'vector 2',
-        label: '2'
+        label: 'tower2'
       },
       {
         title: 'vector 3',
-        label: '3'
+        label: 'tower3'
       },
       {
         title: 'vector 4',
-        label: '4'
+        label: 'tower4'
       },
       {
         title: 'vector 5',
-        label: '5'
+        label: 'tower5'
       },
       {
         title: 'vector 6',
-        label: '6'
+        label: 'tower6'
       },
       {
         title: 'vector 7',
-        label: '7'
+        label: 'tower7'
       },
       {
         title: 'vector 8',
-        label: '8'
+        label: 'tower8'
       },
       {
         title: 'vector 9',
-        label: '9'
+        label: 'tower9'
       },
       {
         title: 'vector 10',
-        label: '10'
+        label: 'tower10'
       },
       {
         title: 'vector 11',
-        label: '11'
+        label: 'tower11'
       }
     ]
   },
 
+  // Основные настройки карт
   optionsMaps: {
     SB: {
       id: 'SB',
@@ -114,7 +132,7 @@ export default {
       levels: {
         org: 4,
         max: 7,
-        min: 0,
+        min: 1,
         default: localStorage.getItem('ZOOM') || 1
       },
       width: 1000,
@@ -133,7 +151,7 @@ export default {
       levels: {
         org: 4,
         max: 7,
-        min: 0,
+        min: 1,
         default: localStorage.getItem('ZOOM') || 1
       },
       width: 1000,
@@ -143,17 +161,22 @@ export default {
     }
   },
 
+  //
   author: 'by <a target="_blank" href="https://steamcommunity.com/id/Findoss/">Findoss</a> | ',
-  contributors: `<span id="contributors">contributors</span>`,
-  contributorNames: ['Lapin', 'Святобор', 'varshevsky'],
+  contributors: `<a target="_blank" href="./public/contributors.txt">contributors</a>`,
 
+  // Публичный ключ к API firebase
   firebaseConfig: {
     apiKey: 'AIzaSyCK08_cm6iXguaw10EgT1GIzSfz1G2Nm-w',
     authDomain: 'hunt-map-1.firebaseapp.com',
     databaseURL: 'https://hunt-map-1.firebaseio.com',
+    storageBucket: 'gs://hunt-map-1.appspot.com/',
     projectId: 'hunt-map-1'
   },
 
+  //
+  // Настройки плагинов
+  //
   optionsRuler: {
     position: 'topleft',
     textColor: 'white',
@@ -164,23 +187,59 @@ export default {
     }
   },
 
-  optionsPoint: {
-    position: 'topleft',
-    // optionsSelect: this.types
-    optionsSelect: []
-  },
-
-  optionsPoligon: {
-    position: 'topleft'
-  },
-
   optionsAuth: {
     position: 'bottomleft'
+  },
+
+  optionsDraw: {
+    polyline: {
+      allowIntersection: false,
+      shapeOptions: {
+        stroke: true,
+        color: 'aqua',
+        weight: 12,
+        opacity: 0.8,
+        fill: false,
+        clickable: false
+      }
+    },
+    polygon: {
+      allowIntersection: false,
+      shapeOptions: {
+        stroke: true,
+        color: 'aqua',
+        weight: 4,
+        opacity: 0.8,
+        fill: true,
+        fillColor: null,
+        fillOpacity: 0.2,
+        showArea: false,
+        clickable: false
+      }
+    },
+    circle: {
+      allowIntersection: false,
+      shapeOptions: {
+        stroke: true,
+        color: 'aqua',
+        weight: 4,
+        opacity: 0.8,
+        fill: true,
+        fillColor: null,
+        fillOpacity: 0.2,
+        showArea: false,
+        clickable: false
+      }
+    },
+    circlemarker: false,
+    rectangle: false
   },
 
   optionsPrint: {
     position: 'topleft',
     exportOnly: true,
+    title: 'Save map',
+    sizeModes: ['Current', 'A4Portrait', 'A4Landscape'],
     filename: 'hunt-map.online',
     defaultSizeTitles: {
       Current: 'Current Size',
