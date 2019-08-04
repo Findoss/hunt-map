@@ -1,6 +1,10 @@
 echo 'START UPDATE';
 
+npm version patch;
+
 git checkout gh-pages;
+
+git merge master;
 
 npm run cache;
 

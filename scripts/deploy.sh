@@ -1,6 +1,6 @@
 echo 'START DEPLOY';
 
-npm version patch;
+npm version minor;
 
 git checkout gh-pages;
 
