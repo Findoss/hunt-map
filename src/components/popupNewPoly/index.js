@@ -32,25 +32,27 @@ export class PopupNewPoly extends Component {
     props.root.remove();
   }
 
-  _loading() {
-    this.refs.container.innerHTML = 'Uploading data...';
+  _loading(props) {
+    props.root.setPopupContent(t('upload'));
   }
 
-  _success() {
-    this.refs.container.innerHTML =
-      '<h1 style="color:green">SUCCESS</h1>Data send to server, information will appear as soon as it is checked by the moderator.';
+  _success(props) {
+    props.root.setPopupContent(`<h1 style="color:green">${t('success')}</h1>${t('msgModer')}`);
   }
 
   _error(error) {
-    this.refs.container.innerHTML = '<h1 style="color:red">ERROR</h1>' + error.message;
+    props.root.setPopupContent(`<h1 style="color:red">${t('error')}</h1>` + error.message);
   }
 
   show(props) {
     this.refs.types.innerText = props.geometry;
+    this.refs.typesLable.innerText = t('type');
+    this.refs.cansel.innerText = t('cancel');
+    this.refs.send.innerText = t('send');
 
     props.types.forEach(type => {
       const option = document.createElement('option');
-      option.innerHTML = type;
+      option.innerText = t('types', type);
       option.value = type;
       this.refs.types.appendChild(option);
     });

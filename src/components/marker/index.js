@@ -8,7 +8,7 @@ export function Marker(doc, id, isLogin) {
     if (type === 'label') {
       return new L.marker(doc.geometry.coordinates, {
         icon: L.divIcon({
-          className: 'marker-' + doc.properties.title,
+          className: 'marker-' + type,
           html: `<div class="marker-label_text">${doc.properties.name}</div>`
         })
       });
@@ -21,7 +21,7 @@ export function Marker(doc, id, isLogin) {
       })
         .on('click', () => console.log('Marker id = ', id))
         .bindPopup(L.responsivePopup().setContent(new PopupText().show(id, doc.properties)))
-        .bindTooltip(doc.properties.title.replace('-', ' '));
+        .bindTooltip(t('types', type));
     }
   }
 }

@@ -17,7 +17,7 @@ import 'leaflet.fullscreen';
 import 'leaflet-easyprint';
 import 'leaflet-responsive-popup/leaflet.responsive.popup.js';
 // components
-import { minPow } from '../../utils';
+import { minPow, merge } from '../../utils';
 
 import { Component } from '../index';
 import { Marker } from '../marker';
@@ -110,7 +110,8 @@ export class Map extends Component {
     this.map = L.map(this.refs.mapContainer, {
       crs: L.CRS.Pr,
       maxBoundsViscosity: 0.6,
-      zoomSnap: 0.1
+      zoomSnap: 0.1,
+      zoomControl: false
     });
 
     const sw = this.map.unproject([0, height], optionMap.levels.org);
@@ -140,6 +141,7 @@ export class Map extends Component {
     });
 
     // Добавление контролов
+
     const drawControl = new L.Control.Draw({
       edit: {
         featureGroup: this.editableLayers,
@@ -155,12 +157,14 @@ export class Map extends Component {
         }
       }
     });
+    L.drawLocal.draw = merge(L.drawLocal.draw, t('draw'));
 
-    this.controlFullscreen = L.control.fullscreen().addTo(this.map);
-    this.controlMeasure = L.control.measure(optionsRuler).addTo(this.map);
+    this.controlZoom = L.control.zoom(t('zoom')).addTo(this.map);
+    this.controlFullscreen = L.control.fullscreen(t('fullscreen')).addTo(this.map);
+    this.controlMeasure = L.control.measure(merge(optionsRuler, t('ruler'))).addTo(this.map);
     this.map.addControl(drawControl);
     this.controlLayers = L.control.layers(null, this.legendItems).addTo(this.map);
-    this.controlPrint = L.easyPrint(optionsPrint).addTo(this.map);
+    this.controlPrint = L.easyPrint(merge(optionsPrint, t('print'))).addTo(this.map);
     this.controlAuth = L.control.auth(optionsAuth).addTo(this.map);
 
     // рендр
