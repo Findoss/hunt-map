@@ -218,6 +218,10 @@ export class Map extends Component {
     });
   }
 
+  testEvent(msg) {
+    console.log(msg);
+  }
+
   //
   // Создание объектов на карте
   //
@@ -234,7 +238,7 @@ export class Map extends Component {
           object = Polyline.call(this, doc, id);
           break;
         default:
-          object = Marker.call(this, doc, id);
+          object = Marker.call(this, doc, id, isLogin);
           break;
       }
 
@@ -269,7 +273,11 @@ export class Map extends Component {
 
   createPopupNewMarker(layer, coord, types, typesMarkers) {
     return L.responsivePopup().setContent(
-      new PopupNewMarker(undefined, { api: this.api, mapId: this.mapId }).show({
+      new PopupNewMarker(undefined, {
+        api: this.api,
+        mapId: this.mapId,
+        events: { testEvent: this.testEvent }
+      }).show({
         root: layer,
         coord,
         types,
