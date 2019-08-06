@@ -9,6 +9,8 @@ export class PopupNewMarker extends Component {
     this.refFile = undefined;
     this.api = props.api;
     this.mapId = props.mapId;
+
+    // props.events.testEvent('123');
   }
 
   _createMarkerSelect(props, type) {

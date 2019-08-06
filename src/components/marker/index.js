@@ -1,7 +1,7 @@
 import L from 'leaflet/dist/leaflet';
 import { PopupText } from '../popupText';
 
-export function Marker(doc, id) {
+export function Marker(doc, id, isLogin) {
   if (this.allTypes.findIndex(type => doc.properties.title === type) > -1) {
     const type = doc.properties.title;
 
@@ -17,7 +17,7 @@ export function Marker(doc, id) {
         icon: L.divIcon({
           className: 'marker-base marker-' + doc.properties.marker
         }),
-        draggable: false
+        draggable: isLogin
       })
         .on('click', () => console.log('Marker id = ', id))
         .bindPopup(L.responsivePopup().setContent(new PopupText().show(id, doc.properties)))
