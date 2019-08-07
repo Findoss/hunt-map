@@ -5,7 +5,7 @@
     "boss": "Boss",
     "spawn-player": "Spawn player",
     "extraction-point": "Extraction point",
-    "resupply-point": "Resupply point",
+    "resupply-point": "Supplies",
     "easter-egg": "Easter egg",
     "tower": "Tower",
     "aviary": "Aviary",
@@ -23,6 +23,11 @@
       "boss-as": "Assassin, Spider",
       "boss-bs": "Butcher, Spider",
       "boss-all": "Assassin, Butcher, Spider"
+    },
+    "aviary": {
+      "aviary": "Dogs or Chicken",
+      "aviary-d": "Dogs",
+      "aviary-c": "Chicken"
     },
     "tower": {
       "tower": "vector 12",
@@ -48,20 +53,12 @@
   "description": "Description",
   "contributors": "Contributors",
   "fastDescription": {
-    "resupply-point": "3 Ammunition box <br/>3 Medkit<br/>1-2 Lantern",
-    "aviary": "Dogs or chicken"
+    "resupply-point": "3 Ammo box <br/>3 Medkit<br/>1-2 Lantern"
   },
   "success": "Success",
   "error": "Error",
   "msgModer": "Data send to server, information will appear as soon as it is checked by the moderator.",
   "upload": "Uploading data...",
-  "zoom": {
-    "zoomInTitle": "Zoom in",
-    "zoomOutTitle": "Zoom out"
-  },
-  "ruler": {
-    "title": "Ruler"
-  },
   "print": {
     "title": "Save map",
     "defaultSizeTitles": {
