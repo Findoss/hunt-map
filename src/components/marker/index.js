@@ -1,15 +1,15 @@
-import L from 'leaflet/dist/leaflet';
+import L from '../../../node_modules/leaflet/dist/leaflet';
+import { getLocalesProp } from '../../utils/translate';
 import { PopupText } from '../popupText';
 
 export function Marker(doc, id, isLogin) {
   if (this.allTypes.findIndex(type => doc.properties.title === type) > -1) {
     const type = doc.properties.title;
-
     if (type === 'label') {
       return new L.marker(doc.geometry.coordinates, {
         icon: L.divIcon({
           className: 'marker-' + type,
-          html: `<div class="marker-label_text">${doc.properties.name}</div>`
+          html: `<div class="marker-label_text">${getLocalesProp(doc.properties.name)}</div>`
         })
       });
     } else {

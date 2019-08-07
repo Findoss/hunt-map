@@ -48,7 +48,9 @@ export class PopupNewMarker extends Component {
         break;
 
       case 'aviary':
-        this.refs.description.value = 'Dogs or chickens';
+        this.refs.description.value = this.refs.typeMarkers.options[
+          this.refs.typeMarkers.selectedIndex
+        ].text;
         break;
 
       case 'boss':
@@ -66,6 +68,12 @@ export class PopupNewMarker extends Component {
     this.refs.description.value = '';
     switch (this.refs.types.value) {
       case 'boss':
+        this.refs.description.value = this.refs.typeMarkers.options[
+          this.refs.typeMarkers.selectedIndex
+        ].text;
+        break;
+
+      case 'aviary':
         this.refs.description.value = this.refs.typeMarkers.options[
           this.refs.typeMarkers.selectedIndex
         ].text;
