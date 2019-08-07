@@ -54,7 +54,8 @@ export default {
       'tower9',
       'tower10',
       'tower11'
-    ]
+    ],
+    aviary: ['aviary', 'aviary-d', 'aviary-c']
   },
 
   // Основные настройки карт
