@@ -18,6 +18,8 @@ git commit -m 'update maps';
 
 git push origin gh-pages;
 
-git checkout master;
+git checkout dev;
+
+git merge master;
 
 echo 'END DEPLOY';

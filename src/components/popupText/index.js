@@ -1,6 +1,7 @@
 import './index.css';
 import template from './index.html';
 import { Component } from '../index';
+import { getLocalesProp } from '../../utils/translate';
 
 export class PopupText extends Component {
   constructor(placeholderId, props) {
@@ -8,8 +9,8 @@ export class PopupText extends Component {
   }
 
   show(id, doc) {
-    this.refs.title.innerHTML = doc.title.replace('-', ' ');
-    this.refs.content.innerHTML = doc.description ? doc.description : '';
+    this.refs.title.innerText = t('types', doc.title);
+    this.refs.content.innerHTML = doc.description ? getLocalesProp(doc.description) : '';
     return this.getElement();
   }
 }

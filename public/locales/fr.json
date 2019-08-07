@@ -1,0 +1,162 @@
+{
+  "SB": "Stillwater Bayou",
+  "LD": "Lawson Delta",
+  "types": {
+    "boss": "Boss",
+    "spawn-player": "Spawn player",
+    "extraction-point": "Extraction point",
+    "resupply-point": "Supplies",
+    "easter-egg": "Easter egg",
+    "tower": "Tower",
+    "aviary": "Aviary",
+    "label": "Compounds name",
+    "new-object": "New markers",
+    "zone": "Compounds zone",
+    "water-low": "Water low"
+  },
+  "typesMarkers": {
+    "boss": {
+      "boss-a": "Assassin",
+      "boss-b": "Butcher",
+      "boss-s": "Spider",
+      "boss-ab": "Assassin, Butcher",
+      "boss-as": "Assassin, Spider",
+      "boss-bs": "Butcher, Spider",
+      "boss-all": "Assassin, Butcher, Spider"
+    },
+    "aviary": {
+      "aviary": "Dogs or Chicken",
+      "aviary-d": "Dogs",
+      "aviary-c": "Chicken"
+    },
+    "tower": {
+      "tower": "vector 12",
+      "tower1": "vector 1",
+      "tower2": "vector 2",
+      "tower3": "vector 3",
+      "tower4": "vector 4",
+      "tower5": "vector 5",
+      "tower6": "vector 6",
+      "tower7": "vector 7",
+      "tower8": "vector 8",
+      "tower9": "vector 9",
+      "tower10": "vector 10",
+      "tower11": "vector 11"
+    }
+  },
+  "send": "Send",
+  "save": "Save",
+  "delete": "Delete",
+  "cancel": "Cancel",
+  "type": "Type",
+  "marker": "Marker",
+  "description": "Description",
+  "contributors": "Contributors",
+  "fastDescription": {
+    "resupply-point": "3 Ammo box <br/>3 Medkit<br/>1-2 Lantern"
+  },
+  "success": "Success",
+  "error": "Error",
+  "msgModer": "Data send to server, information will appear as soon as it is checked by the moderator.",
+  "upload": "Uploading data...",
+  "print": {
+    "title": "Save map",
+    "defaultSizeTitles": {
+      "Current": "Current size",
+      "A4Landscape": "A4 Landscape",
+      "A4Portrait": "A4 Portrait"
+    }
+  },
+  "zoom": {
+    "zoomInTitle": "Zoom in",
+    "zoomOutTitle": "Zoom out"
+  },
+  "ruler": {
+    "title": "Ruler"
+  },
+  "draw": {
+    "toolbar": {
+      "actions": {
+        "title": "Annulez le dessin",
+        "text": "Annuler"
+      },
+      "buttons": {
+        "polyline": "Dessiner une polyligne",
+        "polygon": "Dessiner un polygone",
+        "rectangle": "Dessiner un rectangle",
+        "circle": "Dessiner un cercle",
+        "marker": "Dessiner un marqueur"
+      }
+    },
+    "handlers": {
+      "circle": {
+        "tooltip": {
+          "start": "Cliquez et déplacez pour dessiner un cercle."
+        }
+      },
+      "marker": {
+        "tooltip": {
+          "start": "Cliquez sur la carte pour placer un marqueur."
+        }
+      },
+      "polygon": {
+        "tooltip": {
+          "start": "Cliquez pour commencer à dessiner une forme.",
+          "cont": "Cliquez pour continuer à dessiner une forme.",
+          "end": "Cliquez sur le dernier point pour fermer cette forme."
+        }
+      },
+      "polyline": {
+        "error": "<strong>Erreur:</strong> Les arrêtes de la forme ne doivent pas se croiser!",
+        "tooltip": {
+          "start": "Cliquez pour commencer à dessiner d'une ligne.",
+          "cont": "Cliquez pour continuer à dessiner une ligne.",
+          "end": "Cliquez sur le dernier point pour terminer la ligne."
+        }
+      },
+      "rectangle": {
+        "tooltip": {
+          "start": "Cliquez et déplacez pour dessiner un rectangle."
+        }
+      },
+      "simpleshape": {
+        "tooltip": {
+          "end": "Relachez la souris pour finir de dessiner."
+        }
+      }
+    }
+  },
+  "edit": {
+    "toolbar": {
+      "actions": {
+        "save": {
+          "title": "Sauvegardez les changements.",
+          "text": "Sauver"
+        },
+        "cancel": {
+          "title": "Annulez l'édition, ignorer tous les changements.",
+          "text": "Annuler"
+        }
+      },
+      "buttons": {
+        "edit": "Editer les couches.",
+        "editDisabled": "Pas de couches à éditer.",
+        "remove": "Supprimer les couches.",
+        "removeDisabled": "Pas de couches à supprimer."
+      }
+    },
+    "handlers": {
+      "edit": {
+        "tooltip": {
+          "text": "Déplacez les ancres, ou le marqueur pour éditer l'objet.",
+          "subtext": "Cliquez sur Annuler pour revenir sur les changements."
+        }
+      },
+      "remove": {
+        "tooltip": {
+          "text": "Cliquez sur l'objet à enlever"
+        }
+      }
+    }
+  }
+}

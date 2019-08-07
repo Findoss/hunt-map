@@ -5,6 +5,9 @@ export default {
   // Id текущей карты
   mapId: localStorage.getItem('MAP-ID') || 'SB',
 
+  // Язык
+  lang: window.location.hash.substr(1) || 'en',
+
   // Настройки выбранных слоев
   currentLayers: JSON.parse(localStorage.getItem('LAYERS')) || [],
 
@@ -23,7 +26,7 @@ export default {
     // "clue",
     // "cash",
     // "lift",
-    // "door"
+    // "metal-door"
   ],
 
   // типы для особых маркеров
@@ -37,93 +40,28 @@ export default {
 
   // у каждого типа может быть несколько видов маркеров
   typesMarkers: {
-    boss: [
-      {
-        title: 'Assassin',
-        label: 'boss-a'
-      },
-      {
-        title: 'Butcher',
-        label: 'boss-b'
-      },
-      {
-        title: 'Spider',
-        label: 'boss-s'
-      },
-      {
-        title: 'Assassin, Butcher',
-        label: 'boss-ab'
-      },
-      {
-        title: 'Assassin, Spider',
-        label: 'boss-as'
-      },
-      {
-        title: 'Butcher, Spider',
-        label: 'boss-bs'
-      },
-      {
-        title: 'Assassin, Butcher, Spider',
-        label: 'boss-all'
-      }
-    ],
+    boss: ['boss-a', 'boss-b', 'boss-s', 'boss-ab', 'boss-as', 'boss-bs', 'boss-all'],
     tower: [
-      {
-        title: 'vector 0',
-        label: 'tower'
-      },
-      {
-        title: 'vector 1',
-        label: 'tower1'
-      },
-      {
-        title: 'vector 2',
-        label: 'tower2'
-      },
-      {
-        title: 'vector 3',
-        label: 'tower3'
-      },
-      {
-        title: 'vector 4',
-        label: 'tower4'
-      },
-      {
-        title: 'vector 5',
-        label: 'tower5'
-      },
-      {
-        title: 'vector 6',
-        label: 'tower6'
-      },
-      {
-        title: 'vector 7',
-        label: 'tower7'
-      },
-      {
-        title: 'vector 8',
-        label: 'tower8'
-      },
-      {
-        title: 'vector 9',
-        label: 'tower9'
-      },
-      {
-        title: 'vector 10',
-        label: 'tower10'
-      },
-      {
-        title: 'vector 11',
-        label: 'tower11'
-      }
-    ]
+      'tower',
+      'tower1',
+      'tower2',
+      'tower3',
+      'tower4',
+      'tower5',
+      'tower6',
+      'tower7',
+      'tower8',
+      'tower9',
+      'tower10',
+      'tower11'
+    ],
+    aviary: ['aviary', 'aviary-d', 'aviary-c']
   },
 
   // Основные настройки карт
   optionsMaps: {
     SB: {
       id: 'SB',
-      title: 'Stillwater Bayou',
       image: {
         width: 4096,
         height: 4096,
@@ -142,7 +80,6 @@ export default {
     },
     LD: {
       id: 'LD',
-      title: 'Lawson Delta',
       image: {
         width: 4096,
         height: 4096,
@@ -238,13 +175,7 @@ export default {
   optionsPrint: {
     position: 'topleft',
     exportOnly: true,
-    title: 'Save map',
     sizeModes: ['Current', 'A4Portrait', 'A4Landscape'],
-    filename: 'hunt-map.online',
-    defaultSizeTitles: {
-      Current: 'Current Size',
-      A4Landscape: 'A4 Landscape',
-      A4Portrait: 'A4 Portrait'
-    }
+    filename: 'hunt-map.online'
   }
 };
