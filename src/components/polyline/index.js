@@ -1,4 +1,4 @@
-import L from 'leaflet/dist/leaflet';
+import L from '../../../node_modules/leaflet/dist/leaflet';
 
 export function Polyline(doc, id) {
   return L.polyline(doc.geometry.coordinates, {

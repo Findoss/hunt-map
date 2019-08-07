@@ -1,5 +1,5 @@
 import './index.css';
-import L from 'leaflet/dist/leaflet';
+import L from '../../../node_modules/leaflet/dist/leaflet';
 
 export function Polygon(doc, id) {
   return L.polygon(doc.geometry.coordinates, {

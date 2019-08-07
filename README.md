@@ -43,7 +43,7 @@ _Добавление маркера с загрузкой картинки_
 _Добавление полигона_
 
 ![atl_img](public/images/gifs/addPolyline.gif)  
-_Добавление ломаной_
+_Добавление линии_
 
 ![atl_img](public/images/gifs/admin.gif)  
 _Раздел модерации_
@@ -51,7 +51,7 @@ _Раздел модерации_
 ### Примеры форматирование для раздела description
 
 Картинка  
-```ТЕКСТ<br /><a href="ССЫЛКА_НА_КАРТИНКУ" target="_blank" rel="noopener noreferrer"><img height="100px" src="ССЫЛКА_НА_ПРЕВЬЮ_КАРТИНКИ"></a>```
+`ТЕКСТ<br /><a href="ССЫЛКА_НА_КАРТИНКУ" target="_blank" rel="noopener noreferrer"><img height="100px" src="ССЫЛКА_НА_ПРЕВЬЮ_КАРТИНКИ"></a>`
 
 ## Contributing
 
