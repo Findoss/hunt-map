@@ -2,7 +2,7 @@
   color: var(--color-1);
   background: var(--bg-color-1);
   border: 1px solid var(--bg-color-1);
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .leaflet-tooltip-right::before {

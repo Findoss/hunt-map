@@ -44,18 +44,30 @@ export class PopupEdit extends Component {
   }
 
   _success(props) {
-    props.root.setPopupContent('<h1 style="color:green">SUCCESS</h1>');
+    props.root.setPopupContent(`<h1 style="color:green">${t('success')}</h1>${t('msgModer')}`);
   }
 
   _error(error) {
-    props.root.setPopupContent('<h1 style="color:red">ERROR</h1>' + error.message);
+    props.root.setPopupContent(`<h1 style="color:red">${t('error')}</h1>` + error.message);
+  }
+
+  _updateCoordsDoc(doc, newCoord) {
+    doc.geometry.coordinates = newCoord;
+    this.refs.doc.value = JSON.stringify(doc, null, 2);
   }
 
   show(props) {
     this.refs.doc.value = JSON.stringify(props.doc, null, 2);
+    this.refs.cansel.innerText = t('delete');
+    this.refs.send.innerText = t('save');
 
     this.refs.cansel.onclick = this._handleDelete.bind(this, props);
     this.refs.send.onclick = this._handleSubmit.bind(this, props);
+
+    props.root.on('moveend', e => {
+      this._updateCoordsDoc(props.doc, e.target._latlng);
+    });
+
     return this.getElement();
   }
 }
