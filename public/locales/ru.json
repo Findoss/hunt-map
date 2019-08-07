@@ -3,26 +3,31 @@
   "LD": "Дельта Лоусон",
   "types": {
     "boss": "Босс",
-    "spawn-player": "Спавн",
-    "extraction-point": "Выход",
-    "resupply-point": "Дилижанс",
+    "spawn-player": "Точка появления",
+    "extraction-point": "Точка эвакуации",
+    "resupply-point": "Припасы",
     "easter-egg": "Пасхалка",
     "tower": "Вышка",
     "aviary": "Вольер",
     "label": "Название локации",
-    "new-object": "Новый маркер",
+    "new-object": "Новые маркеры",
     "zone": "Граница локации",
     "water-low": "Мелководье"
   },
   "typesMarkers": {
     "boss": {
-      "boss-a": "Ассасин",
+      "boss-a": "Убийца",
       "boss-b": "Мясник",
       "boss-s": "Паук",
-      "boss-ab": "Ассасин, Мясник",
-      "boss-as": "Ассасин, Паук",
+      "boss-ab": "Убийца, Мясник",
+      "boss-as": "Убийца, Паук",
       "boss-bs": "Мясник, Паук",
-      "boss-all": "Ассасин, Мясник, Паук"
+      "boss-all": "Убийца, Мясник, Паук"
+    },
+    "aviary": {
+      "aviary": "Собаки или курицы",
+      "aviary-d": "Собаки",
+      "aviary-c": "Курицы"
     },
     "tower": {
       "tower": "направление 12 часов",
@@ -48,13 +53,20 @@
   "description": "Описание",
   "contributors": "Благодарность",
   "fastDescription": {
-    "resupply-point": "3 Аптеки <br/>3 Ящика боеприпасов<br/>1-2 Лампы",
-    "aviary": "собаки или курицы"
+    "resupply-point": "3 Аптечки <br/>3 Ящика боеприпасов<br/>1-2 Лампы"
   },
   "success": "Успешно",
   "error": "Ошибка",
   "msgModer": "Данные были отправлены на сервер, на карте они появятся после проверки модератором.",
   "upload": "Загрузка данных...",
+  "print": {
+    "title": "Сохранить карту",
+    "defaultSizeTitles": {
+      "Current": "Текущий размер",
+      "A4Landscape": "A4 Альбомная",
+      "A4Portrait": "A4 Книжная"
+    }
+  },
   "fullscreen": {
     "title": "Включить полноэкранный режим",
     "titleCancel": "Выйти из полноэкранного режима"
@@ -66,14 +78,7 @@
   "ruler": {
     "title": "Рулетка"
   },
-  "print": {
-    "title": "Сохранить карту",
-    "defaultSizeTitles": {
-      "Current": "Текущий размер",
-      "A4Landscape": "A4 Альбомная",
-      "A4Portrait": "A4 Книжная"
-    }
-  },
+
   "draw": {
     "toolbar": {
       "actions": {
@@ -114,6 +119,7 @@
         }
       },
       "polyline": {
+        "error": "<strong>Ошибка</strong> Линия не должна пересекаться!",
         "tooltip": {
           "start": "Нажмите, чтобы начать рисовать линию.",
           "cont": "Нажмите, чтобы продолжить рисование.",
