@@ -1,5 +1,7 @@
 echo 'START DEPLOY';
 
+git checkout master;
+
 npm version minor;
 
 git checkout gh-pages;

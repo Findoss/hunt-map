@@ -1,5 +1,7 @@
 echo 'START UPDATE';
 
+git checkout master;
+
 npm version patch;
 
 git checkout gh-pages;

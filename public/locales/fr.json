@@ -3,76 +3,76 @@
   "LD": "Lawson Delta",
   "types": {
     "boss": "Boss",
-    "spawn-player": "Spawn player",
-    "extraction-point": "Extraction point",
-    "resupply-point": "Supplies",
-    "easter-egg": "Easter egg",
-    "tower": "Tower",
-    "aviary": "Aviary",
-    "label": "Compounds name",
-    "new-object": "New markers",
-    "zone": "Compounds zone",
-    "water-low": "Water low"
+    "spawn-player": "Spawn de joueurs",
+    "extraction-point": "Point d'extraction",
+    "resupply-point": "Ravitaillement",
+    "easter-egg": "Easter Egg",
+    "tower": "Tour",
+    "aviary": "Cage d'animaux",
+    "label": "Nom des compounds",
+    "new-object": "Nouveaux marqueurs",
+    "zone": "Zone des compounds",
+    "water-low": "Eau basse"
   },
   "typesMarkers": {
     "boss": {
       "boss-a": "Assassin",
-      "boss-b": "Butcher",
-      "boss-s": "Spider",
-      "boss-ab": "Assassin, Butcher",
-      "boss-as": "Assassin, Spider",
-      "boss-bs": "Butcher, Spider",
-      "boss-all": "Assassin, Butcher, Spider"
+      "boss-b": "Boucher",
+      "boss-s": "Araignée",
+      "boss-ab": "Assassin, Boucher",
+      "boss-as": "Assassin, Araignée",
+      "boss-bs": "Boucher, Araignée",
+      "boss-all": "Assassin, Boucher, Araignée"
     },
     "aviary": {
-      "aviary": "Dogs or Chicken",
-      "aviary-d": "Dogs",
-      "aviary-c": "Chicken"
+      "aviary": "Chiens ou Poules",
+      "aviary-d": "Chiens",
+      "aviary-c": "Poules"
     },
     "tower": {
-      "tower": "vector 12",
-      "tower1": "vector 1",
-      "tower2": "vector 2",
-      "tower3": "vector 3",
-      "tower4": "vector 4",
-      "tower5": "vector 5",
-      "tower6": "vector 6",
-      "tower7": "vector 7",
-      "tower8": "vector 8",
-      "tower9": "vector 9",
-      "tower10": "vector 10",
-      "tower11": "vector 11"
+      "tower": "direction 12",
+      "tower1": "direction 1",
+      "tower2": "direction 2",
+      "tower3": "direction 3",
+      "tower4": "direction 4",
+      "tower5": "direction 5",
+      "tower6": "direction 6",
+      "tower7": "direction 7",
+      "tower8": "direction 8",
+      "tower9": "direction 9",
+      "tower10": "direction 10",
+      "tower11": "direction 11"
     }
   },
-  "send": "Send",
-  "save": "Save",
-  "delete": "Delete",
-  "cancel": "Cancel",
+  "send": "Envoyer",
+  "save": "Sauvegarde",
+  "delete": "Supprimer",
+  "cancel": "Annuler",
   "type": "Type",
-  "marker": "Marker",
+  "marker": "Marqueur",
   "description": "Description",
-  "contributors": "Contributors",
+  "contributors": "Contributeurs",
   "fastDescription": {
-    "resupply-point": "3 Ammo box <br/>3 Medkit<br/>1-2 Lantern"
+    "resupply-point": "3 Caisse de munitions <br/>3 Kit de soin<br/>1-2 Lanterne"
   },
-  "success": "Success",
-  "error": "Error",
-  "msgModer": "Data send to server, information will appear as soon as it is checked by the moderator.",
-  "upload": "Uploading data...",
+  "success": "Succès",
+  "error": "Erreur",
+  "msgModer": "Données envoyée au serveur, les informations apparaîtront dès qu'elles auront été vérifiées par un modérateur.",
+  "upload": "Upload de données...",
   "print": {
-    "title": "Save map",
+    "title": "Sauvegarde la map",
     "defaultSizeTitles": {
-      "Current": "Current size",
-      "A4Landscape": "A4 Landscape",
+      "Current": "Taille Actuelle",
+      "A4Landscape": "A4 Paysage",
       "A4Portrait": "A4 Portrait"
     }
   },
   "zoom": {
-    "zoomInTitle": "Zoom in",
-    "zoomOutTitle": "Zoom out"
+    "zoomInTitle": "Zoom +",
+    "zoomOutTitle": "Zoom -"
   },
   "ruler": {
-    "title": "Ruler"
+    "title": "Règle"
   },
   "draw": {
     "toolbar": {
