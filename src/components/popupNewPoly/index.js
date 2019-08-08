@@ -13,7 +13,7 @@ export class PopupNewPoly extends Component {
   _handleSelectTypes(props, e) {}
 
   _handleSubmit(props, e) {
-    this._loading();
+    this._loading(props);
     this.api
       .addPoly(this.mapId, {
         geometry: props.geometry,
@@ -21,10 +21,10 @@ export class PopupNewPoly extends Component {
         coordinates: props.coords
       })
       .then(() => {
-        this._success();
+        this._success(props);
       })
       .catch(error => {
-        this._error(error);
+        this._error(props, error);
       });
   }
 
@@ -40,11 +40,13 @@ export class PopupNewPoly extends Component {
     props.root.setPopupContent(`<h1 style="color:green">${t('success')}</h1>${t('msgModer')}`);
   }
 
-  _error(error) {
+  _error(props, error) {
     props.root.setPopupContent(`<h1 style="color:red">${t('error')}</h1>` + error.message);
   }
 
   show(props) {
+    console.log(props);
+
     this.refs.types.innerText = props.geometry;
     this.refs.typesLable.innerText = t('type');
     this.refs.cansel.innerText = t('cancel');
