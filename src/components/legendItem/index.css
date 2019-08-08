@@ -1,0 +1,111 @@
+.leaflet-control-layers-toggle {
+  background-image: url(../../../public/images/icons/layers.svg) !important;
+  border-radius: 2px;
+  display: block !important;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.leaflet-control-layers {
+  border: none !important;
+}
+
+.leaflet-control-layers input {
+  display: none;
+}
+
+.leaflet-control-layers-overlays label input:checked ~ span span {
+  color: var(--color-2-hover) !important;
+}
+
+.leaflet-control-layers-list {
+  z-index: 98;
+}
+
+.leaflet-control-layers-toggle {
+  z-index: 99;
+}
+
+/* .leaflet-control-layers-toggle::after {
+  content: '↓';
+  padding-top: 22px;
+  padding-left: 22px;
+} */
+
+.leaflet-control-layers-expanded .leaflet-control-layers-toggle:after,
+.leaflet-control-layers-expanded .leaflet-control-layers-toggle:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.leaflet-control-layers-expanded .leaflet-control-layers-toggle:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: var(--bg-color-1);
+  border-width: 6px;
+  margin-left: -6px;
+}
+.leaflet-control-layers-expanded .leaflet-control-layers-toggle:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-top-color: var(--color-2-hover);
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.leaflet-control-layers-expanded {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  padding-top: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+}
+
+.leaflet-control-layers-expanded .leaflet-control-layers-list {
+  padding: 10px;
+  background-color: var(--bg-color-2);
+  border: 1px solid var(--color-2) !important;
+  border-radius: 5px;
+}
+
+.leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+  width: 100%;
+}
+
+.leaflet-control-layers-base label,
+.leaflet-control-layers-overlays label {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-color: var(--bg-color-1);
+  border: 1px solid var(--bg-color-2) !important;
+  color: var(--color-1);
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.leaflet-control-layers-base label:hover,
+.leaflet-control-layers-overlays label:hover {
+  border-color: var(--color-2) !important;
+}
+
+.legend-item {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-size: 25px !important;
+  background-repeat: no-repeat;
+
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
+  color: var(--bg-color-1);
+  position: relative;
+  border: 1px solid white;
+  border-radius: 50%;
+}
