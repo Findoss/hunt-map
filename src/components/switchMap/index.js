@@ -14,7 +14,7 @@ export class SwitchMap extends Component {
       let button = document.createElement('button');
       button.value = mapId;
       button.className = 'switch-map-button';
-      button.innerHTML = data[mapId].title;
+      button.innerHTML = t(mapId);
 
       button.addEventListener('click', e => {
         this.triggerEvent('switchMap', e.target.value);

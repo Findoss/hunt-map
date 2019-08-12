@@ -22,7 +22,9 @@ L.Control.Measure = L.Control.extend({
     //  define text color
     textColor: 'black',
     //
-    simbolButton: '→'
+    simbolButton: '→',
+    //
+    title: 'Ruler'
   },
 
   initialize: function(options) {
@@ -35,7 +37,7 @@ L.Control.Measure = L.Control.extend({
     var container = L.DomUtil.create('div', className);
     this._createButton(
       this.options.simbolButton,
-      'Ruler',
+      this.options.title,
       'leaflet-control-measure leaflet-bar-part leaflet-bar-part-top-and-bottom',
       container,
       this._toggleMeasure,
