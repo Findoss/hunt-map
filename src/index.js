@@ -1,3 +1,6 @@
+import t from './utils/translate';
+window.t = t;
+
 import './main.css';
 
 import config from './config';

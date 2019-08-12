@@ -1,5 +1,7 @@
 echo 'START DEPLOY';
 
+git checkout master;
+
 npm version minor;
 
 git checkout gh-pages;
@@ -18,6 +20,8 @@ git commit -m 'update maps';
 
 git push origin gh-pages;
 
-git checkout master;
+git checkout dev;
+
+git merge master;
 
 echo 'END DEPLOY';
