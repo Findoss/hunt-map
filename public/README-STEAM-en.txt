@@ -1,14 +1,17 @@
-[url=https://hunt-map.online] Интерактивные карты Hunt-Showdown[/url]
+[url=https://hunt-map.online/]Hunt-Showdown - Interactive maps[/url]
 
 [h1]FAQ[/h1]
 
-[b]НА КАРТЕ ОТМЕЧЕНЫ НЕ ВСЕ ОБЪЕКТЫ![/b] - Карта создана сообществом игроков, мы рады новым вкладам. Посмотрите мини гайд что бы начать делиться знаниями!.
+[b]THIS VERSION OF THE MAP MAY LACK SOME POINTS OF INTEREST![/b] - This map was created by Russian Hunt: Showdown community, we appreciate any submission. Checkout our mini-guide to start making submissions!
 [list]
-    [*]Карта только на англиском языке? - Нет, карта есть на следующих языках:
-        [*] [https://hunt-map.online/]англиский[/url]
-        [*] [https://hunt-map.online/#ru]русский[/url]
-        [*] [https://hunt-map.online/#fr]французский[/url]
-    [*]Можно добавить новые разделы? - Добавить новые разделы может администратор, начать обсуждение можно в соответствующем [url=https://discord.gg/JyTeMU]discord канале[/url]
-    [*]Почему рулетка показывает расстояние меньше/больше (я точно знаю сколько там метров!)? - Погрешность появляется из за разницы высот между точками.
-    [*]Я нашел ошибку - Cвяжитесь с автором.
+    [*]Is this map available only in English? - No, it supports list of languages:
+        + [url=https://hunt-map.online/]English[/url]
+        + [url=https://hunt-map.online/#ru]Русский[/url]
+        + [url=https://hunt-map.online/#fr]Française[/url]
+    [*]Is it possible to add new features? - New features could be added only by the administrator, you can start a discussion in the corresponding [url=https://discord.gg/RV2Tr75]Discord channel[/url].
+    [*]Why the distance between points is incorrect? (I know exactly what it should be!) - Error my appear because of the difference between point heights.
+    [*]Found mistake? Please contact the author.
 [/list]
+
+[h1]Fast start[/h1]
+[previewimg=16393545;sizeFull,inline;addMarker.gif][/previewimg]
