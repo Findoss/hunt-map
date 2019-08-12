@@ -1,0 +1,17 @@
+.image-modal {
+  background-color: blueviolet;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  cursor: zoom-out;
+  top: 10px;
+  left: 10px;
+  padding: 0;
+  margin: 0;
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999999;
+}
