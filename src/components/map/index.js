@@ -17,7 +17,7 @@ import 'leaflet.fullscreen';
 import 'leaflet-easyprint';
 import 'leaflet-responsive-popup/leaflet.responsive.popup.js';
 // components
-import { minPow, merge } from '../../utils';
+import { minPow, merge, isInIframe } from '../../utils';
 
 import { Component } from '../index';
 import { Marker } from '../marker';
@@ -160,13 +160,16 @@ export class Map extends Component {
     L.drawLocal.draw = merge(L.drawLocal.draw, t('draw'));
 
     this.controlZoom = L.control.zoom(t('zoom')).addTo(this.map);
-    this.controlFullscreen = L.control.fullscreen(t('fullscreen')).addTo(this.map);
+    if (!isInIframe()) {
+      this.controlFullscreen = L.control.fullscreen(t('fullscreen')).addTo(this.map);
+    }
     this.controlMeasure = L.control.measure(merge(optionsRuler, t('ruler'))).addTo(this.map);
     this.map.addControl(drawControl);
     this.controlLayers = L.control.layers(null, this.legendItems).addTo(this.map);
     this.controlPrint = L.easyPrint(merge(optionsPrint, t('print'))).addTo(this.map);
-    this.controlAuth = L.control.auth(optionsAuth).addTo(this.map);
-
+    if (!isInIframe()) {
+      this.controlAuth = L.control.auth(optionsAuth).addTo(this.map);
+    }
     // рендр
     this.map.addLayer(this.editableLayers);
     this.map.setMaxBounds(/*boundsMove*/ boundsLoadTiles);

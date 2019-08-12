@@ -43,17 +43,18 @@
 }
 
 .marker-label_text {
-  color: #c9bba1;
+  color: white;
   width: 220px;
   position: relative;
   left: -110px;
   opacity: 0.8;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
   font-weight: bold;
-  text-shadow: 1px 2px 4px #000000;
+  text-shadow: 3px 3px 2px #000000;
   text-align: center;
-  /**/
+  /* для отладки */
   /* background-color: lightpink; */
 }
 

@@ -45,8 +45,6 @@ export class PopupNewPoly extends Component {
   }
 
   show(props) {
-    console.log(props);
-
     this.refs.types.innerText = props.geometry;
     this.refs.typesLable.innerText = t('type');
     this.refs.cansel.innerText = t('cancel');

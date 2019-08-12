@@ -25,7 +25,7 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "Lawson Stantion"
+      "name": "Lawson Station"
     },
     "geometry": {
       "type": "Point",
@@ -58,7 +58,7 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "Maw Battary"
+      "name": "Maw Battery"
     },
     "geometry": {
       "type": "Point",
@@ -102,7 +102,7 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "Nicholls Priston"
+      "name": "Nicholls Prison"
     },
     "geometry": {
       "type": "Point",
