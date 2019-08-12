@@ -12,7 +12,7 @@ npm run build;
 
 cp public/CNAME CNAME
 cp public/index.html index.html
-cp public/README.md README.md;
+cp public/README-PROD.md README.md;
 
 git add -A .;
 
