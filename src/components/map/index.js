@@ -11,7 +11,6 @@ import '../fullscreen/index.css';
 import L from '../../../node_modules/leaflet/dist/leaflet';
 // plugins
 import '../ruler';
-import '../buttonAuth';
 import 'leaflet-draw/dist/leaflet.draw';
 import 'leaflet.fullscreen';
 import 'leaflet-easyprint';
@@ -24,6 +23,7 @@ import { Marker } from '../marker';
 import { Polygon } from '../polygon';
 import { Polyline } from '../polyline';
 import { legendItem } from '../legendItem';
+import { ButtonAuth } from '../buttonAuth';
 
 import { PopupNewMarker } from '../popupNewMarker';
 import { PopupNewPoly } from '../popupNewPoly';
@@ -168,9 +168,12 @@ export class Map extends Component {
     this.controlLayers = L.control.layers(null, this.legendItems).addTo(this.map);
     this.controlPrint = L.easyPrint(merge(optionsPrint, t('print'))).addTo(this.map);
     if (!isInIframe()) {
+      new ButtonAuth();
       this.controlAuth = L.control.auth(optionsAuth).addTo(this.map);
     }
-    // рендр
+    //
+    // Рендр
+    //
     this.map.addLayer(this.editableLayers);
     this.map.setMaxBounds(/*boundsMove*/ boundsLoadTiles);
     this.map.setView(optionMap.center, optionMap.levels.default);
