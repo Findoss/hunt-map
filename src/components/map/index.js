@@ -159,17 +159,17 @@ export class Map extends Component {
     });
     L.drawLocal.draw = merge(L.drawLocal.draw, t('draw'));
 
-    this.controlZoom = L.control.zoom(t('zoom')).addTo(this.map);
+    this.map.addControl(L.control.zoom(t('zoom')));
     if (!isInIframe()) {
-      this.controlFullscreen = L.control.fullscreen(t('fullscreen')).addTo(this.map);
+      this.map.addControl(L.control.fullscreen(t('fullscreen')));
     }
-    this.controlMeasure = L.control.measure(merge(optionsRuler, t('ruler'))).addTo(this.map);
+    this.map.addControl(L.control.measure(merge(optionsRuler, t('ruler'))));
     this.map.addControl(drawControl);
-    this.controlLayers = L.control.layers(null, this.legendItems).addTo(this.map);
-    this.controlPrint = L.easyPrint(merge(optionsPrint, t('print'))).addTo(this.map);
+    this.map.addControl(L.control.layers(null, this.legendItems));
+    this.map.addControl(L.easyPrint(merge(optionsPrint, t('print'))));
     if (!isInIframe()) {
       new ButtonAuth();
-      this.controlAuth = L.control.auth(optionsAuth).addTo(this.map);
+      this.map.addControl(L.control.auth(optionsAuth));
     }
     //
     // Рендр
