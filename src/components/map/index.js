@@ -22,7 +22,7 @@ import { Component } from '../index';
 import { Marker } from '../marker';
 import { Polygon } from '../polygon';
 import { Polyline } from '../polyline';
-import { legendItem } from '../legendItem';
+import { LegendItem } from '../legendItem';
 import { ButtonAuth } from '../buttonAuth';
 
 import { PopupNewMarker } from '../popupNewMarker';
@@ -137,7 +137,7 @@ export class Map extends Component {
     this.allTypes.forEach(type => {
       this.groups[type] = L.layerGroup();
       this.groups[type].title = type;
-      this.legendItems[legendItem(type)] = this.groups[type];
+      this.legendItems[LegendItem(type)] = this.groups[type];
     });
 
     // Добавление контролов
