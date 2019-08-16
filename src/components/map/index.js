@@ -11,7 +11,6 @@ import '../fullscreen/index.css';
 import L from '../../../node_modules/leaflet/dist/leaflet';
 // plugins
 import '../ruler';
-import '../buttonAuth';
 import 'leaflet-draw/dist/leaflet.draw';
 import 'leaflet.fullscreen';
 import 'leaflet-easyprint';
@@ -23,7 +22,8 @@ import { Component } from '../index';
 import { Marker } from '../marker';
 import { Polygon } from '../polygon';
 import { Polyline } from '../polyline';
-import { legendItem } from '../legendItem';
+import { LegendItem } from '../legendItem';
+import { ButtonAuth } from '../buttonAuth';
 
 import { PopupNewMarker } from '../popupNewMarker';
 import { PopupNewPoly } from '../popupNewPoly';
@@ -137,7 +137,7 @@ export class Map extends Component {
     this.allTypes.forEach(type => {
       this.groups[type] = L.layerGroup();
       this.groups[type].title = type;
-      this.legendItems[legendItem(type)] = this.groups[type];
+      this.legendItems[LegendItem(type)] = this.groups[type];
     });
 
     // Добавление контролов
@@ -159,18 +159,21 @@ export class Map extends Component {
     });
     L.drawLocal.draw = merge(L.drawLocal.draw, t('draw'));
 
-    this.controlZoom = L.control.zoom(t('zoom')).addTo(this.map);
+    this.map.addControl(L.control.zoom(t('zoom')));
     if (!isInIframe()) {
-      this.controlFullscreen = L.control.fullscreen(t('fullscreen')).addTo(this.map);
+      this.map.addControl(L.control.fullscreen(t('fullscreen')));
     }
-    this.controlMeasure = L.control.measure(merge(optionsRuler, t('ruler'))).addTo(this.map);
+    this.map.addControl(L.control.measure(merge(optionsRuler, t('ruler'))));
     this.map.addControl(drawControl);
-    this.controlLayers = L.control.layers(null, this.legendItems).addTo(this.map);
-    this.controlPrint = L.easyPrint(merge(optionsPrint, t('print'))).addTo(this.map);
+    this.map.addControl(L.control.layers(null, this.legendItems));
+    this.map.addControl(L.easyPrint(merge(optionsPrint, t('print'))));
     if (!isInIframe()) {
-      this.controlAuth = L.control.auth(optionsAuth).addTo(this.map);
+      new ButtonAuth();
+      this.map.addControl(L.control.auth(optionsAuth));
     }
-    // рендр
+    //
+    // Рендр
+    //
     this.map.addLayer(this.editableLayers);
     this.map.setMaxBounds(/*boundsMove*/ boundsLoadTiles);
     this.map.setView(optionMap.center, optionMap.levels.default);
