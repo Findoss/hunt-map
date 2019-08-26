@@ -3,7 +3,10 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "Alain & Son's <br> Fish"
+      "name": {
+        "en": "Alain & Son's <br> Fish",
+        "ru": "Рыбное хозяйство &laquo;Ален и сын&raquo;"
+      }
     },
     "geometry": {
       "type": "Point",
@@ -14,7 +17,10 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "Reynard <br> Mill & Lumber"
+      "name": {
+        "en": "Reynard <br> Mill & Lumber",
+        "ru": "Лесопильня Рейнарда"
+      }
     },
     "geometry": {
       "type": "Point",
@@ -25,7 +31,10 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "Port Reeker"
+      "name": {
+        "en": "Port Reeker",
+        "ru": "Поселение <br> &laquo;Порт Рикер&raquo;"
+      }
     },
     "geometry": {
       "type": "Point",
@@ -36,7 +45,10 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "Scupper Lake"
+      "name": {
+        "en": "Scupper Lake",
+        "ru": "Гиблое озеро"
+      }
     },
     "geometry": {
       "type": "Point",
@@ -47,7 +59,10 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "Blanchett Graves"
+      "name": {
+        "en": "Blanchett Graves",
+        "ru": "Кладбище Бланшетт"
+      }
     },
     "geometry": {
       "type": "Point",
@@ -58,7 +73,10 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "Darrow Livestock"
+      "name": {
+        "en": "Darrow Livestock",
+        "ru": "Ферма Дэрроу"
+      }
     },
     "geometry": {
       "type": "Point",
@@ -69,7 +87,10 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "Alice Farm"
+      "name": {
+        "en": "Alice Farm",
+        "ru": "Ферма Элис"
+      }
     },
     "geometry": {
       "type": "Point",
@@ -80,7 +101,10 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "The Chapel <br> of Madonna Noire"
+      "name": {
+        "en": "The Chapel <br> of Madonna Noire",
+        "ru": "Часовня <br> Мадонны Нуар"
+      }
     },
     "geometry": {
       "type": "Point",
@@ -91,7 +115,10 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "Lockbay Docks"
+      "name": {
+        "en": "Lockbay Docks",
+        "ru": "Верфь Локбей"
+      }
     },
     "geometry": {
       "type": "Point",
@@ -102,7 +129,10 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "Stillwater Bend"
+      "name": {
+        "en": "Stillwater Bend",
+        "ru": "Поселение &laquo;Излучина Стилуотер&raquo;"
+      }
     },
     "geometry": {
       "type": "Point",
@@ -113,7 +143,10 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "Pitching Crematorium"
+      "name": {
+        "en": "Pitching Crematorium",
+        "ru": "Разрушенный крематорий"
+      }
     },
     "geometry": {
       "type": "Point",
@@ -124,7 +157,10 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "Cyprus Huts"
+      "name": {
+        "en": "Cyprus Huts",
+        "ru": "Кипарисовая роща"
+      }
     },
     "geometry": {
       "type": "Point",
@@ -135,7 +171,10 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "Davant Ranch"
+      "name": {
+        "en": "Davant Ranch",
+        "ru": "Ранчо Даванта"
+      }
     },
     "geometry": {
       "type": "Point",
@@ -146,7 +185,10 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "The Slaughterhouse"
+      "name": {
+        "en": "The Slaughterhouse",
+        "ru": "Скотобойня"
+      }
     },
     "geometry": {
       "type": "Point",
@@ -157,7 +199,10 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "Catfish Grove"
+      "name": {
+        "en": "Catfish Grove",
+        "ru": "Сомовая роща"
+      }
     },
     "geometry": {
       "type": "Point",
@@ -168,7 +213,10 @@
     "type": "Feature",
     "properties": {
       "title": "label",
-      "name": "Healing-Waters <br> Church"
+      "name": {
+        "en": "Healing-Waters <br> Church",
+        "ru": "Церковь &laquo;Исцеляющие воды&raquo;"
+      }
     },
     "geometry": {
       "type": "Point",

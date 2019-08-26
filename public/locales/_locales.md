@@ -32,6 +32,14 @@
 
 ```
 "description": {
+  "en":"Dogs or Chicken",
+  "ru":"Собаки или курицы",
+  "fr":"Chiens ou Poules"
+},
+```
+
+```
+"description": {
   "en":"Assassin, Butcher, Spider",
   "ru":"Убийца, Мясник, Паук",
   "fr":"Assassin, Boucher, Araignée"
