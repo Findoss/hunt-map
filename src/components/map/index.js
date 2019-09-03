@@ -260,7 +260,11 @@ export class Map extends Component {
       if (isNew) {
         object.addTo(this.groups['new-object']);
       } else {
-        object.addTo(this.groups[doc.properties.title]);
+        try {
+          object.addTo(this.groups[doc.properties.title]);
+        } catch (error) {
+          console.error(`ID ERROR ${id}`);
+        }
       }
     });
 
