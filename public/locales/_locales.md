@@ -21,7 +21,6 @@
 |             |                  |                     |
 |             |                  |                     |
 
-
 ```
 "description": {
   "en":"3 Medkit<br/>3 Ammo box<br/>1-2 Lantern",
@@ -47,15 +46,19 @@
 ```
 
 ```
+<img src='***' data-modal='true' height='100px' />
+```
+
+```
 <br/>Underground
 <br/>Подвал
 <br/>Sous-sol
 
-<br/>1st floor  
-<br/>1 этаж      
+<br/>1st floor
+<br/>1 этаж
 <br/>1er étage
 
-<br/>2st floor   
-<br/>2 этаж      
+<br/>2st floor
+<br/>2 этаж
 <br/>2nd étage
 ```
