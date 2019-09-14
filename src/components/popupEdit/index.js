@@ -44,11 +44,11 @@ export class PopupEdit extends Component {
   }
 
   _success(props) {
-    props.root.setPopupContent(`<h1 style="color:green">${t('success')}</h1>${t('msgModer')}`);
+    props.root.setPopupContent(`<h1 class="success">${t('success')}</h1>${t('msgModer')}`);
   }
 
   _error(error) {
-    props.root.setPopupContent(`<h1 style="color:red">${t('error')}</h1>` + error.message);
+    props.root.setPopupContent(`<h1 class="error">${t('error')}</h1>` + error.message);
   }
 
   _updateCoordsDoc(doc, newCoord) {

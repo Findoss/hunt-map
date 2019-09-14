@@ -1,8 +1,5 @@
 /* popup */
 
-.leaflet-popup {
-}
-
 .leaflet-popup-content-wrapper {
   background-color: var(--bg-color-2);
   color: var(--color-1);
@@ -23,7 +20,7 @@
   text-transform: uppercase;
 }
 
-/* castom popup */
+/* custom popup */
 
 .control-select-type {
   width: 100%;
@@ -81,4 +78,12 @@
 .control-file-upload {
   width: 100%;
   margin-bottom: 15px;
+}
+
+.error {
+  color: var(--color-2-hover);
+}
+
+.success {
+  color: var(--color-3);
 }
