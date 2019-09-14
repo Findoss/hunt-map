@@ -1,17 +1,23 @@
-.image-modal {
-  background-color: blueviolet;
+.modal-bg {
+  background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
-  transform: translate(-50%, -50%);
-  position: absolute;
   cursor: zoom-out;
-  top: 10px;
-  left: 10px;
+  top: 0;
+  left: 0;
   padding: 0;
   margin: 0;
-  width: 80vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 99999999;
+}
+
+.modal-image {
+  width: 95%;
+  height: auto;
+  max-height: 95%;
+  border: 2px solid var(--color-1);
+  border-radius: 5px;
 }

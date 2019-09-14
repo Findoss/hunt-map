@@ -29,6 +29,7 @@ class ViewController {
   }
 
   async initializeMap() {
+    this.initializeAuth();
     this.mapComponent = new Map('map-placeholder', {
       data: config,
       api: this.api,
@@ -38,7 +39,6 @@ class ViewController {
         }
       }
     });
-    this.initializeAuth();
   }
 
   async initializeComponents() {

@@ -1,6 +1,9 @@
 .firebase/
 key.json
 
+build/*
+public/cache/*
+
 bower_components/
 node_modules/
 

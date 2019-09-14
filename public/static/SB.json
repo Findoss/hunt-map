@@ -33,7 +33,7 @@
       "title": "label",
       "name": {
         "en": "Port Reeker",
-        "ru": "Порт Рикер"
+        "ru": "Поселение <br> &laquo;Порт Рикер&raquo;"
       }
     },
     "geometry": {
@@ -103,7 +103,7 @@
       "title": "label",
       "name": {
         "en": "The Chapel <br> of Madonna Noire",
-        "ru": "Часовня <br> Черной Мадонны"
+        "ru": "Часовня <br> Мадонны Нуар"
       }
     },
     "geometry": {
@@ -131,7 +131,7 @@
       "title": "label",
       "name": {
         "en": "Stillwater Bend",
-        "ru": "Излучина Стилуотер"
+        "ru": "Поселение &laquo;Излучина Стилуотер&raquo;"
       }
     },
     "geometry": {

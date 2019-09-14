@@ -8,22 +8,22 @@ admin.initializeApp({
 
 const DB = admin.firestore();
 
-const collect = 'SB';
+const collect = 'LD';
 
 const props = 'properties.title';
-const value = 'aviary';
+const value = 'XXX';
 
 const newData = {
-  en: 'Dogs or Chicken',
-  ru: 'Собаки или курицы',
-  fr: 'Chiens ou Poules'
+  en: 'Assassin, Butcher, Spider',
+  ru: 'Убийца, Мясник, Паук',
+  fr: 'Assassin, Boucher, Araignée'
 };
 
 const prop = {
   properties: {
     description: newData,
-    marker: 'aviary',
-    title: 'aviary'
+    marker: 'XXX',
+    title: 'XXX'
   }
 };
 
