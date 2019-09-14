@@ -1,7 +1,4 @@
 export default {
-  // Флаг для загрузки из Firestore
-  realtime: localStorage.getItem('REALTIME'),
-
   // Id текущей карты
   mapId: localStorage.getItem('MAP-ID') || 'SB',
 
