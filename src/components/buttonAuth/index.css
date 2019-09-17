@@ -11,6 +11,10 @@
   cursor: pointer;
 }
 
+.button-auth_login {
+  border: 2px solid var(--color-3);
+}
+
 #auth-placeholder {
   position: absolute;
   padding: 8px;

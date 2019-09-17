@@ -37,11 +37,11 @@ export class PopupNewPoly extends Component {
   }
 
   _success(props) {
-    props.root.setPopupContent(`<h1 style="color:green">${t('success')}</h1>${t('msgModer')}`);
+    props.root.setPopupContent(`<h1 class="success">${t('success')}</h1>${t('msgModer')}`);
   }
 
   _error(props, error) {
-    props.root.setPopupContent(`<h1 style="color:red">${t('error')}</h1>` + error.message);
+    props.root.setPopupContent(`<h1 class="error">${t('error')}</h1>` + error.message);
   }
 
   show(props) {

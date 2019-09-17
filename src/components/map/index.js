@@ -49,7 +49,6 @@ export class Map extends Component {
     //
     const {
       mapId,
-      realtime,
       currentLayers,
       //
       types,
@@ -74,7 +73,6 @@ export class Map extends Component {
 
     this.allTypes = [...polylineTypes, ...polygonTypes, ...extraTypes, ...this.types];
 
-    this.realtime = realtime;
     this.currentLayers = currentLayers;
 
     const optionMap = optionsMaps[mapId];
@@ -268,6 +266,11 @@ export class Map extends Component {
     this.currentLayers.forEach(layer => {
       this.groups[layer].addTo(this.map);
     });
+
+    if (isLogin) {
+      var x = document.getElementById('button-auth');
+      x.classList.add('button-auth_login');
+    }
   }
 
   createPopupEdit(layer, doc, id, isNew) {
