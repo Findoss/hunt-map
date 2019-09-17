@@ -29,8 +29,13 @@
       "aviary-d": "Dogs",
       "aviary-c": "Chicken"
     },
+    "resupply-point": {
+      "resupply-point": "Повозка",
+      "resupply-point-b": "Лодка",
+      "resupply-point-rc": "Вагон"
+    },
     "tower": {
-      "tower": "vector 12",
+      "tower0": "vector 12",
       "tower1": "vector 1",
       "tower2": "vector 2",
       "tower3": "vector 3",
@@ -41,7 +46,8 @@
       "tower8": "vector 8",
       "tower9": "vector 9",
       "tower10": "vector 10",
-      "tower11": "vector 11"
+      "tower11": "vector 11",
+      "tower": "---"
     }
   },
   "send": "Send",
