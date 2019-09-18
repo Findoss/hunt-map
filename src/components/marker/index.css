@@ -1,14 +1,20 @@
+/* корекция контейнера */
 .leaflet-marker-icon {
   /* размер по умолчанию */
-  width: 26px !important;
-  height: 26px !important;
+  width: 30px !important;
+  height: 30px !important;
   /* центр */
-  margin-left: -13px !important;
-  margin-top: -13px !important;
-  background-size: 25px;
+  margin-left: -15px !important;
+  margin-top: -15px !important;
+  background-size: 28px;
   background-repeat: no-repeat;
+
+  color: var(--color-1);
 }
 
+/* ==================== */
+/* для рисования        */
+/* ==================== */
 .leaflet-div-icon {
   width: 12px !important;
   height: 12px !important;
@@ -21,8 +27,11 @@
   filter: drop-shadow(3px 3px 3px #000000);
 }
 
+/* ==================== */
+/* названия локаций     */
+/* ==================== */
 .marker-base {
-  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.15);
   filter: drop-shadow(2px 2px 2px #000000);
   border-radius: 50%;
 }
@@ -38,6 +47,9 @@
   /* background-color: lightgreen; */
 }
 
+/* ==================== */
+/* названия локаций     */
+/* ==================== */
 .marker-label_text {
   color: white;
   width: 220px;
@@ -54,6 +66,9 @@
   /* background-color: lightpink; */
 }
 
+/* ==================== */
+/* новый маркер         */
+/* ==================== */
 .marker-new-object {
   background-color: red;
 }
@@ -61,39 +76,239 @@
 .marker-new-object::after {
   content: 'NEW';
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: white;
-  font-size: 0.5rem;
-
+  font-size: 0.7rem;
   font-weight: bold;
   text-shadow: 1px 2px 4px #000000;
   text-align: center;
   position: absolute;
-  top: 7px;
+  top: 8px;
   left: 5px;
 }
 
-.marker-resupply-point,
-.marker-resupply-point-b,
-.marker-resupply-point-rc {
-  background-color: lightgreen;
+/* ==================== */
+/* пополнение боезапаса */
+/* ==================== */
+
+.marker-resupply-point {
+  background-image: url(../../../public/images/markers/new/resupply-point2.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 3px 4px;
+  height: 30px;
+  width: 30px;
 }
-.marker-resupply-point::after,
-.marker-resupply-point-b::after,
-.marker-resupply-point-rc::after {
-  content: '+';
-  width: 18px;
-  height: 18px;
-  color: #448f7d;
-  font-weight: normal;
-  font-size: 2.3rem;
+
+/* ==================== */
+/* пасхалка             */
+/* ==================== */
+
+.marker-easter-egg {
+  content: '';
+  background-image: url(../../../public/images/markers/new/easter-egg.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  height: 30px;
+  width: 30px;
+}
+
+/* ==================== */
+/* башни                */
+/* ==================== */
+
+.marker-tower,
+.marker-tower0,
+.marker-tower1,
+.marker-tower2,
+.marker-tower3,
+.marker-tower4,
+.marker-tower5,
+.marker-tower6,
+.marker-tower7,
+.marker-tower8,
+.marker-tower9,
+.marker-tower10,
+.marker-tower11 {
+  background-image: url(../../../public/images/markers/new/tower.png);
+  background-repeat: no-repeat;
+  background-size: 19px;
+  background-position: 6px 1px;
+  height: 30px;
+  width: 30px;
+}
+
+.marker-tower::after {
+  content: '◌';
+  font-size: 40px;
+  font-weight: bold;
   position: absolute;
-  top: -12px;
-  left: 2px;
+  top: -20px;
 }
+.marker-tower0::after,
+.marker-tower1::after,
+.marker-tower2::after,
+.marker-tower3::after,
+.marker-tower4::after,
+.marker-tower5::after,
+.marker-tower6::after,
+.marker-tower7::after,
+.marker-tower8::after,
+.marker-tower9::after,
+.marker-tower10::after,
+.marker-tower11::after {
+  /* content: url(../../../public/images/markers/tower-arrow.svg);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  transform: rotate(-90deg); */
+}
+
+.marker-tower0::after {
+  transform: rotate(-90deg);
+}
+
+.marker-tower1::after {
+  /* transform: rotate(-60deg); */
+}
+
+.marker-tower2::after {
+  /* transform: rotate(-30deg); */
+}
+
+.marker-tower3::after {
+  /* transform: rotate(0deg); */
+}
+
+.marker-tower4::after {
+  /* transform: rotate(30deg); */
+}
+
+.marker-tower5::after {
+  /* transform: rotate(60deg); */
+}
+
+.marker-tower6::after {
+  /* transform: rotate(90deg); */
+}
+
+.marker-tower7::after {
+  /* transform: rotate(120deg); */
+}
+
+.marker-tower8::after {
+  /* transform: rotate(150deg); */
+}
+
+.marker-tower9::after {
+  /* transform: rotate(180deg); */
+}
+
+.marker-tower10::after {
+  /* transform: rotate(210deg); */
+}
+
+.marker-tower11::after {
+  /* transform: rotate(240deg); */
+}
+
+/* ==================== */
+/* вольеры              */
+/* ==================== */
+
+.marker-aviary,
+.marker-aviary-d,
+.marker-aviary-c {
+  background-image: url(../../../public/images/markers/new/aviary.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 6px 6px;
+  height: 30px;
+  width: 30px;
+}
+
+/* ==================== */
+/* касса                */
+/* ==================== */
+
+.marker-cash {
+  background-image: url(../../../public/images/markers/new/cash.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 6px 6px;
+  height: 30px;
+  width: 30px;
+}
+
+/* ==================== */
+/* улика                */
+/* ==================== */
+
+.marker-clue {
+  background-image: url(../../../public/images/markers/new/clue.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 6px 6px;
+  height: 30px;
+  width: 30px;
+}
+
+/* ==================== */
+/* спавн                */
+/* ==================== */
+
+.marker-spawn-player {
+  background-image: url(../../../public/images/markers/new/spawn-player3.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  height: 30px;
+  width: 30px;
+}
+
+/* ==================== */
+/* выход                */
+/* ==================== */
+
+.marker-extraction-point::after,
+.marker-extraction-point-b::after,
+.marker-extraction-point-l::after,
+.marker-extraction-point-t::after,
+.marker-extraction-point-r::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/extraction-point2.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+}
+
+.marker-extraction-point-l::after {
+  transform: rotate(90deg);
+}
+
+.marker-extraction-point-t::after {
+  transform: rotate(180deg);
+}
+
+.marker-extraction-point-r::after {
+  transform: rotate(270deg);
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
 
 .marker-boss {
   background-image: url(../../../public/images/markers/boss-all.svg);
-  background-size: 20px;
+  background-size: 15px;
 }
 
 .marker-boss-all {
@@ -122,182 +337,4 @@
 
 .marker-boss-s {
   background-color: lightblue;
-}
-
-.marker-spawn-player {
-  background-color: plum;
-}
-
-.marker-spawn-player::after {
-  content: 'S';
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #555;
-  text-align: center;
-  position: absolute;
-  top: -2px;
-  left: 8px;
-}
-
-.marker-extraction-point {
-  background-color: whitesmoke;
-}
-
-.marker-extraction-point::after {
-  content: 'E';
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #555;
-  text-align: center;
-  position: absolute;
-  top: -2px;
-  left: 8px;
-}
-
-.marker-easter-egg {
-  background-color: gold;
-}
-
-.marker-easter-egg::after {
-  content: '★';
-  font-size: 1.8rem;
-  position: absolute;
-  top: -9px;
-  left: 1px;
-  color: brown;
-}
-
-.marker-aviary,
-.marker-aviary-d,
-.marker-aviary-c {
-  background-color: lightyellow;
-}
-
-.marker-aviary::after,
-.marker-aviary-d::after,
-.marker-aviary-c::after {
-  content: url(../../../public/images/markers/chicken.svg);
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  top: 3px;
-  left: 3px;
-}
-
-.marker-tower,
-.marker-tower0,
-.marker-tower1,
-.marker-tower2,
-.marker-tower3,
-.marker-tower4,
-.marker-tower5,
-.marker-tower6,
-.marker-tower7,
-.marker-tower8,
-.marker-tower9,
-.marker-tower10,
-.marker-tower11 {
-  background-color: lightcoral;
-}
-
-.marker-tower::after {
-  content: '◌';
-  font-size: 40px;
-  font-weight: bold;
-  position: absolute;
-  top: -20px;
-}
-.marker-tower0::after,
-.marker-tower1::after,
-.marker-tower2::after,
-.marker-tower3::after,
-.marker-tower4::after,
-.marker-tower5::after,
-.marker-tower6::after,
-.marker-tower7::after,
-.marker-tower8::after,
-.marker-tower9::after,
-.marker-tower10::after,
-.marker-tower11::after {
-  content: url(../../../public/images/markers/tower-arrow.svg);
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 3px;
-  left: 4px;
-  transform: rotate(-90deg);
-}
-
-.marker-tower0::after {
-  transform: rotate(-90deg);
-}
-
-.marker-tower1::after {
-  transform: rotate(-60deg);
-}
-
-.marker-tower2::after {
-  transform: rotate(-30deg);
-}
-
-.marker-tower3::after {
-  transform: rotate(0deg);
-}
-
-.marker-tower4::after {
-  transform: rotate(30deg);
-}
-
-.marker-tower5::after {
-  transform: rotate(60deg);
-}
-
-.marker-tower6::after {
-  transform: rotate(90deg);
-}
-
-.marker-tower7::after {
-  transform: rotate(120deg);
-}
-
-.marker-tower8::after {
-  transform: rotate(150deg);
-}
-
-.marker-tower9::after {
-  transform: rotate(180deg);
-}
-
-.marker-tower10::after {
-  transform: rotate(210deg);
-}
-
-.marker-tower11::after {
-  transform: rotate(240deg);
-}
-
-.marker-clue {
-  background-color: lightskyblue;
-}
-
-.marker-clue::after {
-  content: '◌';
-  font-size: 40px;
-  font-weight: bold;
-  position: absolute;
-  top: -20px;
-}
-
-.marker-cash {
-  background-color: lightsalmon;
-}
-
-.marker-cash::after {
-  content: '$';
-  font-size: 17px;
-  position: absolute;
-  top: -3px;
-  left: 4px;
 }

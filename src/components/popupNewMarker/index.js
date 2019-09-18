@@ -43,6 +43,14 @@ export class PopupNewMarker extends Component {
         this.refs.file.classList.remove('hidden');
         break;
 
+      case 'clue':
+        this.refs.file.classList.remove('hidden');
+        break;
+
+      case 'cash':
+        this.refs.file.classList.remove('hidden');
+        break;
+
       case 'resupply-point':
         this.refs.description.value = this.refs.typeMarkers.options[
           this.refs.typeMarkers.selectedIndex
