@@ -9,6 +9,8 @@
     "easter-egg": "Пасхалка",
     "tower": "Вышка",
     "aviary": "Вольер",
+    "clue": "Улика",
+    "cash": "Касса",
     "label": "Название локации",
     "new-object": "Новые маркеры",
     "zone": "Граница локации",
@@ -33,6 +35,12 @@
       "resupply-point": "Повозка",
       "resupply-point-b": "Лодка",
       "resupply-point-rc": "Вагон"
+    },
+    "extraction-point": {
+      "extraction-point-t": "Сверху",
+      "extraction-point-b": "Снизу",
+      "extraction-point-r": "Справа",
+      "extraction-point-l": "Слева"
     },
     "tower": {
       "tower0": "направление 12 часов",

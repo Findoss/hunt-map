@@ -9,6 +9,8 @@
     "easter-egg": "Easter egg",
     "tower": "Tower",
     "aviary": "Aviary",
+    "clue": "Clue",
+    "cash": "Cash",
     "label": "Compounds name",
     "new-object": "New markers",
     "zone": "Compounds zone",
@@ -34,6 +36,12 @@
       "resupply-point-b": "Лодка",
       "resupply-point-rc": "Вагон"
     },
+    "extraction-point": {
+      "extraction-point-t": "Сверху",
+      "extraction-point-b": "Снизу",
+      "extraction-point-r": "Справа",
+      "extraction-point-l": "Слева"
+    },
     "tower": {
       "tower0": "vector 12",
       "tower1": "vector 1",
@@ -47,7 +55,7 @@
       "tower9": "vector 9",
       "tower10": "vector 10",
       "tower11": "vector 11",
-      "tower": "---"
+      "tower": "наблюдательный пункт"
     }
   },
   "send": "Send",
