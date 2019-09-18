@@ -15,10 +15,6 @@
   display: none;
 }
 
-.leaflet-control-layers-overlays label input:checked ~ span span {
-  color: var(--color-2-hover) !important;
-}
-
 .leaflet-control-layers-list {
   z-index: 98;
 }
@@ -79,12 +75,14 @@
 
 .leaflet-control-layers-base label,
 .leaflet-control-layers-overlays label {
+  position: relative;
+  padding-top: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
   margin-top: 2px;
   margin-bottom: 2px;
   background-color: var(--bg-color-1);
   border: 1px solid var(--bg-color-2) !important;
-  color: var(--color-1);
-  padding: 6px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -92,6 +90,23 @@
 .leaflet-control-layers-base label:hover,
 .leaflet-control-layers-overlays label:hover {
   border-color: var(--color-2) !important;
+}
+
+/* .leaflet-control-layers-base label span,
+.leaflet-control-layers-overlays label span {
+} */
+
+.leaflet-control-layers-base label span span,
+.leaflet-control-layers-overlays label span span {
+  text-decoration: line-through;
+  color: var(--color-1);
+  position: relative;
+  top: -6px;
+}
+
+.leaflet-control-layers-base label input:checked ~ span span,
+.leaflet-control-layers-overlays label input:checked ~ span span {
+  text-decoration: none;
 }
 
 .legend-item {
