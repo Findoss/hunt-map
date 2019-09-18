@@ -37,7 +37,9 @@ export default {
 
   // у каждого типа может быть несколько видов маркеров
   typesMarkers: {
+    'resupply-point': ['resupply-point', 'resupply-point-b', 'resupply-point-rc'],
     boss: ['boss-a', 'boss-b', 'boss-s', 'boss-ab', 'boss-as', 'boss-bs', 'boss-all'],
+    aviary: ['aviary', 'aviary-d', 'aviary-c'],
     tower: [
       'tower',
       'tower1',
@@ -51,8 +53,7 @@ export default {
       'tower9',
       'tower10',
       'tower11'
-    ],
-    aviary: ['aviary', 'aviary-d', 'aviary-c']
+    ]
   },
 
   // Основные настройки карт

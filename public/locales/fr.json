@@ -29,8 +29,13 @@
       "aviary-d": "Chiens",
       "aviary-c": "Poules"
     },
+    "resupply-point": {
+      "resupply-point": "Повозка",
+      "resupply-point-b": "Лодка",
+      "resupply-point-rc": "Вагон"
+    },
     "tower": {
-      "tower": "direction 12",
+      "tower0": "direction 12",
       "tower1": "direction 1",
       "tower2": "direction 2",
       "tower3": "direction 3",
@@ -41,7 +46,8 @@
       "tower8": "direction 8",
       "tower9": "direction 9",
       "tower10": "direction 10",
-      "tower11": "direction 11"
+      "tower11": "direction 11",
+      "tower": "---"
     }
   },
   "send": "Envoyer",
