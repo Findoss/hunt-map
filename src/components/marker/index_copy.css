@@ -75,7 +75,7 @@
 }
 
 .marker-resupply-point::after {
-  background-image: url(../../../public/images/markers/new/1.png);
+  background-image: url(../../../public/images/markers/new/resupply-point.png);
   background-repeat: no-repeat;
   background-size: 30px;
   height: 40px;
@@ -83,12 +83,12 @@
   display: block;
   content: '';
   position: absolute;
-  top: 6px;
-  left: 5px;
+  top: 7px;
+  left: 6px;
 }
 
 .marker-resupply-point-2 {
-  background-image: url(../../../public/images/markers/new/1.png);
+  background-image: url(../../../public/images/markers/new/resupply-point.png);
   background-repeat: no-repeat;
   background-size: 40px;
   height: 40px;
@@ -97,7 +97,7 @@
 }
 
 .marker-resupply-point-3 {
-  background-image: url(../../../public/images/markers/new/1.png);
+  background-image: url(../../../public/images/markers/new/resupply-point.png);
   background-repeat: no-repeat;
   background-size: 40px;
   height: 40px;
@@ -107,7 +107,7 @@
 }
 
 .marker-resupply-point-4 {
-  background-image: url(../../../public/images/markers/new/4.png);
+  background-image: url(../../../public/images/markers/new/resupply-point.png);
   background-repeat: no-repeat;
   background-size: 40px;
   height: 40px;
@@ -120,7 +120,7 @@
 }
 
 .marker-resupply-point-5::after {
-  background-image: url(../../../public/images/markers/new/1.png);
+  background-image: url(../../../public/images/markers/new/resupply-point.png);
   background-repeat: no-repeat;
   background-size: 30px;
   height: 40px;
@@ -143,7 +143,7 @@
 
 .marker-easter-egg::after {
   content: '';
-  background-image: url(../../../public/images/markers/new/2.png);
+  background-image: url(../../../public/images/markers/new/easter-egg.png);
   background-repeat: no-repeat;
   background-size: 30px;
   height: 40px;
@@ -161,26 +161,7 @@
 
 .marker-easter-egg-2::after {
   content: '';
-  background-image: url(../../../public/images/markers/new/2.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  height: 40px;
-  width: 40px;
-  filter: invert(100%);
-  display: block;
-  content: '';
-  position: absolute;
-  top: 3px;
-  left: 4px;
-}
-
-.marker-easter-egg-3 {
-  background-color: yellow;
-}
-
-.marker-easter-egg-3::after {
-  content: '';
-  background-image: url(../../../public/images/markers/new/2.png);
+  background-image: url(../../../public/images/markers/new/easter-egg.png);
   background-repeat: no-repeat;
   background-size: 30px;
   height: 40px;
@@ -194,7 +175,7 @@
 }
 
 .marker-easter-egg-4 {
-  background-image: url(../../../public/images/markers/new/2.png);
+  background-image: url(../../../public/images/markers/new/easter-egg.png);
   background-repeat: no-repeat;
   background-size: 36px;
   height: 40px;
@@ -204,7 +185,7 @@
 }
 
 .marker-easter-egg-5 {
-  background-image: url(../../../public/images/markers/new/2.png);
+  background-image: url(../../../public/images/markers/new/easter-egg.png);
   background-repeat: no-repeat;
   background-size: 36px;
   height: 40px;
@@ -213,16 +194,1008 @@
 }
 
 .marker-easter-egg-6 {
-  background-image: url(../../../public/images/markers/new/3.png);
+  background-image: url(../../../public/images/markers/new/easter-egg.png);
   background-repeat: no-repeat;
   background-size: 36px;
   height: 40px;
   width: 40px;
-  /* filter: saturate(100%); */
-  /* filter: hue-rotate(150deg); */
   display: block;
 }
 
 /* ==================== */
 /* боссы                */
 /* ==================== */
+
+/* ==================== */
+/* боссы a              */
+/* ==================== */
+
+.marker-boss-a {
+  background-color: black;
+}
+
+.marker-boss-a::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/boss-a.png);
+  background-repeat: no-repeat;
+  background-size: 35px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.marker-boss-a-2 {
+  background-color: lightskyblue;
+}
+
+.marker-boss-a-2::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/boss-a.png);
+  background-repeat: no-repeat;
+  background-size: 35px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.marker-boss-a-3 {
+  background-image: url(../../../public/images/markers/new/boss-a.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.marker-boss-a-4 {
+  background-image: url(../../../public/images/markers/new/boss-a.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+}
+
+/* ==================== */
+/* боссы b              */
+/* ==================== */
+
+.marker-boss-b {
+  background-color: black;
+}
+
+.marker-boss-b::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/boss-b.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.marker-boss-b-2 {
+  background-color: lightcoral;
+}
+
+.marker-boss-b-2::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/boss-b.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.marker-boss-b-3 {
+  background-image: url(../../../public/images/markers/new/boss-b.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.marker-boss-b-4 {
+  background-image: url(../../../public/images/markers/new/boss-b.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+}
+
+/* 2 */
+
+.marker-boss-b-2-1 {
+  background-color: black;
+}
+
+.marker-boss-b-2-1::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/boss-b2.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.marker-boss-b-2-2 {
+  background-color: lightcoral;
+}
+
+.marker-boss-b-2-2::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/boss-b2.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.marker-boss-b-2-3 {
+  background-image: url(../../../public/images/markers/new/boss-b2.png);
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position-x: 3px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.marker-boss-b-2-4 {
+  background-image: url(../../../public/images/markers/new/boss-b2.png);
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position-x: 3px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+}
+
+/* 3 */
+
+.marker-boss-b-3-1 {
+  background-color: black;
+  overflow: hidden;
+}
+
+.marker-boss-b-3-1::before {
+  content: '';
+  background-image: url(../../../public/images/markers/new/boss-b3.png);
+  background-repeat: no-repeat;
+  background-size: 38px;
+  background-position-x: -2px;
+  background-position-y: -2px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.marker-boss-b-3-2 {
+  background-color: lightcoral;
+  overflow: hidden;
+}
+
+.marker-boss-b-3-2::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/boss-b3.png);
+  background-repeat: no-repeat;
+  background-size: 38px;
+  background-position-x: -2px;
+  background-position-y: -1px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.marker-boss-b-3-3 {
+  background-image: url(../../../public/images/markers/new/boss-b3.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.marker-boss-b-3-4 {
+  background-image: url(../../../public/images/markers/new/boss-b3.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+}
+/* ==================== */
+/* боссы s              */
+/* ==================== */
+
+.marker-boss-s {
+  background-color: black;
+}
+
+.marker-boss-s::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/boss-s.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.marker-boss-s-2 {
+  background-color: lemonchiffon;
+}
+
+.marker-boss-s-2::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/boss-s.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.marker-boss-s-3 {
+  background-image: url(../../../public/images/markers/new/boss-s.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.marker-boss-s-4 {
+  background-image: url(../../../public/images/markers/new/boss-s.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+}
+
+.marker-boss-s {
+  background-color: black;
+}
+
+.marker-boss-s::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/boss-s.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+/* 2 */
+
+.marker-boss-s-2-1 {
+  background-color: black;
+}
+
+.marker-boss-s-2-1::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/boss-s2.png);
+  background-repeat: no-repeat;
+  background-size: 35px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 3px;
+}
+
+.marker-boss-s-2-2 {
+  background-color: lemonchiffon;
+}
+
+.marker-boss-s-2-2::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/boss-s2.png);
+  background-repeat: no-repeat;
+  background-size: 35px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 3px;
+}
+
+.marker-boss-s-2-3 {
+  background-image: url(../../../public/images/markers/new/boss-s2.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: 0px 5px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.marker-boss-s-2-4 {
+  background-image: url(../../../public/images/markers/new/boss-s2.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: 0px 5px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+}
+
+/* ==================== */
+/* spawn-player             */
+/* ==================== */
+
+.marker-spawn-player {
+  background-color: black;
+}
+
+.marker-spawn-player::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/spawn-player.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 5px;
+}
+
+.marker-spawn-player-2 {
+  background-color: plum;
+}
+
+.marker-spawn-player-2::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/spawn-player.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 5px;
+}
+
+.marker-spawn-player-4 {
+  background-image: url(../../../public/images/markers/new/spawn-player.png);
+  background-repeat: no-repeat;
+  background-size: 36px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+}
+
+.marker-spawn-player-5 {
+  background-image: url(../../../public/images/markers/new/spawn-player.png);
+  background-repeat: no-repeat;
+  background-size: 36px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.marker-spawn-player-6 {
+  background-image: url(../../../public/images/markers/new/spawn-player.png);
+  background-repeat: no-repeat;
+  background-size: 36px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+/* 2 */
+
+.marker-spawn-player-2-1 {
+  background-color: black;
+}
+
+.marker-spawn-player-2-1::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/spawn-player2.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 4px;
+}
+
+.marker-spawn-player-2-2 {
+  background-color: plum;
+}
+
+.marker-spawn-player-2-2::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/spawn-player2.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 4px;
+}
+
+.marker-spawn-player-2-4 {
+  background-image: url(../../../public/images/markers/new/spawn-player2.png);
+  background-repeat: no-repeat;
+  background-size: 36px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+}
+
+.marker-spawn-player-2-5 {
+  background-image: url(../../../public/images/markers/new/spawn-player2.png);
+  background-repeat: no-repeat;
+  background-size: 36px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.marker-spawn-player-2-6 {
+  background-image: url(../../../public/images/markers/new/spawn-player2.png);
+  background-repeat: no-repeat;
+  background-size: 36px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+/* 3 */
+
+.marker-spawn-player-3-1 {
+  background-color: black;
+}
+
+.marker-spawn-player-3-1::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/spawn-player3.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 4px;
+}
+
+.marker-spawn-player-3-2 {
+  background-color: plum;
+}
+
+.marker-spawn-player-3-2::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/spawn-player3.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 4px;
+}
+
+.marker-spawn-player-3-4 {
+  background-image: url(../../../public/images/markers/new/spawn-player3.png);
+  background-repeat: no-repeat;
+  background-size: 36px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+}
+
+.marker-spawn-player-3-5 {
+  background-image: url(../../../public/images/markers/new/spawn-player3.png);
+  background-repeat: no-repeat;
+  background-size: 36px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.marker-spawn-player-3-6 {
+  background-image: url(../../../public/images/markers/new/spawn-player3.png);
+  background-repeat: no-repeat;
+  background-size: 36px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+/* ==================== */
+/* extraction-point     */
+/* ==================== */
+
+.marker-extraction-point-1-1 {
+  background-color: black;
+}
+
+.marker-extraction-point-1-1::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/extraction-point.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 8px;
+}
+
+.marker-extraction-point-1-2 {
+  background-color: lightgray;
+}
+
+.marker-extraction-point-1-2::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/extraction-point.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 8px;
+}
+
+.marker-extraction-point-1-4 {
+  background-image: url(../../../public/images/markers/new/extraction-point.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+}
+
+.marker-extraction-point-1-5 {
+  background-image: url(../../../public/images/markers/new/extraction-point.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.marker-extraction-point-1-6 {
+  background-image: url(../../../public/images/markers/new/extraction-point.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+/* 2 */
+
+.marker-extraction-point-2-1 {
+  background-color: black;
+}
+
+.marker-extraction-point-2-1::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/extraction-point2.png);
+  background-repeat: no-repeat;
+  background-size: 38px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 2px;
+}
+
+.marker-extraction-point-2-2 {
+  background-color: lightgray;
+}
+
+.marker-extraction-point-2-2::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/extraction-point2.png);
+  background-repeat: no-repeat;
+  background-size: 38px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 2px;
+}
+
+.marker-extraction-point-2-4 {
+  background-image: url(../../../public/images/markers/new/extraction-point2.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+}
+
+.marker-extraction-point-2-5 {
+  background-image: url(../../../public/images/markers/new/extraction-point2.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.marker-extraction-point-2-6 {
+  background-image: url(../../../public/images/markers/new/extraction-point2.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+/* ==================== */
+/* marker-aviary     */
+/* ==================== */
+
+.marker-aviary-1-1 {
+  background-color: black;
+}
+
+.marker-aviary-1-1::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/aviary.png);
+  background-repeat: no-repeat;
+  background-size: 28px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 7px;
+}
+
+.marker-aviary-1-2 {
+  background-color: lightgoldenrodyellow;
+}
+
+.marker-aviary-1-2::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/aviary.png);
+  background-repeat: no-repeat;
+  background-size: 28px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  filter: invert(100%);
+}
+
+.marker-aviary-1-4 {
+  background-image: url(../../../public/images/markers/new/aviary.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+}
+
+.marker-aviary-1-5 {
+  background-image: url(../../../public/images/markers/new/aviary.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.marker-aviary-1-6 {
+  background-image: url(../../../public/images/markers/new/aviary.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+/* ==================== */
+/* marker-clue     */
+/* ==================== */
+
+.marker-clue-1-1 {
+  background-color: black;
+}
+
+.marker-clue-1-1::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/clue.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 2px;
+}
+
+.marker-clue-1-2 {
+  background-color: lightblue;
+}
+
+.marker-clue-1-2::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/clue.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 2px;
+  filter: invert(100%);
+}
+
+.marker-clue-1-4 {
+  background-image: url(../../../public/images/markers/new/clue.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+}
+
+.marker-clue-1-5 {
+  background-image: url(../../../public/images/markers/new/clue.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.marker-clue-1-6 {
+  background-image: url(../../../public/images/markers/new/clue.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+/* ==================== */
+/* marker-cash     */
+/* ==================== */
+
+.marker-cash-1-1 {
+  background-color: black;
+}
+
+.marker-cash-1-1::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/cash.png);
+  background-repeat: no-repeat;
+  background-size: 35px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.marker-cash-1-2 {
+  background-color: lightsalmon;
+}
+
+.marker-cash-1-2::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/cash.png);
+  background-repeat: no-repeat;
+  background-size: 35px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  filter: invert(100%);
+}
+
+.marker-cash-1-4 {
+  background-image: url(../../../public/images/markers/new/cash.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+}
+
+.marker-cash-1-5 {
+  background-image: url(../../../public/images/markers/new/cash.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.marker-cash-1-6 {
+  background-image: url(../../../public/images/markers/new/cash.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+/* ==================== */
+/* marker-tower     */
+/* ==================== */
+
+.marker-tower-1-1 {
+  background-color: black;
+}
+
+.marker-tower-1-1::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/tower.png);
+  background-repeat: no-repeat;
+  background-size: 23px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 8px;
+}
+
+.marker-tower-1-2 {
+  background-color: thistle;
+}
+
+.marker-tower-1-2::after {
+  content: '';
+  background-image: url(../../../public/images/markers/new/tower.png);
+  background-repeat: no-repeat;
+  background-size: 23px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 8px;
+  filter: invert(100%);
+}
+
+.marker-tower-1-4 {
+  background-image: url(../../../public/images/markers/new/tower.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  display: block;
+}
+
+.marker-tower-1-5 {
+  background-image: url(../../../public/images/markers/new/tower.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.marker-tower-1-6 {
+  background-image: url(../../../public/images/markers/new/tower.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
