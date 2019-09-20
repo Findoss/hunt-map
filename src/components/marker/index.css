@@ -22,7 +22,7 @@
   margin-top: -6px !important;
   background-size: 10px;
   background: white;
-  border: 1px solid #red;
+  border: 1px solid black;
   border-radius: 50%;
   filter: drop-shadow(3px 3px 3px #000000);
 }
@@ -32,8 +32,9 @@
 /* ==================== */
 .marker-base {
   background-color: rgba(0, 0, 0, 0.15);
-  filter: drop-shadow(2px 2px 2px #000000);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 50%;
+  filter: drop-shadow(2px 2px 2px #000000) grayscale(3) brightness(1.1);
 }
 
 .legend-item.marker-zone,
@@ -57,7 +58,7 @@
   left: -110px;
   opacity: 0.8;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 1.4rem;
+  font-size: 1rem;
   letter-spacing: 1px;
   font-weight: bold;
   text-shadow: 3px 3px 2px #000000;
@@ -90,12 +91,11 @@
 /* ==================== */
 
 .marker-resupply-point {
-  background-image: url(../../../public/images/markers/new/resupply-point2.png);
+  background-image: url(../../../public/images/markers/resupply-point.png);
   background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: 3px 4px;
-  height: 30px;
-  width: 30px;
+  background-size: 23px;
+  background-position: 4px 5px;
+  /* filter: hue-rotate(0deg); */
 }
 
 /* ==================== */
@@ -104,11 +104,11 @@
 
 .marker-easter-egg {
   content: '';
-  background-image: url(../../../public/images/markers/new/easter-egg.png);
+  background-image: url(../../../public/images/markers/easter-egg.png);
   background-repeat: no-repeat;
-  background-size: 25px;
-  height: 30px;
-  width: 30px;
+  background-size: 22px;
+  background-position: 4px 3px;
+  /* filter: hue-rotate(280deg); */
 }
 
 /* ==================== */
@@ -116,7 +116,6 @@
 /* ==================== */
 
 .marker-tower,
-.marker-tower0,
 .marker-tower1,
 .marker-tower2,
 .marker-tower3,
@@ -128,44 +127,23 @@
 .marker-tower9,
 .marker-tower10,
 .marker-tower11 {
-  background-image: url(../../../public/images/markers/new/tower.png);
+  background-image: url(../../../public/images/markers/tower.png);
   background-repeat: no-repeat;
   background-size: 19px;
   background-position: 6px 1px;
-  height: 30px;
-  width: 30px;
+  /* filter: hue-rotate(150deg); */
 }
 
-.marker-tower::after {
-  content: '◌';
-  font-size: 40px;
-  font-weight: bold;
-  position: absolute;
-  top: -20px;
-}
-.marker-tower0::after,
-.marker-tower1::after,
-.marker-tower2::after,
-.marker-tower3::after,
-.marker-tower4::after,
-.marker-tower5::after,
-.marker-tower6::after,
-.marker-tower7::after,
-.marker-tower8::after,
-.marker-tower9::after,
-.marker-tower10::after,
-.marker-tower11::after {
-  /* content: url(../../../public/images/markers/tower-arrow.svg);
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 3px;
-  left: 4px;
-  transform: rotate(-90deg); */
+.marker-tower-o {
+  background-image: url(../../../public/images/markers/tower-o.png);
+  background-repeat: no-repeat;
+  background-size: 19px;
+  background-position: 6px 1px;
+  /* filter: hue-rotate(150deg); */
 }
 
 .marker-tower0::after {
-  transform: rotate(-90deg);
+  /* transform: rotate(-90deg); */
 }
 
 .marker-tower1::after {
@@ -219,12 +197,11 @@
 .marker-aviary,
 .marker-aviary-d,
 .marker-aviary-c {
-  background-image: url(../../../public/images/markers/new/aviary.png);
+  background-image: url(../../../public/images/markers/aviary.png);
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: 6px 6px;
-  height: 30px;
-  width: 30px;
+  /* filter: hue-rotate(40deg); */
 }
 
 /* ==================== */
@@ -232,25 +209,23 @@
 /* ==================== */
 
 .marker-cash {
-  background-image: url(../../../public/images/markers/new/cash.png);
+  background-image: url(../../../public/images/markers/cash.png);
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: 6px 6px;
-  height: 30px;
-  width: 30px;
+  /* filter: hue-rotate(250deg); */
 }
 
 /* ==================== */
-/* улика                */
+/* подсказка            */
 /* ==================== */
 
 .marker-clue {
-  background-image: url(../../../public/images/markers/new/clue.png);
+  background-image: url(../../../public/images/markers/clue.png);
   background-repeat: no-repeat;
-  background-size: 20px;
-  background-position: 6px 6px;
-  height: 30px;
-  width: 30px;
+  background-size: 27px;
+  background-position: 2px 3px;
+  /* filter: hue-rotate(80deg); */
 }
 
 /* ==================== */
@@ -258,28 +233,42 @@
 /* ==================== */
 
 .marker-spawn-player {
-  background-image: url(../../../public/images/markers/new/spawn-player3.png);
+  background-image: url(../../../public/images/markers/spawn-player.png);
   background-repeat: no-repeat;
-  background-size: 25px;
-  height: 30px;
-  width: 30px;
+  background-size: 20px;
+  background-position: 4px 5px;
 }
 
 /* ==================== */
 /* выход                */
 /* ==================== */
 
-.marker-extraction-point::after,
+.marker-extraction-point {
+  background-image: url(../../../public/images/markers/extraction-point.png);
+  background-size: 30px;
+}
+
+.marker-extraction-point-b,
+.marker-extraction-point-l,
+.marker-extraction-point-t,
+.marker-extraction-point-r {
+  width: 40px !important;
+  height: 40px !important;
+  margin-left: -20px !important;
+  margin-top: -20px !important;
+}
+
 .marker-extraction-point-b::after,
 .marker-extraction-point-l::after,
 .marker-extraction-point-t::after,
 .marker-extraction-point-r::after {
   content: '';
-  background-image: url(../../../public/images/markers/new/extraction-point2.png);
+  background-image: url(../../../public/images/markers/extraction-point.png);
   background-repeat: no-repeat;
-  background-size: 30px;
-  height: 30px;
-  width: 30px;
+  background-size: 38px;
+  background-position: 1px 3px;
+  width: 40px;
+  height: 40px;
   position: absolute;
 }
 
@@ -295,46 +284,69 @@
   transform: rotate(270deg);
 }
 
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
+/* ==================== */
+/* боссы                */
+/* ==================== */
 
 .marker-boss {
-  background-image: url(../../../public/images/markers/boss-all.svg);
-  background-size: 15px;
+  background-image: url(../../../public/images/markers/boss-all.png);
+  background-size: 30px;
 }
 
 .marker-boss-all {
-  background-image: url(../../../public/images/markers/boss-all.svg);
+  width: 50px !important;
+  height: 50px !important;
+  margin-left: -25px !important;
+  margin-top: -25px !important;
+  background-size: 38px;
+  background-position: 6px 3px;
+  background-image: url(../../../public/images/markers/boss-all.png);
 }
 
 .marker-boss-as {
-  background-image: url(../../../public/images/markers/boss-as.svg);
+  width: 40px !important;
+  height: 40px !important;
+  margin-left: -20px !important;
+  margin-top: -20px !important;
+  background-size: 38px;
+  background-position: 2px 9px;
+  background-image: url(../../../public/images/markers/boss-as.png);
 }
 
 .marker-boss-ab {
-  background-image: url(../../../public/images/markers/boss-ab.svg);
+  width: 40px !important;
+  height: 40px !important;
+  margin-left: -20px !important;
+  margin-top: -20px !important;
+  background-size: 38px;
+  background-position: 2px 9px;
+  background-image: url(../../../public/images/markers/boss-ab.png);
 }
 
 .marker-boss-bs {
-  background-image: url(../../../public/images/markers/boss-bs.svg);
+  width: 40px !important;
+  height: 40px !important;
+  margin-left: -20px !important;
+  margin-top: -20px !important;
+  background-size: 38px;
+  background-position: 2px 9px;
+  background-image: url(../../../public/images/markers/boss-bs.png);
 }
 
 .marker-boss-a {
-  background-color: lightpink;
+  background-image: url(../../../public/images/markers/boss-a.png);
+  background-size: 25px;
+  background-position: 3px 3px;
 }
 
 .marker-boss-b {
-  background-color: lemonchiffon;
+  background-image: url(../../../public/images/markers/boss-b.png);
+  background-size: 21px;
+  background-position: 5px 3px;
 }
 
 .marker-boss-s {
-  background-color: lightblue;
+  background-image: url(../../../public/images/markers/boss-s.png);
+  background-size: 25px;
+  background-position: 3px 3px;
 }

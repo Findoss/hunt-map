@@ -59,7 +59,7 @@ export default {
       'tower9',
       'tower10',
       'tower11',
-      'tower0'
+      'tower-o'
     ]
   },
 
