@@ -24,6 +24,7 @@ import { Polygon } from '../polygon';
 import { Polyline } from '../polyline';
 import { LegendItem } from '../legendItem';
 import { ButtonAuth } from '../buttonAuth';
+import { ButtonStyleAlt } from '../buttonStyleAlt';
 
 import { PopupNewMarker } from '../popupNewMarker';
 import { PopupNewPoly } from '../popupNewPoly';
@@ -157,16 +158,19 @@ export class Map extends Component {
     });
     L.drawLocal.draw = merge(L.drawLocal.draw, t('draw'));
 
+    new ButtonStyleAlt();
+    new ButtonAuth();
+
     this.map.addControl(L.control.zoom(t('zoom')));
     if (!isInIframe()) {
       this.map.addControl(L.control.fullscreen(t('fullscreen')));
     }
     this.map.addControl(L.control.measure(merge(optionsRuler, t('ruler'))));
     this.map.addControl(drawControl);
+    this.map.addControl(L.control.buttonStyleAlt());
     this.map.addControl(L.control.layers(null, this.legendItems));
     this.map.addControl(L.easyPrint(merge(optionsPrint, t('print'))));
     if (!isInIframe()) {
-      new ButtonAuth();
       this.map.addControl(L.control.auth(optionsAuth));
     }
     //
