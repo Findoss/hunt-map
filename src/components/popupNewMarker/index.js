@@ -43,8 +43,19 @@ export class PopupNewMarker extends Component {
         this.refs.file.classList.remove('hidden');
         break;
 
+      case 'clue':
+        this.refs.file.classList.remove('hidden');
+        break;
+
+      case 'cash':
+        this.refs.file.classList.remove('hidden');
+        break;
+
       case 'resupply-point':
-        this.refs.description.value = t('fastDescription', type);
+        this.refs.description.value = this.refs.typeMarkers.options[
+          this.refs.typeMarkers.selectedIndex
+        ].text;
+        this.refs.description.value += '<br/>' + t('fastDescription', type);
         break;
 
       case 'aviary':
@@ -65,8 +76,10 @@ export class PopupNewMarker extends Component {
   }
 
   _handleSelectTypeMarkeds(props, e) {
+    const type = this.refs.types.value;
     this.refs.description.value = '';
-    switch (this.refs.types.value) {
+
+    switch (type) {
       case 'boss':
         this.refs.description.value = this.refs.typeMarkers.options[
           this.refs.typeMarkers.selectedIndex
@@ -77,6 +90,13 @@ export class PopupNewMarker extends Component {
         this.refs.description.value = this.refs.typeMarkers.options[
           this.refs.typeMarkers.selectedIndex
         ].text;
+        break;
+
+      case 'resupply-point':
+        this.refs.description.value = this.refs.typeMarkers.options[
+          this.refs.typeMarkers.selectedIndex
+        ].text;
+        this.refs.description.value += '<br/>' + t('fastDescription', type);
         break;
 
       default:

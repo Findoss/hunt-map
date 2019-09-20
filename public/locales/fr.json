@@ -8,6 +8,8 @@
     "resupply-point": "Ravitaillement",
     "easter-egg": "Easter Egg",
     "tower": "Tour",
+    "clue": "Indice",
+    "cash": "Caisse Enregistreuse",
     "aviary": "Cage d'animaux",
     "label": "Nom des compounds",
     "new-object": "Nouveaux marqueurs",
@@ -29,6 +31,17 @@
       "aviary-d": "Chiens",
       "aviary-c": "Poules"
     },
+    "resupply-point": {
+      "resupply-point": "Ravitaillement",
+      "resupply-point-b": "Bâteau de Ravitaillement",
+      "resupply-point-rc": "Wagon de Ravitaillement"
+    },
+    "extraction-point": {
+      "extraction-point-t": "Haut",
+      "extraction-point-b": "Bas",
+      "extraction-point-r": "Gauche",
+      "extraction-point-l": "Droite"
+    },
     "tower": {
       "tower": "direction 12",
       "tower1": "direction 1",
@@ -41,7 +54,8 @@
       "tower8": "direction 8",
       "tower9": "direction 9",
       "tower10": "direction 10",
-      "tower11": "direction 11"
+      "tower11": "direction 11",
+      "tower-o": "Poste d'observation"
     }
   },
   "send": "Envoyer",

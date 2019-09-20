@@ -5,7 +5,8 @@
       "title": "label",
       "name": {
         "en": "Alain & Son's <br> Fish",
-        "ru": "Рыбное хозяйство &laquo;Ален и сын&raquo;"
+        "fr": "Poissonnerie <br> Alain & Fils",
+        "ru": "Рыбное хозяйство <br> &laquo;Ален и сын&raquo;"
       }
     },
     "geometry": {
@@ -19,7 +20,8 @@
       "title": "label",
       "name": {
         "en": "Reynard <br> Mill & Lumber",
-        "ru": "Лесопильня Рейнарда"
+        "fr": "Scierie Reynard",
+        "ru": "Лесопильня <br> Рейнарда"
       }
     },
     "geometry": {
@@ -33,7 +35,8 @@
       "title": "label",
       "name": {
         "en": "Port Reeker",
-        "ru": "Порт Рикер"
+        "fr": "Havre Saumâtre",
+        "ru": "Поселение <br> &laquo;Порт Рикер&raquo;"
       }
     },
     "geometry": {
@@ -47,6 +50,7 @@
       "title": "label",
       "name": {
         "en": "Scupper Lake",
+        "fr": "Lac Désolé",
         "ru": "Гиблое озеро"
       }
     },
@@ -61,6 +65,7 @@
       "title": "label",
       "name": {
         "en": "Blanchett Graves",
+        "fr": "Cimetière Blanchet",
         "ru": "Кладбище Бланшетт"
       }
     },
@@ -75,6 +80,7 @@
       "title": "label",
       "name": {
         "en": "Darrow Livestock",
+        "fr": "Elevage Darrow",
         "ru": "Ферма Дэрроу"
       }
     },
@@ -89,6 +95,7 @@
       "title": "label",
       "name": {
         "en": "Alice Farm",
+        "fr": "Ferme d'Alice",
         "ru": "Ферма Элис"
       }
     },
@@ -103,7 +110,8 @@
       "title": "label",
       "name": {
         "en": "The Chapel <br> of Madonna Noire",
-        "ru": "Часовня <br> Черной Мадонны"
+        "fr": "Chapelle de la Noire Madonne",
+        "ru": "Часовня <br> Мадонны Нуар"
       }
     },
     "geometry": {
@@ -117,6 +125,7 @@
       "title": "label",
       "name": {
         "en": "Lockbay Docks",
+        "fr": "Quais de Lockbay",
         "ru": "Верфь Локбей"
       }
     },
@@ -131,7 +140,8 @@
       "title": "label",
       "name": {
         "en": "Stillwater Bend",
-        "ru": "Излучина Стилуотер"
+        "fr": "Croisée de Stillwater",
+        "ru": "Поселение <br>&laquo;Излучина Стилуотер&raquo;"
       }
     },
     "geometry": {
@@ -145,7 +155,8 @@
       "title": "label",
       "name": {
         "en": "Pitching Crematorium",
-        "ru": "Разрушенный крематорий"
+        "fr": "Crématorium délabré",
+        "ru": "Разрушенный <br> крематорий"
       }
     },
     "geometry": {
@@ -159,6 +170,7 @@
       "title": "label",
       "name": {
         "en": "Cyprus Huts",
+        "fr": "Cabane des Cyprès",
         "ru": "Кипарисовая роща"
       }
     },
@@ -173,6 +185,7 @@
       "title": "label",
       "name": {
         "en": "Davant Ranch",
+        "fr": "Ranch Davant",
         "ru": "Ранчо Даванта"
       }
     },
@@ -187,6 +200,7 @@
       "title": "label",
       "name": {
         "en": "The Slaughterhouse",
+        "fr": "Abbatoir",
         "ru": "Скотобойня"
       }
     },
@@ -201,6 +215,7 @@
       "title": "label",
       "name": {
         "en": "Catfish Grove",
+        "fr": "Marécage du Silure",
         "ru": "Сомовая роща"
       }
     },
@@ -215,7 +230,8 @@
       "title": "label",
       "name": {
         "en": "Healing-Waters <br> Church",
-        "ru": "Церковь &laquo;Исцеляющие воды&raquo;"
+        "fr": "Eglise des <br> Eaux Curatives",
+        "ru": "Церковь <br>&laquo;Исцеляющие воды&raquo;"
       }
     },
     "geometry": {

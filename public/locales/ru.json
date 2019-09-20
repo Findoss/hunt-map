@@ -9,6 +9,8 @@
     "easter-egg": "Пасхалка",
     "tower": "Вышка",
     "aviary": "Вольер",
+    "clue": "Подсказка",
+    "cash": "Касса",
     "label": "Название локации",
     "new-object": "Новые маркеры",
     "zone": "Граница локации",
@@ -29,6 +31,17 @@
       "aviary-d": "Собаки",
       "aviary-c": "Курицы"
     },
+    "resupply-point": {
+      "resupply-point": "Повозка",
+      "resupply-point-b": "Лодка",
+      "resupply-point-rc": "Вагон"
+    },
+    "extraction-point": {
+      "extraction-point-t": "Сверху",
+      "extraction-point-b": "Снизу",
+      "extraction-point-r": "Справа",
+      "extraction-point-l": "Слева"
+    },
     "tower": {
       "tower": "направление 12 часов",
       "tower1": "направление 1 час",
@@ -41,7 +54,8 @@
       "tower8": "направление 8 часов",
       "tower9": "направление 9 часов",
       "tower10": "направление 10 часов",
-      "tower11": "направление 11 часов"
+      "tower11": "направление 11 часов",
+      "tower-o": "наблюдательный пункт"
     }
   },
   "send": "Отправить",
