@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" class="pie" viewBox="0 0 64 64" xml:space="preserve">
-  <style>
-    .pie { width: 300px; background: #ccc; border-radius: 50%; } .pie circle { fill: none; stroke-width: 32; }
-  </style>
-  <circle cx="50%" cy="50%" r="25%" style="stroke:lemonchiffon;stroke-dasharray:50 100;stroke-dashoffset:0"/>
-  <circle cx="50%" cy="50%" r="25%" style="stroke:lightblue;stroke-dasharray:51 100;stroke-dashoffset:-50"/>
-</svg>
