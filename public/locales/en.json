@@ -32,18 +32,18 @@
       "aviary-c": "Chicken"
     },
     "resupply-point": {
-      "resupply-point": "Повозка",
-      "resupply-point-b": "Лодка",
-      "resupply-point-rc": "Вагон"
+      "resupply-point": "Сarriage",
+      "resupply-point-b": "Boat",
+      "resupply-point-rc": "Railway carriage"
     },
     "extraction-point": {
-      "extraction-point-t": "Сверху",
-      "extraction-point-b": "Снизу",
-      "extraction-point-r": "Справа",
-      "extraction-point-l": "Слева"
+      "extraction-point-t": "Top",
+      "extraction-point-b": "Bottom",
+      "extraction-point-r": "Right",
+      "extraction-point-l": "Left"
     },
     "tower": {
-      "tower0": "vector 12",
+      "tower": "vector 12",
       "tower1": "vector 1",
       "tower2": "vector 2",
       "tower3": "vector 3",
@@ -55,7 +55,7 @@
       "tower9": "vector 9",
       "tower10": "vector 10",
       "tower11": "vector 11",
-      "tower": "наблюдательный пункт"
+      "tower-o": "Observation post"
     }
   },
   "send": "Send",

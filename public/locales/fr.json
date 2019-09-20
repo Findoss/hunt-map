@@ -8,8 +8,8 @@
     "resupply-point": "Ravitaillement",
     "easter-egg": "Easter Egg",
     "tower": "Tour",
-    "clue": "Улика",
-    "cash": "Касса",
+    "clue": "Indice",
+    "cash": "Caisse Enregistreuse",
     "aviary": "Cage d'animaux",
     "label": "Nom des compounds",
     "new-object": "Nouveaux marqueurs",
@@ -32,18 +32,18 @@
       "aviary-c": "Poules"
     },
     "resupply-point": {
-      "resupply-point": "Повозка",
-      "resupply-point-b": "Лодка",
-      "resupply-point-rc": "Вагон"
+      "resupply-point": "Ravitaillement",
+      "resupply-point-b": "Bâteau de Ravitaillement",
+      "resupply-point-rc": "Wagon de Ravitaillement"
     },
     "extraction-point": {
-      "extraction-point-t": "Сверху",
-      "extraction-point-b": "Снизу",
-      "extraction-point-r": "Справа",
-      "extraction-point-l": "Слева"
+      "extraction-point-t": "Haut",
+      "extraction-point-b": "Bas",
+      "extraction-point-r": "Gauche",
+      "extraction-point-l": "Droite"
     },
     "tower": {
-      "tower0": "direction 12",
+      "tower": "direction 12",
       "tower1": "direction 1",
       "tower2": "direction 2",
       "tower3": "direction 3",
@@ -55,7 +55,7 @@
       "tower9": "direction 9",
       "tower10": "direction 10",
       "tower11": "direction 11",
-      "tower": "наблюдательный пункт"
+      "tower-o": "Poste d'observation"
     }
   },
   "send": "Envoyer",

@@ -47,7 +47,7 @@
 ```
 
 ```
-<img src='***' data-modal='true' height='100px' />
+<br /><img height='100px' src='***' data-modal='true'/>
 ```
 
 ```
