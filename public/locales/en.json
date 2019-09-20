@@ -9,6 +9,8 @@
     "easter-egg": "Easter egg",
     "tower": "Tower",
     "aviary": "Aviary",
+    "clue": "Clue",
+    "cash": "Cash",
     "label": "Compounds name",
     "new-object": "New markers",
     "zone": "Compounds zone",
@@ -29,6 +31,17 @@
       "aviary-d": "Dogs",
       "aviary-c": "Chicken"
     },
+    "resupply-point": {
+      "resupply-point": "Сarriage",
+      "resupply-point-b": "Boat",
+      "resupply-point-rc": "Railway carriage"
+    },
+    "extraction-point": {
+      "extraction-point-t": "Top",
+      "extraction-point-b": "Bottom",
+      "extraction-point-r": "Right",
+      "extraction-point-l": "Left"
+    },
     "tower": {
       "tower": "vector 12",
       "tower1": "vector 1",
@@ -41,7 +54,8 @@
       "tower8": "vector 8",
       "tower9": "vector 9",
       "tower10": "vector 10",
-      "tower11": "vector 11"
+      "tower11": "vector 11",
+      "tower-o": "Observation post"
     }
   },
   "send": "Send",

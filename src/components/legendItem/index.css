@@ -34,7 +34,7 @@
   top: 100%;
   left: 50%;
   border: solid transparent;
-  content: ' ';
+  content: '';
   height: 0;
   width: 0;
   position: absolute;
@@ -92,16 +92,15 @@
   border-color: var(--color-2) !important;
 }
 
-/* .leaflet-control-layers-base label span,
+.leaflet-control-layers-base label span,
 .leaflet-control-layers-overlays label span {
-} */
+  display: flex;
+}
 
 .leaflet-control-layers-base label span span,
 .leaflet-control-layers-overlays label span span {
   text-decoration: line-through;
   color: var(--color-1);
-  position: relative;
-  top: -6px;
 }
 
 .leaflet-control-layers-base label input:checked ~ span span,
@@ -110,17 +109,25 @@
 }
 
 .legend-item {
-  display: inline-block;
-  width: 26px;
-  height: 26px;
-  background-size: 25px !important;
-  background-repeat: no-repeat;
-
-  margin-right: 10px;
-  margin-left: 5px;
-  margin-top: 5px;
-  color: var(--bg-color-1);
+  height: 30px;
+  width: 30px;
   position: relative;
-  border: 1px solid white;
-  border-radius: 50%;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  margin-bottom: 3px;
+  color: var(--bg-color-1);
+  overflow: hidden;
+  display: block;
+  filter: grayscale(3) brightness(1.1);
+}
+
+/* huck */
+
+.legend-item .marker-extraction-point {
+}
+.legend-item .marker-boss {
+  height: 50px !important;
+  width: 50px !important;
+  background-size: 50px !important;
+  background-position: center center;
 }
