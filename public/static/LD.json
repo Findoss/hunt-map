@@ -96,7 +96,7 @@
       "name": {
         "en": "Sweetbell Flour",
         "fr": "Moulin Sweetbell",
-        "ru": "Мучная фабрика Свитбела"
+        "ru": "Мельница &laquo;Лобелия&raquo;"
       }
     },
     "geometry": {
@@ -111,7 +111,7 @@
       "name": {
         "en": "Arden Parish",
         "fr": "Paroisse d'Arden",
-        "ru": "Арденский приход"
+        "ru": "Приход Арден"
       }
     },
     "geometry": {
@@ -126,7 +126,7 @@
       "name": {
         "en": "Windy Run",
         "fr": "Haras des quatres vents",
-        "ru": "Коневодство <br/> &laquo;Резвый жеребец&raquo;"
+        "ru": "Ветреный простор"
       }
     },
     "geometry": {
@@ -216,7 +216,7 @@
       "name": {
         "en": "C&A Lumber",
         "fr": "Scierie C&A",
-        "ru": "Лесопильня&nbsp;К. и&nbsp;А."
+        "ru": "Лесопильня&nbsp;C&А&nbsp;"
       }
     },
     "geometry": {
@@ -231,7 +231,7 @@
       "name": {
         "en": "Hemlock and Hide",
         "fr": "Tannerie <br> Hemlock & Hide",
-        "ru": "Ферма <br> Хемлока и&nbsp;Хайда"
+        "ru": "Дубильня <br> &nbsp;Коварный дурман&nbsp;"
       }
     },
     "geometry": {

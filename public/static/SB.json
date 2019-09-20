@@ -36,7 +36,7 @@
       "name": {
         "en": "Port Reeker",
         "fr": "Havre Saumâtre",
-        "ru": "Поселение <br> &laquo;Порт Рикер&raquo;"
+        "ru": "Порт Рикер"
       }
     },
     "geometry": {
@@ -81,7 +81,7 @@
       "name": {
         "en": "Darrow Livestock",
         "fr": "Elevage Darrow",
-        "ru": "Ферма Дэрроу"
+        "ru": "Скотный двор <br> Дэрроу"
       }
     },
     "geometry": {
@@ -111,7 +111,7 @@
       "name": {
         "en": "The Chapel <br> of Madonna Noire",
         "fr": "Chapelle de la Noire Madonne",
-        "ru": "Часовня <br> Мадонны Нуар"
+        "ru": "Часовня <br> Чёрной Мадонны"
       }
     },
     "geometry": {
@@ -141,7 +141,7 @@
       "name": {
         "en": "Stillwater Bend",
         "fr": "Croisée de Stillwater",
-        "ru": "Поселение <br>&laquo;Излучина Стилуотер&raquo;"
+        "ru": "Излучина Стилуотер"
       }
     },
     "geometry": {
