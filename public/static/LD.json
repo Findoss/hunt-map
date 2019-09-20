@@ -5,7 +5,8 @@
       "title": "label",
       "name": {
         "en": "Godard Docks",
-        "ru": "Пристань Годарда"
+        "ru": "Пристань Годарда",
+        "fr": "Docks Godard"
       }
     },
     "geometry": {
@@ -19,6 +20,7 @@
       "title": "label",
       "name": {
         "en": "Blanc Brinery",
+        "fr": "Saumurerie Blanc",
         "ru": "Солодовня Бланка"
       }
     },
@@ -33,6 +35,7 @@
       "title": "label",
       "name": {
         "en": "Lawson Station",
+        "fr": "Gare de Lawson",
         "ru": "Станция Лоусон"
       }
     },
@@ -47,6 +50,7 @@
       "title": "label",
       "name": {
         "en": "Golden Acres",
+        "fr": "Les Acrés Dorés",
         "ru": "Ферма <br/> &laquo;Золотые акры&raquo;"
       }
     },
@@ -61,6 +65,7 @@
       "title": "label",
       "name": {
         "en": "Salter's Pork",
+        "fr": "Porcherie de Salter",
         "ru": "Свинина Солтера"
       }
     },
@@ -75,6 +80,7 @@
       "title": "label",
       "name": {
         "en": "Maw Battery",
+        "fr": "Garnison Maw",
         "ru": "Гарнизон &laquo;Кровавая пасть&raquo;"
       }
     },
@@ -89,6 +95,7 @@
       "title": "label",
       "name": {
         "en": "Sweetbell Flour",
+        "fr": "Moulin Sweetbell",
         "ru": "Мучная фабрика Свитбела"
       }
     },
@@ -103,6 +110,7 @@
       "title": "label",
       "name": {
         "en": "Arden Parish",
+        "fr": "Paroisse d'Arden",
         "ru": "Арденский приход"
       }
     },
@@ -117,6 +125,7 @@
       "title": "label",
       "name": {
         "en": "Windy Run",
+        "fr": "Haras des quatres vents",
         "ru": "Коневодство <br/> &laquo;Резвый жеребец&raquo;"
       }
     },
@@ -131,6 +140,7 @@
       "title": "label",
       "name": {
         "en": "Nicholls Prison",
+        "fr": "Prison Nicholls",
         "ru": "Тюрьма Николлс"
       }
     },
@@ -145,6 +155,7 @@
       "title": "label",
       "name": {
         "en": "Fort Carmick",
+        "fr": "Fort Carmick",
         "ru": "Форт Кармик"
       }
     },
@@ -159,6 +170,7 @@
       "title": "label",
       "name": {
         "en": "Iron Works",
+        "fr": "Fonderie",
         "ru": "Литейный завод"
       }
     },
@@ -173,6 +185,7 @@
       "title": "label",
       "name": {
         "en": "Wolfshead Arsenal",
+        "fr": "Arsenal Wolfhead",
         "ru": "Арсенал Вульфсхеда"
       }
     },
@@ -187,6 +200,7 @@
       "title": "label",
       "name": {
         "en": "Bradley & Craven <br> Brickworks",
+        "fr": "Briqueterie <br> Bradley & Craven",
         "ru": "Кирпичный завод <br> Брэдли и&nbsp;Крейвена"
       }
     },
@@ -201,6 +215,7 @@
       "title": "label",
       "name": {
         "en": "C&A Lumber",
+        "fr": "Scierie C&A",
         "ru": "Лесопильня&nbsp;К. и&nbsp;А."
       }
     },
@@ -215,7 +230,8 @@
       "title": "label",
       "name": {
         "en": "Hemlock and Hide",
-        "ru": "Ферма <br/> Хемлока и&nbsp;Хайда"
+        "fr": "Tannerie <br> Hemlock & Hide",
+        "ru": "Ферма <br> Хемлока и&nbsp;Хайда"
       }
     },
     "geometry": {
