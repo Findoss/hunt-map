@@ -4,7 +4,7 @@
   display: block !important;
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: 67px;
 }
 
 .leaflet-control-layers {
@@ -23,11 +23,10 @@
   z-index: 99;
 }
 
-/* .leaflet-control-layers-toggle::after {
-  content: '↓';
-  padding-top: 22px;
-  padding-left: 22px;
-} */
+.leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+  width: 100%;
+  left: 0;
+}
 
 .leaflet-control-layers-expanded .leaflet-control-layers-toggle:after,
 .leaflet-control-layers-expanded .leaflet-control-layers-toggle:before {
@@ -56,7 +55,7 @@
 .leaflet-control-layers-expanded {
   padding: 0;
   margin: 0;
-  position: relative;
+  /* position: relative; */
   padding-top: 50px;
   background-color: rgba(0, 0, 0, 0);
   transition-duration: 0.3s;
@@ -67,10 +66,6 @@
   background-color: var(--bg-color-2);
   border: 1px solid var(--color-2) !important;
   border-radius: 5px;
-}
-
-.leaflet-control-layers-expanded .leaflet-control-layers-toggle {
-  width: 100%;
 }
 
 .leaflet-control-layers-base label,
@@ -95,16 +90,18 @@
 .leaflet-control-layers-base label span,
 .leaflet-control-layers-overlays label span {
   display: flex;
+  padding-right: 5px;
 }
 
 .leaflet-control-layers-base label span span,
 .leaflet-control-layers-overlays label span span {
   text-decoration: line-through;
-  color: var(--color-1);
+  color: var(--color-2);
 }
 
 .leaflet-control-layers-base label input:checked ~ span span,
 .leaflet-control-layers-overlays label input:checked ~ span span {
+  color: var(--color-1);
   text-decoration: none;
 }
 
@@ -119,15 +116,4 @@
   overflow: hidden;
   display: block;
   filter: grayscale(3) brightness(1.1);
-}
-
-/* huck */
-
-.legend-item .marker-extraction-point {
-}
-.legend-item .marker-boss {
-  height: 50px !important;
-  width: 50px !important;
-  background-size: 50px !important;
-  background-position: center center;
 }
