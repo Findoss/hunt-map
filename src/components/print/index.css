@@ -3,18 +3,20 @@
   background-size: 18px;
 }
 
+.easyPrintSizeMode {
+  font-size: 0.7rem;
+  color: var(--color-1);
+}
+
 .easyPrintSizeMode .CurrentSize::after {
-  color: white;
   content: '.png';
 }
 
 .easyPrintSizeMode .A4Portrait::after {
-  color: white;
   content: 'A4-p';
 }
 
 .easyPrintSizeMode .A4Landscape::after {
-  color: white;
   content: 'A4-l';
 }
 
