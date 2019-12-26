@@ -22,8 +22,6 @@ export default {
     'aviary',
     'clue',
     'cash'
-    // "lift",
-    // "metal-door"
   ],
 
   // типы для особых маркеров
