@@ -22,6 +22,7 @@ export function Marker(doc, id, isLogin) {
         if (type === 'boss') {
           circles.push(Circle(doc, 40, 'darkred'));
           circles.push(Circle(doc, 80, 'white'));
+          circles.push(Circle(doc, 100, 'darkorange'));
         }
 
         return new L.marker(doc.geometry.coordinates, {
@@ -32,16 +33,12 @@ export function Marker(doc, id, isLogin) {
         })
           .on('mouseover', () => {
             if (type === 'boss') {
-              circles.forEach(circle => {
-                circle.addTo(this.groups[doc.properties.title]);
-              });
+              circles.forEach(c => c.addTo(this.groups[doc.properties.title]));
             }
           })
           .on('mouseout', () => {
             if (type === 'boss') {
-              circles.forEach(circle => {
-                circle.remove();
-              });
+              circles.forEach(c => c.remove());
             }
           })
           .on('click', () => console.log('Marker id = ', id))
