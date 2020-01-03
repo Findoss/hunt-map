@@ -6,7 +6,7 @@ export function Circle(doc, radius, color) {
     radius: radius,
     color: color,
     fillColor: color,
-    fillOpacity: 0.1,
+    fillOpacity: 0.03,
     dashArray: [20, 15],
     className: 'circle'
   });
