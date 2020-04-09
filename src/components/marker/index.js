@@ -20,8 +20,7 @@ export function Marker(doc, id, isLogin) {
       default:
         const circles = [];
         if (type === 'boss') {
-          circles.push(Circle(doc, 40, 'darkred'));
-          circles.push(Circle(doc, 80, 'white'));
+          circles.push(Circle(doc, 50, 'white'));
           circles.push(Circle(doc, 100, 'darkorange'));
         }
 

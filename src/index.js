@@ -13,6 +13,7 @@ import { DB } from './services/database';
 import { Static } from './services/static';
 import { Cache } from './services/cache';
 
+import { isInIframe } from './utils';
 import { version } from '../package.json';
 console.log(`%cver ${version}`, 'font-size: x-large');
 
@@ -20,16 +21,20 @@ class ViewController {
   constructor() {
     this.static = new Static();
     this.cache = new Cache();
-    this.api = new DB(config);
+    if (!isInIframe()) this.api = new DB(config);
 
     document.getElementById('app').outerHTML = template;
 
+    // map
     this.initializeMap();
+    // data
+    if (!isInIframe()) this.initializeAuth();
+    else this.loadMapData();
+    // components
     this.initializeComponents();
   }
 
   async initializeMap() {
-    this.initializeAuth();
     this.mapComponent = new Map('map-placeholder', {
       data: config,
       api: this.api,
@@ -67,10 +72,12 @@ class ViewController {
   }
 
   async switchMap(id) {
-    localStorage.setItem('MAP-ID', id);
+    if (!isInIframe()) localStorage.setItem('MAP-ID', id);
     config.mapId = id;
     this.mapComponent.delete();
     this.initializeMap();
+    if (!isInIframe()) this.initializeAuth();
+    else this.loadMapData();
   }
 
   async initializeAuth() {

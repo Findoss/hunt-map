@@ -6,58 +6,40 @@
 
 ## FAQ
 
-#### - На карте отмечены НЕ все объекты
+#### THIS VERSION OF THE MAP MAY LACK SOME POINTS OF INTEREST!
+This map was created by Russian Hunt: Showdown community, we appreciate any submission. Checkout our mini-guide to start making submissions!
 
-Карта создана сообществом игроков, мы рады новым вкладам. Посмотрите мини гайд что бы начать делиться знаниями!
-
-#### - Карта только на английском языке?
-
-Нет, карта есть на следующих языках:
+#### Languages
 
 - [English](https://hunt-map.online/)
 - [Русский](https://hunt-map.online/#ru)
 - [Française](https://hunt-map.online/#fr)
 
-#### - Почему рулетка показывает расстояние меньше/больше (я точно знаю сколько там метров!)?
+#### Why the distance between points is incorrect? (I know exactly what it should be!)?
+Error my appear because of the difference between point heights.
 
-Погрешность появляется из за разницы высот между точками.
+#### Found mistake?
+Please contact the author. [issue](https://github.com/Findoss/Hunt-map/issues)
 
-#### - Можно добавить новые разделы?
+## Fast Start
 
-Добавить новые разделы может администратор, начать обсуждение можно в соответствующем [discord канале](https://discord.gg/JyTeMU)
-
-#### - Я нашел ошибку
-
-Напишите автору или добавляйте [issue](https://github.com/Findoss/Hunt-map/issues)
-
-#### - Xочу помочь
-
-Мы рады любой помощи, заходите в [discord канал](https://discord.gg/JyTeMU)
-
-### Быстрый старт
-
-_Добавление маркера с загрузкой картинки_  
+_Add marker_  
 ![atl_img](public/images/gifs/addMarker.gif)
 
-_Добавление полигона_
+_Add poligon_  
 ![atl_img](public/images/gifs/addPolygon.gif)
 
-_Добавление линии_
+_Add line_  
 ![atl_img](public/images/gifs/addPolyline.gif)
 
-_Раздел модерации_
+_Moderator panel_  
 ![atl_img](public/images/gifs/admin.gif)
 
 ## Contributing
-
 Please read [CONTRIBUTING.md](https://github.com/Findoss/Hunt-map/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
-
-- Findoss - Initial work
-- Святобор - add markers
-- Lapin - maps layer
+[contributors.txt](./public/contributors.txt)
 
 ## License
-
 [MIT](https://github.com/Findoss/Hunt-map/blob/master/LICENSE). Copyright (c) Findoss.
