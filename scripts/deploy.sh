@@ -8,6 +8,8 @@ git checkout gh-pages;
 
 git merge master;
 
+npm run cache;
+
 npm run build;
 
 cp public/CNAME CNAME
