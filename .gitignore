@@ -7,5 +7,6 @@ public/cache/*
 bower_components/
 node_modules/
 
+.vscode
 .npm
 .env
