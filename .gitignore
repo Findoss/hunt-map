@@ -4,6 +4,7 @@ key.json
 bower_components/
 node_modules/
 
+.vscode
 .npm
 .env
 .vscode

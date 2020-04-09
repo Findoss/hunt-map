@@ -1,6 +1,6 @@
 :regional_indicator_h: :regional_indicator_u: :regional_indicator_n: :regional_indicator_t:     :regional_indicator_m: :regional_indicator_a: :regional_indicator_p:
 
-:link:  https://huntshowdown.info/maps 
+:link:   https://huntshowdown.info/maps   :link:
 
 :regional_indicator_f: :regional_indicator_a: :regional_indicator_q:
 
@@ -15,9 +15,6 @@
 
 :interrobang:  Почему рулетка показывает расстояние меньше/больше (я точно знаю сколько там метров!)?
 :white_check_mark:  Погрешность появляется из за разницы высот между точками.
-
-:interrobang:   Можно добавить новые разделы?
-:white_check_mark:  Добавить новые разделы может администратор, начать обсуждение можно в этом канале
 
 :interrobang:   Я нашел ошибку
 :white_check_mark:  Cвяжитесь с @findoss#4833

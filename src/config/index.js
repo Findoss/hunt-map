@@ -1,12 +1,15 @@
+import { isInIframe } from '../utils';
+
 export default {
   // Id текущей карты
-  mapId: localStorage.getItem('MAP-ID') || 'SB',
+  mapId: !isInIframe() ? localStorage.getItem('MAP-ID') || 'SB' : 'SB',
 
   // Язык
   lang: window.location.hash.substr(1) || 'en',
 
-  // Настройки выбранных слоев
-  currentLayers: JSON.parse(localStorage.getItem('LAYERS')) || [],
+  // Выбранные слои
+  currentLayers: !isInIframe() ? JSON.parse(localStorage.getItem('LAYERS')) || null : null,
+  defaultLayers: ['label', 'boss', 'spawn-player', 'easter-egg', 'tower'],
 
   //
   // Типы объектов на карте
@@ -74,11 +77,13 @@ export default {
         org: 4,
         max: 7,
         min: 1,
-        default: localStorage.getItem('ZOOM') || 1
+        default: !isInIframe() ? localStorage.getItem('ZOOM') || 1 : 1
       },
       width: 1000,
       height: 1000,
-      center: JSON.parse(localStorage.getItem('CENTER')) || [-500, 500],
+      center: !isInIframe()
+        ? JSON.parse(localStorage.getItem('CENTER')) || [-500, 500]
+        : [-500, 500],
       padding: 300
     },
     LD: {
@@ -92,17 +97,36 @@ export default {
         org: 4,
         max: 7,
         min: 1,
-        default: localStorage.getItem('ZOOM') || 1
+        default: !isInIframe() ? localStorage.getItem('ZOOM') || 1 : 1
       },
       width: 1000,
       height: 1000,
-      center: JSON.parse(localStorage.getItem('CENTER')) || [-500, 500],
+      center: !isInIframe()
+        ? JSON.parse(localStorage.getItem('CENTER')) || [-500, 500]
+        : [-500, 500],
       padding: 300
     }
+    // XXX: {
+    //   id: 'XXX',
+    //   image: {
+    //     width: 4096,
+    //     height: 4096,
+    //     path: 'public/images/tiles/LD/{z}-{x}-{y}.jpg'
+    //   },
+    //   levels: {
+    //     org: 4,
+    //     max: 7,
+    //     min: 1,
+    //     default: !isInIframe() ? localStorage.getItem('ZOOM') ||1 : 1
+    //   },
+    //   width: 1000,
+    //   height: 1000,
+    //   center: !isInIframe() ? JSON.parse(localStorage.getItem('CENTER'))||[-500, 500] : [-500, 500],
+    //   padding: 300
+    // }
   },
 
   //
-  author: 'by <a target="_blank" href="https://steamcommunity.com/id/Findoss/">Findoss</a> | ',
   contributors: `<a target="_blank" href="./public/contributors.txt">contributors</a>`,
 
   // Публичный ключ к API firebase
@@ -179,6 +203,6 @@ export default {
     position: 'topleft',
     exportOnly: true,
     sizeModes: ['Current', 'A4Portrait', 'A4Landscape'],
-    filename: 'hunt-map.online'
+    filename: 'hunt-map'
   }
 };

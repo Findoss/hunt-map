@@ -51,6 +51,7 @@ export class Map extends Component {
     const {
       mapId,
       currentLayers,
+      defaultLayers,
       //
       types,
       extraTypes,
@@ -58,7 +59,6 @@ export class Map extends Component {
       polylineTypes,
       typesMarkers,
       //
-      author,
       contributors,
       //
       optionsMaps,
@@ -74,7 +74,8 @@ export class Map extends Component {
 
     this.allTypes = [...polylineTypes, ...polygonTypes, ...extraTypes, ...this.types];
 
-    this.currentLayers = currentLayers;
+    if (currentLayers === null) this.currentLayers = defaultLayers;
+    else this.currentLayers = currentLayers; // localStorage
 
     const optionMap = optionsMaps[mapId];
 
@@ -117,7 +118,7 @@ export class Map extends Component {
     const ne = this.map.unproject([width, 0], optionMap.levels.org);
     const boundsLoadTiles = new L.LatLngBounds(sw, ne);
 
-    const attribution = author + contributors;
+    const attribution = contributors;
 
     // Добавление слоев
     L.tileLayer(optionsMaps[mapId].image.path, {
@@ -162,17 +163,14 @@ export class Map extends Component {
     new ButtonAuth();
 
     this.map.addControl(L.control.zoom(t('zoom')));
-    if (!isInIframe()) {
-      this.map.addControl(L.control.fullscreen(t('fullscreen')));
-    }
+    if (!isInIframe()) this.map.addControl(L.control.fullscreen(t('fullscreen')));
     this.map.addControl(L.control.measure(merge(optionsRuler, t('ruler'))));
-    this.map.addControl(drawControl);
+    if (!isInIframe()) this.map.addControl(drawControl);
     this.map.addControl(L.control.buttonStyleAlt());
     this.map.addControl(L.control.layers(null, this.legendItems));
     this.map.addControl(L.easyPrint(merge(optionsPrint, t('print'))));
-    if (!isInIframe()) {
-      this.map.addControl(L.control.auth(optionsAuth));
-    }
+    if (!isInIframe()) this.map.addControl(L.control.auth(optionsAuth));
+
     //
     // Рендр
     //
@@ -184,25 +182,23 @@ export class Map extends Component {
     // События
     //
     this.map.on('overlayadd', e => {
-      let currentLayers = JSON.parse(localStorage.getItem('LAYERS')) || [];
-      if (currentLayers.indexOf(e.layer.title) === -1) {
-        currentLayers.push(e.layer.title);
-        localStorage.setItem('LAYERS', JSON.stringify(currentLayers));
+      if (this.currentLayers.indexOf(e.layer.title) === -1) {
+        this.currentLayers.push(e.layer.title);
+        if (!isInIframe()) localStorage.setItem('LAYERS', JSON.stringify(this.currentLayers));
       }
     });
 
     this.map.on('overlayremove', e => {
-      const currentLayers = JSON.parse(localStorage.getItem('LAYERS'));
-      currentLayers.splice(currentLayers.indexOf(e.layer.title), 1);
-      localStorage.setItem('LAYERS', JSON.stringify(currentLayers));
+      this.currentLayers.splice(this.currentLayers.indexOf(e.layer.title), 1);
+      if (!isInIframe()) localStorage.setItem('LAYERS', JSON.stringify(this.currentLayers));
     });
 
     this.map.on('zoom', e => {
-      localStorage.setItem('ZOOM', e.target.getZoom());
+      if (!isInIframe()) localStorage.setItem('ZOOM', e.target.getZoom());
     });
 
     this.map.on('moveend', e => {
-      localStorage.setItem('CENTER', JSON.stringify(e.target.getCenter()));
+      if (!isInIframe()) localStorage.setItem('CENTER', JSON.stringify(e.target.getCenter()));
     });
 
     this.map.on('draw:created', e => {
@@ -270,7 +266,6 @@ export class Map extends Component {
       }
     });
 
-    if (!this.currentLayers || !this.currentLayers.length) this.currentLayers = this.allTypes;
     this.currentLayers.forEach(layer => {
       this.groups[layer].addTo(this.map);
     });
