@@ -105,25 +105,27 @@ export default {
         ? JSON.parse(localStorage.getItem('CENTER')) || [-500, 500]
         : [-500, 500],
       padding: 300
+    },
+    DS: {
+      id: 'DS',
+      image: {
+        width: 2048,
+        height: 2048,
+        path: 'public/images/tiles/DS/{z}-{x}-{y}.jpg'
+      },
+      levels: {
+        org: 3,
+        max: 6,
+        min: 1,
+        default: !isInIframe() ? localStorage.getItem('ZOOM') || 1 : 1
+      },
+      width: 1000,
+      height: 1000,
+      center: !isInIframe()
+        ? JSON.parse(localStorage.getItem('CENTER')) || [-500, 500]
+        : [-500, 500],
+      padding: 300
     }
-    // XXX: {
-    //   id: 'XXX',
-    //   image: {
-    //     width: 4096,
-    //     height: 4096,
-    //     path: 'public/images/tiles/LD/{z}-{x}-{y}.jpg'
-    //   },
-    //   levels: {
-    //     org: 4,
-    //     max: 7,
-    //     min: 1,
-    //     default: !isInIframe() ? localStorage.getItem('ZOOM') ||1 : 1
-    //   },
-    //   width: 1000,
-    //   height: 1000,
-    //   center: !isInIframe() ? JSON.parse(localStorage.getItem('CENTER'))||[-500, 500] : [-500, 500],
-    //   padding: 300
-    // }
   },
 
   //

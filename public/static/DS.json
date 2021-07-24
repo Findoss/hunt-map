@@ -1,0 +1,242 @@
+{
+  "0": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": {
+        "en": "Stanley<br/>coal<br/>company",
+        "ru": "Stanley<br/>coal<br/>company",
+        "fr": "Stanley<br/>coal<br/>company"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-115, 355]
+    }
+  },
+  "1": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": {
+        "en": "Kingsnake<br/>mine",
+        "ru": "Kingsnake<br/>mine",
+        "fr": "Kingsnake<br/>mine"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-210, 145]
+    }
+  },
+  "2": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": {
+        "en": "Moses<br/>poultry",
+        "ru": "Moses<br/>poultry",
+        "fr": "Moses<br/>poultry"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-420, 150]
+    }
+  },
+  "3": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": {
+        "en": "Seven<br/>sisters<br/>estate",
+        "ru": "Seven<br/>sisters<br/>estate",
+        "fr": "Seven<br/>sisters<br/>estate"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-620, 145]
+    }
+  },
+  "4": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": {
+        "en": "Fort<br/>bolden",
+        "ru": "Fort<br/>bolden",
+        "fr": "Fort<br/>bolden"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-815, 190]
+    }
+  },
+  "5": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": {
+        "en": "Pelican<br/>island<br/>prison",
+        "ru": "Pelican<br/>island<br/>prison",
+        "fr": "Pelican<br/>island<br/>prison"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-610, 345]
+    }
+  },
+  "6": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": {
+        "en": "Weeping<br/>stone<br/>mill",
+        "ru": "Weeping<br/>stone<br/>mill",
+        "fr": "Weeping<br/>stone<br/>mill"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-330, 450]
+    }
+  },
+  "7": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": {
+        "en": "Forked<br/>river<br/>fishery",
+        "ru": "Forked<br/>river<br/>fishery",
+        "fr": "Forked<br/>river<br/>fishery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-520, 515]
+    }
+  },
+  "8": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": {
+        "en": "Ash creek<br/>lumber",
+        "ru": "Ash creek<br/>lumber",
+        "fr": "Ash creek<br/>lumber"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-380, 750]
+    }
+  },
+  "9": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": {
+        "en": "Upper<br/>DeSalle",
+        "ru": "Upper<br/>DeSalle",
+        "fr": "Upper<br/>DeSalle"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-555, 860]
+    }
+  },
+  "10": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": {
+        "en": "Lower<br/>DeSalle",
+        "ru": "Lower<br/>DeSalle",
+        "fr": "Lower<br/>DeSalle"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-770, 880]
+    }
+  },
+  "11": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": {
+        "en": "Heritage<br/>pork",
+        "ru": "Heritage<br/>pork",
+        "fr": "Heritage<br/>pork"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-160, 625]
+    }
+  },
+  "12": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": {
+        "en": "Pearl<br/>plantation",
+        "ru": "Pearl<br/>plantation",
+        "fr": "Pearl<br/>plantation"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-150, 815]
+    }
+  },
+  "13": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": {
+        "en": "First<br/>testimonial<br/>church",
+        "ru": "First<br/>testimonial<br/>church",
+        "fr": "First<br/>testimonial<br/>church"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-630, 665]
+    }
+  },
+  "14": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": {
+        "en": "Reeves<br/>quarry",
+        "ru": "Reeves<br/>quarry",
+        "fr": "Reeves<br/>quarry"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-840, 660]
+    }
+  },
+  "15": {
+    "type": "Feature",
+    "properties": {
+      "title": "label",
+      "name": {
+        "en": "Darin<br/>shipyard",
+        "ru": "Darin<br/>shipyard",
+        "fr": "Darin<br/>shipyard"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-830, 450]
+    }
+  }
+}

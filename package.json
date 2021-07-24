@@ -1,6 +1,6 @@
 {
   "name": "hunt-map",
-  "version": "2.20.0",
+  "version": "2.21.0",
   "homepage": "https://hunt-map.info",
   "private": true,
   "author": "Findoss",
@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development",
     "start": "cross-env NODE_ENV=production webpack --mode production",
-    "cache": "node ./scripts/updateCache.js LD & node ./scripts/updateCache.js SB",
+    "cache": "node ./scripts/updateCache.js LD & node ./scripts/updateCache.js SB & node ./scripts/updateCache.js DS",
     "static": "node ./scripts/staticServer.js",
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "deploy": "sh ./scripts/deploy.sh",
