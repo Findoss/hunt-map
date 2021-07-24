@@ -73,6 +73,7 @@
 .marker-new-object {
   background-color: var(--color-2-hover) !important;
   filter: none !important;
+  border-radius: 50%;
 }
 
 .marker-new-object::after {

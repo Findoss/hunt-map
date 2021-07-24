@@ -1,7 +1,7 @@
 {
   "SB": "Stillwater Bayou",
   "LD": "Lawson Delta",
-  "XXX": "XXX",
+  "DS": "DeSalle",
   "types": {
     "boss": "Boss",
     "spawn-player": "Spawn de joueurs",

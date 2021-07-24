@@ -1,3 +1,5 @@
+# PRODUCTION BRANCH
+
 ![LOGO](public/images/media/logo-dark-text-870x390.png)
 
 ## Preview
@@ -7,6 +9,7 @@
 ## FAQ
 
 #### THIS VERSION OF THE MAP MAY LACK SOME POINTS OF INTEREST!
+
 This map was created by Russian Hunt: Showdown community, we appreciate any submission. Checkout our mini-guide to start making submissions!
 
 #### Languages
@@ -16,9 +19,11 @@ This map was created by Russian Hunt: Showdown community, we appreciate any subm
 - [Française](https://hunt-map.online/#fr)
 
 #### Why the distance between points is incorrect? (I know exactly what it should be!)?
+
 Error my appear because of the difference between point heights.
 
 #### Found mistake?
+
 Please contact the author. [issue](https://github.com/Findoss/Hunt-map/issues)
 
 ## Fast Start
@@ -36,10 +41,13 @@ _Moderator panel_
 ![atl_img](public/images/gifs/admin.gif)
 
 ## Contributing
+
 Please read [CONTRIBUTING.md](https://github.com/Findoss/Hunt-map/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
+
 [contributors.txt](./public/contributors.txt)
 
 ## License
+
 [MIT](https://github.com/Findoss/Hunt-map/blob/master/LICENSE). Copyright (c) Findoss.

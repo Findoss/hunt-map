@@ -50,7 +50,7 @@ const webpackConfig = {
   devServer: {
     publicPath: '/build/',
     contentBase: [rootPath, publicPath],
-    port: 8000,
+    port: 8001,
     compress: true,
     open: true
   },
