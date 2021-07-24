@@ -14,9 +14,9 @@ This map was created by Russian Hunt: Showdown community, we appreciate any subm
 
 #### Languages
 
-- [English](https://hunt-map.online/)
-- [Русский](https://hunt-map.online/#ru)
-- [Française](https://hunt-map.online/#fr)
+- [English](https://hunt-map.info/)
+- [Русский](https://hunt-map.info/#ru)
+- [Française](https://hunt-map.info/#fr)
 
 #### Why the distance between points is incorrect? (I know exactly what it should be!)?
 
