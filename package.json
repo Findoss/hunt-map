@@ -5,6 +5,9 @@
   "private": true,
   "author": "Findoss",
   "license": "MIT",
+  "engines": {
+    "node": "12.19.0"
+  },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development",
     "start": "cross-env NODE_ENV=production webpack --mode production",
