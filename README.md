@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 # PRODUCTION BRANCH
+=======
+# HUNT MAP
+
+>>>>>>> master
 ![LOGO](public/images/media/logo-dark-text-870x390.png)
 
 ## License
