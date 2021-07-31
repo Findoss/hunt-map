@@ -31,7 +31,7 @@ export default {
   extraTypes: ['label', 'new-object'],
 
   // типы для зон
-  polygonTypes: ['zone'],
+  polygonTypes: ['zone','zone-double-clue'],
 
   // типы для линий
   polylineTypes: ['water-low'],
@@ -45,7 +45,18 @@ export default {
       'extraction-point-r',
       'extraction-point-l'
     ],
-    boss: ['boss-a', 'boss-b', 'boss-s', 'boss-ab', 'boss-as', 'boss-bs', 'boss-all'],
+    boss: [
+      'boss-a', 
+      'boss-b', 
+      'boss-s', 
+      'boss-h', 
+      'boss-hb', 
+      'boss-hs', 
+      'boss-ah', 
+      'boss-ab', 
+      'boss-as', 
+      'boss-bs', 
+      'boss-all'],
     aviary: ['aviary', 'aviary-d', 'aviary-c'],
     tower: [
       'tower',
