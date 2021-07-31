@@ -22,10 +22,14 @@
       "boss-a": "Assassin",
       "boss-b": "Boucher",
       "boss-s": "Araignée",
+      "boss-h": "Scrapbeak",
+      "boss-hb": "Scrapbeak, Butcher",
+      "boss-hs": "Scrapbeak, Spider",
+      "boss-ah": "Assassin, Scrapbeak",
       "boss-ab": "Assassin, Boucher",
       "boss-as": "Assassin, Araignée",
       "boss-bs": "Boucher, Araignée",
-      "boss-all": "Assassin, Boucher, Araignée"
+      "boss-all": "Assassin, Boucher, Araignée, Scrapbeak"
     },
     "aviary": {
       "aviary": "Chiens ou Poules",
@@ -56,8 +60,12 @@
       "tower9": "direction 9",
       "tower10": "direction 10",
       "tower11": "direction 11",
-      "tower-o": "Poste d'observation"
+      "tower-o": "Poste d'observation",
+      "tower-h": "Hunting house"
     }
+  },
+  "typesDescription": {
+    "resupply-point": "3 Ammo box <br/>3 Medkit<br/>1-2 Lantern"
   },
   "send": "Envoyer",
   "save": "Sauvegarde",
@@ -67,9 +75,6 @@
   "marker": "Marqueur",
   "description": "Description",
   "contributors": "Contributeurs",
-  "fastDescription": {
-    "resupply-point": "3 Caisse de munitions <br/>3 Kit de soin<br/>1-2 Lanterne"
-  },
   "success": "Succès",
   "error": "Erreur",
   "msgModer": "Données envoyée au serveur, les informations apparaîtront dès qu'elles auront été vérifiées par un modérateur.",
