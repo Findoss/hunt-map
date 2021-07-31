@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Hunt map</title>
-    <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon" />
     <meta property="og:image" content="public/images/media/logo-dark-text-870x390.png" />
     <meta property="og:image:width" content="537" />
     <meta property="og:image:height" content="240" />
-    <meta name="yandex-verification" content="dc5516dcd052e64c" />
-    <link rel="stylesheet" href="src/components/marker/index_alt.css" id="style-alt" disabled />
+    <meta name="description" content="Interactive maps for game Hunt-Showdown" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/media/logo-dark-192x192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!-- Google analitics -->
     <!-- Critical CSS -->
     <style>
@@ -45,13 +46,13 @@
     </style>
   </head>
   <body>
-    <div id="loading-container">
-      <img src="../public/images/media/logo-light-500x500.png" alt="logo" height="300px" />
-      <h1>
-        <span class="loading-container_title">Hunt maps</span>
-      </h1>
+    <div id="root">
+      <div id="loading-container">
+        <img src="%PUBLIC_URL%/images/media/logo-light-500x500.png" alt="logo" height="300px" />
+        <h1>
+          <span class="loading-container_title">Hunt maps</span>
+        </h1>
+      </div>
     </div>
-    <div id="app"></div>
-    <script type="text/javascript" src="build/bundle.js"></script>
   </body>
 </html>
