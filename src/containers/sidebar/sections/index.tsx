@@ -1,5 +1,6 @@
-import React from 'react';
 import classNames from 'classnames';
+
+import { Dropdown } from '../../../components/dropdown';
 
 import './style.css';
 
@@ -12,7 +13,10 @@ export const Sections = ({ className }: Props) => {
 
   return (
     <div className={styleSections}>
-      <div className="section">Language</div>
+      <div className="section section__lang">
+        <span>Language</span>
+        <Dropdown />
+      </div>
       <div className="section">maps</div>
       <div className="section">compounds</div>
       <div className="section">markers</div>

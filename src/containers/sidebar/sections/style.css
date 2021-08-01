@@ -2,6 +2,16 @@
   width: 100%;
   text-transform: uppercase;
   color: var(--color-1);
+  padding: 16px;
+}
+
+.section__lang {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 70px;
 }
 
 .section__adv {

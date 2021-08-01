@@ -2,8 +2,8 @@ import { createSlice } from '@reduxjs/toolkit';
 import { initialState } from './state';
 import type { PayloadAction } from '@reduxjs/toolkit';
 
-export const filtersSlice = createSlice({
-  name: 'map',
+export const langSlice = createSlice({
+  name: 'lang',
   initialState,
   reducers: {
     addFilter: (state, action: PayloadAction<string>) => {

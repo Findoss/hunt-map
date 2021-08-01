@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useCallback } from 'react';
 import classNames from 'classnames';
 
-import { ReactComponent as CloseIcon } from './close.svg';
+import { ReactComponent as CloseIcon } from '../../assets/icons/close.svg';
 import './style.css';
 
 export const Banner = () => {

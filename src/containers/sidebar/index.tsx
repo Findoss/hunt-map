@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import { Sections } from './sections';
 
-import { ReactComponent as ArrowIcon } from './arrow.svg';
+import { ReactComponent as ArrowIcon } from '../../assets/icons/arrow.svg';
 import './style.css';
 
 export const Sidebar = () => {

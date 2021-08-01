@@ -1,11 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import { mapSlice } from './map/slice';
-import { filtersSlice } from './filters/slice';
+import { filterSlice } from './filter/slice';
 
 export const store = configureStore({
   reducer: {
     map: mapSlice.reducer,
-    filters: filtersSlice.reducer,
+    filters: filterSlice.reducer,
   },
 });
 
