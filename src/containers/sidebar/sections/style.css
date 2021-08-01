@@ -1,0 +1,11 @@
+.section {
+  width: 100%;
+  text-transform: uppercase;
+  color: var(--color-1);
+}
+
+.section__adv {
+  background-color: brown;
+
+  height: 70px;
+}
