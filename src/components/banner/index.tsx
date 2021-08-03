@@ -14,6 +14,7 @@ export const Banner = () => {
 
   return (
     <div className={styleBanner}>
+      ADV
       <div onClick={toggleBanner} className="avd__close-button">
         <CloseIcon />
       </div>

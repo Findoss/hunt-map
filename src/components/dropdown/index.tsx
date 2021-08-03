@@ -1,18 +1,23 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import classNames from 'classnames';
 
 import { ReactComponent as ArrowIcon } from '../../assets/icons/arrow.svg';
 import './style.css';
 
-const data = [
-  { id: 'en', label: 'English' },
-  { id: 'ru', label: 'Русский' },
-];
+export type Item = {
+  id: string;
+  label?: string;
+};
 
-export const Dropdown = () => {
-  const init = data[0].id;
+export type Props = {
+  options: Item[];
+  onChange?: (item: Item) => void;
+};
+
+export const Dropdown = ({ options, onChange }: Props) => {
+  const init = options[0].id;
   const [isOpen, setOpen] = useState(false);
-  const [items, setItem] = useState(data);
+  const [items] = useState(options);
   const [selectedId, setSelectedId] = useState(init);
 
   const styleArrow = classNames('dropdown__header__arrow', {
@@ -35,6 +40,9 @@ export const Dropdown = () => {
     const id: string = e.target.id;
     setSelectedId(id);
     toggleDropdown();
+
+    const selectedItem = items.find((item) => item.id === id) as Item;
+    if (onChange) onChange(selectedItem);
   };
 
   return (
@@ -47,7 +55,7 @@ export const Dropdown = () => {
         {items.map(({ id, label }) => (
           <div className="dropdown__item" onClick={handleItemClick} id={id} key={id}>
             <span className={styleItem}>• </span>
-            {label}
+            {label ? label : id}
           </div>
         ))}
       </div>

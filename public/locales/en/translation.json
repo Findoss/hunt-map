@@ -67,6 +67,12 @@
   "typesDescription": {
     "resupply-point": "3 Ammo box <br/>3 Medkit<br/>1-2 Lantern"
   },
+  "sections": {
+    "maps": "Карты",
+    "compounds": "Области",
+    "filters": "Фильтры",
+    "admin": "Панель редактирования"
+  },
   "send": "Send",
   "save": "Save",
   "delete": "Delete",

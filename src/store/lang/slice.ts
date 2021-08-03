@@ -6,11 +6,8 @@ export const langSlice = createSlice({
   name: 'lang',
   initialState,
   reducers: {
-    addFilter: (state, action: PayloadAction<string>) => {
-      state.view.filters.push(action.payload);
-    },
-    removeFilter: (state, action: PayloadAction<string>) => {
-      state.view.filters.filter((v) => v !== action.payload);
+    setLang: (state, action: PayloadAction<string>) => {
+      state.lang = action.payload;
     },
   },
 });

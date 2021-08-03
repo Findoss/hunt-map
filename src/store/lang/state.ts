@@ -1,11 +1,11 @@
-export interface LangsState {
+export interface LangState {
   lang: string;
-  langs: Record<string, string>;
+  supportedLangs: Record<string, string>;
 }
 
-export const initialState: LangsState = {
+export const initialState: LangState = {
   lang: 'id',
-  langs: {
+  supportedLangs: {
     en: 'English',
     ru: 'Русский',
   },
