@@ -1,7 +1,9 @@
 {
-  "SB": "Stillwater Bayou",
-  "LD": "Lawson Delta",
-  "DS": "DeSalle",
+  "maps": {
+    "SB": "Stillwater Bayou",
+    "LD": "Lawson Delta",
+    "DS": "DeSalle"
+  },
   "types": {
     "boss": "Boss",
     "spawn-player": "Spawn player",
@@ -68,10 +70,11 @@
     "resupply-point": "3 Ammo box <br/>3 Medkit<br/>1-2 Lantern"
   },
   "sections": {
-    "maps": "Карты",
-    "compounds": "Области",
-    "filters": "Фильтры",
-    "admin": "Панель редактирования"
+    "maps": "Maps",
+    "compounds": "Compounds",
+    "filters": "Filters",
+    "editor": "Editor",
+    "tools": "Tools"
   },
   "send": "Send",
   "save": "Save",

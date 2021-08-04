@@ -6,6 +6,8 @@
 
 ## FAQ
 
+https://hunt-map.info/en/SB?filters=[label,spawn-player,easter-egg,tower,boss]
+
 #### THIS VERSION OF THE MAP MAY LACK SOME POINTS OF INTEREST!
 
 This map was created by Russian Hunt: Showdown community, we appreciate any submission. Checkout our mini-guide to start making submissions!

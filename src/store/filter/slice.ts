@@ -7,10 +7,14 @@ export const filterSlice = createSlice({
   initialState,
   reducers: {
     addFilter: (state, action: PayloadAction<string>) => {
+      if (!state.view.filters) {
+        state.view.filters = [];
+      }
       state.view.filters.push(action.payload);
     },
     removeFilter: (state, action: PayloadAction<string>) => {
-      state.view.filters.filter((v) => v !== action.payload);
+      const newFilters = state.view.filters.filter((v) => v !== action.payload);
+      state.view.filters = newFilters;
     },
   },
 });

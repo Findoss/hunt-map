@@ -1,7 +1,14 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
 import { mapSlice } from './map/slice';
 import { filterSlice } from './filter/slice';
 import { langSlice } from './lang/slice';
+
+import { loggerMiddleware } from './middleware/log';
+import { urlMiddleware } from './middleware/url';
+
+import type { ThunkAction, Action } from '@reduxjs/toolkit';
+
+const middlewares = [loggerMiddleware, urlMiddleware];
 
 export const store = configureStore({
   reducer: {
@@ -9,6 +16,7 @@ export const store = configureStore({
     map: mapSlice.reducer,
     filters: filterSlice.reducer,
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(middlewares),
 });
 
 export type AppDispatch = typeof store.dispatch;

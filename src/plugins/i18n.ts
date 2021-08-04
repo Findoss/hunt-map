@@ -11,7 +11,7 @@ export default i18n
     load: 'languageOnly',
     preload: ['en'],
     fallbackLng: 'en',
-    debug: true,
+    debug: false,
     interpolation: {
       escapeValue: false,
     },

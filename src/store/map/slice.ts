@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { initialState } from './state';
 
 import type { PayloadAction } from '@reduxjs/toolkit';
-import type { Coords } from './types';
+import type { Coords, idMaps } from './types';
 
 export const mapSlice = createSlice({
   name: 'map',
@@ -11,8 +11,11 @@ export const mapSlice = createSlice({
     setCenter: (state, action: PayloadAction<Coords>) => {
       state.view.center = action.payload;
     },
-    decrement: (state, action: PayloadAction<number>) => {
+    setZoom: (state, action: PayloadAction<number>) => {
       state.view.zoom = action.payload;
+    },
+    setMapId: (state, action: PayloadAction<idMaps>) => {
+      state.view.id = action.payload;
     },
   },
 });

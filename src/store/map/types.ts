@@ -1,9 +1,9 @@
-export type idsMap = 'SB' | 'LD' | 'DS';
+export type idMaps = string;
 
 export type Coords = [number, number];
 
 export type Map = {
-  id: idsMap;
+  id: idMaps;
   image: {
     width: number;
     height: number;

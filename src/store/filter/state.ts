@@ -1,3 +1,5 @@
+import { getUrlData } from '../../utils/URL';
+
 import type { typesMarker } from './types';
 
 export interface FiltersState {
@@ -6,13 +8,15 @@ export interface FiltersState {
   };
   types: typesMarker;
   extraTypes: string[];
-  polygonTypes: string[];
+  polygonTypes: typesMarker;
   polylineTypes: string[];
 }
 
+const filters = getUrlData().search.filters as string[];
+
 export const initialState: FiltersState = {
   view: {
-    filters: ['label', 'boss', 'spawn-player', 'easter-egg', 'tower'],
+    filters: filters ?? ['label', 'boss', 'spawn-player', 'easter-egg'],
   },
   types: {
     boss: [
@@ -62,7 +66,9 @@ export const initialState: FiltersState = {
   extraTypes: ['label', 'new-object'],
 
   // типы для зон
-  polygonTypes: ['zone', 'zone-double-clue'],
+  polygonTypes: {
+    zone: ['zone', 'zone-double-clue'],
+  },
 
   // типы для линий
   polylineTypes: ['water-low'],

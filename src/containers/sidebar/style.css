@@ -3,9 +3,9 @@
 
   position: fixed;
   height: 100vh;
-  width: 300px;
+  width: 260px;
 
-  transform: translateX(-300px);
+  transform: translateX(-260px);
   transition: transform 0.5s;
 }
 
@@ -24,7 +24,7 @@
   width: 30px;
   height: 50px;
   top: 50%;
-  left: 300px;
+  left: 260px;
 
   display: flex;
   align-items: center;
@@ -45,6 +45,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  overflow-y: auto;
 }

@@ -1,17 +1,21 @@
-import type { idsMap, Map, Coords } from './types';
+import { getUrlData } from '../../utils/URL';
+
+import type { idMaps, Map, Coords } from './types';
 
 export interface MapState {
   view: {
-    id: idsMap;
+    id: idMaps;
     center: Coords;
     zoom: number;
   };
-  maps: Record<idsMap, Map>;
+  maps: Record<idMaps, Map>;
 }
+
+const [, mapId] = getUrlData().path;
 
 export const initialState: MapState = {
   view: {
-    id: 'SB',
+    id: mapId ?? 'SB',
     center: [-500, 500],
     zoom: 1,
   },

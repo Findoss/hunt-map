@@ -1,6 +1,7 @@
 import type { RootState } from '../index';
-import type { idsMap } from './types';
+import type { idMaps } from './types';
 
 export const getMap = (state: RootState) => state.map;
+export const selectIdMaps = (state: RootState) => Object.keys(getMap(state).maps);
 export const selectViewMap = (state: RootState) => getMap(state).view;
-export const selectOptionsMap = (state: RootState) => (id: idsMap) => getMap(state).maps[id];
+export const selectOptionsMap = (state: RootState) => (id: idMaps) => getMap(state).maps[id];
