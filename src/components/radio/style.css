@@ -8,6 +8,10 @@
   cursor: pointer;
 }
 
+.radio:hover {
+  color: var(--color-2-hover);
+}
+
 .radio__input {
   visibility: hidden;
   width: 0px;
@@ -16,6 +20,9 @@
 .radio__marker {
   fill: var(--color-1);
   margin-right: 4px;
+  width: 24px;
+  text-align: center;
+  color: #777;
 }
 
 .radio__input:checked ~ .radio__marker {

@@ -8,6 +8,10 @@
   cursor: pointer;
 }
 
+.checkbox:hover {
+  color: var(--color-2-hover);
+}
+
 .checkbox_checked {
   opacity: 1;
 }
@@ -18,6 +22,7 @@
   height: 20px;
   overflow: hidden;
   text-align: center;
+  color: #777;
 }
 
 .checkbox__icon img {

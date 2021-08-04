@@ -22,7 +22,7 @@ export const Radio = ({ id, value, name, label, checked, onChange }: Props) => {
         checked={checked}
         onChange={onChange}
       />
-      <ArrowIcon className="radio__marker" />
+      {checked ? <ArrowIcon className="radio__marker" /> : <div className="radio__marker">●</div>}
       <span className="radio__label">{label}</span>
     </label>
   );
