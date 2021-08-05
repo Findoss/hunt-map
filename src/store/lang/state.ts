@@ -8,7 +8,7 @@ export interface LangState {
 const [langId] = getUrlData().path;
 
 export const initialState: LangState = {
-  lang: langId ?? 'en',
+  lang: langId || 'en',
   supportedLangs: {
     en: 'English',
     ru: 'Русский',

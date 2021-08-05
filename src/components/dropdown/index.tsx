@@ -11,11 +11,14 @@ export type Item = {
 
 export type Props = {
   options: Item[];
+  initId?: string;
   onChange?: (item: Item) => void;
 };
 
-export const Dropdown = ({ options, onChange }: Props) => {
-  const init = options[0].id;
+export const Dropdown = ({ initId, options, onChange }: Props) => {
+  console.log(initId);
+
+  const init = initId ?? options[0].id;
   const [isOpen, setOpen] = useState(false);
   const [items] = useState(options);
   const [selectedId, setSelectedId] = useState(init);
@@ -26,10 +29,6 @@ export const Dropdown = ({ options, onChange }: Props) => {
 
   const styleBody = classNames('dropdown__body', {
     dropdown__body_open: isOpen,
-  });
-
-  const styleItem = classNames('dropdown__item-dot', {
-    'dropdown__item-dot_selected': '0' === selectedId,
   });
 
   const selectedItem = items.find((item) => item.id === selectedId);
@@ -54,7 +53,6 @@ export const Dropdown = ({ options, onChange }: Props) => {
       <div className={styleBody}>
         {items.map(({ id, label }) => (
           <div className="dropdown__item" onClick={handleItemClick} id={id} key={id}>
-            <span className={styleItem}>• </span>
             {label ? label : id}
           </div>
         ))}

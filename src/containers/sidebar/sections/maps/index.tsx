@@ -28,6 +28,7 @@ export const SectionMaps = ({ className }: Props) => {
         {idMaps.map((id) => (
           <Radio
             id={id}
+            key={id}
             value={id}
             name="map-switch"
             label={t(`maps.${id}`)}
