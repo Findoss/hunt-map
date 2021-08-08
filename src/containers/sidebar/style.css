@@ -1,5 +1,6 @@
 .sidebar {
   background-color: var(--bg-color-1);
+  border-right: 1px solid #444;
 
   position: fixed;
   height: 100vh;
@@ -7,6 +8,8 @@
 
   transform: translateX(-260px);
   transition: transform 0.5s;
+
+  z-index: 10;
 }
 
 .sidebar_show {
@@ -19,12 +22,16 @@
 
 .sidebar__toggle {
   background-color: var(--bg-color-1);
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  border-right: 1px solid #444;
+  border-left: 1px solid var(--bg-color-1);
 
   position: absolute;
   width: 30px;
   height: 50px;
   top: 50%;
-  left: 260px;
+  left: 259px;
 
   display: flex;
   align-items: center;

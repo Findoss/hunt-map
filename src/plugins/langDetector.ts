@@ -1,13 +1,15 @@
+import LanguageDetector from 'i18next-browser-languagedetector';
 import { getUrlData } from '../utils/URL';
 import type { DetectorOptions } from 'i18next-browser-languagedetector';
 
-export const langDetector = {
+const options = {
+  order: ['customDetector'],
+};
+
+const customLangDetector = {
   name: 'customDetector',
 
   lookup(options: DetectorOptions): string | string[] | undefined {
-    console.log('customDetector');
-    // console.log(options);
-
     const [idLang] = getUrlData().path;
     if (idLang) {
       return idLang;
@@ -21,3 +23,8 @@ export const langDetector = {
     // store it
   },
 };
+
+const langDetector = new LanguageDetector(null, options);
+langDetector.addDetector(customLangDetector);
+
+export { langDetector };

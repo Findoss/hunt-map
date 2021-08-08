@@ -1,6 +1,6 @@
-export type idMaps = string;
+import type { LatLngTuple } from 'leaflet';
 
-export type Coords = [number, number];
+export type idMaps = string;
 
 export type Map = {
   id: idMaps;
@@ -17,6 +17,6 @@ export type Map = {
   };
   width: number;
   height: number;
-  center: Coords;
+  center: LatLngTuple;
   padding: number;
 };

@@ -16,8 +16,6 @@ export type Props = {
 };
 
 export const Dropdown = ({ initId, options, onChange }: Props) => {
-  console.log(initId);
-
   const init = initId ?? options[0].id;
   const [isOpen, setOpen] = useState(false);
   const [items] = useState(options);

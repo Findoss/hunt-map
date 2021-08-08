@@ -1,11 +1,12 @@
 import { getUrlData } from '../../utils/URL';
 
-import type { idMaps, Map, Coords } from './types';
+import type { LatLngTuple } from 'leaflet';
+import type { idMaps, Map } from './types';
 
 export interface MapState {
   view: {
     id: idMaps;
-    center: Coords;
+    center: LatLngTuple;
     zoom: number;
   };
   maps: Record<idMaps, Map>;
@@ -25,7 +26,7 @@ export const initialState: MapState = {
       image: {
         width: 4096,
         height: 4096,
-        path: 'public/images/tiles/SB/{z}-{x}-{y}.jpg',
+        path: '/images/tiles/SB/{z}-{x}-{y}.jpg',
       },
       levels: {
         org: 4,
@@ -43,7 +44,7 @@ export const initialState: MapState = {
       image: {
         width: 4096,
         height: 4096,
-        path: 'public/images/tiles/LD/{z}-{x}-{y}.jpg',
+        path: '/images/tiles/LD/{z}-{x}-{y}.jpg',
       },
       levels: {
         org: 4,
@@ -61,7 +62,7 @@ export const initialState: MapState = {
       image: {
         width: 2048,
         height: 2048,
-        path: 'public/images/tiles/DS/{z}-{x}-{y}.jpg',
+        path: '/images/tiles/DS/{z}-{x}-{y}.jpg',
       },
       levels: {
         org: 3,

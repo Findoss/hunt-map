@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="app">
       <Sidebar />
-      <Map />
       <Banner />
+      <Map />
     </div>
   );
 }
