@@ -1,0 +1,12 @@
+.leaflet-marker-icon {
+  /* размер по умолчанию */
+  width: 30px !important;
+  height: 30px !important;
+  /* центр */
+  margin-left: -15px !important;
+  margin-top: -15px !important;
+  background-size: 28px;
+  background-repeat: no-repeat;
+
+  color: var(--color-1);
+}
