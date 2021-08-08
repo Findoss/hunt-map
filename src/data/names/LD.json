@@ -1,0 +1,245 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Godard Docks",
+          "ru": "Пристань Годарда",
+          "fr": "Docks Godard"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120, 110]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Blanc Brinery",
+          "fr": "Saumurerie Blanc",
+          "ru": "Солодовня Бланка"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-130, 350]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Lawson Station",
+          "fr": "Gare de Lawson",
+          "ru": "Станция Лоусон"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-250, 500]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Golden Acres",
+          "fr": "Les Acrés Dorés",
+          "ru": "Ферма <br/> &laquo;Золотые акры&raquo;"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120, 600]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Salter's Pork",
+          "fr": "Porcherie de Salter",
+          "ru": "Свинина Солтера"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-160, 850]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Maw Battery",
+          "fr": "Garnison Maw",
+          "ru": "Гарнизон &laquo;Кровавая пасть&raquo;"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-400, 200]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Sweetbell Flour",
+          "fr": "Moulin Sweetbell",
+          "ru": "Мельница &laquo;Лобелия&raquo;"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-500, 500]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Arden Parish",
+          "fr": "Paroisse d'Arden",
+          "ru": "Приход Арден"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-380, 695]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Windy Run",
+          "fr": "Haras des quatres vents",
+          "ru": "Ветреный простор"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-525, 910]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Nicholls Prison",
+          "fr": "Prison Nicholls",
+          "ru": "Тюрьма Николлс"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-665, 715]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Fort Carmick",
+          "fr": "Fort Carmick",
+          "ru": "Форт Кармик"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-665, 375]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Iron Works",
+          "fr": "Fonderie",
+          "ru": "Литейный завод"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-620, 135]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Wolfshead Arsenal",
+          "fr": "Arsenal Wolfhead",
+          "ru": "Арсенал Вульфсхеда"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-870, 195]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Bradley & Craven <br> Brickworks",
+          "fr": "Briqueterie <br> Bradley & Craven",
+          "ru": "Кирпичный завод <br> Брэдли и&nbsp;Крейвена"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-850, 450]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "C&A Lumber",
+          "fr": "Scierie C&A",
+          "ru": "Лесопильня&nbsp;C&А&nbsp;"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-830, 625]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Hemlock and Hide",
+          "fr": "Tannerie <br> Hemlock & Hide",
+          "ru": "Дубильня <br> &nbsp;Коварный дурман&nbsp;"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-850, 870]
+      }
+    }
+  ]
+}

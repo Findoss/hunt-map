@@ -1,0 +1,247 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Alain & Son's <br> Fish",
+          "fr": "Poissonnerie <br> Alain & Fils",
+          "ru": "Рыбное хозяйство <br> &laquo;Ален и сын&raquo;"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-110, 130]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Reynard <br> Mill & Lumber",
+          "fr": "Scierie Reynard",
+          "ru": "Лесопильня <br> Рейнарда"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-100, 350]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Port Reeker",
+          "fr": "Havre Saumâtre",
+          "ru": "Порт Рикер"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120, 615]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Scupper Lake",
+          "fr": "Lac Désolé",
+          "ru": "Гиблое озеро"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-95, 830]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Blanchett Graves",
+          "fr": "Cimetière Blanchet",
+          "ru": "Кладбище Бланшетт"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-395, 200]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Darrow Livestock",
+          "fr": "Elevage Darrow",
+          "ru": "Скотный двор <br> Дэрроу"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-250, 450]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Alice Farm",
+          "fr": "Ferme d'Alice",
+          "ru": "Ферма Элис"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-370, 595]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "The Chapel <br> of Madonna Noire",
+          "fr": "Chapelle de la Noire Madonne",
+          "ru": "Часовня <br> Чёрной Мадонны"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-365, 840]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Lockbay Docks",
+          "fr": "Quais de Lockbay",
+          "ru": "Верфь Локбей"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-475, 420]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Stillwater Bend",
+          "fr": "Croisée de Stillwater",
+          "ru": "Излучина Стилуотер"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-575, 770]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Pitching <br> Crematorium",
+          "fr": "Crématorium délabré",
+          "ru": "Разрушенный <br> крематорий"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-670, 340]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Cyprus Huts",
+          "fr": "Cabane des Cyprès",
+          "ru": "Кипарисовая роща"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-800, 120]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Davant Ranch",
+          "fr": "Ranch Davant",
+          "ru": "Ранчо Даванта"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-880, 300]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "The Slaughterhouse",
+          "fr": "Abbatoir",
+          "ru": "Скотобойня"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-900, 600]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Catfish Grove",
+          "fr": "Marécage du Silure",
+          "ru": "Сомовая роща"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-850, 850]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "label",
+        "name": {
+          "en": "Healing-Waters <br> Church",
+          "fr": "Eglise des <br> Eaux Curatives",
+          "ru": "Церковь <br>&laquo;Исцеляющие воды&raquo;"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-665, 570]
+      }
+    }
+  ]
+}
