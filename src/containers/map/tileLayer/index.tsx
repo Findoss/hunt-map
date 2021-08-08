@@ -8,9 +8,10 @@ export const TileLayerMap = ({ optionsMap }: { optionsMap: TypeMap }) => {
   const { org, min, max } = levels;
 
   const map = useMap();
+  const padding = 100;
   const boundsLoadTiles = new L.LatLngBounds(
-    map.unproject([0, height], org),
-    map.unproject([width, 0], org)
+    map.unproject([0 - padding - 500, width + padding], org),
+    map.unproject([height + padding, 0 - padding], org)
   );
   map.setMaxBounds(boundsLoadTiles);
 

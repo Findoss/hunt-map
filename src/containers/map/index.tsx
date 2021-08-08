@@ -4,21 +4,31 @@ import { useAppSelector } from '../../hooks/redux-toolkit';
 import { TileLayerMap } from './tileLayer';
 import { MarkerLabel } from './markerLabel';
 
-import { selectViewMap, selectOptionsViewMap } from '../../store/map/selectors';
+import {
+  selectViewMap,
+  selectOptionsViewMap,
+  selectIdMaps,
+  selectMaps,
+} from '../../store/map/selectors';
+import { selectViewMarkerFilters } from '../../store/filter/selectors';
 
 import { createCRS } from './crs';
 
-import namesCompounds from '../../data/names/SB.json';
-import type { TypeFeatureLabel } from './markerLabel/types';
+import { compoundsLabels } from '../../data/names/index';
 
-import './markerBase/style.css';
 import './style.css';
+import './markerBase/style.css';
 
 export const Map = () => {
+  const idMaps = useAppSelector(selectIdMaps);
+  const maps = useAppSelector(selectMaps);
+  const filters = useAppSelector(selectViewMarkerFilters);
   const { center, zoom } = useAppSelector(selectViewMap);
   const { width, height } = useAppSelector(selectOptionsViewMap).image;
-  const optionsMap = useAppSelector(selectOptionsViewMap);
-  console.log(optionsMap);
+  const { id: idMap } = useAppSelector(selectViewMap);
+
+  // console.log(optionsMap);
+  // console.log(filters.includes('label'));
 
   return (
     <MapContainer
@@ -29,17 +39,17 @@ export const Map = () => {
       maxBoundsViscosity={0.6}
       crs={createCRS(width, height)}
     >
-      <TileLayerMap optionsMap={optionsMap} />
-      {/* <GeoJSON data={data as GeoJsonObject} /> */}
-      <LayerGroup>
-        {namesCompounds.features.map((v, i) => (
-          <MarkerLabel feature={v as TypeFeatureLabel} key={i} />
-        ))}
-      </LayerGroup>
+      {idMaps.map((id) => idMap === id && <TileLayerMap optionsMap={maps[id]} key={id} />)}
+
+      {filters.includes('label') && (
+        <LayerGroup>
+          {compoundsLabels[idMap].features.map((v, i) => (
+            <MarkerLabel feature={v} key={i} />
+          ))}
+        </LayerGroup>
+      )}
+
       <LayerGroup></LayerGroup>
     </MapContainer>
   );
 };
-
-//  {/* <img src={process.env.PUBLIC_URL + '/images/maps/LD.jpg'} alt="map" /> */}
-// contributors: `<a target="_blank" href="./public/contributors.txt">contributors</a>`,
