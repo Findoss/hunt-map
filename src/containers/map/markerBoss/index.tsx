@@ -29,8 +29,8 @@ export const MarkerBoss = ({ feature }: Props) => {
       position={coordinates as LatLngTuple}
       icon={icon}
       eventHandlers={{
-        mouseover: () => setHover((v) => !v),
-        mouseout: () => setHover((v) => !v),
+        mouseover: () => setHover(() => true),
+        mouseout: () => setHover(() => false),
       }}
     >
       {hover ? (

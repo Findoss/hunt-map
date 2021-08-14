@@ -5,6 +5,8 @@ import { TileLayerMap } from './tileLayer';
 import { MarkerLabel } from './markerLabel';
 import { MarkerSpawnPlayer } from './markerSpawnPlayer';
 import { MarkerBoss } from './markerBoss';
+import { MarkerResupplyPoint } from './markerResupplyPoint';
+import { MarkerExtractionPoint } from './markerExtractionPoint';
 
 import {
   selectViewMap,
@@ -40,6 +42,10 @@ export const Map = () => {
         return <MarkerSpawnPlayer feature={v} key={i} />;
       case 'boss':
         return <MarkerBoss feature={v} key={i} />;
+      case 'resupply-point':
+        return <MarkerResupplyPoint feature={v} key={i} />;
+      case 'extraction-point':
+        return <MarkerExtractionPoint feature={v} key={i} />;
       default:
         return null;
     }

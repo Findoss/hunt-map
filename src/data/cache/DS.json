@@ -108,6 +108,69 @@
         "title": "spawn-player",
         "marker": "spawn-player"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-100, 150], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "resupply-point",
+        "marker": "resupply-point"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-100, 200], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "resupply-point",
+        "marker": "resupply-point-b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-100, 250], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "resupply-point",
+        "marker": "resupply-point-rc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-100, 300], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "extraction-point",
+        "marker": "extraction-point-t"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-100, 350], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "extraction-point",
+        "marker": "extraction-point-b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-100, 400], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "extraction-point",
+        "marker": "extraction-point-r"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-100, 450], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "extraction-point",
+        "marker": "extraction-point-l"
+      }
     }
   ]
 }

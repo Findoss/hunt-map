@@ -1,0 +1,20 @@
+.marker-resupply-point {
+  background-image: url(../../../assets/markers/resupply-point.png);
+  background-repeat: no-repeat;
+  background-size: 23px;
+  background-position: 4px 5px;
+}
+
+.marker-resupply-point-b {
+  background-image: url(../../../assets/markers/resupply-point-b.png);
+  background-repeat: no-repeat;
+  background-size: 23px;
+  background-position: 4px 5px;
+}
+
+.marker-resupply-point-rc {
+  background-image: url(../../../assets/markers/resupply-point-rc.png);
+  background-repeat: no-repeat;
+  background-size: 23px;
+  background-position: 4px 5px;
+}
