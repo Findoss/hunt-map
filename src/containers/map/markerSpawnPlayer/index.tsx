@@ -10,7 +10,7 @@ import './style.css';
 type Props = { feature: TypeFeatureMarker };
 
 export const MarkerSpawnPlayer = ({ feature }: Props) => {
-  const { t } = useTranslation().i18n;
+  const { t } = useTranslation();
   const { geometry, properties } = feature;
   const { coordinates } = geometry;
   const { title, marker } = properties;
@@ -21,9 +21,7 @@ export const MarkerSpawnPlayer = ({ feature }: Props) => {
 
   return (
     <Marker position={coordinates as LatLngTuple} icon={icon}>
-      <Tooltip>{651651}</Tooltip>
-      {/* t(`types.${title}`) */}
+      <Tooltip>{t(`types.${title}`)}</Tooltip>
     </Marker>
   );
 };
-

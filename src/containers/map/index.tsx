@@ -4,6 +4,7 @@ import { useAppSelector } from '../../hooks/redux-toolkit';
 import { TileLayerMap } from './tileLayer';
 import { MarkerLabel } from './markerLabel';
 import { MarkerSpawnPlayer } from './markerSpawnPlayer';
+import { MarkerBoss } from './markerBoss';
 
 import {
   selectViewMap,
@@ -19,8 +20,9 @@ import { markers } from '../../data';
 
 import type { TypeFeatureMarker } from './markerBase/types';
 
-import './style.css';
 import './markerBase/style.css';
+import './tooltip/style.css';
+import './style.css';
 
 export const Map = () => {
   const idMaps = useAppSelector(selectIdMaps);
@@ -30,17 +32,14 @@ export const Map = () => {
   const { width, height } = useAppSelector(selectOptionsViewMap).image;
   const { id: idMap } = useAppSelector(selectViewMap);
 
-  // console.log(optionsMap);
-  // console.log(filters.includes('label'));
-
   const switchTypeMarkers = (v: TypeFeatureMarker, i: number) => {
-    console.log(v.properties.title);
-
     switch (v.properties.title) {
       case 'label':
         return <MarkerLabel feature={v} key={i} />;
       case 'spawn-player':
         return <MarkerSpawnPlayer feature={v} key={i} />;
+      case 'boss':
+        return <MarkerBoss feature={v} key={i} />;
       default:
         return null;
     }
