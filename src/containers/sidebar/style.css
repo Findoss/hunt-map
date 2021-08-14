@@ -1,6 +1,6 @@
 .sidebar {
   background-color: var(--bg-color-1);
-  border-right: 1px solid #444;
+  border-right: 1px solid var(--color-4);
 
   position: fixed;
   height: 100vh;
@@ -22,9 +22,9 @@
 
 .sidebar__toggle {
   background-color: var(--bg-color-1);
-  border-top: 1px solid #444;
-  border-bottom: 1px solid #444;
-  border-right: 1px solid #444;
+  border-top: 1px solid var(--color-4);
+  border-bottom: 1px solid var(--color-4);
+  border-right: 1px solid var(--color-4);
   border-left: 1px solid var(--bg-color-1);
 
   position: absolute;

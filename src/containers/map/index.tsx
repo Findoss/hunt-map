@@ -3,6 +3,7 @@ import { useAppSelector } from '../../hooks/redux-toolkit';
 
 import { TileLayerMap } from './tileLayer';
 import { MarkerLabel } from './markerLabel';
+import { MarkerSpawnPlayer } from './markerSpawnPlayer';
 
 import {
   selectViewMap,
@@ -14,7 +15,9 @@ import { selectViewMarkerFilters } from '../../store/filter/selectors';
 
 import { createCRS } from './crs';
 
-import { compoundsLabels } from '../../data/names/index';
+import { markers } from '../../data';
+
+import type { TypeFeatureMarker } from './markerBase/types';
 
 import './style.css';
 import './markerBase/style.css';
@@ -30,6 +33,19 @@ export const Map = () => {
   // console.log(optionsMap);
   // console.log(filters.includes('label'));
 
+  const switchTypeMarkers = (v: TypeFeatureMarker, i: number) => {
+    console.log(v.properties.title);
+
+    switch (v.properties.title) {
+      case 'label':
+        return <MarkerLabel feature={v} key={i} />;
+      case 'spawn-player':
+        return <MarkerSpawnPlayer feature={v} key={i} />;
+      default:
+        return null;
+    }
+  };
+
   return (
     <MapContainer
       zoom={zoom}
@@ -41,13 +57,13 @@ export const Map = () => {
     >
       {idMaps.map((id) => idMap === id && <TileLayerMap optionsMap={maps[id]} key={id} />)}
 
-      {filters.includes('label') && (
-        <LayerGroup>
-          {compoundsLabels[idMap].features.map((v, i) => (
-            <MarkerLabel feature={v} key={i} />
-          ))}
+      {filters.map((filter) => (
+        <LayerGroup key={filter}>
+          {markers[idMap].features
+            .filter((v) => v.properties.title === filter)
+            .map((v, i) => switchTypeMarkers(v, i))}
         </LayerGroup>
-      )}
+      ))}
 
       <LayerGroup></LayerGroup>
     </MapContainer>

@@ -1,11 +1,8 @@
 import type { LatLngTuple } from 'leaflet';
 
-export type TypeFeatureLabel = {
+export type TypeFeatureMarker = {
   type: string;
-  properties: {
-    title: string;
-    name: Record<string, string>;
-  };
+  properties: Record<string, string | Record<string, string>>;
   geometry: {
     type: string;
     coordinates: LatLngTuple | number[];

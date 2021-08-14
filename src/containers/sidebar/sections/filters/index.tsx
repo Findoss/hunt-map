@@ -61,12 +61,7 @@ export const SectionFilters = ({ className }: Props) => {
             value={filter}
             label={t(`types.${filter}`)}
             initValue={viewMarkerFilters.includes(filter)}
-            icon={
-              <img
-                src={`${process.env.PUBLIC_URL}/images/markers/${filter}.png`}
-                alt="icon-marker"
-              />
-            }
+            icon={<div className={classNames('legend-item', `marker-${filter}`)} />}
           />
         ))}
       </div>
