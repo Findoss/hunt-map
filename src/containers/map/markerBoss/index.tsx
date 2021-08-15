@@ -33,7 +33,7 @@ export const MarkerBoss = ({ feature }: Props) => {
         mouseout: () => setHover(() => false),
       }}
     >
-      {hover ? (
+      {hover && (
         <>
           <Circle
             center={coordinates as LatLngTuple}
@@ -52,7 +52,7 @@ export const MarkerBoss = ({ feature }: Props) => {
             dashArray={[20, 15]}
           />
         </>
-      ) : null}
+      )}
 
       <Tooltip>{t(`types.${title}`)}</Tooltip>
     </Marker>

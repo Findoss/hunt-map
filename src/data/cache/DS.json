@@ -171,6 +171,159 @@
         "title": "extraction-point",
         "marker": "extraction-point-l"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-100, 500], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "aviary",
+        "marker": "aviary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-100, 550], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "aviary",
+        "marker": "aviary-d"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-100, 600], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "aviary",
+        "marker": "aviary-c"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-150, 100], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "tower",
+        "marker": "tower"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-150, 150], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "tower",
+        "marker": "tower1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-150, 200], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "tower",
+        "marker": "tower2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-150, 250], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "tower",
+        "marker": "tower3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-150, 300], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "tower",
+        "marker": "tower4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-150, 350], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "tower",
+        "marker": "tower5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-150, 400], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "tower",
+        "marker": "tower6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-150, 450], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "tower",
+        "marker": "tower7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-150, 500], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "tower",
+        "marker": "tower8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-150, 550], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "tower",
+        "marker": "tower9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-150, 600], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "tower",
+        "marker": "tower10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-150, 650], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "tower",
+        "marker": "tower11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-150, 700], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "tower",
+        "marker": "tower-o"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-150, 750], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "tower",
+        "marker": "tower-h"
+      }
     }
   ]
 }

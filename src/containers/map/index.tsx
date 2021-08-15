@@ -7,6 +7,8 @@ import { MarkerSpawnPlayer } from './markerSpawnPlayer';
 import { MarkerBoss } from './markerBoss';
 import { MarkerResupplyPoint } from './markerResupplyPoint';
 import { MarkerExtractionPoint } from './markerExtractionPoint';
+import { MarkerAviary } from './markerAviary';
+import { MarkerTower } from './markerTower';
 
 import {
   selectViewMap,
@@ -46,6 +48,10 @@ export const Map = () => {
         return <MarkerResupplyPoint feature={v} key={i} />;
       case 'extraction-point':
         return <MarkerExtractionPoint feature={v} key={i} />;
+      case 'aviary':
+        return <MarkerAviary feature={v} key={i} />;
+      case 'tower':
+        return <MarkerTower feature={v} key={i} />;
       default:
         return null;
     }
