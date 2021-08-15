@@ -2,13 +2,7 @@ import { MapContainer, LayerGroup } from 'react-leaflet';
 import { useAppSelector } from '../../hooks/redux-toolkit';
 
 import { TileLayerMap } from './tileLayer';
-import { MarkerLabel } from './markerLabel';
-import { MarkerSpawnPlayer } from './markerSpawnPlayer';
-import { MarkerBoss } from './markerBoss';
-import { MarkerResupplyPoint } from './markerResupplyPoint';
-import { MarkerExtractionPoint } from './markerExtractionPoint';
-import { MarkerAviary } from './markerAviary';
-import { MarkerTower } from './markerTower';
+import { switchTypeMarkers } from './switchTypeMarkers';
 
 import {
   selectViewMap,
@@ -22,8 +16,6 @@ import { createCRS } from './crs';
 
 import { markers } from '../../data';
 
-import type { TypeFeatureMarker } from './markerBase/types';
-
 import './markerBase/style.css';
 import './tooltip/style.css';
 import './style.css';
@@ -35,27 +27,6 @@ export const Map = () => {
   const { center, zoom } = useAppSelector(selectViewMap);
   const { width, height } = useAppSelector(selectOptionsViewMap).image;
   const { id: idMap } = useAppSelector(selectViewMap);
-
-  const switchTypeMarkers = (v: TypeFeatureMarker, i: number) => {
-    switch (v.properties.title) {
-      case 'label':
-        return <MarkerLabel feature={v} key={i} />;
-      case 'spawn-player':
-        return <MarkerSpawnPlayer feature={v} key={i} />;
-      case 'boss':
-        return <MarkerBoss feature={v} key={i} />;
-      case 'resupply-point':
-        return <MarkerResupplyPoint feature={v} key={i} />;
-      case 'extraction-point':
-        return <MarkerExtractionPoint feature={v} key={i} />;
-      case 'aviary':
-        return <MarkerAviary feature={v} key={i} />;
-      case 'tower':
-        return <MarkerTower feature={v} key={i} />;
-      default:
-        return null;
-    }
-  };
 
   return (
     <MapContainer

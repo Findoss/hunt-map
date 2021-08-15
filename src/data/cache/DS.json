@@ -324,6 +324,33 @@
         "title": "tower",
         "marker": "tower-h"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-200, 100], "type": "Point" },
+      "properties": {
+        "id": "1",
+        "title": "easter-egg",
+        "marker": "easter-egg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "polygon",
+        "coordinates": [
+          { "lng": 236.25079819196165, "lat": -0.5669716934255283 },
+          { "lat": -209.6009102911252, "lng": 236.42350604395958 },
+          { "lng": 343.3216448983832, "lat": -269.00421255925284 },
+          { "lng": 484.4276944815218, "lat": -124.97543148819513 },
+          { "lat": -0.40090952916201145, "lng": 485.82788941274384 }
+        ]
+      },
+      "properties": {
+        "id": "1",
+        "title": "zone",
+        "marker": "easter-egg"
+      }
     }
   ]
 }

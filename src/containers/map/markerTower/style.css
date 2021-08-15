@@ -45,14 +45,14 @@
   content: '';
   position: absolute;
   display: block;
-  width: 300px;
-  height: 300px;
-  top: -135px;
-  left: -135px;
-  z-index: -1000;
+  width: 400px;
+  height: 400px;
+  top: -185px;
+  left: -185px;
   pointer-events: none;
-  background-size: 300px;
+  background-size: 400px;
   filter: grayscale(0);
+  background-repeat: no-repeat;
   background-image: url(./segment.svg);
 }
 
