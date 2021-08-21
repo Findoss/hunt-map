@@ -7,7 +7,7 @@ export interface FiltersState {
     filters: string[];
   };
   types: typesMarker;
-  extraTypes: string[];
+  extraTypes: typesMarker;
   polygonTypes: typesMarker;
   polylineTypes: string[];
 }
@@ -63,11 +63,11 @@ export const initialState: FiltersState = {
   },
 
   // типы для особых маркеров
-  extraTypes: ['label', 'new-object'],
+  extraTypes: { label: ['label', 'label-double-clue'] },
 
   // типы для зон
   polygonTypes: {
-    zone: ['zone', 'zone-double-clue'],
+    zone: ['zone'],
   },
 
   // типы для линий

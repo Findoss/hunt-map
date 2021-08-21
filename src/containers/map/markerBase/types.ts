@@ -1,6 +1,6 @@
 import type { LatLngTuple, LatLngLiteral } from 'leaflet';
 
-export type TypeFeatureMarker = {
+export type TypeFeature = {
   type: string;
   properties: Record<string, string | Record<string, string>>;
   geometry: {

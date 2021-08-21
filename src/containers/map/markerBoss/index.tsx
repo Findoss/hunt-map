@@ -4,14 +4,14 @@ import { Marker, Tooltip, Circle } from 'react-leaflet';
 import { useTranslation } from 'react-i18next';
 
 import type { LatLngTuple } from 'leaflet';
-import type { TypeFeatureMarker } from '../markerBase/types';
+import type { TypeFeature } from '../markerBase/types';
 
 import './style.css';
 
 const DETECTION_HUNT = 50;
 const DARK_VISION = 100;
 
-type Props = { feature: TypeFeatureMarker };
+type Props = { feature: TypeFeature };
 
 export const MarkerBoss = ({ feature }: Props) => {
   const [hover, setHover] = useState(false);

@@ -2,7 +2,7 @@ import { MapContainer, LayerGroup } from 'react-leaflet';
 import { useAppSelector } from '../../hooks/redux-toolkit';
 
 import { TileLayerMap } from './tileLayer';
-import { switchTypeMarkers } from './switchTypeMarkers';
+import { switchTypeFeature } from './switchTypeFeature';
 
 import {
   selectViewMap,
@@ -43,7 +43,7 @@ export const Map = () => {
         <LayerGroup key={filter}>
           {markers[idMap].features
             .filter((v) => v.properties.title === filter)
-            .map((v, i) => switchTypeMarkers(v, i))}
+            .map((v, i) => switchTypeFeature(v, i))}
         </LayerGroup>
       ))}
 

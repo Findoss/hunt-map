@@ -5,6 +5,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Godard Docks",
           "ru": "Пристань Годарда",
@@ -20,6 +21,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Blanc Brinery",
           "fr": "Saumurerie Blanc",
@@ -35,6 +37,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label-double-clue",
         "name": {
           "en": "Lawson Station",
           "fr": "Gare de Lawson",
@@ -50,6 +53,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Golden Acres",
           "fr": "Les Acrés Dorés",
@@ -65,6 +69,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Salter's Pork",
           "fr": "Porcherie de Salter",
@@ -80,6 +85,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Maw Battery",
           "fr": "Garnison Maw",
@@ -95,6 +101,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Sweetbell Flour",
           "fr": "Moulin Sweetbell",
@@ -110,6 +117,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Arden Parish",
           "fr": "Paroisse d'Arden",
@@ -125,6 +133,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Windy Run",
           "fr": "Haras des quatres vents",
@@ -140,6 +149,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label-double-clue",
         "name": {
           "en": "Nicholls Prison",
           "fr": "Prison Nicholls",
@@ -155,6 +165,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label-double-clue",
         "name": {
           "en": "Fort Carmick",
           "fr": "Fort Carmick",
@@ -170,6 +181,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Iron Works",
           "fr": "Fonderie",
@@ -185,6 +197,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Wolfshead Arsenal",
           "fr": "Arsenal Wolfhead",
@@ -200,6 +213,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Bradley & Craven <br> Brickworks",
           "fr": "Briqueterie <br> Bradley & Craven",
@@ -215,6 +229,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "C&A Lumber",
           "fr": "Scierie C&A",
@@ -230,6 +245,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Hemlock and Hide",
           "fr": "Tannerie <br> Hemlock & Hide",

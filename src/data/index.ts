@@ -5,11 +5,11 @@ import CACHE_SB from './cache/SB.json';
 import CACHE_LD from './cache/LD.json';
 import CACHE_DS from './cache/DS.json';
 
-import type { TypeFeatureMarker } from '../containers/map/markerBase/types';
+import type { TypeFeature } from '../containers/map/markerBase/types';
 
 type TypeCollectionFeatures = {
   type: string;
-  features: TypeFeatureMarker[];
+  features: TypeFeature[];
 };
 type TypeFeatureMarkerCollection = Record<string, TypeCollectionFeatures>;
 

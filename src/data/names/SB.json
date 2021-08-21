@@ -5,6 +5,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Alain & Son's <br> Fish",
           "fr": "Poissonnerie <br> Alain & Fils",
@@ -20,6 +21,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Reynard <br> Mill & Lumber",
           "fr": "Scierie Reynard",
@@ -35,6 +37,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label-double-clue",
         "name": {
           "en": "Port Reeker",
           "fr": "Havre Saumâtre",
@@ -50,6 +53,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Scupper Lake",
           "fr": "Lac Désolé",
@@ -66,6 +70,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label-double-clue",
         "name": {
           "en": "Blanchett Graves",
           "fr": "Cimetière Blanchet",
@@ -82,6 +87,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Darrow Livestock",
           "fr": "Elevage Darrow",
@@ -97,6 +103,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Alice Farm",
           "fr": "Ferme d'Alice",
@@ -112,6 +119,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "The Chapel <br> of Madonna Noire",
           "fr": "Chapelle de la Noire Madonne",
@@ -127,6 +135,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Lockbay Docks",
           "fr": "Quais de Lockbay",
@@ -142,6 +151,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Stillwater Bend",
           "fr": "Croisée de Stillwater",
@@ -157,6 +167,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Pitching <br> Crematorium",
           "fr": "Crématorium délabré",
@@ -172,6 +183,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Cyprus Huts",
           "fr": "Cabane des Cyprès",
@@ -187,6 +199,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Davant Ranch",
           "fr": "Ranch Davant",
@@ -202,6 +215,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "The Slaughterhouse",
           "fr": "Abbatoir",
@@ -217,6 +231,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label",
         "name": {
           "en": "Catfish Grove",
           "fr": "Marécage du Silure",
@@ -232,6 +247,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
+        "marker": "label-double-clue",
         "name": {
           "en": "Healing-Waters <br> Church",
           "fr": "Eglise des <br> Eaux Curatives",

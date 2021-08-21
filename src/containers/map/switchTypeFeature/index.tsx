@@ -7,9 +7,11 @@ import { MarkerAviary } from '../markerAviary';
 import { MarkerTower } from '../markerTower';
 import { MarkerEasterEgg } from '../markerEasterEgg';
 
-import type { TypeFeatureMarker } from '../markerBase/types';
+import { PolygonZone } from '../poligonZone';
 
-export const switchTypeMarkers = (v: TypeFeatureMarker, i: number) => {
+import type { TypeFeature } from '../markerBase/types';
+
+export const switchTypeFeature = (v: TypeFeature, i: number) => {
   switch (v.properties.title) {
     case 'label':
       return <MarkerLabel feature={v} key={i} />;
@@ -27,6 +29,8 @@ export const switchTypeMarkers = (v: TypeFeatureMarker, i: number) => {
       return <MarkerTower feature={v} key={i} />;
     case 'easter-egg':
       return <MarkerEasterEgg feature={v} key={i} />;
+    case 'zone':
+      return <PolygonZone feature={v} key={i} />;
     default:
       return null;
   }
