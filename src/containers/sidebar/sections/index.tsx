@@ -25,7 +25,15 @@ export const Sections = ({ className }: Props) => {
       <div className="section">
         <span>{t('sections.editor')}</span>
       </div> */}
-      <div className="section section__adv">ADV</div>
+
+      <a
+        className="section section__adv"
+        href="https://discord.gg/FyutvHpS"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        .
+      </a>
     </div>
   );
 };

@@ -46,8 +46,6 @@ export const Map = () => {
             .map((v, i) => switchTypeFeature(v, i))}
         </LayerGroup>
       ))}
-
-      <LayerGroup></LayerGroup>
     </MapContainer>
   );
 };

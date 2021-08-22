@@ -3,7 +3,7 @@ import LABELS_LD from './names/LD.json';
 import LABELS_DS from './names/DS.json';
 import CACHE_SB from './cache/SB.json';
 import CACHE_LD from './cache/LD.json';
-import CACHE_DS from './cache/DS.json';
+import CACHE_DS from './cache/TMP.json';
 
 import type { TypeFeature } from '../containers/map/markerBase/types';
 

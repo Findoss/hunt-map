@@ -85,7 +85,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
-        "marker": "label",
+        "marker": "label-double-clue",
         "name": {
           "en": "Pelican<br/>island<br/>prison",
           "ru": "Pelican<br/>island<br/>prison",
@@ -101,7 +101,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
-        "marker": "label",
+        "marker": "label-double-clue",
         "name": {
           "en": "Weeping<br/>stone<br/>mill",
           "ru": "Weeping<br/>stone<br/>mill",
@@ -213,7 +213,7 @@
       "type": "Feature",
       "properties": {
         "title": "label",
-        "marker": "label",
+        "marker": "label-double-clue",
         "name": {
           "en": "First<br/>testimonial<br/>church",
           "ru": "First<br/>testimonial<br/>church",

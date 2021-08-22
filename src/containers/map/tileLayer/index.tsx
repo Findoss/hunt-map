@@ -1,6 +1,11 @@
 import * as L from 'leaflet';
 import { TileLayer, useMap } from 'react-leaflet';
+
+import { ATTRIBUTION } from './attribution';
+
 import type { Map as TypeMap } from '../../../store/map/types';
+
+import './style.css';
 
 export const TileLayerMap = ({ optionsMap }: { optionsMap: TypeMap }) => {
   const { levels, image } = optionsMap;
@@ -21,7 +26,7 @@ export const TileLayerMap = ({ optionsMap }: { optionsMap: TypeMap }) => {
       maxZoom={max}
       bounds={boundsLoadTiles}
       zIndex={1}
-      attribution='<a target="_blank" href="./public/contributors.txt">contributors</a>'
+      attribution={ATTRIBUTION}
       url={process.env.PUBLIC_URL + path}
     />
   );

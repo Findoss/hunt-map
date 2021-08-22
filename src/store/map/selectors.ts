@@ -1,5 +1,4 @@
 import type { RootState } from '../index';
-import type { idMaps } from './types';
 
 export const getMap = (state: RootState) => state.map;
 export const selectMaps = (state: RootState) => getMap(state).maps;
