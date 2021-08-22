@@ -1,0 +1,21 @@
+.leaflet-control-attribution {
+  width: 100%;
+  text-align: center;
+  width: 250px;
+  height: 70px;
+  padding: 0;
+  background: transparent !important;
+}
+
+.leaflet-control-attribution.leaflet-control,
+.leaflet-control-attribution.leaflet-control a {
+  color: var(--color-1) !important;
+}
+
+#sponsor {
+  height: 60px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-image: url('../../../assets/sponsor/ruhunt.png');
+  background-size: contain;
+}
