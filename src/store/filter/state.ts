@@ -9,7 +9,7 @@ export interface FiltersState {
   types: typesMarker;
   extraTypes: typesMarker;
   polygonTypes: typesMarker;
-  polylineTypes: string[];
+  // polylineTypes: string[];
 }
 
 const filters = getUrlData().search.filters as string[];
@@ -30,6 +30,10 @@ export const initialState: FiltersState = {
       'boss-ab',
       'boss-as',
       'boss-bs',
+      'boss-abs',
+      'boss-abh',
+      'boss-ash',
+      'boss-bsh',
       'boss-all',
     ],
     'spawn-player': ['spawn-player'],
@@ -58,8 +62,8 @@ export const initialState: FiltersState = {
       'tower-h',
     ],
     aviary: ['aviary', 'aviary-d', 'aviary-c'],
-    clue: ['clue'],
-    cash: ['cash'],
+    // clue: ['clue'],
+    // cash: ['cash'],
   },
 
   // типы для особых маркеров
@@ -71,5 +75,5 @@ export const initialState: FiltersState = {
   },
 
   // типы для линий
-  polylineTypes: ['water-low'],
+  // polylineTypes: ['water-low'],
 };

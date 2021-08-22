@@ -93,6 +93,42 @@
     },
     {
       "type": "Feature",
+      "geometry": { "coordinates": [-50, 650], "type": "Point" },
+      "properties": {
+        "id": "2",
+        "title": "boss",
+        "marker": "boss-abs"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-50, 700], "type": "Point" },
+      "properties": {
+        "id": "2",
+        "title": "boss",
+        "marker": "boss-abh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-50, 750], "type": "Point" },
+      "properties": {
+        "id": "2",
+        "title": "boss",
+        "marker": "boss-bsh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "coordinates": [-50, 800], "type": "Point" },
+      "properties": {
+        "id": "2",
+        "title": "boss",
+        "marker": "boss-ash"
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": { "coordinates": [-50, 100], "type": "Point" },
       "properties": {
         "id": "2",

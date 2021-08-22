@@ -8,8 +8,8 @@
   height: 50px !important;
   margin-left: -25px !important;
   margin-top: -25px !important;
-  background-size: 50px;
-  background-position: 1px 1px;
+  background-size: 40px;
+  background-position: 5px 5px;
   background-image: url(../../../assets/markers/boss-all.png);
 }
 
@@ -26,6 +26,18 @@
   margin-top: -20px !important;
   background-size: 38px;
   background-position: 2px 9px;
+}
+
+.marker-base.marker-boss-abs,
+.marker-base.marker-boss-abh,
+.marker-base.marker-boss-ash,
+.marker-base.marker-boss-bsh {
+  width: 40px !important;
+  height: 40px !important;
+  margin-left: -20px !important;
+  margin-top: -20px !important;
+  background-size: 38px;
+  background-position: 2px 1px;
 }
 
 .marker-base.marker-boss-as {
@@ -54,6 +66,22 @@
 
 .marker-base.marker-boss-hb {
   background-image: url(../../../assets/markers/boss-hb.png);
+}
+
+.marker-base.marker-boss-abs {
+  background-image: url(../../../assets/markers/boss-abs.png);
+}
+
+.marker-base.marker-boss-abh {
+  background-image: url(../../../assets/markers/boss-abh.png);
+}
+
+.marker-base.marker-boss-ash {
+  background-image: url(../../../assets/markers/boss-ash.png);
+}
+
+.marker-base.marker-boss-bsh {
+  background-image: url(../../../assets/markers/boss-bsh.png);
 }
 
 .marker-base.marker-boss-a,
