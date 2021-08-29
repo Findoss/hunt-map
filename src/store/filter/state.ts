@@ -36,7 +36,7 @@ export const initialState: FiltersState = {
     //   'boss-bsh',
     //   'boss-all',
     // ],
-    // 'spawn-player': ['spawn-player'],
+    'spawn-player': ['spawn-player'],
     // 'extraction-point': [
     //   'extraction-point-t',
     //   'extraction-point-b',

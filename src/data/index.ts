@@ -1,10 +1,13 @@
 import LABELS_SB from './names/SB.json';
 import ZONES_SB from './zone/SB.json';
-// import LABELS_LD from './names/LD.json';
-// import LABELS_DS from './names/DS.json';
 import CACHE_SB from './cache/SB.json';
+
+// import LABELS_LD from './names/LD.json';
 // import CACHE_LD from './cache/LD.json';
+
+// import LABELS_DS from './names/DS.json';
 // import CACHE_DS from './cache/DS.json';
+
 import TMP from './cache/TMP.json';
 
 import type { LatLngTuple, LatLngLiteral } from 'leaflet';
@@ -38,7 +41,7 @@ const labels: TypeFeatureMarkerCollection = {
 };
 
 const cache: TypeFeatureMarkerCollection = {
-  SB: CACHE_SB,
+  SB: CACHE_SB as any,
   // LD: CACHE_LD,
   // DS: TMP,
 };
