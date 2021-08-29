@@ -88,7 +88,23 @@
       "DR_": "Davant Ranch",
       "_S_": "The Slaughterhouse",
       "CG_": "Catfish Grove",
-      "HWC": "Healing-Waters <br> Church"
+      "HWC": "Healing-Waters <br> Church",
+      "GD_": "Godard Docks",
+      "BB_": "Blanc Brinery",
+      "LS_": "Lawson Station",
+      "GA_": "Golden Acres",
+      "SP_": "Salter's Pork",
+      "MB_": "Maw Battery",
+      "SF_": "Sweetbell Flour",
+      "AP_": "Arden Parish",
+      "WR_": "Windy Run",
+      "NP_": "Nicholls Prison",
+      "FC_": "Fort Carmick",
+      "IW_": "Iron Works",
+      "WA_": "Wolfshead Arsenal",
+      "BCB": "Bradley & Craven <br> Brickworks",
+      "CAL": "C&A Lumber",
+      "HAH": "Hemlock and Hide"
     }
   },
   "sections": {

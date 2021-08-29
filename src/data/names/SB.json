@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "features": [
     {
-      "id000017": {
+      "LABEL_SB_0": {
         "type": "Feature",
         "properties": {
           "title": "label",
@@ -16,7 +16,7 @@
       }
     },
     {
-      "id000016": {
+      "LABEL_SB_2": {
         "type": "Feature",
         "properties": {
           "title": "label",
@@ -30,7 +30,7 @@
       }
     },
     {
-      "id000015": {
+      "LABEL_SB_3": {
         "type": "Feature",
         "properties": {
           "title": "label",
@@ -44,7 +44,7 @@
       }
     },
     {
-      "id000014": {
+      "LABEL_SB_4": {
         "type": "Feature",
         "properties": {
           "title": "label",
@@ -59,7 +59,7 @@
     },
 
     {
-      "id000013": {
+      "LABEL_SB_5": {
         "type": "Feature",
         "properties": {
           "title": "label",
@@ -74,7 +74,7 @@
     },
 
     {
-      "id000012": {
+      "LABEL_SB_6": {
         "type": "Feature",
         "properties": {
           "title": "label",
@@ -88,7 +88,7 @@
       }
     },
     {
-      "id000011": {
+      "LABEL_SB_7": {
         "type": "Feature",
         "properties": {
           "title": "label",
@@ -102,7 +102,7 @@
       }
     },
     {
-      "id000010": {
+      "LABEL_SB_8": {
         "type": "Feature",
         "properties": {
           "title": "label",
@@ -116,7 +116,7 @@
       }
     },
     {
-      "id00009": {
+      "LABEL_SB_9": {
         "type": "Feature",
         "properties": {
           "title": "label",
@@ -130,7 +130,7 @@
       }
     },
     {
-      "id00008": {
+      "LABEL_SB_10": {
         "type": "Feature",
         "properties": {
           "title": "label",
@@ -144,7 +144,7 @@
       }
     },
     {
-      "id00007": {
+      "LABEL_SB_11": {
         "type": "Feature",
         "properties": {
           "title": "label",
@@ -158,7 +158,7 @@
       }
     },
     {
-      "id00006": {
+      "LABEL_SB_12": {
         "type": "Feature",
         "properties": {
           "title": "label",
@@ -172,7 +172,7 @@
       }
     },
     {
-      "id00005": {
+      "LABEL_SB_13": {
         "type": "Feature",
         "properties": {
           "title": "label",
@@ -186,7 +186,7 @@
       }
     },
     {
-      "id00004": {
+      "LABEL_SB_14": {
         "type": "Feature",
         "properties": {
           "title": "label",
@@ -200,7 +200,7 @@
       }
     },
     {
-      "id00003": {
+      "LABEL_SB_15": {
         "type": "Feature",
         "properties": {
           "title": "label",
@@ -214,7 +214,7 @@
       }
     },
     {
-      "id00002": {
+      "LABEL_SB_16": {
         "type": "Feature",
         "properties": {
           "title": "label",

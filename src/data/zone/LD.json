@@ -2,259 +2,543 @@
   "type": "FeatureCollection",
   "features": [
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Godard Docks",
-          "ru": "Пристань Годарда",
-          "fr": "Docks Godard"
+      "ZvflFD7CcxhCz5Q2V0E7": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 877.2960452831994,
+              "lat": -342.6689797127868
+            },
+            {
+              "lng": 1000.2444060597782,
+              "lat": -335.53004263543704
+            },
+            {
+              "lng": 998.6579755981448,
+              "lat": -717.066568658239
+            },
+            {
+              "lng": 842.3945751272676,
+              "lat": -678.1990223482238
+            },
+            {
+              "lng": 803.5270288172524,
+              "lat": -535.4202808012294
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-120, 110]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Blanc Brinery",
-          "fr": "Saumurerie Blanc",
-          "ru": "Солодовня Бланка"
+      "ztEiUK99o9e6GmtYfTnV": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 0,
+              "lat": -483.92151012825076
+            },
+            {
+              "lng": -1.2022894661571446,
+              "lat": -752.032061081294
+            },
+            {
+              "lng": 245.26705109605751,
+              "lat": -733.3965743558582
+            },
+            {
+              "lng": 234.44644590064323,
+              "lat": -554.8565886315223
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-130, 350]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label-double-clue",
-        "name": {
-          "en": "Lawson Station",
-          "fr": "Gare de Lawson",
-          "ru": "Станция Лоусон"
+      "to9az79umCZV3pcMX4gu": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 559.08203125,
+              "lat": -656.73828125
+            },
+            {
+              "lng": 625.9765625,
+              "lat": -531.73828125
+            },
+            {
+              "lng": 803.7109375,
+              "lat": -535.15625
+            },
+            {
+              "lng": 841.796875,
+              "lat": -677.24609375
+            },
+            {
+              "lng": 738.5260766396607,
+              "lat": -788.9350561578424
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-250, 500]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Golden Acres",
-          "fr": "Les Acrés Dorés",
-          "ru": "Ферма <br/> &laquo;Золотые акры&raquo;"
+      "s9we3BuDrXGisw0WcLnY": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 565.8925851390388,
+              "lat": -374.61467655634965
+            },
+            {
+              "lng": 603.1814193031731,
+              "lat": -288.2979308060387
+            },
+            {
+              "lng": 726.4417322346172,
+              "lat": -259.2955042339342
+            },
+            {
+              "lng": 876.9781368231596,
+              "lat": -343.1953811032365
+            },
+            {
+              "lng": 803.4362694438946,
+              "lat": -535.5090906349293
+            },
+            {
+              "lng": 625.9690401812552,
+              "lat": -531.7111538219157
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-120, 600]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Salter's Pork",
-          "fr": "Porcherie de Salter",
-          "ru": "Свинина Солтера"
+      "Ou5yUOIj4tJG2Fb8TAfS": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 369.5008724747338,
+              "lat": -407.51403982610134
+            },
+            {
+              "lng": 565.6874734661138,
+              "lat": -374.6552002511904
+            },
+            {
+              "lng": 625.9286793534505,
+              "lat": -531.8621974331172
+            },
+            {
+              "lng": 559.08203125,
+              "lat": -656.73828125
+            },
+            {
+              "lng": 518.06640625,
+              "lat": -657.71484375
+            },
+            {
+              "lng": 338.37890625,
+              "lat": -526.85546875
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-160, 850]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Maw Battery",
-          "fr": "Garnison Maw",
-          "ru": "Гарнизон &laquo;Кровавая пасть&raquo;"
+      "oIVI8oZXR7QkkwxQQumv": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 488.7306679928793,
+              "lat": -756.8412189459226
+            },
+            {
+              "lng": 339.64677418939334,
+              "lat": -800.7247844606584
+            },
+            {
+              "lng": 307.18495860315045,
+              "lat": -999.7036911096658
+            },
+            {
+              "lng": 557.2611675638366,
+              "lat": -999.7036911096658
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-400, 200]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Sweetbell Flour",
-          "fr": "Moulin Sweetbell",
-          "ru": "Мельница &laquo;Лобелия&raquo;"
+      "oGs2vZmSNgjrj3L613if": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 252.2435590539518,
+              "lat": 1.0466537720080988
+            },
+            {
+              "lng": 487.74065775577395,
+              "lat": 0
+            },
+            {
+              "lng": 476.2274662636849,
+              "lat": -129.78506772900423
+            },
+            {
+              "lng": 307.32679367122586,
+              "lat": -278.3336999286574
+            },
+            {
+              "lng": 213.26031175089255,
+              "lat": -244.83056938168934
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-500, 500]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Arden Parish",
-          "fr": "Paroisse d'Arden",
-          "ru": "Приход Арден"
+      "nO7KJXdxeA9AbuvuCDSh": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 0,
+              "lat": -284.7642678631724
+            },
+            {
+              "lng": 212.97828947426677,
+              "lat": -244.70689870693224
+            },
+            {
+              "lng": 306.97429432603815,
+              "lat": -277.2287231704143
+            },
+            {
+              "lng": 369.2416899451441,
+              "lat": -407.7126286397509
+            },
+            {
+              "lng": 338.3062959432953,
+              "lat": -526.6949132622464
+            },
+            {
+              "lng": 234.44644590064323,
+              "lat": -555.4577333646009
+            },
+            {
+              "lng": -0.6011447330785723,
+              "lat": -483.92151012825076
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-380, 695]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Windy Run",
-          "fr": "Haras des quatres vents",
-          "ru": "Ветреный простор"
+      "NcJ75W0dqrK30vwiygzh": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 307.11561620187973,
+              "lat": -278.4231537885553
+            },
+            {
+              "lng": 476.0823393025678,
+              "lat": -130.0724962737373
+            },
+            {
+              "lng": 603.6043944728984,
+              "lat": -288.1998446849473
+            },
+            {
+              "lng": 565.7728514390337,
+              "lat": -374.7023054421549
+            },
+            {
+              "lng": 369.1763497181073,
+              "lat": -407.6455030278237
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-525, 910]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label-double-clue",
-        "name": {
-          "en": "Nicholls Prison",
-          "fr": "Prison Nicholls",
-          "ru": "Тюрьма Николлс"
+      "MsqwNfUyiavod88MCjFn": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 488.7306679928793,
+              "lat": -756.240074212844
+            },
+            {
+              "lng": 517.5856151806508,
+              "lat": -657.6523379879582
+            },
+            {
+              "lng": 559.0646017630722,
+              "lat": -655.8489037887224
+            },
+            {
+              "lng": 737.6045874874083,
+              "lat": -787.4996003329297
+            },
+            {
+              "lng": 720.1713902281297,
+              "lat": -999.7036911096658
+            },
+            {
+              "lng": 557.2611675638366,
+              "lat": -999.7036911096658
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-665, 715]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label-double-clue",
-        "name": {
-          "en": "Fort Carmick",
-          "fr": "Fort Carmick",
-          "ru": "Форт Кармик"
+      "mOWwrwdIGf4EvD2aHJLI": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 234.45112909607445,
+              "lat": -555.2789899643869
+            },
+            {
+              "lng": 337.9334462013763,
+              "lat": -526.6660878534657
+            },
+            {
+              "lng": 518.1646175087769,
+              "lat": -657.5887311616718
+            },
+            {
+              "lng": 488.8345448196009,
+              "lat": -756.6308606772953
+            },
+            {
+              "lng": 339.633740270314,
+              "lat": -801.263579986911
+            },
+            {
+              "lng": 244.84234592703487,
+              "lat": -733.2518172294014
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-665, 375]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Iron Works",
-          "fr": "Fonderie",
-          "ru": "Литейный завод"
+      "ml3fImozdB4ddUilXUxZ": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 726.3777177736204,
+              "lat": -259.0468085720044
+            },
+            {
+              "lng": 876.2736400138236,
+              "lat": -343.7745825898827
+            },
+            {
+              "lng": 1001.0376212905946,
+              "lat": -336.3232578662537
+            },
+            {
+              "lng": 998.6579755981448,
+              "lat": -0.793215230816636
+            },
+            {
+              "lng": 692.4768965029233,
+              "lat": -0.793215230816636
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-620, 135]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Wolfshead Arsenal",
-          "fr": "Arsenal Wolfhead",
-          "ru": "Арсенал Вульфсхеда"
+      "EWt85kBcSkRFYH6llJF3": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": -0.6011447330785723,
+              "lat": -752.032061081294
+            },
+            {
+              "lng": -1.2022894661571446,
+              "lat": -999.7036911096658
+            },
+            {
+              "lng": 305.98266913699337,
+              "lat": -999.7036911096658
+            },
+            {
+              "lng": 338.44448472323626,
+              "lat": -800.1236397275798
+            },
+            {
+              "lng": 245.26705109605751,
+              "lat": -733.3965743558582
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-870, 195]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Bradley & Craven <br> Brickworks",
-          "fr": "Briqueterie <br> Bradley & Craven",
-          "ru": "Кирпичный завод <br> Брэдли и&nbsp;Крейвена"
+      "a5cnVDpLrIRQgs0rrvTd": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 999.03102538173,
+              "lat": -716.9578338255475
+            },
+            {
+              "lng": 842.0329595805152,
+              "lat": -677.7083173752438
+            },
+            {
+              "lng": 737.8909092657094,
+              "lat": -789.1769440941063
+            },
+            {
+              "lng": 721.0326448123222,
+              "lat": -1000.2444060597782
+            },
+            {
+              "lng": 998.6579755981448,
+              "lat": -998.6579755981448
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-850, 450]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "C&A Lumber",
-          "fr": "Scierie C&A",
-          "ru": "Лесопильня&nbsp;C&А&nbsp;"
+      "8sBkunnz71Bafbj00mGg": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 1.0466537720080988,
+              "lat": 0
+            },
+            {
+              "lng": 252.2435590539518,
+              "lat": 1.0466537720080988
+            },
+            {
+              "lng": 212.47071571764403,
+              "lat": -244.9169826498951
+            },
+            {
+              "lng": 0,
+              "lat": -284.68982598620283
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-830, 625]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Hemlock and Hide",
-          "fr": "Tannerie <br> Hemlock & Hide",
-          "ru": "Дубильня <br> &nbsp;Коварный дурман&nbsp;"
+      "6yqq2xHvncpEzb5ZTqSX": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 487.79296875,
+              "lat": -0.48828125
+            },
+            {
+              "lng": 691.40625,
+              "lat": -0.48828125
+            },
+            {
+              "lng": 726.5625,
+              "lat": -259.27734375
+            },
+            {
+              "lng": 603.7006408174813,
+              "lat": -288.6423554815706
+            },
+            {
+              "lng": 476.10662859822935,
+              "lat": -129.84726234497163
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-850, 870]
       }
     }
   ]

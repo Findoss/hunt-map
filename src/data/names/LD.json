@@ -2,259 +2,227 @@
   "type": "FeatureCollection",
   "features": [
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Godard Docks",
-          "ru": "Пристань Годарда",
-          "fr": "Docks Godard"
+      "LABEL_LD_0": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "GD_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-120, 110]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-120, 110]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Blanc Brinery",
-          "fr": "Saumurerie Blanc",
-          "ru": "Солодовня Бланка"
+      "LABEL_LD_1": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "BB_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-130, 350]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-130, 350]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label-double-clue",
-        "name": {
-          "en": "Lawson Station",
-          "fr": "Gare de Lawson",
-          "ru": "Станция Лоусон"
+      "LABEL_LD_2": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label-double-clue",
+          "name": "LS_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-250, 500]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-250, 500]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Golden Acres",
-          "fr": "Les Acrés Dorés",
-          "ru": "Ферма <br/> &laquo;Золотые акры&raquo;"
+      "LABEL_LD_3": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "GA_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-120, 600]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-120, 600]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Salter's Pork",
-          "fr": "Porcherie de Salter",
-          "ru": "Свинина Солтера"
+      "LABEL_LD_4": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "SP_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-160, 850]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-160, 850]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Maw Battery",
-          "fr": "Garnison Maw",
-          "ru": "Гарнизон &laquo;Кровавая пасть&raquo;"
+      "LABEL_LD_5": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "MB_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-400, 200]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-400, 200]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Sweetbell Flour",
-          "fr": "Moulin Sweetbell",
-          "ru": "Мельница &laquo;Лобелия&raquo;"
+      "LABEL_LD_6": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "SF_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-500, 500]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-500, 500]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Arden Parish",
-          "fr": "Paroisse d'Arden",
-          "ru": "Приход Арден"
+      "LABEL_LD_7": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "AP_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-380, 695]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-380, 695]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Windy Run",
-          "fr": "Haras des quatres vents",
-          "ru": "Ветреный простор"
+      "LABEL_LD_8": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "WR_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-525, 910]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-525, 910]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label-double-clue",
-        "name": {
-          "en": "Nicholls Prison",
-          "fr": "Prison Nicholls",
-          "ru": "Тюрьма Николлс"
+      "LABEL_LD_9": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label-double-clue",
+          "name": "NP_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-665, 715]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-665, 715]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label-double-clue",
-        "name": {
-          "en": "Fort Carmick",
-          "fr": "Fort Carmick",
-          "ru": "Форт Кармик"
+      "LABEL_LD_10": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label-double-clue",
+          "name": "FC_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-665, 375]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-665, 375]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Iron Works",
-          "fr": "Fonderie",
-          "ru": "Литейный завод"
+      "LABEL_LD_11": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "IW_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-620, 135]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-620, 135]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Wolfshead Arsenal",
-          "fr": "Arsenal Wolfhead",
-          "ru": "Арсенал Вульфсхеда"
+      "LABEL_LD_12": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "WA_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-870, 195]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-870, 195]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Bradley & Craven <br> Brickworks",
-          "fr": "Briqueterie <br> Bradley & Craven",
-          "ru": "Кирпичный завод <br> Брэдли и&nbsp;Крейвена"
+      "LABEL_LD_13": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "BCB"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-850, 450]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-850, 450]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "C&A Lumber",
-          "fr": "Scierie C&A",
-          "ru": "Лесопильня&nbsp;C&А&nbsp;"
+      "LABEL_LD_14": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "CAL"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-830, 625]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-830, 625]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Hemlock and Hide",
-          "fr": "Tannerie <br> Hemlock & Hide",
-          "ru": "Дубильня <br> &nbsp;Коварный дурман&nbsp;"
+      "LABEL_LD_15": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "HAH"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-850, 870]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-850, 870]
       }
     }
   ]
