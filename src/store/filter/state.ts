@@ -36,7 +36,7 @@ export const initialState: FiltersState = {
     //   'boss-bsh',
     //   'boss-all',
     // ],
-    'spawn-player': ['spawn-player'],
+    // 'spawn-player': ['spawn-player'],
     // 'extraction-point': [
     //   'extraction-point-t',
     //   'extraction-point-b',
@@ -73,7 +73,7 @@ export const initialState: FiltersState = {
 
   // типы для зон
   polygonTypes: {
-    zone: ['zone'],
+    // zone: ['zone'],
   },
 
   // типы для линий

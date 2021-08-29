@@ -5,7 +5,6 @@ import { TileLayerMap } from './tileLayer';
 import { switchTypeFeature } from './switchTypeFeature';
 
 import { selectViewMap, selectOptionsViewMap, selectMaps } from '../../store/map/selectors';
-import { selectViewMarkerFilters } from '../../store/filter/selectors';
 import { selectMarkersId, selectMarkerById } from '../../store/data/selectors';
 
 import { createCRS } from './crs';
