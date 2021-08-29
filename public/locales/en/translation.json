@@ -104,7 +104,23 @@
       "WA_": "Wolfshead Arsenal",
       "BCB": "Bradley & Craven <br> Brickworks",
       "CAL": "C&A Lumber",
-      "HAH": "Hemlock and Hide"
+      "HAH": "Hemlock and Hide",
+      "SCC": "Stanley<br/>coal<br/>company",
+      "KM_": "Kingsnake<br/>mine",
+      "MP_": "Moses<br/>poultry",
+      "SSE": "Seven<br/>sisters<br/>estate",
+      "FB_": "Fort<br/>bolden",
+      "PIP": "Pelican<br/>island<br/>prison",
+      "WSM": "Weeping<br/>stone<br/>mill",
+      "FRF": "Forked<br/>river<br/>fishery",
+      "ACL": "Ash creek<br/>lumber",
+      "ADS": "Upper<br/>DeSalle",
+      "LDS": "Lower<br/>DeSalle",
+      "HP_": "Heritage<br/>pork",
+      "PP_": "Pearl<br/>plantation",
+      "FTC": "First<br/>testimonial<br/>church",
+      "RQ_": "Reeves<br/>quarry",
+      "DS_": "Darin<br/>shipyard"
     }
   },
   "sections": {

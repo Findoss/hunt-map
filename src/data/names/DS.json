@@ -2,259 +2,227 @@
   "type": "FeatureCollection",
   "features": [
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Stanley<br/>coal<br/>company",
-          "ru": "Stanley<br/>coal<br/>company",
-          "fr": "Stanley<br/>coal<br/>company"
+      "SCC": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "SCC"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-115, 355]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-115, 355]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Kingsnake<br/>mine",
-          "ru": "Kingsnake<br/>mine",
-          "fr": "Kingsnake<br/>mine"
+      "KM_": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "KM_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-210, 145]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-210, 145]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Moses<br/>poultry",
-          "ru": "Moses<br/>poultry",
-          "fr": "Moses<br/>poultry"
+      "MP_": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "MP_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-420, 150]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-420, 150]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Seven<br/>sisters<br/>estate",
-          "ru": "Seven<br/>sisters<br/>estate",
-          "fr": "Seven<br/>sisters<br/>estate"
+      "SSE": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "SSE"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-620, 145]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-620, 145]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Fort<br/>bolden",
-          "ru": "Fort<br/>bolden",
-          "fr": "Fort<br/>bolden"
+      "FB_": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "FB_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-815, 190]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-815, 190]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label-double-clue",
-        "name": {
-          "en": "Pelican<br/>island<br/>prison",
-          "ru": "Pelican<br/>island<br/>prison",
-          "fr": "Pelican<br/>island<br/>prison"
+      "PIP": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label-double-clue",
+          "name": "PIP"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-610, 345]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-610, 345]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label-double-clue",
-        "name": {
-          "en": "Weeping<br/>stone<br/>mill",
-          "ru": "Weeping<br/>stone<br/>mill",
-          "fr": "Weeping<br/>stone<br/>mill"
+      "WSM": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label-double-clue",
+          "name": "WSM"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-330, 450]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-330, 450]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Forked<br/>river<br/>fishery",
-          "ru": "Forked<br/>river<br/>fishery",
-          "fr": "Forked<br/>river<br/>fishery"
+      "FRF": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "FRF"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-520, 515]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-520, 515]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Ash creek<br/>lumber",
-          "ru": "Ash creek<br/>lumber",
-          "fr": "Ash creek<br/>lumber"
+      "ACL": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "ACL"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-380, 750]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-380, 750]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Upper<br/>DeSalle",
-          "ru": "Upper<br/>DeSalle",
-          "fr": "Upper<br/>DeSalle"
+      "ADS": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "ADS"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-555, 860]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-555, 860]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Lower<br/>DeSalle",
-          "ru": "Lower<br/>DeSalle",
-          "fr": "Lower<br/>DeSalle"
+      "LDS": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "LDS"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-770, 880]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-770, 880]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Heritage<br/>pork",
-          "ru": "Heritage<br/>pork",
-          "fr": "Heritage<br/>pork"
+      "HP_": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "HP_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-160, 625]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-160, 625]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Pearl<br/>plantation",
-          "ru": "Pearl<br/>plantation",
-          "fr": "Pearl<br/>plantation"
+      "PP_": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "PP_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-150, 815]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-150, 815]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label-double-clue",
-        "name": {
-          "en": "First<br/>testimonial<br/>church",
-          "ru": "First<br/>testimonial<br/>church",
-          "fr": "First<br/>testimonial<br/>church"
+      "FTC": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label-double-clue",
+          "name": "FTC"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-630, 665]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-630, 665]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Reeves<br/>quarry",
-          "ru": "Reeves<br/>quarry",
-          "fr": "Reeves<br/>quarry"
+      "RQ_": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "RQ_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-840, 660]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-840, 660]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Darin<br/>shipyard",
-          "ru": "Darin<br/>shipyard",
-          "fr": "Darin<br/>shipyard"
+      "DS_": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "DS_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-830, 450]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-830, 450]
       }
     }
   ]

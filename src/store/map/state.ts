@@ -57,23 +57,23 @@ export const initialState: MapState = {
       center: [-500, 500],
       padding: 300,
     },
-    // DS: {
-    //   id: 'DS',
-    //   image: {
-    //     width: 2048,
-    //     height: 2048,
-    //     path: '/images/tiles/DS/{z}-{x}-{y}.jpg',
-    //   },
-    //   levels: {
-    //     org: 3,
-    //     max: 6,
-    //     min: 1,
-    //     default: 1,
-    //   },
-    //   width: 1000,
-    //   height: 1000,
-    //   center: [-500, 500],
-    //   padding: 300,
-    // },
+    DS: {
+      id: 'DS',
+      image: {
+        width: 2048,
+        height: 2048,
+        path: '/images/tiles/DS/{z}-{x}-{y}.jpg',
+      },
+      levels: {
+        org: 3,
+        max: 6,
+        min: 1,
+        default: 1,
+      },
+      width: 1000,
+      height: 1000,
+      center: [-500, 500],
+      padding: 300,
+    },
   },
 };

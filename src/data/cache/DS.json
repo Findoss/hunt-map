@@ -1,4 +1,481 @@
 {
   "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "ZPZYCVyhAiL9kla4wifQ": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 977.881626397819,
+            "lat": -556.208697301259
+          }
+        }
+      }
+    },
+    {
+      "Vv2nmXMWBTdpOwpVxuUb": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 952.591606100432,
+            "lat": -366.3282689643198
+          }
+        }
+      }
+    },
+    {
+      "VjRTbSrAnguFXmZi92Wa": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 489.15334995752676,
+            "lat": -27.204705103003878
+          }
+        }
+      }
+    },
+    {
+      "v547so9jy9LbQYZUt3EE": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 15.262014265860858,
+            "lat": -418.9081229092256
+          }
+        }
+      }
+    },
+    {
+      "UIQQ5xMN0pjOqTPxs5GC": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 611.6807913003528,
+            "lat": -980.6446042598429
+          }
+        }
+      }
+    },
+    {
+      "uGqxahbgLE6dB9lUvooe": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 961.8776084739425,
+            "lat": -462.0549132338314
+          }
+        }
+      }
+    },
+    {
+      "TxIng6wNlo7N87z6H2wv": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 26.42378589313223,
+            "lat": -797.7249844633541
+          }
+        }
+      }
+    },
+    {
+      "TWVQj0LlSXV4JLyFdKC0": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 952.4834837430616,
+            "lat": -281.8237419264308
+          }
+        }
+      }
+    },
+    {
+      "sOMNOJPquptLxbJMmeXG": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 169.24890447066593,
+            "lat": -57.40339694025278
+          }
+        }
+      }
+    },
+    {
+      "R5ep2p5d5T2LeU6tunKx": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 465.8805748889414,
+            "lat": -975.6499904323382
+          }
+        }
+      }
+    },
+    {
+      "QymbefrnHNLh7YNQ3aMw": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 713.6668538635712,
+            "lat": -978.141362842524
+          }
+        }
+      }
+    },
+    {
+      "qyIUGESdmjya4BwdGxb8": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 15.945388038959104,
+            "lat": -708.6586027028825
+          }
+        }
+      }
+    },
+    {
+      "POqkEg7uoUam17wbR8pq": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 13.439684204265532,
+            "lat": -514.3526598852809
+          }
+        }
+      }
+    },
+    {
+      "pnd0139l6CRPmpZdgNwV": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 766.513819952996,
+            "lat": -26.77963158576944
+          }
+        }
+      }
+    },
+    {
+      "PlMTqeSdRymUD7rgh6YS": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 823.6862080210275,
+            "lat": -954.0775094326906
+          }
+        }
+      }
+    },
+    {
+      "NaGherkG39zs8ra1PLxv": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 172.82870410283726,
+            "lat": -965.6689363989718
+          }
+        }
+      }
+    },
+    {
+      "mo9Zq1wSthg2E26COPov": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 987.4457805355938,
+            "lat": -650.468749747995
+          }
+        }
+      }
+    },
+    {
+      "mdBNu4eceSwohIWXGvX6": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 31.662984820218792,
+            "lat": -346.0149204454126
+          }
+        }
+      }
+    },
+    {
+      "lQScCyChPtpHKELivwJS": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 46.241625312981405,
+            "lat": -144.647448639129
+          }
+        }
+      }
+    },
+    {
+      "jSpRP4L4qNLPLxxhy96y": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 918.6901391229238,
+            "lat": -8.288933586071494
+          }
+        }
+      }
+    },
+    {
+      "J9JPI4nbqNrrK3AOlvaj": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 942.2817193294351,
+            "lat": -185.33205351421392
+          }
+        }
+      }
+    },
+    {
+      "IYCvLWxEeA2gK62tLcb0": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 276.798163179217,
+            "lat": -969.2142370287478
+          }
+        }
+      }
+    },
+    {
+      "gLPMdOtCD6ZixDXBxa5z": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 979.2631153288308,
+            "lat": -838.77631788285
+          }
+        }
+      }
+    },
+    {
+      "g0QS3FMEP2o4JgEOKfVC": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 74.25995001000953,
+            "lat": -923.9213412288304
+          }
+        }
+      }
+    },
+    {
+      "dpS710ug05v1lK6wq7FC": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 302.7586126502267,
+            "lat": -9.882959275700626
+          }
+        }
+      }
+    },
+    {
+      "bUi2fVOq6biPrCKBmn5c": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 654.0818746444877,
+            "lat": -27.842315378855528
+          }
+        }
+      }
+    },
+    {
+      "b6AyX5ECnnxOeux44Ev5": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 22.09575199684333,
+            "lat": -260.59319880813166
+          }
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player",
+          "description": ""
+        },
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "lng": 12.528519173467869,
+            "lat": -609.1138230882378
+          }
+        }
+      }
+    }
+  ]
 }

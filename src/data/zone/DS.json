@@ -2,259 +2,539 @@
   "type": "FeatureCollection",
   "features": [
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Stanley<br/>coal<br/>company",
-          "ru": "Stanley<br/>coal<br/>company",
-          "fr": "Stanley<br/>coal<br/>company"
+      "VSPhzmufVIC2MOnJVh7U": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 696.7487716965103,
+              "lat": -285.88106192503
+            },
+            {
+              "lng": 707.1067811865476,
+              "lat": -0.6905339660024878
+            },
+            {
+              "lng": 490.27911586176634,
+              "lat": -0.6905339660024878
+            },
+            {
+              "lng": 475.77790257571417,
+              "lat": -162.96601597658713
+            },
+            {
+              "lng": 618.7184335382291,
+              "lat": -307.2876148711071
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-115, 355]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Kingsnake<br/>mine",
-          "ru": "Kingsnake<br/>mine",
-          "fr": "Kingsnake<br/>mine"
+      "vaxKVskbbbePJzaFPMLG": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 0,
+              "lat": -0.6442909720570772
+            },
+            {
+              "lng": 223.56896730380578,
+              "lat": 0
+            },
+            {
+              "lng": 232.58904091260487,
+              "lat": -284.77660964922813
+            },
+            {
+              "lng": 0,
+              "lat": -335.67559644173724
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-210, 145]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Moses<br/>poultry",
-          "ru": "Moses<br/>poultry",
-          "fr": "Moses<br/>poultry"
+      "VAWG0bwFsAtvxb7LLltv": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 231.9447499405478,
+              "lat": -284.77660964922813
+            },
+            {
+              "lng": 222.9246763317487,
+              "lat": -0.6442909720570772
+            },
+            {
+              "lng": 490.9497207074928,
+              "lat": 0
+            },
+            {
+              "lng": 475.48673737812294,
+              "lat": -164.29419787455467
+            },
+            {
+              "lng": 304.1053388109404,
+              "lat": -319.5683221403103
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-420, 150]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Seven<br/>sisters<br/>estate",
-          "ru": "Seven<br/>sisters<br/>estate",
-          "fr": "Seven<br/>sisters<br/>estate"
+      "rBxEgT0wbKc7Rt0B9O0T": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": -1.2885819441141544,
+              "lat": -504.4798311206915
+            },
+            {
+              "lng": 235.16620480083319,
+              "lat": -538.6272526397165
+            },
+            {
+              "lng": 251.2734791022601,
+              "lat": -686.8141762128444
+            },
+            {
+              "lng": -0.6442909720570772,
+              "lat": -776.370621328778
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-620, 145]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Fort<br/>bolden",
-          "ru": "Fort<br/>bolden",
-          "fr": "Fort<br/>bolden"
+      "QPsCVsraW95Ijjdt1mG9": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 308.6686828031121,
+              "lat": -999.2026488055999
+            },
+            {
+              "lng": 337.67110937521653,
+              "lat": -761.6589645007441
+            },
+            {
+              "lng": 499.9465913858012,
+              "lat": -752.6820229427118
+            },
+            {
+              "lng": 564.1662502240325,
+              "lat": -999.2026488055999
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-815, 190]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label-double-clue",
-        "name": {
-          "en": "Pelican<br/>island<br/>prison",
-          "ru": "Pelican<br/>island<br/>prison",
-          "fr": "Pelican<br/>island<br/>prison"
+      "NjYiF6hcZwC1k9ukvoUc": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 565.5473181560375,
+              "lat": -999.2026488055999
+            },
+            {
+              "lng": 499.2560574197987,
+              "lat": -752.6820229427118
+            },
+            {
+              "lng": 532.4016877879181,
+              "lat": -707.79731515255
+            },
+            {
+              "lng": 573.8337257480674,
+              "lat": -714.0121208465725
+            },
+            {
+              "lng": 706.4162472205451,
+              "lat": -783.0655174468212
+            },
+            {
+              "lng": 803.0910024608934,
+              "lat": -999.2026488055999
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-610, 345]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label-double-clue",
-        "name": {
-          "en": "Weeping<br/>stone<br/>mill",
-          "ru": "Weeping<br/>stone<br/>mill",
-          "fr": "Weeping<br/>stone<br/>mill"
+      "mznA8C4wx9GTqp0JpyKC": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 804.4720703928983,
+              "lat": -999.2026488055999
+            },
+            {
+              "lng": 705.7257132545426,
+              "lat": -783.0655174468212
+            },
+            {
+              "lng": 793.4235269368586,
+              "lat": -693.9866358325003
+            },
+            {
+              "lng": 1000.5837167376051,
+              "lat": -716.7742567105823
+            },
+            {
+              "lng": 997.1310469075925,
+              "lat": -999.2026488055999
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-330, 450]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Forked<br/>river<br/>fishery",
-          "ru": "Forked<br/>river<br/>fishery",
-          "fr": "Forked<br/>river<br/>fishery"
+      "MjEjhAdvZmWTRkBgFFiO": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 999.8931827716024,
+              "lat": -716.0837227445799
+            },
+            {
+              "lng": 794.8045948688635,
+              "lat": -693.9866358325003
+            },
+            {
+              "lng": 745.0861493166843,
+              "lat": -522.0436782978808
+            },
+            {
+              "lng": 1000.5837167376051,
+              "lat": -453.6808156636345
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-520, 515]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Ash creek<br/>lumber",
-          "ru": "Ash creek<br/>lumber",
-          "fr": "Ash creek<br/>lumber"
+      "lnaQoa2S5KRl1R9NXwtQ": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 618.0278995722267,
+              "lat": -307.2876148711071
+            },
+            {
+              "lng": 566.9283860880425,
+              "lat": -386.69902096139316
+            },
+            {
+              "lng": 383.2463511313808,
+              "lat": -495.8033875897863
+            },
+            {
+              "lng": 289.3337317550424,
+              "lat": -508.9235329438335
+            },
+            {
+              "lng": 302.45387710908966,
+              "lat": -319.0266922931494
+            },
+            {
+              "lng": 475.77790257571417,
+              "lat": -164.3470839085921
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-380, 750]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Upper<br/>DeSalle",
-          "ru": "Upper<br/>DeSalle",
-          "fr": "Upper<br/>DeSalle"
+      "jySpvsRR1qSzGJg0av7K": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 574.5242597140699,
+              "lat": -714.0121208465725
+            },
+            {
+              "lng": 600.7645504221645,
+              "lat": -497.1844555217912
+            },
+            {
+              "lng": 746.4672172486894,
+              "lat": -522.0436782978808
+            },
+            {
+              "lng": 794.1140609028611,
+              "lat": -693.2961018664978
+            },
+            {
+              "lng": 705.0351792885401,
+              "lat": -782.3749834808187
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-555, 860]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Lower<br/>DeSalle",
-          "ru": "Lower<br/>DeSalle",
-          "fr": "Lower<br/>DeSalle"
+      "eTfmIlMRZXPlr9BrCuam": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": -0.6905339660024878,
+              "lat": -775.4696438207939
+            },
+            {
+              "lng": -0.6905339660024878,
+              "lat": -999.2026488055999
+            },
+            {
+              "lng": 308.6686828031121,
+              "lat": -999.2026488055999
+            },
+            {
+              "lng": 338.361643341219,
+              "lat": -762.3494984667466
+            },
+            {
+              "lng": 252.04489759090808,
+              "lat": -686.390762206473
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-770, 880]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Heritage<br/>pork",
-          "ru": "Heritage<br/>pork",
-          "fr": "Heritage<br/>pork"
+      "923TiRWCys0vEJTvp8I5": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 0,
+              "lat": -335.03130546968015
+            },
+            {
+              "lng": 231.30045896849072,
+              "lat": -284.77660964922813
+            },
+            {
+              "lng": 303.46104783888336,
+              "lat": -319.5683221403103
+            },
+            {
+              "lng": 289.93093742568476,
+              "lat": -508.98986792509106
+            },
+            {
+              "lng": 235.81049577289025,
+              "lat": -539.2715436117736
+            },
+            {
+              "lng": -1.2885819441141544,
+              "lat": -504.4798311206915
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-160, 625]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Pearl<br/>plantation",
-          "ru": "Pearl<br/>plantation",
-          "fr": "Pearl<br/>plantation"
+      "38Qv28gCoMktKXOaNGLL": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 1000.5837167376051,
+              "lat": -452.99028169763204
+            },
+            {
+              "lng": 746.4672172486894,
+              "lat": -522.0436782978808
+            },
+            {
+              "lng": 601.4550843881669,
+              "lat": -497.87498948779375
+            },
+            {
+              "lng": 566.9283860880425,
+              "lat": -386.69902096139316
+            },
+            {
+              "lng": 618.7184335382291,
+              "lat": -307.2876148711071
+            },
+            {
+              "lng": 696.0582377305078,
+              "lat": -286.5715958910325
+            },
+            {
+              "lng": 999.2026488055999,
+              "lat": -304.52547900709715
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-150, 815]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label-double-clue",
-        "name": {
-          "en": "First<br/>testimonial<br/>church",
-          "ru": "First<br/>testimonial<br/>church",
-          "fr": "First<br/>testimonial<br/>church"
+      "9Pjbj6BZZ1VUJrehAEFW": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 381.1747492333733,
+              "lat": -496.4939215557888
+            },
+            {
+              "lng": 566.9283860880425,
+              "lat": -386.69902096139316
+            },
+            {
+              "lng": 600.7645504221645,
+              "lat": -497.1844555217912
+            },
+            {
+              "lng": 574.5242597140699,
+              "lat": -714.0121208465725
+            },
+            {
+              "lng": 531.7111538219157,
+              "lat": -707.79731515255
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-630, 665]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Reeves<br/>quarry",
-          "ru": "Reeves<br/>quarry",
-          "fr": "Reeves<br/>quarry"
+      "9AwlgtJoYq6lpIyCNNGe": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 999.2026488055999,
+              "lat": -304.52547900709715
+            },
+            {
+              "lng": 696.7487716965103,
+              "lat": -286.5715958910325
+            },
+            {
+              "lng": 707.1067811865476,
+              "lat": 0
+            },
+            {
+              "lng": 997.8215808735949,
+              "lat": -0.6905339660024878
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-840, 660]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Darin<br/>shipyard",
-          "ru": "Darin<br/>shipyard",
-          "fr": "Darin<br/>shipyard"
+      "2HpGncMnkGdEmUHHXBAi": {
+        "type": "Feature",
+        "properties": {
+          "title": "zone"
+        },
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            {
+              "lng": 531.7111538219157,
+              "lat": -707.79731515255
+            },
+            {
+              "lng": 499.2560574197987,
+              "lat": -752.6820229427118
+            },
+            {
+              "lng": 338.361643341219,
+              "lat": -760.9684305347416
+            },
+            {
+              "lng": 251.3543636249056,
+              "lat": -686.390762206473
+            },
+            {
+              "lng": 235.47208240684836,
+              "lat": -538.6164934819406
+            },
+            {
+              "lng": 290.7147996870474,
+              "lat": -507.54246501182854
+            },
+            {
+              "lng": 381.1747492333733,
+              "lat": -495.1128536237838
+            }
+          ]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-830, 450]
       }
     }
   ]
