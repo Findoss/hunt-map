@@ -31,6 +31,10 @@
       "boss-ab": "Assassin, Butcher",
       "boss-as": "Assassin, Spider",
       "boss-bs": "Butcher, Spider",
+      "boss-abs": "Assassin, Butcher, Spider",
+      "boss-abh": "Assassin, Butcher, Scrapbeak",
+      "boss-ash": "Assassin, Spider, Scrapbeak",
+      "boss-bsh": "Butcher, Spider, Scrapbeak",
       "boss-all": "Assassin, Butcher, Spider, Scrapbeak"
     },
     "aviary": {
@@ -67,7 +71,25 @@
     }
   },
   "typesDescription": {
-    "resupply-point": "3 Ammo box <br/>3 Medkit<br/>1-2 Lantern"
+    "resupply-point": "3 Ammo box <br/>3 Medkit<br/>1 Custom Ammo box<br/>1 Lantern<br/>",
+    "label": {
+      "ASF": "Alain & Son's <br> Fish",
+      "RML": "Reynard <br> Mill & Lumber",
+      "PR_": "Port Reeker",
+      "SL_": "Scupper Lake",
+      "BG_": "Blanchett Graves",
+      "DL_": "Darrow Livestock",
+      "AF_": "Alice Farm",
+      "CMN": "The Chapel <br> of Madonna Noire",
+      "LD_": "Lockbay Docks",
+      "SB_": "Stillwater Bend",
+      "PC_": "Pitching <br> Crematorium",
+      "CH_": "Cyprus Huts",
+      "DR_": "Davant Ranch",
+      "_S_": "The Slaughterhouse",
+      "CG_": "Catfish Grove",
+      "HWC": "Healing-Waters <br> Church"
+    }
   },
   "sections": {
     "maps": "Maps",
@@ -75,25 +97,5 @@
     "filters": "Filters",
     "editor": "Editor",
     "tools": "Tools"
-  },
-  "send": "Send",
-  "save": "Save",
-  "delete": "Delete",
-  "cancel": "Cancel",
-  "type": "Type",
-  "marker": "Marker",
-  "description": "Description",
-  "contributors": "Contributors",
-  "success": "Success",
-  "error": "Error",
-  "msgModer": "Data send to server, information will appear as soon as it is checked by the moderator.",
-  "upload": "Uploading data...",
-  "print": {
-    "title": "Save map",
-    "defaultSizeTitles": {
-      "Current": "Current size",
-      "A4Landscape": "A4 Landscape",
-      "A4Portrait": "A4 Portrait"
-    }
   }
 }

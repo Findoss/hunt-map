@@ -2,259 +2,432 @@
   "type": "FeatureCollection",
   "features": [
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Stanley<br/>coal<br/>company",
-          "ru": "Stanley<br/>coal<br/>company",
-          "fr": "Stanley<br/>coal<br/>company"
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-50, 150], "type": "Point" },
+        "properties": {
+          "title": "boss",
+          "marker": "boss-a"
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-115, 355]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Kingsnake<br/>mine",
-          "ru": "Kingsnake<br/>mine",
-          "fr": "Kingsnake<br/>mine"
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-50, 200], "type": "Point" },
+        "properties": {
+          "title": "boss",
+          "marker": "boss-b"
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-210, 145]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Moses<br/>poultry",
-          "ru": "Moses<br/>poultry",
-          "fr": "Moses<br/>poultry"
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-50, 250], "type": "Point" },
+        "properties": {
+          "title": "boss",
+          "marker": "boss-s"
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-420, 150]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Seven<br/>sisters<br/>estate",
-          "ru": "Seven<br/>sisters<br/>estate",
-          "fr": "Seven<br/>sisters<br/>estate"
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-50, 300], "type": "Point" },
+        "properties": {
+          "title": "boss",
+          "marker": "boss-h"
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-620, 145]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Fort<br/>bolden",
-          "ru": "Fort<br/>bolden",
-          "fr": "Fort<br/>bolden"
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-50, 350], "type": "Point" },
+        "properties": {
+          "title": "boss",
+          "marker": "boss-hb"
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-815, 190]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label-double-clue",
-        "name": {
-          "en": "Pelican<br/>island<br/>prison",
-          "ru": "Pelican<br/>island<br/>prison",
-          "fr": "Pelican<br/>island<br/>prison"
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-50, 400], "type": "Point" },
+        "properties": {
+          "title": "boss",
+          "marker": "boss-hs"
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-610, 345]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label-double-clue",
-        "name": {
-          "en": "Weeping<br/>stone<br/>mill",
-          "ru": "Weeping<br/>stone<br/>mill",
-          "fr": "Weeping<br/>stone<br/>mill"
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-50, 450], "type": "Point" },
+        "properties": {
+          "title": "boss",
+          "marker": "boss-ah"
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-330, 450]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Forked<br/>river<br/>fishery",
-          "ru": "Forked<br/>river<br/>fishery",
-          "fr": "Forked<br/>river<br/>fishery"
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-50, 500], "type": "Point" },
+        "properties": {
+          "title": "boss",
+          "marker": "boss-ab"
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-520, 515]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Ash creek<br/>lumber",
-          "ru": "Ash creek<br/>lumber",
-          "fr": "Ash creek<br/>lumber"
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-50, 550], "type": "Point" },
+        "properties": {
+          "title": "boss",
+          "marker": "boss-as"
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-380, 750]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Upper<br/>DeSalle",
-          "ru": "Upper<br/>DeSalle",
-          "fr": "Upper<br/>DeSalle"
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-50, 600], "type": "Point" },
+        "properties": {
+          "title": "boss",
+          "marker": "boss-bs"
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-555, 860]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Lower<br/>DeSalle",
-          "ru": "Lower<br/>DeSalle",
-          "fr": "Lower<br/>DeSalle"
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-50, 650], "type": "Point" },
+        "properties": {
+          "title": "boss",
+          "marker": "boss-abs"
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-770, 880]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Heritage<br/>pork",
-          "ru": "Heritage<br/>pork",
-          "fr": "Heritage<br/>pork"
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-50, 700], "type": "Point" },
+        "properties": {
+          "title": "boss",
+          "marker": "boss-abh"
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-160, 625]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Pearl<br/>plantation",
-          "ru": "Pearl<br/>plantation",
-          "fr": "Pearl<br/>plantation"
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-50, 750], "type": "Point" },
+        "properties": {
+          "title": "boss",
+          "marker": "boss-bsh"
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-150, 815]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label-double-clue",
-        "name": {
-          "en": "First<br/>testimonial<br/>church",
-          "ru": "First<br/>testimonial<br/>church",
-          "fr": "First<br/>testimonial<br/>church"
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-50, 800], "type": "Point" },
+        "properties": {
+          "title": "boss",
+          "marker": "boss-ash"
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-630, 665]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Reeves<br/>quarry",
-          "ru": "Reeves<br/>quarry",
-          "fr": "Reeves<br/>quarry"
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-50, 100], "type": "Point" },
+        "properties": {
+          "title": "boss",
+          "marker": "boss-all"
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-840, 660]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Darin<br/>shipyard",
-          "ru": "Darin<br/>shipyard",
-          "fr": "Darin<br/>shipyard"
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-100, 100], "type": "Point" },
+        "properties": {
+          "title": "spawn-player",
+          "marker": "spawn-player"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-100, 150], "type": "Point" },
+        "properties": {
+          "title": "resupply-point",
+          "marker": "resupply-point"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-100, 200], "type": "Point" },
+        "properties": {
+          "title": "resupply-point",
+          "marker": "resupply-point-b"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-100, 250], "type": "Point" },
+        "properties": {
+          "title": "resupply-point",
+          "marker": "resupply-point-rc"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-100, 300], "type": "Point" },
+        "properties": {
+          "title": "extraction-point",
+          "marker": "extraction-point-t"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-100, 350], "type": "Point" },
+        "properties": {
+          "title": "extraction-point",
+          "marker": "extraction-point-b"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-100, 400], "type": "Point" },
+        "properties": {
+          "title": "extraction-point",
+          "marker": "extraction-point-r"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-100, 450], "type": "Point" },
+        "properties": {
+          "title": "extraction-point",
+          "marker": "extraction-point-l"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-100, 500], "type": "Point" },
+        "properties": {
+          "title": "aviary",
+          "marker": "aviary"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-100, 550], "type": "Point" },
+        "properties": {
+          "title": "aviary",
+          "marker": "aviary-d"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-100, 600], "type": "Point" },
+        "properties": {
+          "title": "aviary",
+          "marker": "aviary-c"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-150, 100], "type": "Point" },
+        "properties": {
+          "title": "tower",
+          "marker": "tower"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-150, 150], "type": "Point" },
+        "properties": {
+          "title": "tower",
+          "marker": "tower1"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-150, 200], "type": "Point" },
+        "properties": {
+          "title": "tower",
+          "marker": "tower2"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-150, 250], "type": "Point" },
+        "properties": {
+          "title": "tower",
+          "marker": "tower3"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-150, 300], "type": "Point" },
+        "properties": {
+          "title": "tower",
+          "marker": "tower4"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-150, 350], "type": "Point" },
+        "properties": {
+          "title": "tower",
+          "marker": "tower5"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-150, 400], "type": "Point" },
+        "properties": {
+          "title": "tower",
+          "marker": "tower6"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-150, 450], "type": "Point" },
+        "properties": {
+          "title": "tower",
+          "marker": "tower7"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-150, 500], "type": "Point" },
+        "properties": {
+          "title": "tower",
+          "marker": "tower8"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-150, 550], "type": "Point" },
+        "properties": {
+          "title": "tower",
+          "marker": "tower9"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-150, 600], "type": "Point" },
+        "properties": {
+          "title": "tower",
+          "marker": "tower10"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-150, 650], "type": "Point" },
+        "properties": {
+          "title": "tower",
+          "marker": "tower11"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-150, 700], "type": "Point" },
+        "properties": {
+          "title": "tower",
+          "marker": "tower-o"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-150, 750], "type": "Point" },
+        "properties": {
+          "title": "tower",
+          "marker": "tower-h"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": { "coordinates": [-200, 100], "type": "Point" },
+        "properties": {
+          "title": "easter-egg",
+          "marker": "easter-egg"
+        }
+      }
+    },
+    {
+      "9MXjX6n1dmBOzFxCYOz0": {
+        "type": "Feature",
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [
+            { "lng": 236.25079819196165, "lat": -0.5669716934255283 },
+            { "lat": -209.6009102911252, "lng": 236.42350604395958 },
+            { "lng": 343.3216448983832, "lat": -269.00421255925284 },
+            { "lng": 484.4276944815218, "lat": -124.97543148819513 },
+            { "lat": -0.40090952916201145, "lng": 485.82788941274384 }
+          ]
         }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-830, 450]
+      "properties": {
+        "title": "zone",
+        "marker": "easter-egg"
       }
     }
   ]

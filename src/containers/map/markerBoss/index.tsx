@@ -4,7 +4,7 @@ import { Marker, Tooltip, Circle } from 'react-leaflet';
 import { useTranslation } from 'react-i18next';
 
 import type { LatLngTuple } from 'leaflet';
-import type { TypeFeature } from '../markerBase/types';
+import type { TypeFeature } from '../../../data';
 
 import './style.css';
 

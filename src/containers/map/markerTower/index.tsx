@@ -3,7 +3,7 @@ import { Marker, Tooltip } from 'react-leaflet';
 import { useTranslation } from 'react-i18next';
 
 import type { LatLngTuple } from 'leaflet';
-import type { TypeFeature } from '../markerBase/types';
+import type { TypeFeature } from '../../../data';
 
 import './style.css';
 
@@ -19,6 +19,7 @@ export const MarkerTower = ({ feature }: Props) => {
 
   const icon = L.divIcon({
     className: 'marker-base marker-' + marker,
+    html: `<div class="vector"></div>`,
   });
 
   return (

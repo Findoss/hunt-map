@@ -1,19 +1,4 @@
 {
   "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": { "coordinates": [-253.16604127579737, 544.7936210131331], "type": "Point" },
-      "properties": {
-        "id": "zznNLJ9H3ajClHNDgAjX",
-        "description": {
-          "fr": "3 Kit de soin<br/>3 Caisse de munitions<br/>1-2 Lanterne",
-          "ru": "3 Аптечки<br/>3 Ящика боеприпасов<br/>1-2 Лампы",
-          "en": "3 Medkit<br/>3 Ammo box<br/>1-2 Lantern"
-        },
-        "title": "spawn-player",
-        "marker": "spawn-player"
-      }
-    }
-  ]
+  "features": []
 }

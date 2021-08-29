@@ -1,7 +1,7 @@
 import { Polygon } from 'react-leaflet';
 
 import type { LatLngLiteral } from 'leaflet';
-import type { TypeFeature } from '../markerBase/types';
+import type { TypeFeature } from '../../../data';
 
 import './style.css';
 

@@ -2,261 +2,229 @@
   "type": "FeatureCollection",
   "features": [
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Alain & Son's <br> Fish",
-          "fr": "Poissonnerie <br> Alain & Fils",
-          "ru": "Рыбное хозяйство <br> &laquo;Ален и сын&raquo;"
+      "id000017": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "ASF"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-110, 130]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-110, 130]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Reynard <br> Mill & Lumber",
-          "fr": "Scierie Reynard",
-          "ru": "Лесопильня <br> Рейнарда"
+      "id000016": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "RML"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-100, 350]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-100, 350]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label-double-clue",
-        "name": {
-          "en": "Port Reeker",
-          "fr": "Havre Saumâtre",
-          "ru": "Порт Рикер"
+      "id000015": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label-double-clue",
+          "name": "PR_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-120, 615]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-120, 615]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Scupper Lake",
-          "fr": "Lac Désolé",
-          "ru": "Гиблое озеро"
+      "id000014": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "SL_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-95, 830]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-95, 830]
       }
     },
 
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label-double-clue",
-        "name": {
-          "en": "Blanchett Graves",
-          "fr": "Cimetière Blanchet",
-          "ru": "Кладбище Бланшетт"
+      "id000013": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label-double-clue",
+          "name": "BG_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-395, 200]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-395, 200]
       }
     },
 
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Darrow Livestock",
-          "fr": "Elevage Darrow",
-          "ru": "Скотный двор <br> Дэрроу"
+      "id000012": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "DL_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-250, 450]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-250, 450]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Alice Farm",
-          "fr": "Ferme d'Alice",
-          "ru": "Ферма Элис"
+      "id000011": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "AF_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-370, 595]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-370, 595]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "The Chapel <br> of Madonna Noire",
-          "fr": "Chapelle de la Noire Madonne",
-          "ru": "Часовня <br> Чёрной Мадонны"
+      "id000010": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "CMN"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-365, 840]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-365, 840]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Lockbay Docks",
-          "fr": "Quais de Lockbay",
-          "ru": "Верфь Локбей"
+      "id00009": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "LD_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-475, 420]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-475, 420]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Stillwater Bend",
-          "fr": "Croisée de Stillwater",
-          "ru": "Излучина Стилуотер"
+      "id00008": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "SB_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-575, 770]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-575, 770]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Pitching <br> Crematorium",
-          "fr": "Crématorium délabré",
-          "ru": "Разрушенный <br> крематорий"
+      "id00007": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "PC_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-670, 340]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-670, 340]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Cyprus Huts",
-          "fr": "Cabane des Cyprès",
-          "ru": "Кипарисовая роща"
+      "id00006": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "CH_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-800, 120]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-800, 120]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Davant Ranch",
-          "fr": "Ranch Davant",
-          "ru": "Ранчо Даванта"
+      "id00005": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "DR_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-880, 300]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-880, 300]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "The Slaughterhouse",
-          "fr": "Abbatoir",
-          "ru": "Скотобойня"
+      "id00004": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "_S_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-900, 600]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-900, 600]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label",
-        "name": {
-          "en": "Catfish Grove",
-          "fr": "Marécage du Silure",
-          "ru": "Сомовая роща"
+      "id00003": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "CG_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-850, 850]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-850, 850]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "label",
-        "marker": "label-double-clue",
-        "name": {
-          "en": "Healing-Waters <br> Church",
-          "fr": "Eglise des <br> Eaux Curatives",
-          "ru": "Церковь <br>&laquo;Исцеляющие воды&raquo;"
+      "id00002": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label-double-clue",
+          "name": "HWC"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-665, 570]
         }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-665, 570]
       }
     }
   ]
