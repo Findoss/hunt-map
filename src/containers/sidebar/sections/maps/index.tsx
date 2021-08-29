@@ -7,6 +7,8 @@ import { selectIdMaps, selectViewMap } from '../../../../store/map/selectors';
 
 import { Radio } from '../../../../components/radio';
 
+import './style.css';
+
 type Props = {
   className?: string;
 };

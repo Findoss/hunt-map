@@ -8,6 +8,7 @@ import { selectViewMap, selectOptionsViewMap, selectMaps } from '../../store/map
 import { selectMarkersId, selectMarkerById } from '../../store/data/selectors';
 
 import { createCRS } from './crs';
+// import { createRuler } from './toolRuler';
 
 import './markerBase/style.css';
 import './tooltip/style.css';

@@ -5,17 +5,16 @@
     "DS": "DeSalle"
   },
   "types": {
-    "boss": "Boss",
+    "boss": "Boss - coming soon",
     "spawn-player": "Spawn player",
-    "extraction-point": "Extraction point",
-    "resupply-point": "Supplies",
-    "easter-egg": "Easter egg",
-    "tower": "Tower",
-    "aviary": "Aviary",
-    "clue": "Clue",
-    "cash": "Cash",
+    "extraction-point": "Extraction point - coming soon",
+    "resupply-point": "Supplies - coming soon",
+    "easter-egg": "Easter egg - coming soon",
+    "tower": "Tower - coming soon",
+    "aviary": "Aviary - coming soon",
+    "clue": "Clue - coming soon",
+    "cash": "Cash - coming soon",
     "label": "Compounds name",
-    "new-object": "New markers",
     "zone": "Compounds zone",
     "water-low": "Water low"
   },
@@ -129,5 +128,9 @@
     "filters": "Filters",
     "editor": "Editor",
     "tools": "Tools"
+  },
+  "tools": {
+    "ruler": "Ruler - coming soon",
+    "editor": "Moder panel - coming soon"
   }
 }

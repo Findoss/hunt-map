@@ -3,6 +3,8 @@ import classNames from 'classnames';
 import { SectionLang } from './lang';
 import { SectionMaps } from './maps';
 import { SectionFilters } from './filters';
+import { SectionTools } from './tools';
+import { SectionEditor } from './panel';
 
 import './style.css';
 
@@ -18,13 +20,8 @@ export const Sections = ({ className }: Props) => {
       <SectionLang className="section section__lang" />
       <SectionMaps className="section section__map-switch" />
       <SectionFilters className="section" />
-
-      {/* <div className="section">
-        <span>{t('sections.tools')}</span>
-      </div>
-      <div className="section">
-        <span>{t('sections.editor')}</span>
-      </div> */}
+      <SectionTools className="section" />
+      <SectionEditor className="section" />
 
       <a
         className="section section__adv"

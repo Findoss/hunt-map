@@ -1,0 +1,24 @@
+.button {
+  background-color: var(--bg-color-2);
+  outline: none;
+  border: none;
+  padding: 8px;
+  width: 100%;
+  color: var(--color-1);
+  font-size: 1rem;
+
+  text-align: left;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: var(--color-2-hover);
+}
+
+.button--active {
+  color: var(--color-2-hover);
+}

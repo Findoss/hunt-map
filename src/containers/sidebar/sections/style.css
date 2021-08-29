@@ -23,9 +23,3 @@
   background-image: url('../../../assets/sponsor/ruhunt-full.png');
   background-size: contain;
 }
-
-.map-switch__container {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
