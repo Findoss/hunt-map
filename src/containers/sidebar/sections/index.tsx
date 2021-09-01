@@ -6,6 +6,7 @@ import { SectionFilters } from './filters';
 import { SectionTools } from './tools';
 import { SectionEditor } from './panel';
 
+import { ReactComponent as SponsorSVG } from '../../../assets/sponsor/ruhuntwhite.svg';
 import './style.css';
 
 type Props = {
@@ -29,7 +30,7 @@ export const Sections = ({ className }: Props) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        .
+        <SponsorSVG />
       </a>
     </div>
   );

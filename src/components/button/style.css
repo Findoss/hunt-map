@@ -6,6 +6,7 @@
   width: 100%;
   color: var(--color-1);
   font-size: 1rem;
+  border: 1px solid transparent;
 
   text-align: left;
   display: flex;
@@ -21,4 +22,5 @@
 
 .button--active {
   color: var(--color-2-hover);
+  border: 1px solid var(--color-2);
 }

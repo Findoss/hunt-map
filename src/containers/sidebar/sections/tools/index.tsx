@@ -1,10 +1,8 @@
 import classNames from 'classnames';
-
 import { useTranslation } from 'react-i18next';
 
-import { Button } from '../../../../components/button';
+import { ButtonRuler } from '../../../map/toolRuler';
 
-import { ReactComponent as RulerIcon } from '../../../map/toolRuler/ruler.svg';
 import './style.css';
 
 type Props = {
@@ -19,7 +17,7 @@ export const SectionTools = ({ className }: Props) => {
     <div className={style}>
       <span>{t('sections.tools')}</span>
       <div className="tools__container">
-        <Button icon={<RulerIcon />}>{t(`tools.ruler`)}</Button>
+        <ButtonRuler />
       </div>
     </div>
   );

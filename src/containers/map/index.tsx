@@ -8,7 +8,7 @@ import { selectViewMap, selectOptionsViewMap, selectMaps } from '../../store/map
 import { selectMarkersId, selectMarkerById } from '../../store/data/selectors';
 
 import { createCRS } from './crs';
-// import { createRuler } from './toolRuler';
+import { Ruler } from '../map/toolRuler/index';
 
 import './markerBase/style.css';
 import './tooltip/style.css';
@@ -31,8 +31,9 @@ export const Map = () => {
       maxBoundsViscosity={0.6}
       crs={createCRS(width, height)}
     >
-      <TileLayerMap optionsMap={maps[idMap]} key={idMap} />
       <LayerGroup>{markersId.map((id) => switchTypeFeature(marker(id), id))}</LayerGroup>
+      <TileLayerMap optionsMap={maps[idMap]} key={idMap} />
+      <Ruler />
     </MapContainer>
   );
 };
