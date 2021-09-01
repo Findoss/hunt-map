@@ -24,14 +24,14 @@ export default {
     'tower',
     'aviary',
     'clue',
-    'cash'
+    'cash',
   ],
 
   // типы для особых маркеров
   extraTypes: ['label', 'new-object'],
 
   // типы для зон
-  polygonTypes: ['zone'],
+  polygonTypes: ['zone', 'zone-double-clue'],
 
   // типы для линий
   polylineTypes: ['water-low'],
@@ -43,9 +43,21 @@ export default {
       'extraction-point-t',
       'extraction-point-b',
       'extraction-point-r',
-      'extraction-point-l'
+      'extraction-point-l',
     ],
-    boss: ['boss-a', 'boss-b', 'boss-s', 'boss-ab', 'boss-as', 'boss-bs', 'boss-all'],
+    boss: [
+      'boss-a',
+      'boss-b',
+      'boss-s',
+      'boss-h',
+      'boss-hb',
+      'boss-hs',
+      'boss-ah',
+      'boss-ab',
+      'boss-as',
+      'boss-bs',
+      'boss-all',
+    ],
     aviary: ['aviary', 'aviary-d', 'aviary-c'],
     tower: [
       'tower',
@@ -60,8 +72,8 @@ export default {
       'tower9',
       'tower10',
       'tower11',
-      'tower-o'
-    ]
+      'tower-o',
+    ],
   },
 
   // Основные настройки карт
@@ -71,61 +83,61 @@ export default {
       image: {
         width: 4096,
         height: 4096,
-        path: 'public/images/tiles/SB/{z}-{x}-{y}.jpg'
+        path: 'public/images/tiles/SB/{z}-{x}-{y}.jpg',
       },
       levels: {
         org: 4,
         max: 7,
         min: 1,
-        default: !isInIframe() ? localStorage.getItem('ZOOM') || 1 : 1
+        default: !isInIframe() ? localStorage.getItem('ZOOM') || 1 : 1,
       },
       width: 1000,
       height: 1000,
       center: !isInIframe()
         ? JSON.parse(localStorage.getItem('CENTER')) || [-500, 500]
         : [-500, 500],
-      padding: 300
+      padding: 300,
     },
     LD: {
       id: 'LD',
       image: {
         width: 4096,
         height: 4096,
-        path: 'public/images/tiles/LD/{z}-{x}-{y}.jpg'
+        path: 'public/images/tiles/LD/{z}-{x}-{y}.jpg',
       },
       levels: {
         org: 4,
         max: 7,
         min: 1,
-        default: !isInIframe() ? localStorage.getItem('ZOOM') || 1 : 1
+        default: !isInIframe() ? localStorage.getItem('ZOOM') || 1 : 1,
       },
       width: 1000,
       height: 1000,
       center: !isInIframe()
         ? JSON.parse(localStorage.getItem('CENTER')) || [-500, 500]
         : [-500, 500],
-      padding: 300
+      padding: 300,
     },
     DS: {
       id: 'DS',
       image: {
         width: 2048,
         height: 2048,
-        path: 'public/images/tiles/DS/{z}-{x}-{y}.jpg'
+        path: 'public/images/tiles/DS/{z}-{x}-{y}.jpg',
       },
       levels: {
         org: 3,
         max: 6,
         min: 1,
-        default: !isInIframe() ? localStorage.getItem('ZOOM') || 1 : 1
+        default: !isInIframe() ? localStorage.getItem('ZOOM') || 1 : 1,
       },
       width: 1000,
       height: 1000,
       center: !isInIframe()
         ? JSON.parse(localStorage.getItem('CENTER')) || [-500, 500]
         : [-500, 500],
-      padding: 300
-    }
+      padding: 300,
+    },
   },
 
   //
@@ -137,7 +149,7 @@ export default {
     authDomain: 'hunt-map-1.firebaseapp.com',
     databaseURL: 'https://hunt-map-1.firebaseio.com',
     storageBucket: 'gs://hunt-map-1.appspot.com/',
-    projectId: 'hunt-map-1'
+    projectId: 'hunt-map-1',
   },
 
   //
@@ -150,11 +162,11 @@ export default {
     simbolButton: '',
     formatDistance(val) {
       return Math.round(val) + 'm';
-    }
+    },
   },
 
   optionsAuth: {
-    position: 'bottomleft'
+    position: 'bottomleft',
   },
 
   optionsDraw: {
@@ -166,8 +178,8 @@ export default {
         weight: 12,
         opacity: 0.8,
         fill: false,
-        clickable: false
-      }
+        clickable: false,
+      },
     },
     polygon: {
       allowIntersection: false,
@@ -180,8 +192,8 @@ export default {
         fillColor: null,
         fillOpacity: 0.2,
         showArea: false,
-        clickable: false
-      }
+        clickable: false,
+      },
     },
     circle: {
       allowIntersection: false,
@@ -194,17 +206,17 @@ export default {
         fillColor: null,
         fillOpacity: 0.2,
         showArea: false,
-        clickable: false
-      }
+        clickable: false,
+      },
     },
     circlemarker: false,
-    rectangle: false
+    rectangle: false,
   },
 
   optionsPrint: {
     position: 'topleft',
     exportOnly: true,
     sizeModes: ['Current', 'A4Portrait', 'A4Landscape'],
-    filename: 'hunt-map'
-  }
+    filename: 'hunt-map',
+  },
 };

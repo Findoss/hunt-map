@@ -66,6 +66,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 | ------------ | -------------------------------------- | --------------------------- |
 | Findoss      | dis Findoss#4833                       | creator                     |
 | Lapin        | dis Lapin#2600                         | map layers                  |
+| DRAFTPUNK    | dis DRAFTPUNK#1988                     | map layers                  |
 | varshevsky   | dis varshevsky#2885                    | easter-egg information      |
 | grassoff BLS | https://steamcommunity.com/id/grassoff | easter-egg information      |
 | Святобор     | dis Святобор#5127                      | add markers                 |

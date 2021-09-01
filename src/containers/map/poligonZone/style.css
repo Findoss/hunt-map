@@ -1,0 +1,9 @@
+.poligon-zone {
+  pointer-events: none !important;
+}
+
+.poligon-zone:hover {
+  stroke: red;
+  stroke-opacity: 0.8;
+  fill-opacity: 0.1;
+}
