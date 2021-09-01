@@ -1,0 +1,30 @@
+.avd {
+  background-color: brown;
+
+  position: fixed;
+  width: 500px;
+  height: 70px;
+  top: 0px;
+  left: calc(50% + 175px - 250px);
+
+  overflow: hidden;
+}
+
+.avd_hide {
+  display: none;
+}
+
+.avd__close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin: 4px;
+}
+
+.avd__close-button:hover {
+  cursor: pointer;
+}

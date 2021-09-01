@@ -1,0 +1,229 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "SCC": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "SCC"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-115, 355]
+        }
+      }
+    },
+    {
+      "KM_": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "KM_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-210, 145]
+        }
+      }
+    },
+    {
+      "MP_": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "MP_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-420, 150]
+        }
+      }
+    },
+    {
+      "SSE": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "SSE"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-620, 145]
+        }
+      }
+    },
+    {
+      "FB_": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "FB_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-815, 190]
+        }
+      }
+    },
+    {
+      "PIP": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label-double-clue",
+          "name": "PIP"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-610, 345]
+        }
+      }
+    },
+    {
+      "WSM": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label-double-clue",
+          "name": "WSM"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-330, 450]
+        }
+      }
+    },
+    {
+      "FRF": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "FRF"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-520, 515]
+        }
+      }
+    },
+    {
+      "ACL": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "ACL"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-380, 750]
+        }
+      }
+    },
+    {
+      "ADS": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "ADS"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-555, 860]
+        }
+      }
+    },
+    {
+      "LDS": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "LDS"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-770, 880]
+        }
+      }
+    },
+    {
+      "HP_": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "HP_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-160, 625]
+        }
+      }
+    },
+    {
+      "PP_": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "PP_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-150, 815]
+        }
+      }
+    },
+    {
+      "FTC": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label-double-clue",
+          "name": "FTC"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-630, 665]
+        }
+      }
+    },
+    {
+      "RQ_": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "RQ_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-840, 660]
+        }
+      }
+    },
+    {
+      "DS_": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "DS_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-830, 450]
+        }
+      }
+    }
+  ]
+}
