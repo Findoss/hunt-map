@@ -19,12 +19,15 @@ export const Sections = ({ className }: Props) => {
   const styleSections = classNames('sections', className);
 
   return (
-    <div className={styleSections}>
-      <SectionLang className="section section__lang" />
-      <SectionMaps className="section section__map-switch" />
-      <SectionFilters className="section" />
-      <SectionTools className="section" />
-      <SectionEditor className="section" />
+    <>
+      <div className={styleSections}>
+        <SectionLang className="section section__lang" />
+        <SectionMaps className="section section__map-switch" />
+        <SectionFilters className="section" />
+        <SectionTools className="section" />
+        <SectionEditor className="section" />
+        <div className="section section-br" />
+      </div>
 
       <a
         className="section section__adv"
@@ -34,6 +37,6 @@ export const Sections = ({ className }: Props) => {
       >
         <SponsorSVG />
       </a>
-    </div>
+    </>
   );
 };

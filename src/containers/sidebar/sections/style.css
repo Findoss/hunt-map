@@ -15,8 +15,19 @@
 .section__map-switch {
 }
 
+.section-br {
+  height: 4px;
+  margin-top: 60px;
+}
+
 .section__adv {
-  margin-top: auto;
+  position: sticky;
+  bottom: 0px;
+  height: 80px;
+  width: calc(100% - 12px);
+  padding-top: 4px;
+  display: block;
+  background-color: var(--bg-color-1);
 }
 
 .section__adv:hover .st1 {
