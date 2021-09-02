@@ -6,6 +6,8 @@ import { SectionFilters } from './filters';
 import { SectionTools } from './tools';
 import { SectionEditor } from './panel';
 
+import { INVITE_LINK_DISCORD_RUHUNT } from '../../../constants';
+
 import { ReactComponent as SponsorSVG } from '../../../assets/sponsor/ruhuntwhite.svg';
 import './style.css';
 
@@ -26,7 +28,7 @@ export const Sections = ({ className }: Props) => {
 
       <a
         className="section section__adv"
-        href="https://discord.gg/FyutvHpS"
+        href={INVITE_LINK_DISCORD_RUHUNT}
         target="_blank"
         rel="noopener noreferrer"
       >

@@ -1,4 +1,6 @@
 import ReactDOMServer from 'react-dom/server';
+
+import { INVITE_LINK_DISCORD_RUHUNT } from '../../../constants';
 import { ReactComponent as SponsorSVG } from '../../../assets/sponsor/ruhuntwhite.svg';
 
 const Attribution = () => {
@@ -8,7 +10,7 @@ const Attribution = () => {
         contributors
       </a>
       <a
-        href="https://discord.gg/FyutvHpS"
+        href={INVITE_LINK_DISCORD_RUHUNT}
         target="_blank"
         rel="noopener noreferrer"
         className="sponsor"
