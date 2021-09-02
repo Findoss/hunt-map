@@ -11,7 +11,7 @@ export const initialState: LangState = {
   lang: langId || 'en',
   supportedLangs: {
     en: 'English',
-    // ru: 'Русский',
+    ru: 'Русский',
     // fr: 'fr',
   },
 };

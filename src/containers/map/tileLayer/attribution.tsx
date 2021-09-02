@@ -6,7 +6,7 @@ import { ReactComponent as SponsorSVG } from '../../../assets/sponsor/ruhuntwhit
 const Attribution = () => {
   return (
     <>
-      <a target="_blank" href="./public/contributors.txt">
+      <a target="_blank" href="./contributors.txt">
         contributors
       </a>
       <a

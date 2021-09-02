@@ -16,7 +16,7 @@ const filters = getUrlData().search.filters as string[];
 
 export const initialState: FiltersState = {
   view: {
-    filters: filters ?? ['label', 'zone', 'spawn-player'],
+    filters: filters ?? ['label', 'spawn-player'],
   },
   types: {
     boss: [
