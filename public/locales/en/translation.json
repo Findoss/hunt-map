@@ -70,7 +70,7 @@
     }
   },
   "typesDescription": {
-    "resupply-point": "3 Ammo box <br/>3 Medkit<br/>1 Custom Ammo box<br/>1 Lantern<br/>",
+    "resupply-point": "3 Ammo box <br/>3 Medkit<br/>1 Custom Ammo box<br/>1 Toolbox<br/>1 Lantern<br/>",
     "label": {
       "ASF": "Alain & Son's <br> Fish",
       "RML": "Reynard <br> Mill & Lumber",
@@ -131,6 +131,8 @@
   },
   "tools": {
     "ruler": "Ruler",
-    "editor": "Moder panel - coming soon"
+    "editor": "Load editor panel",
+    "editorReady": " - ready",
+    "addMarker": "Add marker"
   }
 }

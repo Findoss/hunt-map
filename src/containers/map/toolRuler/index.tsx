@@ -14,7 +14,7 @@ export const Ruler = () => {
   const map = useMap();
 
   useEffect(() => {
-    ruler.addTo(map);
+    map.addControl(ruler);
   }, [map]);
 
   return null;

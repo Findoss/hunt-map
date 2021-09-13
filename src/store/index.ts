@@ -3,6 +3,7 @@ import { mapSlice } from './map/slice';
 import { filterSlice } from './filter/slice';
 import { langSlice } from './lang/slice';
 import { dataSlice } from './data/slice';
+import { editorSlice } from './editor/slice';
 
 import { loggerMiddleware } from './middleware/log';
 import { urlMiddleware } from './middleware/url';
@@ -17,6 +18,7 @@ export const store = configureStore({
     lang: langSlice.reducer,
     map: mapSlice.reducer,
     filters: filterSlice.reducer,
+    editor: editorSlice.reducer,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(middlewares),
 });

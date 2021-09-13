@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { initialState } from './state';
+
 import type { PayloadAction } from '@reduxjs/toolkit';
 
 export const filterSlice = createSlice({

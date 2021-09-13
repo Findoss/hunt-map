@@ -1,22 +1,34 @@
+import { useCallback } from 'react';
 import classNames from 'classnames';
-
 import { useTranslation } from 'react-i18next';
+import { useAppSelector } from '../../../../hooks/redux-toolkit';
 
-import { Button } from '../../../../components/button';
+import { EditControl } from '../../../map/toolEditor';
+
+import { selectIsLoadModule } from '../../../../store/editor/selectors';
+import { addMarker } from '../../../../store/editor/thunk';
 
 type Props = {
   className?: string;
 };
 export const SectionEditor = ({ className }: Props) => {
   const { t } = useTranslation();
+  const isLoadModuleBackend = useAppSelector(selectIsLoadModule);
+
+  const handleAddMarker = useCallback(() => {
+    addMarker();
+  }, []);
 
   const style = classNames(className);
 
   return (
     <div className={style}>
-      <span>{t('sections.editor')}</span>
+      <span>
+        {t('sections.editor')}
+        {isLoadModuleBackend && t('tools.editorReady')}
+      </span>
       <div className="tools__container">
-        <Button>{t(`tools.editor`)}</Button>
+        <EditControl />
       </div>
     </div>
   );
