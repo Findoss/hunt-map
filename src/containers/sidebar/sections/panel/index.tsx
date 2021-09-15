@@ -1,4 +1,3 @@
-import { useCallback } from 'react';
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
 import { useAppSelector } from '../../../../hooks/redux-toolkit';
@@ -6,7 +5,6 @@ import { useAppSelector } from '../../../../hooks/redux-toolkit';
 import { EditControl } from '../../../map/toolEditor';
 
 import { selectIsLoadModule } from '../../../../store/editor/selectors';
-import { addMarker } from '../../../../store/editor/thunk';
 
 type Props = {
   className?: string;
@@ -14,10 +12,6 @@ type Props = {
 export const SectionEditor = ({ className }: Props) => {
   const { t } = useTranslation();
   const isLoadModuleBackend = useAppSelector(selectIsLoadModule);
-
-  const handleAddMarker = useCallback(() => {
-    addMarker();
-  }, []);
 
   const style = classNames(className);
 

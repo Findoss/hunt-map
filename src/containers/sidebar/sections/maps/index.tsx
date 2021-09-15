@@ -1,11 +1,11 @@
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
-import { useAppDispatch, useAppSelector } from '../../../../hooks/redux-toolkit';
+import { useAppDispatch, useAppSelector } from 'hooks/redux-toolkit';
 
-import { mapSlice } from '../../../../store/map/slice';
-import { selectIdMaps, selectViewMap } from '../../../../store/map/selectors';
+import { mapSlice } from 'store/map/slice';
+import { selectIdMaps, selectViewMap } from 'store/map/selectors';
 
-import { Radio } from '../../../../components/radio';
+import { Radio } from 'components/radio';
 
 import './style.css';
 
