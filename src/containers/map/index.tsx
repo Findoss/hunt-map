@@ -1,5 +1,5 @@
 import { MapContainer, LayerGroup, FeatureGroup } from 'react-leaflet';
-import { Draw } from './toolEditor';
+import { DrawControl } from './toolEditor';
 import { useAppSelector } from '../../hooks/redux-toolkit';
 
 import { TileLayerMap } from './tileLayer';
@@ -35,7 +35,9 @@ export const Map = () => {
       <LayerGroup>{markersId.map((id) => switchTypeFeature(marker(id), id))}</LayerGroup>
       <TileLayerMap optionsMap={maps[idMap]} key={idMap} />
       <Ruler />
-      <Draw />
+      <FeatureGroup>
+        <DrawControl />
+      </FeatureGroup>
     </MapContainer>
   );
 };
