@@ -1,9 +1,9 @@
 {
   "name": "hunt-map",
-  "version": "2.23.1",
+  "version": "3.0.0",
   "homepage": "https://hunt-map.info",
   "private": true,
-  "author": "Findoss",
+  "author": "Nikita Stroganov",
   "license": "MIT",
   "scripts": {
     "predeploy": "npm run build",
