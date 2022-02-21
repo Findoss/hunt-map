@@ -1,6 +1,5 @@
 import { useState, useCallback } from 'react';
 import classNames from 'classnames';
-//пробный коммит
 
 import { ReactComponent as CloseIcon } from '../../assets/icons/close.svg';
 import './style.css';
