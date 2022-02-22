@@ -1,6 +1,6 @@
 // @ts-nocheck
 import * as L from 'leaflet';
-import { MarkerNew } from '../markerNew';
+import { MarkerNew } from '../marker-new';
 import 'leaflet-draw';
 
 // debug - state leaflet draw

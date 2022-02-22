@@ -1,17 +1,17 @@
 import { MapContainer, LayerGroup, FeatureGroup } from 'react-leaflet';
-import { DrawControl } from './toolEditor';
+import { DrawControl } from './tool-editor';
 import { useAppSelector } from '../../hooks/redux-toolkit';
 
-import { TileLayerMap } from './tileLayer';
-import { switchTypeFeature } from './switchTypeFeature';
+import { TileLayerMap } from './tile-layer';
+import { switchTypeFeature } from './switch-type-feature';
 
 import { selectViewMap, selectOptionsViewMap, selectMaps } from '../../store/map/selectors';
 import { selectMarkersId, selectMarkerById } from '../../store/data/selectors';
 
 import { createCRS } from './crs';
-import { Ruler } from '../map/toolRuler/index';
+import { Ruler } from './tool-ruler/index';
 
-import './markerBase/style.css';
+import './marker-base/style.css';
 import './tooltip/style.css';
 import './style.css';
 

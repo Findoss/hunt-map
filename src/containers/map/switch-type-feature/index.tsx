@@ -1,13 +1,13 @@
-import { MarkerLabel } from '../markerLabel';
-import { MarkerSpawnPlayer } from '../markerSpawnPlayer';
-import { MarkerBoss } from '../markerBoss';
-import { MarkerResupplyPoint } from '../markerResupplyPoint';
-import { MarkerExtractionPoint } from '../markerExtractionPoint';
-import { MarkerAviary } from '../markerAviary';
-import { MarkerTower } from '../markerTower';
-import { MarkerEasterEgg } from '../markerEasterEgg';
+import { MarkerLabel } from '../marker-label';
+import { MarkerSpawnPlayer } from '../marker-spawn-player';
+import { MarkerBoss } from '../marker-boss';
+import { MarkerResupplyPoint } from '../marker-resupply-point';
+import { MarkerExtractionPoint } from '../marker-extraction-point';
+import { MarkerAviary } from '../marker-aviary';
+import { MarkerTower } from '../marker-tower';
+import { MarkerEasterEgg } from '../marker-easter-egg';
 
-import { PolygonZone } from '../poligonZone';
+import { PolygonZone } from '../poligon-zone';
 
 import type { TypeFeature } from '../../../data';
 
