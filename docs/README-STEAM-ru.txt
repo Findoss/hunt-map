@@ -1,4 +1,4 @@
-[url=https://huntshowdown.info/maps] Интерактивные карты Hunt-Showdown[/url]
+[url=https://huntshowdown.info/maps] Интерактивные карты Hunt-Showdown[/url] 
 
 [h1]FAQ[/h1]
 
