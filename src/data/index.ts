@@ -10,8 +10,6 @@ import LABELS_DS from './names/DS.json';
 import CACHE_DS from './cache/DS.json';
 import ZONES_DS from './zone/DS.json';
 
-// import TMP from './cache/TMP.json';
-
 import type { LatLngTuple, LatLngLiteral } from 'leaflet';
 
 export type TypeFeature = {
@@ -46,7 +44,6 @@ const cache: TypeFeatureMarkerCollection = {
   SB: CACHE_SB as any,
   LD: CACHE_LD as any,
   DS: CACHE_DS as any,
-  // DS: TMP,
 };
 
 const zones: TypeFeatureMarkerCollection = {
