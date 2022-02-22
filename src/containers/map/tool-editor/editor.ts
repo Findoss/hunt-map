@@ -3,9 +3,6 @@ import * as L from 'leaflet';
 import { MarkerNew } from '../marker-new';
 import 'leaflet-draw';
 
-// debug - state leaflet draw
-// import 'leaflet-draw/dist/leaflet.draw.css';
-
 const optionsText = () => {
   L.drawLocal.draw.handlers.marker.tooltip.start = '';
 };
