@@ -1,5 +1,5 @@
 import * as L from 'leaflet';
-import { minPow } from '../../utils/minPow';
+import { minPow } from '../../utils/min-pow';
 
 import type { LatLngLiteral } from 'leaflet';
 

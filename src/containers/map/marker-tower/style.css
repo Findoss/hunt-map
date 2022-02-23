@@ -68,7 +68,6 @@
 .marker-tower9:hover,
 .marker-tower10:hover,
 .marker-tower11:hover {
-  /* filter: grayscale(0); */
 }
 
 .marker-tower1::after {

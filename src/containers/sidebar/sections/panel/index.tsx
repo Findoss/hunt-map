@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
 import { useAppSelector } from '../../../../hooks/redux-toolkit';
 
-import { EditControl } from '../../../map/toolEditor';
+import { EditControl } from '../../../map/tool-editor';
 
 import { selectIsLoadModule } from '../../../../store/editor/selectors';
 

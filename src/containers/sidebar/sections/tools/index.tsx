@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
 
-import { ButtonRuler } from '../../../map/toolRuler';
+import { ButtonRuler } from '../../../map/tool-ruler';
 
 import './style.css';
 

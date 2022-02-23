@@ -11,8 +11,6 @@
   text-shadow: 3px 3px 2px #000000;
   text-align: center;
   pointer-events: none;
-  /* для отладки */
-  /* background-color: lightpink; */
 }
 
 .marker-label-double-clue {

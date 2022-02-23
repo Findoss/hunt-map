@@ -13,6 +13,5 @@ export const initialState: LangState = {
     en: 'English',
     ru: 'Русский',
     de: 'Deutsch',
-    // fr: 'fr',
   },
 };

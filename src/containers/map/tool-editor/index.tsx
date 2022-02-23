@@ -6,12 +6,10 @@ import { useAppDispatch, useAppSelector } from 'hooks/redux-toolkit';
 import { useLeafletContext } from '@react-leaflet/core';
 import { usePrevious } from 'hooks/usePrevious';
 
-// import { eventHandlers } from './events';
 import { createDraw } from './editor';
 
 import { Button } from 'components/button';
 
-// import { addMarker } from 'store/editor/thunk';
 import { editorSlice } from 'store/editor/slice';
 import { selectEdit } from 'store/editor/selectors';
 
@@ -89,19 +87,3 @@ export const EditControl = React.memo(() => {
     </Button>
   );
 });
-
-// const [mode, setMode] = useState('');
-
-// const m = drawControl._toolbars.draw._modes;
-
-// const handleAddMarker = useCallback(() => {
-//   addMarker();
-// }, []);
-
-// useEffect(() => {
-//   setTimeout(() => {
-//     drawControl._map.on('draw:drawstop', (data: any) => {
-//       setMode('');
-//     });
-//   }, 0);
-// }, []);

@@ -30,7 +30,5 @@
 }
 
 .radio__input:checked ~ .radio__label {
-  /* text-decoration: underline;
-  text-decoration-color: var(--color-2-hover); */
   color: var(--color-2-hover);
 }

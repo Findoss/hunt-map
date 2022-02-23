@@ -9,7 +9,6 @@ export interface FiltersState {
   types: typesMarker;
   extraTypes: typesMarker;
   polygonTypes: typesMarker;
-  // polylineTypes: string[];
 }
 
 const filters = getUrlData().search.filters as string[];
@@ -62,8 +61,6 @@ export const initialState: FiltersState = {
       'tower-h',
     ],
     aviary: ['aviary', 'aviary-d', 'aviary-c'],
-    // clue: ['clue'],
-    // cash: ['cash'],
   },
 
   // типы для особых маркеров
@@ -72,10 +69,5 @@ export const initialState: FiltersState = {
   },
 
   // типы для зон
-  polygonTypes: {
-    // zone: ['zone'],
-  },
-
-  // типы для линий
-  // polylineTypes: ['water-low'],
+  polygonTypes: {},
 };
