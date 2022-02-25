@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import cn from 'classnames';
 import { useTranslation } from 'react-i18next';
 import { useAppDispatch, useAppSelector } from 'hooks/redux-toolkit';
 
@@ -7,7 +7,7 @@ import { selectIdMaps, selectViewMap } from 'store/map/selectors';
 
 import { Radio } from 'components/radio';
 
-import './style.css';
+import styles from './maps.module.css';
 
 type Props = {
   className?: string;
@@ -21,12 +21,13 @@ export const SectionMaps = ({ className }: Props) => {
 
   const { id: idMap } = useAppSelector(selectViewMap);
   const idMaps = useAppSelector(selectIdMaps);
-  const style = classNames(className);
+  const styleMap = cn(className);
+  const styleMapContainer = cn(`${styles.map__container}`);
 
   return (
-    <div className={style}>
+    <div className={styleMap}>
       <span>{t('sections.maps')}</span>
-      <div className="map-switch map-switch__container">
+      <div className={styleMapContainer}>
         {idMaps.map((id) => (
           <Radio
             id={id}
