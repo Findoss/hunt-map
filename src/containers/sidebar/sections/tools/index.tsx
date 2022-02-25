@@ -1,9 +1,9 @@
-import classNames from 'classnames';
+import cn from 'classnames';
 import { useTranslation } from 'react-i18next';
 
 import { ButtonRuler } from '../../../map/tool-ruler';
 
-import './style.css';
+import styles from './tools.module.css';
 
 type Props = {
   className?: string;
@@ -11,12 +11,13 @@ type Props = {
 export const SectionTools = ({ className }: Props) => {
   const { t } = useTranslation();
 
-  const style = classNames(className);
+  const styleSection = cn(className);
+  const styleContainer = cn(`${styles.container}`);
 
   return (
-    <div className={style}>
+    <div className={styleSection}>
       <span>{t('sections.tools')}</span>
-      <div className="tools__container">
+      <div className={styleContainer}>
         <ButtonRuler />
       </div>
     </div>
