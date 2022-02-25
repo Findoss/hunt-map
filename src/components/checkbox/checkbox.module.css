@@ -15,7 +15,7 @@
   opacity: 1;
 }
 
-.checkbox__icon {
+.icon {
   margin-right: 8px;
   width: 20px;
   height: 20px;
@@ -24,21 +24,21 @@
   color: #777;
 }
 
-.checkbox__icon img {
+.icon img {
   width: 20px;
   height: 20px;
   filter: grayscale(3) brightness(1.5);
 }
 
-.checkbox__input {
+.input {
   visibility: hidden;
   width: 0px;
 }
 
-.checkbox__label {
+.label {
   text-decoration: line-through;
 }
 
-.checkbox_checked .checkbox__label {
+.label_activ {
   text-decoration: none;
 }

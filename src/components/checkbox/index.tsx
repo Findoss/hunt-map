@@ -1,6 +1,6 @@
 import React, { ReactElement, useState } from 'react';
-import classNames from 'classnames';
-import './style.css';
+import cn from 'classnames';
+import styles  from './checkbox.module.css';
 
 export type Props = {
   id: string;
@@ -30,15 +30,20 @@ export const Checkbox = ({
     if (onClick) onClick(e);
   };
 
-  const styleChekbox = classNames('checkbox', {
+  const styleChekbox = cn(`${styles.checkbox}`, {
     checkbox_checked: checked,
   });
+  const styleIcon = cn(`${styles.icon}`);
+  const styleInput = cn(`${styles.input}`);
+  const styleLabel = cn(`${styles.label}`, {
+    [styles.label_activ]: checked,
+  })
 
   return (
     <label className={styleChekbox} htmlFor={name}>
-      <div className="checkbox__icon">{icon ? icon : '●'}</div>
+      <div className={styleIcon}>{icon ? icon : '●'}</div>
       <input
-        className="checkbox__input"
+        className={styleInput}
         type="checkbox"
         name={name}
         id={id}
@@ -47,7 +52,7 @@ export const Checkbox = ({
         onChange={onChange ? onChange : () => {}}
         value={value}
       />
-      <span className="checkbox__label">{label ? label : name}</span>
+      <span className={styleLabel}>{label ? label : name}</span>
     </label>
   );
 };
