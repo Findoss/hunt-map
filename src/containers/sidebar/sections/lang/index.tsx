@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import cn from 'classnames';
 import { useTranslation } from 'react-i18next';
 import { useAppDispatch, useAppSelector } from '../../../../hooks/redux-toolkit';
 
@@ -19,7 +19,7 @@ export const SectionLang = ({ className }: Props) => {
   const dispatch = useAppDispatch();
   const idLang = useAppSelector(selectLang);
   const langs = useAppSelector(selectSupportedLangs);
-  const style = classNames(className);
+  const style = cn(className);
 
   const handlerChange = ({ id }: Item) => {
     dispatch(setLang(id));

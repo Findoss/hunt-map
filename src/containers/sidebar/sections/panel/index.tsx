@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import cn from 'classnames';
 import { useTranslation } from 'react-i18next';
 import { useAppSelector } from '../../../../hooks/redux-toolkit';
 
@@ -13,7 +13,7 @@ export const SectionEditor = ({ className }: Props) => {
   const { t } = useTranslation();
   const isLoadModuleBackend = useAppSelector(selectIsLoadModule);
 
-  const style = classNames(className);
+  const style = cn(className);
 
   return (
     <div className={style}>

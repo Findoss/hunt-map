@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import cn from 'classnames';
 
 import { useTranslation } from 'react-i18next';
 import { useAppDispatch, useAppSelector } from '../../../../hooks/redux-toolkit';
@@ -32,7 +32,7 @@ export const SectionFilters = ({ className }: Props) => {
     else dispatch(removeFilter(value));
   };
 
-  const style = classNames(className);
+  const style = cn(className);
 
   return (
     <>
@@ -61,7 +61,6 @@ export const SectionFilters = ({ className }: Props) => {
             value={filter}
             label={t(`types.${filter}`)}
             initValue={viewMarkerFilters.includes(filter)}
-            icon={<div className={classNames('legend-item', `marker-${filter}`)} />}
           />
         ))}
       </div>
