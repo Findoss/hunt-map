@@ -61,6 +61,7 @@ export const SectionFilters = ({ className }: Props) => {
             value={filter}
             label={t(`types.${filter}`)}
             initValue={viewMarkerFilters.includes(filter)}
+            icon={<div className={cn('legend-item', `marker-${filter}`)} />}
           />
         ))}
       </div>
