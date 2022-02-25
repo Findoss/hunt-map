@@ -1,11 +1,12 @@
+import cn from 'classnames';
 import { Sidebar } from './containers/sidebar';
 import { Map } from './containers/map';
-
-import './App.css';
+import styles from'./app.module.css';
 
 function App() {
+  const styleApp = cn(`${styles.app}`)
   return (
-    <div className="app">
+    <div className={styleApp}>
       <Sidebar />
       <Map />
     </div>
