@@ -11,9 +11,7 @@ export const Sidebar = () => {
   const toggleSidebar = useCallback(() => setShowSidebar((value) => !value), []);
 
   return (
-    <div className={cn(`${styles.sidebar}`, {
-      [styles.sidebar_show]: showSidebar,
-    })}>
+    <div className={cn(`${styles.sidebar}`, {[styles.sidebar_show]: showSidebar,})}>
       <div onClick={toggleSidebar} className={cn(`${styles.sidebar__toggle}`)}>
         <ArrowIcon />
       </div>

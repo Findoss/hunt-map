@@ -45,9 +45,9 @@ export const Checkbox = ({
         onChange={onChange ? onChange : () => {}}
         value={value}
       />
-      <span className={cn(`${styles.label}`, {
-        [styles.label_active]: checked,
-      })}>{label ? label : name}</span>
+      <span className={cn(`${styles.label}`, {[styles.label_active]: checked,})}>
+        {label ? label : name}
+      </span>
     </label>
   );
 };
