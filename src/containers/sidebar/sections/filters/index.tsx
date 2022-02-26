@@ -31,12 +31,10 @@ export const SectionFilters = ({ className }: Props) => {
     if (checked) dispatch(addFilter(value));
     else dispatch(removeFilter(value));
   };
-
-  const style = cn(className);
-
+  
   return (
     <>
-      <div className={style}>
+      <div className={cn(className)}>
         <span>{t('sections.compounds')}</span>
         {compoundFilters.map((filter) => (
           <Checkbox
@@ -50,7 +48,7 @@ export const SectionFilters = ({ className }: Props) => {
           />
         ))}
       </div>
-      <div className={style}>
+      <div className={cn(className)}>
         <span>{t('sections.filters')}</span>
         {markerFilters.map((filter) => (
           <Checkbox

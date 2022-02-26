@@ -13,10 +13,8 @@ export const SectionEditor = ({ className }: Props) => {
   const { t } = useTranslation();
   const isLoadModuleBackend = useAppSelector(selectIsLoadModule);
 
-  const style = cn(className);
-
   return (
-    <div className={style}>
+    <div className={cn(className)}>
       <span>
         {t('sections.editor')}
         {isLoadModuleBackend && t('tools.editorReady')}

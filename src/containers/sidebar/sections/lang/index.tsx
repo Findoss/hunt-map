@@ -19,7 +19,6 @@ export const SectionLang = ({ className }: Props) => {
   const dispatch = useAppDispatch();
   const idLang = useAppSelector(selectLang);
   const langs = useAppSelector(selectSupportedLangs);
-  const style = cn(className);
 
   const handlerChange = ({ id }: Item) => {
     dispatch(setLang(id));
@@ -27,7 +26,7 @@ export const SectionLang = ({ className }: Props) => {
   };
 
   return (
-    <div className={style}>
+    <div className={cn(className)}>
       <span>Language</span>
       <Dropdown options={langs} initId={idLang} onChange={handlerChange} />
     </div>
