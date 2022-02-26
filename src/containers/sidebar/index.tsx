@@ -11,19 +11,15 @@ export const Sidebar = () => {
   const toggleSidebar = useCallback(() => setShowSidebar((value) => !value), []);
 
   const styleSidebar = cn(`${styles.sidebar}`, {
-    // не доконца понимаю почему не сработала запись `${styles.sidebar_show}`.
-    // потому что она возвращает строку?
     [styles.sidebar_show]: showSidebar,
   });
-  const styleSections = cn(`${styles.sections}`)
-  const styleToggle = cn(`${styles.sidebar__toggle}`)
 
   return (
     <div className={styleSidebar}>
-      <div onClick={toggleSidebar} className={styleToggle}>
+      <div onClick={toggleSidebar} className={cn(`${styles.sidebar__toggle}`)}>
         <ArrowIcon />
       </div>
-      <Sections className={styleSections} />
+      <Sections className={cn(`${styles.sections}`)} />
     </div>
   );
 };
