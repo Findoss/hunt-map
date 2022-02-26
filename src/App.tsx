@@ -4,9 +4,8 @@ import { Map } from './containers/map';
 import styles from'./app.module.css';
 
 function App() {
-  const styleApp = cn(`${styles.app}`)
   return (
-    <div className={styleApp}>
+    <div className={cn(`${styles.app}`)}>
       <Sidebar />
       <Map />
     </div>
