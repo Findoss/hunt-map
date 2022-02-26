@@ -16,26 +16,19 @@ type Props = {
 };
 
 export const Sections = ({ className }: Props) => {
-  const styleSections = cn(`${styles.section}`, className);
-  const styleSectionLang = cn(`${styles.section} ${styles.section__lang}`);
-  const styleSection = cn(`${styles.section}`);
-  //что такое -br и __adv? Не понял смысла сокращения.
-  const styleSectionBr = cn(`${styles.section__br}`);
-  const styleSectionAdv = cn(`${styles.section__adv}`);
-
   return (
     <>
-      <div className={styleSections}>
-        <SectionLang className={styleSectionLang} />
-        <SectionMaps className={styleSection} />
-        <SectionFilters className={styleSection} />
-        <SectionTools className={styleSection} />
-        <SectionEditor className={styleSection} />
-        <div className={styleSectionBr} />
+      <div className={cn(`${styles.section}`, className)}>
+        <SectionLang className={cn(`${styles.section} ${styles.section__lang}`)} />
+        <SectionMaps className={cn(`${styles.section}`)} />
+        <SectionFilters className={cn(`${styles.section}`)} />
+        <SectionTools className={cn(`${styles.section}`)} />
+        <SectionEditor className={cn(`${styles.section}`)} />
+        <div className={cn(`${styles.section__br}`)} />
       </div>
 
       <a
-        className={styleSectionAdv}
+        className={cn(`${styles.section__adv}`)}
         href={INVITE_LINK_DISCORD_RUHUNT}
         target="_blank"
         rel="noopener noreferrer"
