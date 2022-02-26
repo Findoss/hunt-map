@@ -1,8 +1,8 @@
 import { ReactElement } from 'react';
-import classNames from 'classnames';
+import cn from 'classnames';
 import type { MouseEventHandler } from 'react';
 
-import './style.css';
+import styles from './button.module.css';
 
 export type Props = {
   icon?: ReactElement;
@@ -12,10 +12,9 @@ export type Props = {
 };
 
 export const Button = ({ children, icon, active, onClick }: Props) => {
-  const className = classNames('button', { 'button--active': active });
 
   return (
-    <button onClick={onClick} className={className}>
+    <button onClick={onClick} className={cn(`${styles.button}`, {[styles.button_active]: active })}>
       <span>{icon}</span>
       <span>{children}</span>
     </button>
