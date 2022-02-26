@@ -30,20 +30,13 @@ export const Checkbox = ({
     if (onClick) onClick(e);
   };
 
-  const styleChekbox = cn(`${styles.checkbox}`, {
-    checkbox_checked: checked,
-  });
-  const styleIcon = cn(`${styles.icon}`);
-  const styleInput = cn(`${styles.input}`);
-  const styleLabel = cn(`${styles.label}`, {
-    [styles.label_activ]: checked,
-  })
-
   return (
-    <label className={styleChekbox} htmlFor={name}>
-      <div className={styleIcon}>{icon ? icon : '●'}</div>
+    <label className={cn(`${styles.checkbox}`, {
+      checkbox_checked: checked,
+    })} htmlFor={name}>
+      <div className={cn(`${styles.icon}`)}>{icon ? icon : '●'}</div>
       <input
-        className={styleInput}
+        className={cn(`${styles.input}`)}
         type="checkbox"
         name={name}
         id={id}
@@ -52,7 +45,9 @@ export const Checkbox = ({
         onChange={onChange ? onChange : () => {}}
         value={value}
       />
-      <span className={styleLabel}>{label ? label : name}</span>
+      <span className={cn(`${styles.label}`, {
+        [styles.label_active]: checked,
+      })}>{label ? label : name}</span>
     </label>
   );
 };
