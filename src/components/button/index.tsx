@@ -14,7 +14,7 @@ export type Props = {
 export const Button = ({ children, icon, active, onClick }: Props) => {
 
   return (
-    <button onClick={onClick} className={cn(`${styles.button}`, {[styles.button_active]: active })}>
+    <button onClick={onClick} className={cn(styles.button, {[styles.button_active]: active})}>
       <span>{icon}</span>
       <span>{children}</span>
     </button>

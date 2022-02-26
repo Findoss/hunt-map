@@ -35,14 +35,14 @@ export const Dropdown = ({ initId, options, onChange }: Props) => {
   };
 
   return (
-    <div className={cn(`${styles.dropdown}`)}>
-      <div className={cn(`${styles.header}`)} onClick={toggleDropdown}>
+    <div className={cn(styles.dropdown)}>
+      <div className={cn(styles.header)} onClick={toggleDropdown}>
         {selectedId ? selectedItem?.label : 'Select your destination'}
-        <ArrowIcon className={cn(`${styles.arrow}`, {[styles.arrow_open]: isOpen,})} />
+        <ArrowIcon className={cn(styles.arrow, {[styles.arrow_open]: isOpen,})} />
       </div>
-      <div className={cn(`${styles.body}`, {[styles.body_open]: isOpen,})}>
+      <div className={cn(styles.body, {[styles.body_open]: isOpen,})}>
         {items.map(({ id, label }) => (
-          <div className={cn(`${styles.item}`)} onClick={handleItemClick} id={id} key={id}>
+          <div className={cn(styles.item)} onClick={handleItemClick} id={id} key={id}>
             {label ? label : id}
           </div>
         ))}
