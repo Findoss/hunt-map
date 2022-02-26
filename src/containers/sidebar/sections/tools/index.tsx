@@ -11,13 +11,10 @@ type Props = {
 export const SectionTools = ({ className }: Props) => {
   const { t } = useTranslation();
 
-  const styleSection = cn(className);
-  const styleContainer = cn(`${styles.container}`);
-
   return (
-    <div className={styleSection}>
+    <div className={cn(className)}>
       <span>{t('sections.tools')}</span>
-      <div className={styleContainer}>
+      <div className={cn(`${styles.container}`)}>
         <ButtonRuler />
       </div>
     </div>

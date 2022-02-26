@@ -21,13 +21,11 @@ export const SectionMaps = ({ className }: Props) => {
 
   const { id: idMap } = useAppSelector(selectViewMap);
   const idMaps = useAppSelector(selectIdMaps);
-  const styleMap = cn(className);
-  const styleMapContainer = cn(`${styles.map__container}`);
 
   return (
-    <div className={styleMap}>
+    <div className={cn(className)}>
       <span>{t('sections.maps')}</span>
-      <div className={styleMapContainer}>
+      <div className={cn(`${styles.map__container}`)}>
         {idMaps.map((id) => (
           <Radio
             id={id}
