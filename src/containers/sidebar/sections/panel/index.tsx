@@ -7,19 +7,19 @@ import { EditControl } from '../../../map/tool-editor';
 import { selectIsLoadModule } from '../../../../store/editor/selectors';
 
 type Props = {
-  className?: string;
+  extraClass?: string;
 };
-export const SectionEditor = ({ className }: Props) => {
+export const SectionEditor = ({ extraClass }: Props) => {
   const { t } = useTranslation();
   const isLoadModuleBackend = useAppSelector(selectIsLoadModule);
 
   return (
-    <div className={cn(className)}>
+    <div className={cn(extraClass)}>
       <span>
         {t('sections.editor')}
         {isLoadModuleBackend && t('tools.editorReady')}
       </span>
-      <div className="tools__container">
+      <div>
         <EditControl />
       </div>
     </div>

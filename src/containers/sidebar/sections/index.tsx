@@ -12,23 +12,23 @@ import { ReactComponent as SponsorSVG } from '../../../assets/sponsor/ruhuntwhit
 import styles from './sections.module.css';
 
 type Props = {
-  className?: string;
+  extraClass?: string;
 };
 
-export const Sections = ({ className }: Props) => {
+export const Sections = ({ extraClass }: Props) => {
   return (
     <>
-      <div className={cn(`${styles.section}`, className)}>
-        <SectionLang className={cn(`${styles.section} ${styles.section__lang}`)} />
-        <SectionMaps className={cn(`${styles.section}`)} />
-        <SectionFilters className={cn(`${styles.section}`)} />
-        <SectionTools className={cn(`${styles.section}`)} />
-        <SectionEditor className={cn(`${styles.section}`)} />
-        <div className={cn(`${styles.section__br}`)} />
+      <div className={cn(styles.section, extraClass)}>
+        <SectionLang extraClass={cn(styles.section, styles.section__lang)} />
+        <SectionMaps extraClass={cn(styles.section)} />
+        <SectionFilters extraClass={cn(styles.section)} />
+        <SectionTools extraClass={cn(styles.section)} />
+        <SectionEditor extraClass={cn(styles.section)} />
+        <div className={cn(styles.section__br)} />
       </div>
 
       <a
-        className={cn(`${styles.section__adv}`)}
+        className={cn(styles.section__adv)}
         href={INVITE_LINK_DISCORD_RUHUNT}
         target="_blank"
         rel="noopener noreferrer"

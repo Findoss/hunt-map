@@ -6,15 +6,15 @@ import { ButtonRuler } from '../../../map/tool-ruler';
 import styles from './tools.module.css';
 
 type Props = {
-  className?: string;
+  extraClass?: string;
 };
-export const SectionTools = ({ className }: Props) => {
+export const SectionTools = ({ extraClass }: Props) => {
   const { t } = useTranslation();
 
   return (
-    <div className={cn(className)}>
+    <div className={cn(extraClass)}>
       <span>{t('sections.tools')}</span>
-      <div className={cn(`${styles.container}`)}>
+      <div className={cn(styles.container)}>
         <ButtonRuler />
       </div>
     </div>

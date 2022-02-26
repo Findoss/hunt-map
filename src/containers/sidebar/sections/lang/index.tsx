@@ -9,12 +9,12 @@ import { Dropdown } from '../../../../components/dropdown';
 
 import type { Item } from '../../../../components/dropdown/index';
 type Props = {
-  className?: string;
+  extraClass?: string;
 };
 
 const { setLang } = langSlice.actions;
 
-export const SectionLang = ({ className }: Props) => {
+export const SectionLang = ({ extraClass }: Props) => {
   const { i18n } = useTranslation();
   const dispatch = useAppDispatch();
   const idLang = useAppSelector(selectLang);
@@ -26,7 +26,7 @@ export const SectionLang = ({ className }: Props) => {
   };
 
   return (
-    <div className={cn(className)}>
+    <div className={cn(extraClass)}>
       <span>Language</span>
       <Dropdown options={langs} initId={idLang} onChange={handlerChange} />
     </div>

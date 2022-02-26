@@ -15,9 +15,9 @@ import React from 'react';
 const { addFilter, removeFilter } = filterSlice.actions;
 
 type Props = {
-  className?: string;
+  extraClass?: string;
 };
-export const SectionFilters = ({ className }: Props) => {
+export const SectionFilters = ({ extraClass }: Props) => {
   const { t } = useTranslation();
 
   const dispatch = useAppDispatch();
@@ -34,7 +34,7 @@ export const SectionFilters = ({ className }: Props) => {
   
   return (
     <>
-      <div className={cn(className)}>
+      <div className={cn(extraClass)}>
         <span>{t('sections.compounds')}</span>
         {compoundFilters.map((filter) => (
           <Checkbox
@@ -48,7 +48,7 @@ export const SectionFilters = ({ className }: Props) => {
           />
         ))}
       </div>
-      <div className={cn(className)}>
+      <div className={cn(extraClass)}>
         <span>{t('sections.filters')}</span>
         {markerFilters.map((filter) => (
           <Checkbox

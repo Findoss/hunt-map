@@ -5,7 +5,7 @@ import styles from'./app.module.css';
 
 function App() {
   return (
-    <div className={cn(`${styles.app}`)}>
+    <div className={cn(styles.app)}>
       <Sidebar />
       <Map />
     </div>

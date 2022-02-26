@@ -10,12 +10,12 @@ import { Radio } from 'components/radio';
 import styles from './maps.module.css';
 
 type Props = {
-  className?: string;
+  extraClass?: string;
 };
 
 const { setMapId } = mapSlice.actions;
 
-export const SectionMaps = ({ className }: Props) => {
+export const SectionMaps = ({ extraClass }: Props) => {
   const { t } = useTranslation();
   const dispatch = useAppDispatch();
 
@@ -23,9 +23,9 @@ export const SectionMaps = ({ className }: Props) => {
   const idMaps = useAppSelector(selectIdMaps);
 
   return (
-    <div className={cn(className)}>
+    <div className={cn(extraClass)}>
       <span>{t('sections.maps')}</span>
-      <div className={cn(`${styles.map__container}`)}>
+      <div className={cn(styles.map__container)}>
         {idMaps.map((id) => (
           <Radio
             id={id}
