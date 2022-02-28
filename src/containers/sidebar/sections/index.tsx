@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import cn from 'classnames';
 
 import { SectionLang } from './lang';
 import { SectionMaps } from './maps';
@@ -9,28 +9,26 @@ import { SectionEditor } from './panel';
 import { INVITE_LINK_DISCORD_RUHUNT } from '../../../constants';
 
 import { ReactComponent as SponsorSVG } from '../../../assets/sponsor/ruhuntwhite.svg';
-import './style.css';
+import styles from './sections.module.css';
 
 type Props = {
-  className?: string;
+  extraClass?: string;
 };
 
-export const Sections = ({ className }: Props) => {
-  const styleSections = classNames('sections', className);
-
+export const Sections = ({ extraClass }: Props) => {
   return (
     <>
-      <div className={styleSections}>
-        <SectionLang className="section section__lang" />
-        <SectionMaps className="section section__map-switch" />
-        <SectionFilters className="section" />
-        <SectionTools className="section" />
-        <SectionEditor className="section" />
-        <div className="section section-br" />
+      <div className={cn(styles.section, extraClass)}>
+        <SectionLang extraClass={cn(styles.section, styles.section__lang)} />
+        <SectionMaps extraClass={cn(styles.section)} />
+        <SectionFilters extraClass={cn(styles.section)} />
+        <SectionTools extraClass={cn(styles.section)} />
+        <SectionEditor extraClass={cn(styles.section)} />
+        <div className={cn(styles.section__br)} />
       </div>
 
       <a
-        className="section section__adv"
+        className={cn(styles.section__adv)}
         href={INVITE_LINK_DISCORD_RUHUNT}
         target="_blank"
         rel="noopener noreferrer"

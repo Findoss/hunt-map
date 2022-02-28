@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import cn from 'classnames';
 
 import { useTranslation } from 'react-i18next';
 import { useAppDispatch, useAppSelector } from '../../../../hooks/redux-toolkit';
@@ -15,9 +15,9 @@ import React from 'react';
 const { addFilter, removeFilter } = filterSlice.actions;
 
 type Props = {
-  className?: string;
+  extraClass?: string;
 };
-export const SectionFilters = ({ className }: Props) => {
+export const SectionFilters = ({ extraClass }: Props) => {
   const { t } = useTranslation();
 
   const dispatch = useAppDispatch();
@@ -31,12 +31,10 @@ export const SectionFilters = ({ className }: Props) => {
     if (checked) dispatch(addFilter(value));
     else dispatch(removeFilter(value));
   };
-
-  const style = classNames(className);
-
+  
   return (
     <>
-      <div className={style}>
+      <div className={cn(extraClass)}>
         <span>{t('sections.compounds')}</span>
         {compoundFilters.map((filter) => (
           <Checkbox
@@ -50,7 +48,7 @@ export const SectionFilters = ({ className }: Props) => {
           />
         ))}
       </div>
-      <div className={style}>
+      <div className={cn(extraClass)}>
         <span>{t('sections.filters')}</span>
         {markerFilters.map((filter) => (
           <Checkbox
@@ -61,7 +59,7 @@ export const SectionFilters = ({ className }: Props) => {
             value={filter}
             label={t(`types.${filter}`)}
             initValue={viewMarkerFilters.includes(filter)}
-            icon={<div className={classNames('legend-item', `marker-${filter}`)} />}
+            icon={<div className={cn('legend-item', `marker-${filter}`)} />}
           />
         ))}
       </div>

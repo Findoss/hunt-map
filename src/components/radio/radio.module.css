@@ -12,12 +12,12 @@
   color: var(--color-2-hover);
 }
 
-.radio__input {
+.input {
   visibility: hidden;
   width: 0px;
 }
 
-.radio__marker {
+.marker {
   fill: var(--color-1);
   margin-right: 4px;
   width: 24px;
@@ -25,10 +25,10 @@
   color: #777;
 }
 
-.radio__input:checked ~ .radio__marker {
+.input:checked ~ .marker {
   fill: var(--color-2-hover);
 }
 
-.radio__input:checked ~ .radio__label {
+.input:checked ~ .label {
   color: var(--color-2-hover);
 }
