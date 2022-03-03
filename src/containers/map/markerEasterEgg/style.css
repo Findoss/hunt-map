@@ -1,7 +1,0 @@
-.marker-easter-egg {
-  content: '';
-  background-image: url(../../../assets/markers/easter-egg.png);
-  background-repeat: no-repeat;
-  background-size: 22px;
-  background-position: 4px 3px;
-}

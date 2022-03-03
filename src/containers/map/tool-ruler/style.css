@@ -1,0 +1,14 @@
+.ruler-tooltip {
+  background-color: white;
+  border-width: medium;
+  border-color: #de0000;
+  font-size: smaller;
+}
+.ruler-moving-tooltip {
+  background-color: rgba(255, 255, 255, 0.7);
+  background-clip: padding-box;
+  opacity: 0.5;
+  border: dotted;
+  border-color: red;
+  font-size: smaller;
+}

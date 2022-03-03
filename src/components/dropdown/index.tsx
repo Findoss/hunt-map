@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import classNames from 'classnames';
+import cn from 'classnames';
 
 import { ReactComponent as ArrowIcon } from '../../assets/icons/arrow.svg';
-import './style.css';
+import styles from './dropdown.module.css';
 
 export type Item = {
   id: string;
@@ -21,14 +21,6 @@ export const Dropdown = ({ initId, options, onChange }: Props) => {
   const [items] = useState(options);
   const [selectedId, setSelectedId] = useState(init);
 
-  const styleArrow = classNames('dropdown__header__arrow', {
-    dropdown__header__arrow_open: isOpen,
-  });
-
-  const styleBody = classNames('dropdown__body', {
-    dropdown__body_open: isOpen,
-  });
-
   const selectedItem = items.find((item) => item.id === selectedId);
 
   const toggleDropdown = () => setOpen(!isOpen);
@@ -43,14 +35,14 @@ export const Dropdown = ({ initId, options, onChange }: Props) => {
   };
 
   return (
-    <div className="dropdown">
-      <div className="dropdown__header" onClick={toggleDropdown}>
+    <div className={cn(styles.dropdown)}>
+      <div className={cn(styles.header)} onClick={toggleDropdown}>
         {selectedId ? selectedItem?.label : 'Select your destination'}
-        <ArrowIcon className={styleArrow} />
+        <ArrowIcon className={cn(styles.arrow, {[styles.arrow_open]: isOpen,})} />
       </div>
-      <div className={styleBody}>
+      <div className={cn(styles.body, {[styles.body_open]: isOpen,})}>
         {items.map(({ id, label }) => (
-          <div className="dropdown__item" onClick={handleItemClick} id={id} key={id}>
+          <div className={cn(styles.item)} onClick={handleItemClick} id={id} key={id}>
             {label ? label : id}
           </div>
         ))}

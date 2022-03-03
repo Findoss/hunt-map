@@ -1,0 +1,57 @@
+.dropdown {
+  position: relative;
+  width: 100%;
+  color: var(--color-1);
+  background-color: var(--bg-color-2);
+  border-bottom: 1px solid var(--color-4);
+}
+
+.header {
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  fill: var(--color-1);
+  transform: rotate(90deg);
+}
+
+.arrow_open {
+  transform: rotate(-90deg);
+}
+
+.body {
+  width: 100%;
+  position: absolute;
+  padding: 4px;
+  border-top: 1px solid var(--color-2);
+  background-color: var(--bg-color-2);
+  display: none;
+}
+
+.body_open {
+  display: block;
+}
+
+.item {
+  padding: 8px;
+  width: 100%;
+}
+
+.item:hover {
+  cursor: pointer;
+  color: var(--color-2-hover);
+}
+
+.dropdown__item-dot {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown__item-dot_selected {
+  opacity: 1;
+  color: var(--color-2-hover);
+}

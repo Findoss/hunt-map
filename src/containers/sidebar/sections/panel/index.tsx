@@ -1,27 +1,25 @@
-import classNames from 'classnames';
+import cn from 'classnames';
 import { useTranslation } from 'react-i18next';
 import { useAppSelector } from '../../../../hooks/redux-toolkit';
 
-import { EditControl } from '../../../map/toolEditor';
+import { EditControl } from '../../../map/tool-editor';
 
 import { selectIsLoadModule } from '../../../../store/editor/selectors';
 
 type Props = {
-  className?: string;
+  extraClass?: string;
 };
-export const SectionEditor = ({ className }: Props) => {
+export const SectionEditor = ({ extraClass }: Props) => {
   const { t } = useTranslation();
   const isLoadModuleBackend = useAppSelector(selectIsLoadModule);
 
-  const style = classNames(className);
-
   return (
-    <div className={style}>
+    <div className={cn(extraClass)}>
       <span>
         {t('sections.editor')}
         {isLoadModuleBackend && t('tools.editorReady')}
       </span>
-      <div className="tools__container">
+      <div>
         <EditControl />
       </div>
     </div>

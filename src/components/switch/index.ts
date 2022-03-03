@@ -1,4 +1,4 @@
-import { ReactChild, ReactChildren, ReactElement } from 'react';
+import { ReactElement } from 'react';
 
 export const Switch = (props: any) => {
   const { test, children } = props;
