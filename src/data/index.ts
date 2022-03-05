@@ -11,6 +11,8 @@ import CACHE_DS from './cache/DS.json';
 import ZONES_DS from './zone/DS.json';
 
 import CACHE_TEST from './cache/TMP.json';
+import LABELS_TEST from './names/TMP.json';
+import ZONES_TEST from './zone/TMP.json';
 
 import type { LatLngTuple, LatLngLiteral } from 'leaflet';
 import { IS_DEV } from '../constants';
@@ -49,15 +51,17 @@ const cache: TypeFeatureMarkerCollection = {
   DS: CACHE_DS as any,
 };
 
-if (IS_DEV) {
-  cache.TEST = CACHE_TEST as any;
-}
-
 const zones: TypeFeatureMarkerCollection = {
   SB: ZONES_SB as any,
   LD: ZONES_LD as any,
   DS: ZONES_DS as any,
 };
+
+if (IS_DEV) {
+  cache.TEST = CACHE_TEST as any;
+  labels.TEST = LABELS_TEST as any;
+  zones.TEST = ZONES_TEST as any;
+}
 
 const allData: TypeFeatureMarkerCollection = labels;
 

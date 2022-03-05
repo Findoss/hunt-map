@@ -1,0 +1,231 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "LABEL_SB_0": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "ASF"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-110, 130]
+        }
+      }
+    },
+    {
+      "LABEL_SB_2": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "RML"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-100, 350]
+        }
+      }
+    },
+    {
+      "LABEL_SB_3": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label-double-clue",
+          "name": "PR_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-120, 615]
+        }
+      }
+    },
+    {
+      "LABEL_SB_4": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "SL_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-95, 830]
+        }
+      }
+    },
+
+    {
+      "LABEL_SB_5": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label-double-clue",
+          "name": "BG_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-395, 200]
+        }
+      }
+    },
+
+    {
+      "LABEL_SB_6": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "DL_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-250, 450]
+        }
+      }
+    },
+    {
+      "LABEL_SB_7": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "AF_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-370, 595]
+        }
+      }
+    },
+    {
+      "LABEL_SB_8": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "CMN"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-365, 840]
+        }
+      }
+    },
+    {
+      "LABEL_SB_9": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "LD_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-475, 420]
+        }
+      }
+    },
+    {
+      "LABEL_SB_10": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "SB_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-575, 770]
+        }
+      }
+    },
+    {
+      "LABEL_SB_11": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "PC_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-670, 340]
+        }
+      }
+    },
+    {
+      "LABEL_SB_12": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "CH_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-800, 120]
+        }
+      }
+    },
+    {
+      "LABEL_SB_13": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "DR_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-880, 300]
+        }
+      }
+    },
+    {
+      "LABEL_SB_14": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "_S_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-900, 600]
+        }
+      }
+    },
+    {
+      "LABEL_SB_15": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label",
+          "name": "CG_"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-850, 850]
+        }
+      }
+    },
+    {
+      "LABEL_SB_16": {
+        "type": "Feature",
+        "properties": {
+          "title": "label",
+          "marker": "label-double-clue",
+          "name": "HWC"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-665, 570]
+        }
+      }
+    }
+  ]
+}
