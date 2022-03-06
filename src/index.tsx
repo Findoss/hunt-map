@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+import dotenvExpand from 'dotenv-expand';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -9,6 +12,9 @@ import './plugins/i18n';
 import './index.css';
 
 import reportWebVitals from './reportWebVitals';
+
+const myEnv = dotenv.config();
+dotenvExpand.expand(myEnv);
 
 ReactDOM.render(
   <React.StrictMode>
