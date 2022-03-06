@@ -10,7 +10,7 @@
 > node -v
 
 Если у вас установленна другая версия node.js, удалите текущую версию с компьютера. Установите node c помощью nvm.
-[Интструкция установки nvm для разных ОС ](https://github.com/nvm-sh/nvm#node-version-manager---)
+[Инструкция установки nvm для разных ОС ](https://github.com/nvm-sh/nvm#node-version-manager---)
 
 Актуальная версия node указана в этом файле.
 
