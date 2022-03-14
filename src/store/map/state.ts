@@ -78,7 +78,7 @@ if (IS_DEV) {
     image: {
       width: 4096,
       height: 4096,
-      path: '/images/tiles/TMP/{z}-{x}-{y}.jpg',
+      path: '/images/tiles/SB/{z}-{x}-{y}.jpg',
     },
     levels: {
       org: 4,
