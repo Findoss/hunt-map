@@ -70,4 +70,5 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 | varshevsky   | dis varshevsky#2885                    | easter-egg information      |
 | grassoff BLS | https://steamcommunity.com/id/grassoff | easter-egg information      |
 | Святобор     | dis Святобор#5127                      | add markers                 |
-| !Pythz       | dis !Pythz#0069                        | translation french language |
+| !Pythz       | dis !Pythz#0069                        | French translation          |
+| Krispie#2283 | dis Krispie#2283  https://htda.de/     | German translation          |
