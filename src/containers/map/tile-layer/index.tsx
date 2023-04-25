@@ -1,9 +1,10 @@
 import * as L from 'leaflet';
 import { TileLayer, useMap } from 'react-leaflet';
 
+import { PUBLIC_URL } from 'constants/index';
 import { ATTRIBUTION } from './attribution';
 
-import type { Map as TypeMap } from '../../../store/map/types';
+import type { Map as TypeMap } from 'store/map/types';
 
 import './style.css';
 
@@ -27,7 +28,7 @@ export const TileLayerMap = ({ optionsMap }: { optionsMap: TypeMap }) => {
       bounds={boundsLoadTiles}
       zIndex={1}
       attribution={ATTRIBUTION}
-      url={process.env.PUBLIC_URL + path}
+      url={'../' + path}
     />
   );
 };

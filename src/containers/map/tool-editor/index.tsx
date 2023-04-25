@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-
 import { useMap } from 'react-leaflet';
+import { useLeafletContext } from '@react-leaflet/core';
+
 import { useTranslation } from 'react-i18next';
 import { useAppDispatch, useAppSelector } from 'hooks/redux-toolkit';
-import { useLeafletContext } from '@react-leaflet/core';
 import { usePrevious } from 'hooks/usePrevious';
 
 import { createDraw } from './editor';

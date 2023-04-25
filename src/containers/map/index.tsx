@@ -11,7 +11,6 @@ import { selectMarkersId, selectMarkerById } from '../../store/data/selectors';
 import { createCRS } from './crs';
 import { Ruler } from './tool-ruler/index';
 
-// импортируются стили, где применяются не пойму.
 import './marker-base/style.css';
 import './tooltip/style.css';
 import './style.css';

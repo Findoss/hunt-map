@@ -1,9 +1,9 @@
-import { useState, useCallback } from 'react';
 import cn from 'classnames';
+import { useState, useCallback } from 'react';
+import { ReactComponent as ArrowIcon } from 'assets/icons/arrow.svg';
 
 import { Sections } from './sections';
 
-import { ReactComponent as ArrowIcon } from '../../assets/icons/arrow.svg';
 import styles from './sidebar.module.css';
 
 export const Sidebar = () => {
@@ -11,7 +11,7 @@ export const Sidebar = () => {
   const toggleSidebar = useCallback(() => setShowSidebar((value) => !value), []);
 
   return (
-    <div className={cn(styles.sidebar, {[styles.sidebar_show]: showSidebar,})}>
+    <div className={cn(styles.sidebar, { [styles.sidebar_show]: showSidebar })}>
       <div onClick={toggleSidebar} className={cn(styles.sidebar__toggle)}>
         <ArrowIcon />
       </div>
