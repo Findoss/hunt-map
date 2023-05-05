@@ -23,6 +23,7 @@ export const Ruler = () => {
 export const ButtonRuler = () => {
   const { t } = useTranslation();
   const [toggle, setToggle] = useState(false);
+
   const toggleDraw = () => {
     ruler.toggleMeasure();
     setToggle((v) => !v);
