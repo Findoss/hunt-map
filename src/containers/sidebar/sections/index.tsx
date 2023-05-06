@@ -17,9 +17,9 @@ export const Sections = ({ extraClass }: Props) => {
     <>
       <div className={cn(styles.section, extraClass)}>
         <SectionLang extraClass={cn(styles.section, styles.section__lang)} />
-        <SectionMaps extraClass={cn(styles.section)} />
+        {/* <SectionMaps extraClass={cn(styles.section)} />
         <SectionFilters extraClass={cn(styles.section)} />
-        <SectionTools extraClass={cn(styles.section)} />
+        <SectionTools extraClass={cn(styles.section)} /> */}
         {/* <SectionEditor extraClass={cn(styles.section)} /> */}
       </div>
     </>

@@ -10,6 +10,7 @@ export default defineConfig({
       store: path.resolve(__dirname, './src/store'),
       constants: path.resolve(__dirname, './src/constants'),
       components: path.resolve(__dirname, './src/components'),
+      utils: path.resolve(__dirname, './src/utils'),
       assets: path.resolve(__dirname, './src/assets'),
     },
   },

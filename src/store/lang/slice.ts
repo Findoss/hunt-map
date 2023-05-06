@@ -1,6 +1,6 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { initialState } from './state';
-import type { PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { LangList, initialState } from './state';
+import { fetchLangs } from './thunk';
 
 export const langSlice = createSlice({
   name: 'lang',
@@ -9,5 +9,10 @@ export const langSlice = createSlice({
     setLang: (state, action: PayloadAction<string>) => {
       state.lang = action.payload;
     },
+  },
+  extraReducers: (builder) => {
+    builder.addCase(fetchLangs.fulfilled, (state, action) => {
+      state.supportedLangs = action.payload;
+    });
   },
 });

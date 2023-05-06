@@ -4,12 +4,14 @@ import reportWebVitals from './reportWebVitals';
 
 import App from './App';
 import { store } from './store';
-import { VERSION_APP } from './constants/index';
+import { IS_DEV, IS_PROD, VERSION_APP } from './constants/index';
 
 import './plugins/i18n';
 import './index.css';
 
-console.log(VERSION_APP);
+if (IS_PROD || IS_DEV) {
+  console.log(VERSION_APP);
+}
 
 const $container = document.getElementById('root');
 const root = createRoot($container!);
@@ -19,4 +21,6 @@ root.render(
   </Provider>
 );
 
-reportWebVitals();
+if (IS_PROD) {
+  reportWebVitals();
+}

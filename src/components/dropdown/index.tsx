@@ -18,10 +18,9 @@ export type Props = {
 export const Dropdown = ({ initId, options, onChange }: Props) => {
   const init = initId ?? options[0].id;
   const [isOpen, setOpen] = useState(false);
-  const [items] = useState(options);
   const [selectedId, setSelectedId] = useState(init);
 
-  const selectedItem = items.find((item) => item.id === selectedId);
+  const selectedItem = options.find((item) => item.id === selectedId);
 
   const toggleDropdown = () => setOpen(!isOpen);
 
@@ -30,7 +29,7 @@ export const Dropdown = ({ initId, options, onChange }: Props) => {
     setSelectedId(id);
     toggleDropdown();
 
-    const selectedItem = items.find((item) => item.id === id) as Item;
+    const selectedItem = options.find((item) => item.id === id) as Item;
     if (onChange) onChange(selectedItem);
   };
 
@@ -38,10 +37,10 @@ export const Dropdown = ({ initId, options, onChange }: Props) => {
     <div className={cn(styles.dropdown)}>
       <div className={cn(styles.header)} onClick={toggleDropdown}>
         {selectedId ? selectedItem?.label : 'Select your destination'}
-        <ArrowIcon className={cn(styles.arrow, {[styles.arrow_open]: isOpen,})} />
+        <ArrowIcon className={cn(styles.arrow, { [styles.arrow_open]: isOpen })} />
       </div>
-      <div className={cn(styles.body, {[styles.body_open]: isOpen,})}>
-        {items.map(({ id, label }) => (
+      <div className={cn(styles.body, { [styles.body_open]: isOpen })}>
+        {options.map(({ id, label }) => (
           <div className={cn(styles.item)} onClick={handleItemClick} id={id} key={id}>
             {label ? label : id}
           </div>
