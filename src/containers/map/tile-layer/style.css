@@ -1,7 +1,5 @@
 .leaflet-control-attribution {
   width: 100%;
-  width: 210px;
-  height: 60px;
   padding: 0;
   background: transparent !important;
 }
