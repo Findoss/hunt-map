@@ -2,7 +2,6 @@
   width: 100%;
   width: 210px;
   height: 60px;
-  top: -10px;
   padding: 0;
   background: transparent !important;
 }
@@ -10,17 +9,4 @@
 .leaflet-control-attribution.leaflet-control,
 .leaflet-control-attribution.leaflet-control a {
   color: var(--color-1) !important;
-}
-
-.sponsor {
-  height: 20px;
-}
-
-.sponsor svg {
-  height: 100%;
-}
-
-.sponsor:hover .st1 {
-  fill: var(--color-2-hover);
-  transition: fill 1s;
 }

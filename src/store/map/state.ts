@@ -21,7 +21,7 @@ const mapsConfig: Record<idMaps, Map> = {
     image: {
       width: 4096,
       height: 4096,
-      path: '/images/tiles/SB/{z}-{x}-{y}.jpg',
+      path: '/images/maps/SB/tiles/{z}-{x}-{y}.jpg',
     },
     levels: {
       org: 4,
@@ -39,7 +39,7 @@ const mapsConfig: Record<idMaps, Map> = {
     image: {
       width: 4096,
       height: 4096,
-      path: '/images/tiles/LD/{z}-{x}-{y}.jpg',
+      path: '/images/maps/LD/tiles/{z}-{x}-{y}.jpg',
     },
     levels: {
       org: 4,
@@ -57,7 +57,7 @@ const mapsConfig: Record<idMaps, Map> = {
     image: {
       width: 2048,
       height: 2048,
-      path: '/images/tiles/DS/{z}-{x}-{y}.jpg',
+      path: '/images/maps/DS/tiles/{z}-{x}-{y}.jpg',
     },
     levels: {
       org: 3,
