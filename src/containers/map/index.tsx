@@ -31,12 +31,12 @@ export const Map = () => {
       maxBoundsViscosity={0.6}
       crs={createCRS(width, height)}
     >
-      <LayerGroup>{markersId.map((id) => switchTypeFeature(marker(id), id))}</LayerGroup>
+      {/* <LayerGroup>{markersId.map((id) => switchTypeFeature(marker(id), id))}</LayerGroup> */}
       <TileLayerMap optionsMap={maps[idMap]} key={idMap} />
-      <Ruler />
-      <FeatureGroup>
-        <DrawControl />
-      </FeatureGroup>
+      {/* <Ruler /> */}
+      {/* <FeatureGroup> */}
+      {/* <DrawControl /> */}
+      {/* </FeatureGroup> */}
     </MapContainer>
   );
 };

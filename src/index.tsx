@@ -2,7 +2,7 @@ import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
 
-import App from './App';
+import App from './app';
 import { store } from './store';
 import { IS_DEV, IS_PROD, VERSION_APP } from './constants/index';
 

@@ -16,11 +16,9 @@ export const TileLayerMap = ({ optionsMap }: Props) => {
 
   const map = useMap();
 
-  const padding = 100;
-
   const boundsLoadTiles = new L.LatLngBounds(
-    map.unproject([0 - padding - 500, width + padding], org),
-    map.unproject([height + padding, 0 - padding], org)
+    map.unproject([0, width], org),
+    map.unproject([height, 0], org)
   );
 
   map.setMaxBounds(boundsLoadTiles);

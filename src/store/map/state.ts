@@ -21,7 +21,7 @@ if (IS_DEV) {
     image: {
       width: 4096,
       height: 4096,
-      path: '/images/tiles/SB/{z}-{x}-{y}.jpg',
+      path: '/maps/TEST/tiles/tile.jpg',
     },
     levels: {
       org: 4,
@@ -38,7 +38,7 @@ if (IS_DEV) {
 
 export const initialState: MapState = {
   view: {
-    id: getUrlData().path[1] ?? 'SB',
+    id: '',
     center: [-500, 500],
     zoom: 1,
   },

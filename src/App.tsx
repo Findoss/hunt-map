@@ -4,11 +4,14 @@ import { Map } from './containers/map';
 import styles from './app.module.css';
 import { useEffect } from 'react';
 import { fetchLangs } from 'store/lang/thunk';
-import { useAppDispatch } from 'hooks/redux-toolkit';
+import { useAppDispatch, useAppSelector } from 'hooks/redux-toolkit';
 import { fetchMaps } from 'store/map/thunk';
+import { selectViewMap } from 'store/map/selectors';
+import { PlaceholderMap } from 'components/placeholder';
 
 function App() {
   const dispatch = useAppDispatch();
+  const { id: idMap } = useAppSelector(selectViewMap);
 
   useEffect(() => {
     dispatch(fetchLangs());
@@ -18,7 +21,7 @@ function App() {
   return (
     <div className={cn(styles.app)}>
       <Sidebar />
-      {/* <Map /> */}
+      {idMap === '' ? <PlaceholderMap /> : <Map />}
     </div>
   );
 }
