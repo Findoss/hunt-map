@@ -5,12 +5,14 @@ import styles from './app.module.css';
 import { useEffect } from 'react';
 import { fetchLangs } from 'store/lang/thunk';
 import { useAppDispatch } from 'hooks/redux-toolkit';
+import { fetchMaps } from 'store/map/thunk';
 
 function App() {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
     dispatch(fetchLangs());
+    dispatch(fetchMaps());
   }, []);
 
   return (

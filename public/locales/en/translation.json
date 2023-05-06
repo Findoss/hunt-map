@@ -2,6 +2,14 @@
   "maps": {
     "SB": "Stillwater Bayou",
     "LD": "Lawson Delta",
-    "DS": "DeSalle"
+    "DS": "DeSalle",
+    "TEST": "Карта для тестов"
+  },
+  "sections": {
+    "maps": "Maps",
+    "compounds": "Compounds",
+    "filters": "Filters",
+    "editor": "Editor",
+    "tools": "Tools"
   }
 }
