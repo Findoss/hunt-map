@@ -33,7 +33,7 @@ export const Map = () => {
     >
       {/* <LayerGroup>{markersId.map((id) => switchTypeFeature(marker(id), id))}</LayerGroup> */}
       <TileLayerMap optionsMap={maps[idMap]} key={idMap} />
-      {/* <Ruler /> */}
+      <Ruler />
       {/* <FeatureGroup> */}
       {/* <DrawControl /> */}
       {/* </FeatureGroup> */}

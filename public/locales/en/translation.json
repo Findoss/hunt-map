@@ -11,5 +11,8 @@
     "filters": "Filters",
     "editor": "Editor",
     "tools": "Tools"
+  },
+  "tools": {
+    "ruler": "Ruler"
   }
 }

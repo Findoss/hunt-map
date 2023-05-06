@@ -56,6 +56,8 @@ const Ruler = L.Control.extend({
     } else {
       this._map.doubleClickZoom.enable();
       this._map.removeLayer(this._allLayers);
+      this._map.removeLayer(this._tempLine);
+      this._map.removeLayer(this._tempPoint);
       this._allLayers = L.layerGroup();
       this._map.off('click', this._clicked, this);
       this._map.off('mousemove', this._moving, this);
@@ -85,7 +87,9 @@ const Ruler = L.Control.extend({
         .addTo(this._pointLayer)
         .openTooltip();
     }
+
     this._clickCount++;
+
     if (this._clickCount > 1) {
       this._closePath();
     }
