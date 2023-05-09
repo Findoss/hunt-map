@@ -1,21 +1,20 @@
 import type { LatLngTuple, LatLngLiteral } from 'leaflet';
 
-export type Feature = Record<
-  string,
-  {
+export type FeatureData = {
+  type: string;
+  properties: {
+    title: string;
+    marker: string;
+    name?: string;
+    event?: string;
+  };
+  geometry: {
     type: string;
-    properties: {
-      title: string;
-      marker: string;
-      name?: string;
-      event?: string;
-    };
-    geometry: {
-      type: string;
-      coordinates: LatLngTuple | LatLngTuple[] | LatLngLiteral[] | number[];
-    };
-  }
->;
+    coordinates: LatLngTuple | LatLngTuple[] | LatLngLiteral[] | number[];
+  };
+};
+
+export type Feature = Record<string, FeatureData>;
 
 export type ContentMap = {
   data: Feature[];

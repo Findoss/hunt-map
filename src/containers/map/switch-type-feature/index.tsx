@@ -9,9 +9,9 @@ import { MarkerEasterEgg } from '../marker-easter-egg';
 
 import { PolygonZone } from '../poligon-zone';
 
-import type { Feature } from 'store/data/state';
+import type { FeatureData } from 'store/data/state';
 
-export const switchTypeFeature = (v: Feature, id: string) => {
+export const switchTypeFeature = (v: FeatureData, id: string) => {
   switch (v.properties.title) {
     case 'label':
       return <MarkerLabel feature={v} key={id} />;
