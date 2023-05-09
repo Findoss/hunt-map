@@ -1,5 +1,6 @@
 import { ReactComponent as ArrowIcon } from '../../assets/icons/arrow.svg';
-import './style.css';
+import cn from 'classnames';
+import styles from './radio.module.css';
 
 export type Props = {
   id: string;
@@ -12,9 +13,9 @@ export type Props = {
 
 export const Radio = ({ id, value, name, label, checked, onChange }: Props) => {
   return (
-    <label htmlFor={id} className="radio">
+    <label htmlFor={id} className={cn(styles.radio)}>
       <input
-        className="radio__input"
+        className={cn(styles.input)}
         type="radio"
         id={id}
         name={name}
@@ -22,8 +23,8 @@ export const Radio = ({ id, value, name, label, checked, onChange }: Props) => {
         checked={checked}
         onChange={onChange}
       />
-      {checked ? <ArrowIcon className="radio__marker" /> : <div className="radio__marker">●</div>}
-      <span className="radio__label">{label}</span>
+      {checked ? <ArrowIcon className={cn(styles.marker)} /> : <div className={cn(styles.marker)}>●</div>}
+      <span className={cn(styles.label)}>{label}</span>
     </label>
   );
 };

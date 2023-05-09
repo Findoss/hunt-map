@@ -4,6 +4,8 @@ import { initialState } from './state';
 import type { LatLngTuple } from 'leaflet';
 import type { PayloadAction } from '@reduxjs/toolkit';
 import type { idMaps } from './types';
+import { fetchMaps } from './thunk';
+import { getUrlData } from 'utils/URL';
 
 export const mapSlice = createSlice({
   name: 'map',
@@ -18,5 +20,11 @@ export const mapSlice = createSlice({
     setMapId: (state, action: PayloadAction<idMaps>) => {
       state.view.id = action.payload;
     },
+  },
+  extraReducers: (builder) => {
+    builder.addCase(fetchMaps.fulfilled, (state, action) => {
+      state.maps = { ...state.maps, ...action.payload };
+      state.view.id = getUrlData().path[1] ?? Object.keys(action.payload)[0];
+    });
   },
 });

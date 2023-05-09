@@ -1,0 +1,10 @@
+.leaflet-control-attribution {
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.leaflet-control-attribution.leaflet-control,
+.leaflet-control-attribution.leaflet-control a {
+  color: var(--color-1) !important;
+}

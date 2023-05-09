@@ -1,18 +1,16 @@
-import { getUrlData } from '../../utils/URL';
+import { getUrlData } from 'utils/URL';
 
-export interface LangState {
+export type LangList = Record<string, string>;
+export type LangState = {
   lang: string;
-  supportedLangs: Record<string, string>;
-}
-
-const [langId] = getUrlData().path;
+  supportedLangs: LangList;
+};
 
 export const initialState: LangState = {
-  lang: langId || 'en',
+  lang: getUrlData().path[0] || 'en',
   supportedLangs: {
     en: 'English',
-    ru: 'Русский',
-    de: 'Deutsch',
-    // fr: 'fr',
+    // ru: 'Русский',
+    // de: 'Deutsch',
   },
 };

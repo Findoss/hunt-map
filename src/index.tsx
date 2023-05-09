@@ -1,22 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
-
-import App from './App';
-import { store } from './store';
-import './plugins/i18n';
-
-import './index.css';
-
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
+import App from './app';
+import { store } from './store';
+import { IS_DEV, IS_PROD, VERSION_APP } from './constants/index';
+
+import './plugins/i18n';
+import './index.css';
+
+if (IS_PROD || IS_DEV) {
+  console.log(VERSION_APP);
+}
+
+const $container = document.getElementById('root');
+const root = createRoot($container!);
+root.render(
+  <Provider store={store}>
+    <App />
+  </Provider>
 );
 
-reportWebVitals();
+if (IS_PROD) {
+  reportWebVitals();
+}

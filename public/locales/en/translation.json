@@ -2,125 +2,8 @@
   "maps": {
     "SB": "Stillwater Bayou",
     "LD": "Lawson Delta",
-    "DS": "DeSalle"
-  },
-  "types": {
-    "boss": "Boss - coming soon",
-    "spawn-player": "Spawn player",
-    "extraction-point": "Extraction point - coming soon",
-    "resupply-point": "Supplies - coming soon",
-    "easter-egg": "Easter egg - coming soon",
-    "tower": "Tower - coming soon",
-    "aviary": "Aviary - coming soon",
-    "clue": "Clue - coming soon",
-    "cash": "Cash - coming soon",
-    "label": "Compounds name",
-    "zone": "Compounds zone",
-    "water-low": "Water low"
-  },
-  "typesMarkers": {
-    "boss": {
-      "boss-a": "Assassin",
-      "boss-b": "Butcher",
-      "boss-s": "Spider",
-      "boss-h": "Scrapbeak",
-      "boss-hb": "Scrapbeak, Butcher",
-      "boss-hs": "Scrapbeak, Spider",
-      "boss-ah": "Assassin, Scrapbeak",
-      "boss-ab": "Assassin, Butcher",
-      "boss-as": "Assassin, Spider",
-      "boss-bs": "Butcher, Spider",
-      "boss-abs": "Assassin, Butcher, Spider",
-      "boss-abh": "Assassin, Butcher, Scrapbeak",
-      "boss-ash": "Assassin, Spider, Scrapbeak",
-      "boss-bsh": "Butcher, Spider, Scrapbeak",
-      "boss-all": "Assassin, Butcher, Spider, Scrapbeak"
-    },
-    "aviary": {
-      "aviary": "Dogs or Chicken",
-      "aviary-d": "Dogs",
-      "aviary-c": "Chicken"
-    },
-    "resupply-point": {
-      "resupply-point": "Сarriage",
-      "resupply-point-b": "Boat",
-      "resupply-point-rc": "Railway carriage"
-    },
-    "extraction-point": {
-      "extraction-point-t": "Top",
-      "extraction-point-b": "Bottom",
-      "extraction-point-r": "Right",
-      "extraction-point-l": "Left"
-    },
-    "tower": {
-      "tower": "vector 12",
-      "tower1": "vector 1",
-      "tower2": "vector 2",
-      "tower3": "vector 3",
-      "tower4": "vector 4",
-      "tower5": "vector 5",
-      "tower6": "vector 6",
-      "tower7": "vector 7",
-      "tower8": "vector 8",
-      "tower9": "vector 9",
-      "tower10": "vector 10",
-      "tower11": "vector 11",
-      "tower-o": "Observation post",
-      "tower-h": "Hunting house"
-    }
-  },
-  "typesDescription": {
-    "resupply-point": "3 Ammo box <br/>3 Medkit<br/>1 Custom Ammo box<br/>1 Lantern<br/>",
-    "label": {
-      "ASF": "Alain & Son's <br> Fish",
-      "RML": "Reynard <br> Mill & Lumber",
-      "PR_": "Port Reeker",
-      "SL_": "Scupper Lake",
-      "BG_": "Blanchett Graves",
-      "DL_": "Darrow Livestock",
-      "AF_": "Alice Farm",
-      "CMN": "The Chapel <br> of Madonna Noire",
-      "LD_": "Lockbay Docks",
-      "SB_": "Stillwater Bend",
-      "PC_": "Pitching <br> Crematorium",
-      "CH_": "Cyprus Huts",
-      "DR_": "Davant Ranch",
-      "_S_": "The Slaughterhouse",
-      "CG_": "Catfish Grove",
-      "HWC": "Healing-Waters <br> Church",
-      "GD_": "Godard Docks",
-      "BB_": "Blanc Brinery",
-      "LS_": "Lawson Station",
-      "GA_": "Golden Acres",
-      "SP_": "Salter's Pork",
-      "MB_": "Maw Battery",
-      "SF_": "Sweetbell Flour",
-      "AP_": "Arden Parish",
-      "WR_": "Windy Run",
-      "NP_": "Nicholls Prison",
-      "FC_": "Fort Carmick",
-      "IW_": "Iron Works",
-      "WA_": "Wolfshead Arsenal",
-      "BCB": "Bradley & Craven <br> Brickworks",
-      "CAL": "C&A Lumber",
-      "HAH": "Hemlock and Hide",
-      "SCC": "Stanley<br/>coal<br/>company",
-      "KM_": "Kingsnake<br/>mine",
-      "MP_": "Moses<br/>poultry",
-      "SSE": "Seven<br/>sisters<br/>estate",
-      "FB_": "Fort<br/>bolden",
-      "PIP": "Pelican<br/>island<br/>prison",
-      "WSM": "Weeping<br/>stone<br/>mill",
-      "FRF": "Forked<br/>river<br/>fishery",
-      "ACL": "Ash creek<br/>lumber",
-      "ADS": "Upper<br/>DeSalle",
-      "LDS": "Lower<br/>DeSalle",
-      "HP_": "Heritage<br/>pork",
-      "PP_": "Pearl<br/>plantation",
-      "FTC": "First<br/>testimonial<br/>church",
-      "RQ_": "Reeves<br/>quarry",
-      "DS_": "Darin<br/>shipyard"
-    }
+    "DS": "DeSalle",
+    "TEST": "Карта для тестов"
   },
   "sections": {
     "maps": "Maps",
@@ -131,6 +14,6 @@
   },
   "tools": {
     "ruler": "Ruler",
-    "editor": "Moder panel - coming soon"
+    "addMarker": "Add marker"
   }
 }
