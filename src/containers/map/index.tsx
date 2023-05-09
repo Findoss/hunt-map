@@ -64,7 +64,7 @@ export const Map = () => {
       <Ruler />
 
       <FeatureGroup>
-        <DrawControl />
+        <DrawControl key={idMap} />
       </FeatureGroup>
     </MapContainer>
   );
