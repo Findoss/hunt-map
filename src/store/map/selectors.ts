@@ -12,3 +12,5 @@ export const selectOptionsMapById = (state: RootState) => (id: string) => select
 
 export const selectOptionsViewMap = (state: RootState) =>
   selectOptionsMapById(state)(selectViewMap(state).id);
+
+export const selectImageSettingsMap = (state: RootState) => selectOptionsViewMap(state).image;

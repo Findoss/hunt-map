@@ -5,6 +5,7 @@ import 'leaflet-draw';
 
 const optionsText = () => {
   L.drawLocal.draw.handlers.marker.tooltip.start = '';
+  L.drawLocal.draw.handlers.circle.tooltip.start = '';
 };
 
 const optionsDefault = {
@@ -12,11 +13,18 @@ const optionsDefault = {
     marker: {
       icon: MarkerNew,
     },
+    polyline: {
+      shapeOptions: {
+        color: '#f357a1',
+        weight: 10,
+      },
+    },
   },
 };
 
 export function createDraw(editableLayer, options? = optionsDefault) {
   optionsText();
+
   const opt = {
     ...options,
     edit: {
@@ -25,6 +33,7 @@ export function createDraw(editableLayer, options? = optionsDefault) {
       edit: false,
     },
   };
+
   const controlDraw = new L.Control.Draw(opt);
   return controlDraw;
 }

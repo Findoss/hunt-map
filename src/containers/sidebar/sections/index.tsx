@@ -1,5 +1,6 @@
 import cn from 'classnames';
 
+import { IS_DEV } from 'constants/index';
 import { SectionLang } from './lang';
 import { SectionMaps } from './maps';
 import { SectionFilters } from './filters';
@@ -20,7 +21,7 @@ export const Sections = ({ extraClass }: Props) => {
         <SectionMaps extraClass={cn(styles.section)} />
         {/*<SectionFilters extraClass={cn(styles.section)} /> */}
         <SectionTools extraClass={cn(styles.section)} />
-        {/* <SectionEditor extraClass={cn(styles.section)} /> */}
+        {IS_DEV && <SectionEditor extraClass={cn(styles.section)} />}
       </div>
     </>
   );

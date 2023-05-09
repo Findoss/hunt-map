@@ -9,6 +9,7 @@ import { updateUrlData } from '../../utils/URL';
 export const urlMiddleware: Middleware = (store) => (next) => (action) => {
   const result = next(action);
   const newState = store.getState();
+
   switch (action.type) {
     case 'map/setMapId':
     case 'lang/setLang':

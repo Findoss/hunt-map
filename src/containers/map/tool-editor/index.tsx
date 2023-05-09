@@ -18,12 +18,14 @@ import './style.css';
 
 export const DrawControl = () => {
   const map = useMap();
+  const context = useLeafletContext();
+
   const mode = useAppSelector(selectEdit);
   const preMode = usePrevious(mode);
+
   const dispatch = useAppDispatch();
-  const context = useLeafletContext();
+
   const { setEdit } = editorSlice.actions;
-  const [isEditReady, setEditReady] = useState(false);
   const [drawControl, setDrawControl] = useState<any>();
 
   useEffect(() => {
@@ -31,6 +33,7 @@ export const DrawControl = () => {
     setDrawControl(() => createDraw(editableLayers));
 
     map.on('draw:created', (e) => {
+      console.log('draw:created');
       editableLayers.addLayer(e.layer);
     });
 
@@ -39,7 +42,9 @@ export const DrawControl = () => {
       dispatch(setEdit(''));
     });
 
-    setEditReady(() => true);
+    map.on('draw:deleted', (e) => {
+      console.log('draw:deleted');
+    });
   }, [map]);
 
   useEffect(() => {
@@ -48,13 +53,10 @@ export const DrawControl = () => {
   }, [drawControl]);
 
   useEffect(() => {
-    if (!isEditReady) return;
     if (drawControl === undefined) return;
     if (preMode === undefined) return;
 
     const m = drawControl._toolbars.draw._modes;
-
-    if (preMode === undefined) return;
 
     if (mode !== '' && mode !== preMode) {
       if (preMode !== '') {
@@ -66,7 +68,7 @@ export const DrawControl = () => {
     if (mode === '' && preMode !== '') {
       m[preMode].handler.disable();
     }
-  }, [mode, isEditReady]);
+  }, [mode]);
 
   return null;
 };
@@ -75,15 +77,32 @@ export const EditControl = React.memo(() => {
   const { t } = useTranslation();
   const mode = useAppSelector(selectEdit);
   const dispatch = useAppDispatch();
+
   const { setEdit } = editorSlice.actions;
 
   return (
-    <Button
-      onClick={() => dispatch(setEdit('marker'))}
-      active={'marker' === mode}
-      icon={<AddMarkerIcon />}
-    >
-      {t(`tools.addMarker`)}
-    </Button>
+    <>
+      <Button
+        onClick={() => dispatch(setEdit('marker'))}
+        active={'marker' === mode}
+        icon={<AddMarkerIcon />}
+      >
+        {t(`tools.addMarker`)}
+      </Button>
+      {/* <Button
+        onClick={() => dispatch(setEdit('circle'))}
+        active={'circle' === mode}
+        icon={<AddMarkerIcon />}
+      >
+        {t(`tools.addCircle`)}
+      </Button> */}
+      {/* <Button
+        onClick={() => dispatch(setEdit('polyline'))}
+        active={'polyline' === mode}
+        icon={<AddMarkerIcon />}
+      >
+        {t(`tools.addPolyline`)}
+      </Button> */}
+    </>
   );
 });

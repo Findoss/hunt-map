@@ -1,8 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { initialState } from './state';
 
-import { addMarker } from './thunk';
-
 import type { PayloadAction } from '@reduxjs/toolkit';
 
 export const editorSlice = createSlice({
@@ -17,10 +15,5 @@ export const editorSlice = createSlice({
         state.edit = '';
       }
     },
-  },
-  extraReducers: (builder) => {
-    builder.addCase(addMarker.fulfilled, (state) => {
-      state.isLoadModule = false;
-    });
   },
 });
